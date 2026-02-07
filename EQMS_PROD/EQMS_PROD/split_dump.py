@@ -25,6 +25,9 @@ EXCEL_FILE = os.path.join(BASE_FOLDER, "DB-SCHEMA_LATEST.xlsx")
 APP_USER_FILE = os.path.join(BASE_FOLDER, "app_user.txt")
 MODULE_WISE_TABLES_FILE = os.path.join(BASE_FOLDER, "Module Wise tables.xlsx")
 
+# Tenant key for data batch folders (e.g. "tenant_1", "tenant_2"). Change this to generate for another tenant.
+TENANT_KEY = "tenant_2"
+
 # ==========================================
 
 
@@ -2799,7 +2802,7 @@ def update_master_changelog(folder_name):
                 f.write(f"-- include: {folder_name}\n")
                 f.write(f"-- @include {folder_name}/scripts/ddl/tables/*.sql\n")
                 f.write(f"-- @include {folder_name}/scripts/ddl/constraints/*.sql\n")
-                f.write(f"-- @include {folder_name}/scripts/tenant_specific/tenant_1/dml/*.sql\n")
+                f.write(f"-- @include {folder_name}/scripts/tenant_specific/{TENANT_KEY}/dml/*.sql\n")
                 f.write(f"-- @include {folder_name}/scripts/ddl/permissions/*.sql\n\n")
     except Exception as e:
         print(f"       Warning: Could not update master changelog: {e}")
@@ -3075,8 +3078,9 @@ def create_permission_folder_name(batch_number, app_user_name, screen_name, scre
     return folder_name
 
 
-def create_folder_name(batch_number, module_name, screen_name, screen_number, migration_type="schema", migration_number=1):
-    """Create folder name with length control using intelligent abbreviation."""
+def create_folder_name(batch_number, module_name, screen_name, screen_number, migration_type="schema", migration_number=1, tenant_key=None):
+    """Create folder name with length control using intelligent abbreviation.
+    For migration_type='data', pass tenant_key (e.g. TENANT_KEY) to include it in the folder name."""
     MAX_FOLDER_LEN = 100
 
     # Ensure batch_number is valid
@@ -3094,6 +3098,8 @@ def create_folder_name(batch_number, module_name, screen_name, screen_number, mi
     migration_str = f"{migration_number:03d}"
     module_clean = module_name.lower().replace(" ", "_") if module_name else "unknown"
     type_name = migration_type.lower()
+    # For data batches, include tenant key in folder name when provided
+    tenant_part = f"{tenant_key}_" if (migration_type == "data" and tenant_key) else ""
     
     if not screen_name or screen_name.lower() in ['', 'default', 'none']:
         screen_clean = ""
@@ -3103,31 +3109,31 @@ def create_folder_name(batch_number, module_name, screen_name, screen_number, mi
     if module_clean == screen_clean:
         screen_clean = ""
     
-    # Build initial folder name
+    # Build initial folder name (tenant_part inserted before type_name for data batches)
     if screen_clean:
-        folder_name = f"migrations_{batch_str}_{module_clean}_{screen_str}_{screen_clean}_{type_name}_batch_{migration_str}"
+        folder_name = f"migrations_{batch_str}_{module_clean}_{screen_str}_{screen_clean}_{tenant_part}{type_name}_batch_{migration_str}"
     else:
-        folder_name = f"migrations_{batch_str}_{module_clean}_{screen_str}_{type_name}_batch_{migration_str}"
+        folder_name = f"migrations_{batch_str}_{module_clean}_{screen_str}_{tenant_part}{type_name}_batch_{migration_str}"
 
     # If folder name is too long, abbreviate parts using syllable logic
     if len(folder_name) > MAX_FOLDER_LEN:
         # 1. Try to abbreviate screen_clean first
         if screen_clean:
             # Calculate remaining space
-            fixed_len = len(f"migrations_{batch_str}_{module_clean}_{screen_str}__batch_{migration_str}") + len(type_name)
+            fixed_len = len(f"migrations_{batch_str}_{module_clean}_{screen_str}__batch_{migration_str}") + len(type_name) + len(tenant_part)
             allowed_screen_len = MAX_FOLDER_LEN - fixed_len
             screen_clean = abbreviate_folder_table_name(screen_clean, max_length=max(10, allowed_screen_len))
-            folder_name = f"migrations_{batch_str}_{module_clean}_{screen_str}_{screen_clean}_{type_name}_batch_{migration_str}"
+            folder_name = f"migrations_{batch_str}_{module_clean}_{screen_str}_{screen_clean}_{tenant_part}{type_name}_batch_{migration_str}"
 
         # 2. If still too long, abbreviate module_clean
         if len(folder_name) > MAX_FOLDER_LEN:
-            fixed_len = len(f"migrations_{batch_str}__batch_{migration_str}") + len(screen_str) + len(type_name) + (len(screen_clean) + 1 if screen_clean else 0)
+            fixed_len = len(f"migrations_{batch_str}__batch_{migration_str}") + len(screen_str) + len(type_name) + len(tenant_part) + (len(screen_clean) + 1 if screen_clean else 0)
             allowed_module_len = MAX_FOLDER_LEN - fixed_len
             module_clean = abbreviate_folder_table_name(module_clean, max_length=max(10, allowed_module_len))
             if screen_clean:
-                folder_name = f"migrations_{batch_str}_{module_clean}_{screen_str}_{screen_clean}_{type_name}_batch_{migration_str}"
+                folder_name = f"migrations_{batch_str}_{module_clean}_{screen_str}_{screen_clean}_{tenant_part}{type_name}_batch_{migration_str}"
             else:
-                folder_name = f"migrations_{batch_str}_{module_clean}_{screen_str}_{type_name}_batch_{migration_str}"
+                folder_name = f"migrations_{batch_str}_{module_clean}_{screen_str}_{tenant_part}{type_name}_batch_{migration_str}"
     
     return folder_name
 
@@ -4360,7 +4366,8 @@ def process_data_migrations(module_name, module_df, base_batch_number, sorted_sc
             screen_name=screen,
             screen_number=screen_num,
             migration_type="data",
-            migration_number=1
+            migration_number=1,
+            tenant_key=TENANT_KEY
         )
         
         print(f"\n  Creating data migration folder: {data_folder_name}")
@@ -4368,8 +4375,8 @@ def process_data_migrations(module_name, module_df, base_batch_number, sorted_sc
         
         # Create folder structure for data migration
         data_paths = {
-            "data": os.path.join(data_folder_name, "scripts", "tenant_specific", "tenant_1", "dml"),
-            "rdata": os.path.join(data_folder_name, "rollback", "tenant_specific", "tenant_1", "dml"),
+            "data": os.path.join(data_folder_name, "scripts", "tenant_specific", TENANT_KEY, "dml"),
+            "rdata": os.path.join(data_folder_name, "rollback", "tenant_specific", TENANT_KEY, "dml"),
         }
         
         for p in data_paths.values():
@@ -4575,7 +4582,8 @@ def process_data_migrations(module_name, module_df, base_batch_number, sorted_sc
             screen_name=screen,
             screen_number=screen_num,
             migration_type="data",
-            migration_number=1
+            migration_number=1,
+            tenant_key=TENANT_KEY
         )
         
         print(f"\n  Creating data migration folder for screen '{screen}': {data_folder_name}")
@@ -4583,8 +4591,8 @@ def process_data_migrations(module_name, module_df, base_batch_number, sorted_sc
         
         # Create folder structure for data migration
         data_paths = {
-            "data": os.path.join(data_folder_name, "scripts", "tenant_specific", "tenant_1", "dml"),
-            "rdata": os.path.join(data_folder_name, "rollback", "tenant_specific", "tenant_1", "dml"),
+            "data": os.path.join(data_folder_name, "scripts", "tenant_specific", TENANT_KEY, "dml"),
+            "rdata": os.path.join(data_folder_name, "rollback", "tenant_specific", TENANT_KEY, "dml"),
         }
         
         for p in data_paths.values():
@@ -6083,8 +6091,8 @@ def main(df=None):
                     "cons": os.path.join(table_folder_abs, "scripts", "ddl", "constraints"),
                     "rtables": os.path.join(table_folder_abs, "rollback", "ddl", "tables"),
                     "rcons": os.path.join(table_folder_abs, "rollback", "ddl", "constraints"),
-                    "data": os.path.join(table_folder_abs, "scripts", "tenant_specific", "tenant_1", "dml"),
-                    "rdata": os.path.join(table_folder_abs, "rollback", "tenant_specific", "tenant_1", "dml"),
+                    "data": os.path.join(table_folder_abs, "scripts", "tenant_specific", TENANT_KEY, "dml"),
+                    "rdata": os.path.join(table_folder_abs, "rollback", "tenant_specific", TENANT_KEY, "dml"),
                     "permissions": os.path.join(table_folder_abs, "scripts", "ddl", "permissions"),
                     "rpermissions": os.path.join(table_folder_abs, "rollback", "ddl", "permissions"),
                 }
@@ -6769,8 +6777,8 @@ def main(df=None):
                     "cons": os.path.join(table_folder_abs, "scripts", "ddl", "constraints"),
                     "rtables": os.path.join(table_folder_abs, "rollback", "ddl", "tables"),
                     "rcons": os.path.join(table_folder_abs, "rollback", "ddl", "constraints"),
-                    "data": os.path.join(table_folder_abs, "scripts", "tenant_specific", "tenant_1", "dml"),
-                    "rdata": os.path.join(table_folder_abs, "rollback", "tenant_specific", "tenant_1", "dml"),
+                    "data": os.path.join(table_folder_abs, "scripts", "tenant_specific", TENANT_KEY, "dml"),
+                    "rdata": os.path.join(table_folder_abs, "rollback", "tenant_specific", TENANT_KEY, "dml"),
                 }
                 
                 # Ensure all directories are created before writing files
@@ -7577,15 +7585,16 @@ def main(df=None):
                     screen_name=screen,
                     screen_number=screen_number_for_folder,
                     migration_type="data",
-                    migration_number=1
+                    migration_number=1,
+                    tenant_key=TENANT_KEY
                 )
                 
                 print(f"\n  Creating data migration folder for screen '{screen}': {data_folder_name}")
                 print(f"   - Total data files for this screen: {len(screen_data_files)}")
                 
                 data_paths = {
-                    "data": os.path.join(data_folder_name, "scripts", "tenant_specific", "tenant_1", "dml"),
-                    "rdata": os.path.join(data_folder_name, "rollback", "tenant_specific", "tenant_1", "dml"),
+                    "data": os.path.join(data_folder_name, "scripts", "tenant_specific", TENANT_KEY, "dml"),
+                    "rdata": os.path.join(data_folder_name, "rollback", "tenant_specific", TENANT_KEY, "dml"),
                 }
                 
                 for p in data_paths.values():
