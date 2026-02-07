@@ -501,11 +501,12 @@ def process_permissions_for_upcoming_modules(current_module_name, state, tables_
 def process_permissions_for_current_module_app_users(current_module_name, state, executed_modules, screen_order_map=None, full_df=None, table_sql_map=None):
     """
     Process permissions for current module's app_users on tables from already-executed modules.
-    Creates permission batches at the START of target module execution.
+    Creates grant permission folders when the target app_user's module is executing (first batch).
     
-    @description When a module starts executing, check if its app_users need permissions on tables
-    from modules that were already executed. Create permission batches at the START of the module.
-    Example: If workflow's pms_app_user needs organization table access, create a batch at the START of workflow module.
+    @description For every table, check Excel (Module Wise tables): if this module's sheet lists
+    that table, record it and create grant permission folder when this module runs - like checking
+    for schema batch. Iterates every row in this module's sheet; resolves table owner from Excel/dump;
+    only includes tables from already-executed modules; creates one permission folder per app_user.
     @param {str} current_module_name - Name of the module being processed
     @param {dict} state - Global migration state object
     @param {set} executed_modules - Set of modules that were already executed
@@ -562,10 +563,12 @@ def process_permissions_for_current_module_app_users(current_module_name, state,
         if schema_col_idx == -1:
             schema_col_idx = 1
         
-        # Map: app_user -> list of tables they need from executed modules
-        app_user_tables_map = defaultdict(list)
+        # Map: required_module -> (tables set, app_users that need them).
+        # We create ONE folder per required_module and grant ALL app_users in that folder (avoids duplicate folder names).
+        required_module_tables = defaultdict(set)   # required_module -> set of full table names
+        required_module_app_users = defaultdict(set)  # required_module -> set of app_users that need those tables
         
-        # Process each table listed in current module's sheet
+        # Process every table listed in current module's sheet
         for _, row in df_current.iterrows():
             t_name = str(row.iloc[table_col_idx]).strip()
             if not t_name or t_name.lower() == 'nan':
@@ -574,35 +577,30 @@ def process_permissions_for_current_module_app_users(current_module_name, state,
             table_only = t_name.split('.')[-1] if '.' in t_name else t_name
             table_normalized = normalize(table_only)
             
-            # Determine which module this table belongs to using get_table_module
+            # Resolve table owner and full name from dump.sql only (ignore schema from Excel)
             table_module = get_table_module(table_only, full_df)
+            full_table_name = None
+            if table_sql_map:
+                for table_key in table_sql_map.keys():
+                    key_only = table_key.split('.')[-1] if '.' in table_key else table_key
+                    if normalize(key_only) == table_normalized:
+                        full_table_name = table_key.lower()  # schema.table from dump.sql
+                        if not table_module and '.' in table_key:
+                            table_module = table_key.split('.')[0]
+                        break
             
-            # Check if this table belongs to an already-executed module
+            if not full_table_name:
+                # Fallback: use table_module (or current) as schema - never use Excel schema
+                schema_from_dump = (table_module or current_module_name).lower()
+                full_table_name = f"{schema_from_dump}.{table_only}"
+            
+            # Only grant if this table belongs to an already-executed module (required_module)
             if table_module and table_module.lower() in executed_modules:
-                # Get the actual table name with schema from dump.sql or use Excel schema
-                s_name = str(row.iloc[schema_col_idx]).strip() if len(row) > schema_col_idx else ''
-                s_name = s_name.lower() if s_name.lower() != 'nan' and s_name else table_module.lower()
-                
-                # Try to get actual table name from dump.sql
-                full_table_name = None
-                if table_sql_map:
-                    # Look for table in table_sql_map
-                    for table_key in table_sql_map.keys():
-                        table_key_only = table_key.split('.')[-1] if '.' in table_key else table_key
-                        if normalize(table_key_only) == table_normalized:
-                            full_table_name = table_key.lower()
-                            break
-                
-                # If not found in dump.sql, construct from Excel
-                if not full_table_name:
-                    full_table_name = f"{s_name}.{table_only}" if '.' not in t_name else t_name.lower()
-                
-                # Add to permission list for all current module's app_users
-                for app_user in current_module_app_users:
-                    if full_table_name not in app_user_tables_map[app_user]:
-                        app_user_tables_map[app_user].append(full_table_name)
+                required_module = table_module.lower()
+                required_module_tables[required_module].add(full_table_name)
+                required_module_app_users[required_module].update(current_module_app_users)
         
-        if not app_user_tables_map:
+        if not required_module_tables:
             return False
         
         # Get screen order for folder naming (use first screen's order or default)
@@ -615,18 +613,22 @@ def process_permissions_for_current_module_app_users(current_module_name, state,
         
         folders_created = False
         
-        # Create separate folder for each app_user
-        for app_user, tables_list in sorted(app_user_tables_map.items()):
-            if not tables_list:
+        # Create ONE folder per required_module; grant ALL app_users on that module's tables in a single SQL file
+        for required_module in sorted(required_module_tables.keys()):
+            tables_set = required_module_tables[required_module]
+            app_users_set = required_module_app_users.get(required_module, current_module_app_users)
+            if not tables_set:
                 continue
             
-            # Get batch number - this will be BEFORE the first schema batch of current module
-            batch_number = get_next_batch_number(state, f"module '{current_module_name}' app_user '{app_user}' permissions on executed modules' tables")
+            tables_list_sorted = sorted(tables_set)
             
-            # Create folder name
+            # Get batch number - one per required_module (not per app_user)
+            batch_number = get_next_batch_number(state, f"module '{current_module_name}' required_module '{required_module}' permissions")
+            
+            # Folder name: required module name (e.g. organization), one folder per required module
             folder_name = create_permission_folder_name(
                 batch_number=batch_number,
-                app_user_name=app_user,
+                app_user_name=required_module,
                 screen_name=current_module_name.lower(),
                 screen_number=screen_order_for_folder,
                 migration_type="permission",
@@ -641,44 +643,42 @@ def process_permissions_for_current_module_app_users(current_module_name, state,
             for p in paths.values(): 
                 os.makedirs(p, exist_ok=True)
             
-            # Extract unique schemas from the tables list
             table_schemas = set()
-            tables_list_sorted = sorted(tables_list)
             for t in tables_list_sorted:
                 if '.' in t:
-                    schema = t.split('.')[0].lower()
-                    table_schemas.add(schema)
+                    table_schemas.add(t.split('.')[0].lower())
             
-            # Grant USAGE on all schemas used by these tables
+            # Single SQL file: grant ALL app_users on these tables (no duplication of folders)
             sql = []
-            sql.append(f"-- Permissions for module '{current_module_name}': Grant access to {app_user}")
-            sql.append(f"-- on tables from already-executed modules")
+            sql.append(f"-- Permissions for module '{current_module_name}': Grant access to tables from required module '{required_module}'")
+            sql.append(f"-- App users: {', '.join(sorted(app_users_set))}")
             sql.append("")
             for schema in sorted(table_schemas):
-                sql.append(f"GRANT USAGE ON SCHEMA {schema} TO {app_user};")
+                for app_user in sorted(app_users_set):
+                    sql.append(f"GRANT USAGE ON SCHEMA {schema} TO {app_user};")
             sql.append("")
-            
-            # Grant permissions on tables
             for t in tables_list_sorted:
-                sql.append(f"GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE {t} TO {app_user};")
+                for app_user in sorted(app_users_set):
+                    sql.append(f"GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE {t} TO {app_user};")
             
             with open(os.path.join(paths["scripts"], "001_grant_permissions.sql"), "w", encoding="utf-8") as f:
                 f.write("\n".join(sql))
             
             rb = []
-            rb.append(f"-- Rollback: Revoke permissions from {app_user}")
-            rb.append(f"-- on tables from already-executed modules")
+            rb.append(f"-- Rollback: Revoke permissions on tables from required module '{required_module}'")
             rb.append("")
             for t in reversed(tables_list_sorted):
-                rb.append(f"REVOKE SELECT, INSERT, UPDATE, DELETE ON TABLE {t} FROM {app_user};")
+                for app_user in sorted(app_users_set):
+                    rb.append(f"REVOKE SELECT, INSERT, UPDATE, DELETE ON TABLE {t} FROM {app_user};")
             rb.append("")
             for schema in reversed(sorted(table_schemas)):
-                rb.append(f"REVOKE USAGE ON SCHEMA {schema} FROM {app_user};")
+                for app_user in sorted(app_users_set):
+                    rb.append(f"REVOKE USAGE ON SCHEMA {schema} FROM {app_user};")
             
             with open(os.path.join(paths["rollback"], "001_rollback_grant_permissions.sql"), "w", encoding="utf-8") as f:
                 f.write("\n".join(rb))
             
-            print(f"     Created permission folder for module '{current_module_name}' app_user '{app_user}' on executed modules' tables: {folder_name}")
+            print(f"     Created permission folder for required module '{required_module}' -> all app_users (target module '{current_module_name}'): {folder_name}")
             folders_created = True
         
         return folders_created
@@ -696,7 +696,7 @@ def process_permissions_for_current_module_app_users(current_module_name, state,
                 pass
 
 
-def process_global_users_permissions(current_module_name, state, tables_in_this_batch, screen_number=None, screen_order_map=None, full_df=None, schema_batch_number=None, modules_executed_before_run=None):
+def process_global_users_permissions(current_module_name, state, tables_in_this_batch, screen_number=None, screen_order_map=None, full_df=None, schema_batch_number=None, modules_executed_before_run=None, screen_name=None):
     """
     Process global users (magic_read_app_user, magic_save_app_user, auth_app_user) permissions.
     These users are module-irrelevant and need to be checked for EVERY schema batch.
@@ -711,6 +711,7 @@ def process_global_users_permissions(current_module_name, state, tables_in_this_
     @param {dict} screen_order_map - Map of screen names to SCREEN_ORDER values
     @param {DataFrame} full_df - Full Excel DataFrame for getting SCREEN_ORDER
     @param {int} schema_batch_number - Batch number of the schema batch (will use this instead of generating new one)
+    @param {str} screen_name - Optional screen name (e.g. "skill master") to include in folder name when available
     @returns {bool} True if any permission folder was created, False otherwise
     """
     if not tables_in_this_batch:
@@ -865,11 +866,14 @@ def process_global_users_permissions(current_module_name, state, tables_in_this_
         # Get next batch number - this will be the last batch of the module
         batch_number = get_next_batch_number(state, f"global user '{app_user}' permissions for module '{current_module_name}' (last batch)")
         
-        # Create folder name using app_user name and SCREEN_ORDER
+        # Create folder name: include screen name when available, else module name
+        folder_screen_name = (screen_name or current_module_name or "").strip().lower().replace(" ", "_")
+        if not folder_screen_name:
+            folder_screen_name = current_module_name.lower()
         folder_name = create_permission_folder_name(
             batch_number=batch_number,
             app_user_name=app_user,
-            screen_name=current_module_name.lower(),
+            screen_name=folder_screen_name,
             screen_number=screen_order_for_folder if screen_order_for_folder else 1,
             migration_type="permission",
             migration_number=1
@@ -5349,9 +5353,14 @@ def main(df=None):
     processed_tables_global = set(state.get("processed_tables", []))
     pending_constraints = state.get("pending_constraints", [])
     
-    # Track modules that were executed BEFORE this run started
-    # This is used to determine if global user permissions should be created
-    modules_executed_before_run = set(state.get("executed_modules", []))
+    # Track modules that were executed BEFORE this run started (for "future module" permissions).
+    # When a module runs, its app_users get permissions on tables from these executed modules (first batch).
+    executed_from_state = state.get("executed_modules", [])
+    if executed_from_state:
+        modules_executed_before_run = set(m.lower() for m in executed_from_state)
+    else:
+        # Derive from existing schema/data folders so future runs get correct permissions
+        modules_executed_before_run = set(m.lower() for m in get_executed_modules_from_folders())
     
     # Read dump file
     with open(DUMP_FILE, "r", encoding="utf-8") as f:
@@ -6481,49 +6490,8 @@ def main(df=None):
                         permission_counter += 1
                         print(f"     Generated permission files for {app_user} in lookup folder")
                 
-                # Process magic users - create separate folders with table name
-                if magic_users_lookup:
-                    for app_user in magic_users_lookup:
-                        # Assign sequential batch number
-                        permission_batch_number = get_next_batch_number(state, f"magic user '{app_user}' permissions for lookup table in screen '{screen}'")
-                        
-                        # Create folder name using table name
-                        permission_folder_name = create_permission_folder_name(
-                            batch_number=permission_batch_number,
-                            app_user_name=app_user,
-                            screen_name=screen,
-                            screen_number=screen_number_for_folder,
-                            migration_type="schema",
-                            migration_number=1,
-                            table_name=table_name_only  # Pass table name for folder naming
-                        )
-                        
-                        print(f"     Creating separate magic permission folder for {app_user} (table '{table_name_only}'): {permission_folder_name}")
-                        
-                        # Track folder name for this table
-                        table_folder_mapping[normalize(table_name_only)].add(permission_folder_name)
-                        
-                        # Create paths
-                        m_paths = {
-                            "scripts": os.path.join(permission_folder_name, "scripts", "ddl", "permissions"),
-                            "rollback": os.path.join(permission_folder_name, "rollback", "ddl", "permissions"),
-                        }
-                        for p in m_paths.values():
-                            os.makedirs(p, exist_ok=True)
-                        
-                        # Generate SQL
-                        table_list = [(table, sql)]
-                        p_sql = generate_batch_permission_sql(module_name, table_list, table_constraints, [], app_user, screen)
-                        p_rb_sql = generate_batch_permission_rollback(module_name, table_list, table_constraints, [], app_user, screen)
-                        
-                        # Write files
-                        with open(os.path.join(m_paths["scripts"], "001_grant_permissions.sql"), "w", encoding="utf-8") as f:
-                            f.write(p_sql if p_sql else "-- No permissions to grant\n")
-                        with open(os.path.join(m_paths["rollback"], "001_rollback_grant_permissions.sql"), "w", encoding="utf-8") as f:
-                            f.write(p_rb_sql if p_rb_sql else "-- No permissions to revoke\n")
-                            
-                        # No longer updating master changelog as per user request
-                        # update_master_changelog(permission_folder_name)
+                # Magic users (magic_read, magic_save, auth) for lookup tables are created by
+                # process_global_users_permissions (called below); skip separate folders here to avoid duplication.
                 
                 # If no app users at all, create empty ones in lookup folder
                 if not app_users:
@@ -6544,11 +6512,24 @@ def main(df=None):
                     module_name,
                     state,
                     [table],
-                    screen_number=lookup_table_screen_number,
+                    screen_number=screen_number_for_folder,
                     screen_order_map=screen_order_map,
                     full_df=df,
                     schema_batch_number=schema_batch_number,
-                    modules_executed_before_run=modules_executed_before_run
+                    modules_executed_before_run=modules_executed_before_run,
+                    screen_name=screen
+                )
+                
+                # If target module (e.g. DND) was already executed: create its app_user permission folder
+                # after this lookup table schema folder (do not pass schema_batch_number so it gets next number).
+                process_external_permissions_to_current_tables(
+                    module_name,
+                    state,
+                    [table],
+                    screen_number=screen_number_for_folder,
+                    screen_order_map=screen_order_map,
+                    full_df=df,
+                    schema_batch_number=None
                 )
                 
                 # CRITICAL: Track this lookup table as having a dedicated folder
@@ -7133,8 +7114,8 @@ def main(df=None):
             # Use sequential batch numbers to ensure globally unique numbers
             
             # ================= PERMISSIONS FOR CURRENT MODULE APP_USERS (AT START OF MODULE) =================
-            # When processing the FIRST screen of a module, create permission batches for current module's app_users
-            # on tables from already-executed modules
+            # Check Excel for every table this module needs; create grant permission folders when this module
+            # is executing (first batch), like schema batch check. Done on first screen only.
             if screen_idx == 1:
                 process_permissions_for_current_module_app_users(
                     module_name,
@@ -7151,10 +7132,8 @@ def main(df=None):
             print(f"\n  Processing screen '{screen}' (position: {screen_idx}/{len(sorted_screens)})")
             print(f"   - Schema batch number: {schema_batch_number:05d}")
             
-            # External/module-specific permission folders (dms_app_user, dnd_app_user, etc.) are NOT created here.
-            # They are created only when that respective module is executing, as the first batch of that module
-            # (via process_permissions_for_current_module_app_users at screen_idx == 1 above).
-            # Only global user permissions are created after schema batches (below).
+            # Schema folder is created first so it gets this batch number; external/global permission
+            # folders are created after (below) so they get later numbers and run after schema (Liquibase-friendly).
             
             screen_folder_name = create_folder_name(
                 batch_number=schema_batch_number,
@@ -7382,12 +7361,22 @@ def main(df=None):
             
             print(f"     Created schema batch: {screen_folder_name}")
             
+            # ================= EXTERNAL PERMISSIONS (AFTER SCHEMA BATCH) =================
+            # If target module (e.g. DND) was already executed: create its app_user permission folders
+            # NOW, after this schema batch, so migration order is schema -> permissions (Liquibase-friendly).
+            # Do not pass schema_batch_number so folders get next batch number (after schema).
+            tables_for_external = [t for t, _ in sorted_screen_tables]
+            process_external_permissions_to_current_tables(
+                module_name,
+                state,
+                tables_for_external,
+                screen_number=screen_number_for_folder,
+                screen_order_map=screen_order_map,
+                full_df=df,
+                schema_batch_number=None
+            )
+            
             # ================= GLOBAL USERS PERMISSIONS (AFTER SCHEMA BATCH) =================
-            # Create global user permission folders (magic_read_app_user, magic_save_app_user, auth_app_user)
-            # for EVERY schema batch if tables are listed in Magic Read, Magic Save, or Auth sheets
-            # Extract table names from sorted_screen_tables
-            # ================= GLOBAL USERS PERMISSIONS (AFTER EVERY SCHEMA BATCH) =================
-            # Check global users permissions for EVERY schema batch (all modules)
             # Create global user permission folders (magic_read_app_user, magic_save_app_user, auth_app_user)
             # for EVERY schema batch if tables are listed in Magic Read, Magic Save, or Auth sheets
             tables_for_global_perms = [t for t, _ in sorted_screen_tables]
@@ -7399,7 +7388,8 @@ def main(df=None):
                 screen_order_map=screen_order_map,
                 full_df=df,
                 schema_batch_number=schema_batch_number,
-                modules_executed_before_run=modules_executed_before_run
+                modules_executed_before_run=modules_executed_before_run,
+                screen_name=screen
             )
             
             # For lookup modules, process data migration per table (after schema batch)
@@ -7767,8 +7757,8 @@ def main(df=None):
                             
                             print(f"     Generated: {batch_permission_filename} for {app_user} in {paths['permissions']}")
                     
-                    # Process magic users for hrcs - create separate folders
-                    if magic_users_hrcs:
+                    # Magic users for HRCS/DND are created by process_global_users_permissions (no duplicate folders)
+                    if False and magic_users_hrcs:  # disabled to avoid duplication
                         print(f"\n  Generating separate permission folders for hrcs magic users - {len(magic_users_hrcs)} user(s)")
                         for app_user in magic_users_hrcs:
                             # Assign sequential batch number
@@ -7814,8 +7804,8 @@ def main(df=None):
                             
                         print(f"     Generated separate magic user permission folders for screen '{screen}'")
                     
-                    # Process magic users for dnd - create separate folders
-                    if magic_users_dnd:
+                    # Magic users for DND are created by process_global_users_permissions (no duplicate folders)
+                    if False and magic_users_dnd:  # disabled to avoid duplication
                         print(f"\n  Generating separate permission folders for dnd magic users - {len(magic_users_dnd)} user(s)")
                         for app_user in magic_users_dnd:
                             # Determine allowed tables
@@ -8056,9 +8046,35 @@ def main(df=None):
         print(f"\nWARNING: No folder names were tracked - skipping Excel file creation")
     
     # ================= FINAL COMPLETION =================
+    # Record this module as executed so future module runs can grant their app_users access to its tables
+    executed_list = list(set(state.get("executed_modules", [])) | {module_name})
+    state["executed_modules"] = executed_list
+    save_state(state)
+    
     print("\n  COMPLETED SUCCESSFULLY")
     
     return module_name  # Return the processed module name
+
+
+def get_executed_modules_from_folders():
+    """
+    Get module names that have schema or data batches (i.e. have been "executed").
+    Used so future modules can grant their app_users access to these modules' tables.
+    """
+    base_path = os.path.abspath(OUTPUT_FOLDER)
+    if not os.path.exists(base_path):
+        return []
+    import re
+    modules = set()
+    for item in os.listdir(base_path):
+        if not os.path.isdir(os.path.join(base_path, item)) or not item.startswith("migrations_"):
+            continue
+        if "_schema_batch_" not in item.lower() and "_data_batch_" not in item.lower():
+            continue
+        match = re.match(r'migrations_\d{5}_(.+?)_\d{3,5}_', item.lower())
+        if match:
+            modules.add(match.group(1))
+    return sorted(list(modules))
 
 
 def get_available_modules_from_folders():
