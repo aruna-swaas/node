@@ -1,0 +1,53 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00527_infrastructure_0004_infrastructure_qualifications_schema_batch_001
+Date with time: 2026-02-07 17:19:26
+
+Schema: infrastructure
+- Table: infrastructure.eqms_infrastructure_qualification
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_qualification
+
+- Table: infrastructure.eqms_infrastructure_qualification_checklist
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_qualification_checklist
+
+- Table: infrastructure.eqms_infrastructure_qualification_checklist_history
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_qualification_checklist_history
+
+- Table: infrastructure.eqms_infrastructure_qualification_checklist_items
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_qualification_checklist_items
+
+- Table: infrastructure.eqms_infrastructure_qualification_checklist_items_history
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_qualification_checklist_items_history
+
+- Table: infrastructure.eqms_infrastructure_qualification_history
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_qualification_history
+
+- Table: infrastructure.eqms_infrastructure_qualification_test
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_qualification_test
+
+- Table: infrastructure.eqms_infrastructure_qualification_test_history
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_qualification_test_history
+
+- Table: infrastructure.eqms_infrastructure_qualification
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: infrastructure.eqms_infrastructure_qualification_checklist
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: infrastructure.eqms_infrastructure_qualification_checklist_items
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: infrastructure.eqms_infrastructure_qualification_test
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)

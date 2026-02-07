@@ -1,0 +1,1 @@
+ALTER TABLE pre_production.eqms_pre_prod_performance_qualification_final_result DROP CONSTRAINT fk_eppqf_process_validation_performance_qualification_id;

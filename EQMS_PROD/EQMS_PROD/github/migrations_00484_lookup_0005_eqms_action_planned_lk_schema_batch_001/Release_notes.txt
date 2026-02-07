@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00484_lookup_0005_eqms_action_planned_lk_schema_batch_001
+Date with time: 2026-02-07 17:18:22
+
+Schema: organization
+- Table: organization.eqms_action_planned_lk
+  Change Type: CREATE
+  Description: Create new table eqms_action_planned_lk
+
+- Table: organization.eqms_action_planned_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s)

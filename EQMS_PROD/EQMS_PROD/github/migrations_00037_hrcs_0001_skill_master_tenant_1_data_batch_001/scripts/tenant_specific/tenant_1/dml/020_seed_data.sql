@@ -1,0 +1,21 @@
+﻿DO $$ 
+DECLARE 
+VAR_TENANT_KEY INT := ${TENANTKEY}; 
+VAR_ORG_ID INT := ${ORGID}; 
+
+BEGIN
+
+
+INSERT INTO abac.eqms_form_action_wf_status_mapping(eqms_tenant_key, fk_eqms_organization_id, fk_eqms_form_controls_id, fk_eqms_workflow_task_status_id, status, created_date, created_by, modified_date, modified_by
+)
+VALUES
+(VAR_TENANT_KEY,VAR_ORG_ID,254,21,1,NOW(),1,NULL,NULL),
+(VAR_TENANT_KEY,VAR_ORG_ID,254,20,1,NOW(),1,NULL,NULL),
+(VAR_TENANT_KEY,VAR_ORG_ID,249,NULL,1,NOW(),1,NULL,NULL),
+(VAR_TENANT_KEY,VAR_ORG_ID,251,22,1,NOW(),1,NULL,NULL),
+(VAR_TENANT_KEY,VAR_ORG_ID,252,23,1,NOW(),1,NULL,NULL),
+(VAR_TENANT_KEY,VAR_ORG_ID,253,NULL,1,NOW(),1,NULL,NULL),
+(VAR_TENANT_KEY,VAR_ORG_ID,252,25,1,NOW(),1,NULL,NULL),
+(VAR_TENANT_KEY,VAR_ORG_ID,251,24,1,NOW(),1,NULL,NULL),
+(VAR_TENANT_KEY,VAR_ORG_ID,250,21,1,NOW(),1,NULL,NULL);
+END $$;

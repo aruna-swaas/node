@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_rmp_residual_risk_acceptability_type_lk;

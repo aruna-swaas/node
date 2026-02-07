@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS workflow.eqms_project_type_entity_subscription_mapper_history;

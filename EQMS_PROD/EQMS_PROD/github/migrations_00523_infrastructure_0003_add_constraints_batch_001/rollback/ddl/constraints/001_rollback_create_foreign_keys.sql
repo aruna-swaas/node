@@ -1,0 +1,3 @@
+ALTER TABLE infrastructure.eqms_infrastructure_installation_report DROP CONSTRAINT fk_ei_infrastructure_id;
+ALTER TABLE infrastructure.eqms_infrastructure_image_supporting_files DROP CONSTRAINT fk_ei_infrastructure_id;
+ALTER TABLE infrastructure.eqms_infrastructure_doc_supporting_files DROP CONSTRAINT fk_ei_infrastructure_id;

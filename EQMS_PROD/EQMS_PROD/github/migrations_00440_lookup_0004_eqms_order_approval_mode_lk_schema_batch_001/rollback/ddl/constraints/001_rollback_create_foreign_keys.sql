@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_order_approval_mode_lk DROP CONSTRAINT fk_eoaml_organization_id;
+ALTER TABLE organization.eqms_order_approval_mode_lk DROP CONSTRAINT eoaml_tenant_org_ref_unique;

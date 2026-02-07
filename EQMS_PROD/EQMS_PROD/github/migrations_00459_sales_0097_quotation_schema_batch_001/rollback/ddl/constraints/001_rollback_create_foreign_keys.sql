@@ -1,0 +1,13 @@
+ALTER TABLE sales.eqms_quotation_supporting_files DROP CONSTRAINT fk_eqsf_quotation_id;
+ALTER TABLE sales.eqms_quotation_supporting_files DROP CONSTRAINT fk_eqsf_organization_id;
+ALTER TABLE sales.eqms_quotation_supporting_files DROP CONSTRAINT fk_eqsf_file_id;
+ALTER TABLE sales.eqms_quotation_product DROP CONSTRAINT fk_eqp_quotation_id;
+ALTER TABLE sales.eqms_quotation_product DROP CONSTRAINT fk_eqp_product_variants_id;
+ALTER TABLE sales.eqms_quotation_product DROP CONSTRAINT fk_eqp_organization_product_id;
+ALTER TABLE sales.eqms_quotation_product DROP CONSTRAINT fk_eqp_organization_id;
+ALTER TABLE sales.eqms_quotation_customer DROP CONSTRAINT fk_eqc_quotation_id;
+ALTER TABLE sales.eqms_quotation_customer DROP CONSTRAINT fk_eqc_organization_id;
+ALTER TABLE sales.eqms_quotation DROP CONSTRAINT fk_eq_customer_master_id;
+ALTER TABLE sales.eqms_quotation DROP CONSTRAINT fk_eq_status_id;
+ALTER TABLE sales.eqms_quotation DROP CONSTRAINT fk_eq_organization_id;
+ALTER TABLE sales.eqms_customer_master DROP CONSTRAINT fk_ecm_organization_id;

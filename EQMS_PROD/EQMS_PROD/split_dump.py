@@ -26,7 +26,7 @@ APP_USER_FILE = os.path.join(BASE_FOLDER, "app_user.txt")
 MODULE_WISE_TABLES_FILE = os.path.join(BASE_FOLDER, "Module Wise tables.xlsx")
 
 # Tenant key for data batch folders (e.g. "tenant_1", "tenant_2"). Change this to generate for another tenant.
-TENANT_KEY = "tenant_2"
+TENANT_KEY = "tenant_1"
 
 # ==========================================
 

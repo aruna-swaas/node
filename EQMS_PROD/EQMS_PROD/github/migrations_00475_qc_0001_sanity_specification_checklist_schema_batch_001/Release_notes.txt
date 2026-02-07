@@ -1,0 +1,45 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00475_qc_0001_sanity_specification_checklist_schema_batch_001
+Date with time: 2026-02-07 17:18:15
+
+Schema: qc
+- Table: qc.eqms_sanity_spec_checklist
+  Change Type: CREATE
+  Description: Create new table eqms_sanity_spec_checklist
+
+- Table: qc.eqms_sanity_spec_checklist_applicable_group
+  Change Type: CREATE
+  Description: Create new table eqms_sanity_spec_checklist_applicable_group
+
+- Table: qc.eqms_sanity_spec_checklist_applicable_group_history
+  Change Type: CREATE
+  Description: Create new table eqms_sanity_spec_checklist_applicable_group_history
+
+- Table: qc.eqms_sanity_spec_checklist_detail
+  Change Type: CREATE
+  Description: Create new table eqms_sanity_spec_checklist_detail
+
+- Table: qc.eqms_sanity_spec_checklist_detail_history
+  Change Type: CREATE
+  Description: Create new table eqms_sanity_spec_checklist_detail_history
+
+- Table: qc.eqms_sanity_spec_checklist_group_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_sanity_spec_checklist_group_lk_history
+
+- Table: qc.eqms_sanity_spec_checklist_history
+  Change Type: CREATE
+  Description: Create new table eqms_sanity_spec_checklist_history
+
+- Table: qc.eqms_sanity_spec_checklist
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: qc.eqms_sanity_spec_checklist_applicable_group
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: qc.eqms_sanity_spec_checklist_detail
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

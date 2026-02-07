@@ -1,0 +1,1 @@
+ALTER TABLE sales.eqms_delivery_product DROP CONSTRAINT fk_edp_quotation_product_id;

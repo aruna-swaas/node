@@ -1,0 +1,17 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00225_dnd_0017_prototype_pilot_schema_batch_001
+Date with time: 2026-02-07 17:12:15
+
+Schema: dnd
+- Table: dnd.eqms_execution_stage_test_items
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_test_items
+
+- Table: dnd.eqms_execution_stage_test_items_history
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_test_items_history
+
+- Table: dnd.eqms_execution_stage_test_items
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

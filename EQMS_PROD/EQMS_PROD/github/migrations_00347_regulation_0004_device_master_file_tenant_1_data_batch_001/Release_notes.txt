@@ -1,0 +1,14 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00347_regulation_0004_device_master_file_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:15:06
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_reg_regulatory_agency_lk: 1 INSERT statement(s)
+
+File 002_seed_data.sql (from split_002_PREDEFINED.sql):
+  - organization.eqms_reg_device_product_specification_aspects: 1 INSERT statement(s)

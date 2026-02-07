@@ -1,0 +1,6 @@
+ALTER TABLE infrastructure.eqms_infrastructure_complaint_supporting_files DROP CONSTRAINT fk_ei_infrastructure_complaint_id;
+ALTER TABLE infrastructure.eqms_infrastructure_complaint_supporting_files DROP CONSTRAINT fk_ei_organization_id;
+ALTER TABLE infrastructure.eqms_infrastructure_complaint_supporting_files DROP CONSTRAINT fk_ei_file_id;
+ALTER TABLE infrastructure.eqms_infrastructure_complaint DROP CONSTRAINT fk_ei_status_lk_id;
+ALTER TABLE infrastructure.eqms_infrastructure_complaint DROP CONSTRAINT fk_ei_organization_id;
+ALTER TABLE infrastructure.eqms_infrastructure_complaint DROP CONSTRAINT fk_ei_infrastructure_id;

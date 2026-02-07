@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dnd.eqms_market_research_study_supporting_files;

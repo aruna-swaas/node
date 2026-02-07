@@ -1,0 +1,101 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00232_dnd_0019_execution_and_verificationverification_report_schema_batch_001
+Date with time: 2026-02-07 17:12:20
+
+Schema: dnd
+- Table: dnd.eqms_execution_stage_verification
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification
+
+- Table: dnd.eqms_execution_stage_verification_equipments
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_equipments
+
+- Table: dnd.eqms_execution_stage_verification_equipments_history
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_equipments_history
+
+- Table: dnd.eqms_execution_stage_verification_history
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_history
+
+- Table: dnd.eqms_execution_stage_verification_jigs
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_jigs
+
+- Table: dnd.eqms_execution_stage_verification_jigs_history
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_jigs_history
+
+- Table: dnd.eqms_execution_stage_verification_report
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_report
+
+- Table: dnd.eqms_execution_stage_verification_report_history
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_report_history
+
+- Table: dnd.eqms_execution_stage_verification_tools
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_tools
+
+- Table: dnd.eqms_execution_stage_verification_tools_history
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_tools_history
+
+- Table: dnd.eqms_lifetime_calculation_criteria
+  Change Type: CREATE
+  Description: Create new table eqms_lifetime_calculation_criteria
+
+- Table: dnd.eqms_lifetime_calculation_criteria_history
+  Change Type: CREATE
+  Description: Create new table eqms_lifetime_calculation_criteria_history
+
+- Table: dnd.eqms_lifetime_calculation_criteria_supp_files
+  Change Type: CREATE
+  Description: Create new table eqms_lifetime_calculation_criteria_supp_files
+
+- Table: dnd.eqms_lifetime_calculation_criteria_supp_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_lifetime_calculation_criteria_supp_files_history
+
+- Table: dnd.eqms_product_life_declaration
+  Change Type: CREATE
+  Description: Create new table eqms_product_life_declaration
+
+- Table: dnd.eqms_product_life_declaration_history
+  Change Type: CREATE
+  Description: Create new table eqms_product_life_declaration_history
+
+- Table: dnd.eqms_execution_stage_verification
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_execution_stage_verification_equipments
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_execution_stage_verification_jigs
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_execution_stage_verification_report
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_execution_stage_verification_tools
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_lifetime_calculation_criteria
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_lifetime_calculation_criteria_supp_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_product_life_declaration
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

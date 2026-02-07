@@ -1,0 +1,6 @@
+ALTER TABLE vendor.eqms_part_category_supporting_files DROP CONSTRAINT fk_epcsf_part_category_id;
+ALTER TABLE vendor.eqms_part_category_supporting_files DROP CONSTRAINT fk_epcsf_organization_id;
+ALTER TABLE vendor.eqms_part_category_supporting_files DROP CONSTRAINT fk_epcsf_file_id;
+ALTER TABLE vendor.eqms_part_category DROP CONSTRAINT fk_epc_status_lk_id;
+ALTER TABLE vendor.eqms_part_category DROP CONSTRAINT fk_epc_part_category_subclass_lk;
+ALTER TABLE vendor.eqms_part_category DROP CONSTRAINT fk_epc_organization_id;

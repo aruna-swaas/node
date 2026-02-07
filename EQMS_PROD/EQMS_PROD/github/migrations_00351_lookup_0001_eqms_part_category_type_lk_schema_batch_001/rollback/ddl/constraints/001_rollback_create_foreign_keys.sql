@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_part_category_type_lk DROP CONSTRAINT fk_epctl_organization_id;
+ALTER TABLE organization.eqms_part_category_type_lk DROP CONSTRAINT uk_epctl_ref_id;

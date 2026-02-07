@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_reg_product_classification DROP CONSTRAINT fk_erpc_regulation_id;
+ALTER TABLE organization.eqms_reg_product_classification DROP CONSTRAINT fk_erpc_organization_id;

@@ -1,0 +1,252 @@
+DO $$ 
+DECLARE 
+VAR_TENANT_KEY INT := ${TENANTKEY}; 
+VAR_ORG_ID INT := ${ORGID}; 
+
+BEGIN
+-- Record Generation Entity Template
+INSERT INTO organization.eqms_entity_template (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, fk_eqms_nomenclature_category_id, entity_title, entity_version, slug, is_annexure, fk_parent_entity_id, fk_eqms_module_id, status, created_date, created_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 30, 1, 'L-01 Project List', 1, 'l-01_project_list', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 31, 1, 'High-Level-Requirements - Product', 1, 'high-level-requirements_-_product', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 32, 1, 'F-03 Project Feasibility Report', 1, 'f-03_project_feasibility_report', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 1, 'KK-QP-14-F-04 Product Realisation Plan', 1, 'kk-qp-14-f-04_product_realisation_plan', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 34, 1, 'MKG-F-01 Product Need Document', 1, 'mkg-f-01_product_need_document', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 35, 1, 'F-02 PND Project Review Report', 1, 'f-02_pnd_project_review_report', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 36, 1, 'F-13 Design Input Requirements', 1, 'f-13_design_input_requirements', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 37, 1, 'F-15 Design Project Plan Ver 3', 1, 'f-15_design_project_plan_ver_3', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 38, 1, 'Intended Use - Format', 1, 'intended_use_-_format', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 39, 1, 'F-14 Design Input Adequacy Check List', 1, 'f-14_design_input_adequacy_check_list', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 40, 1, 'F-22 Design Validation Report', 1, 'f-22_design_validation_report', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 41, 1, 'F-16 Design Quality Plan', 1, 'f-16_design_quality_plan', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 42, 1, 'F-21 Design Validation Plan', 1, 'f-21_design_validation_plan', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 43, 1, 'F-20 Design Verifiction Report V 2', 1, 'f-20_design_verifiction_report_v_2', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 44, 1, 'F-12 Design History File', 1, 'f-12_design_history_file', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 45, 1, 'F-18 Design Output File', 1, 'f-18_design_output_file', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 46, 1, 'F-17 Design Review Report', 1, 'f-17_design_review_report', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 47, 1, 'F-24 Design Transfer Check List', 1, 'f-24_design_transfer_check_list', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 48, 1, 'F-33 Design Inputs to Output Traceability Matrix', 1, 'f-33_design_inputs_to_output_traceability_matrix', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 49, 1, 'F-19 Design Verification Plan', 1, 'f-19_design_verification_plan', 'false', NULL, NULL, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 50, 1, 'F-26 Product Life Declaration', 1, 'f-26_product_life_declaration', 'false', NULL, NULL, 1, NOW(), 1);
+
+-- Delimiter
+INSERT INTO organization.eqms_nomenclature_delimiter (
+  eqms_tenant_key, fk_eqms_entity_template_id, fk_eqms_organization_id, delimiter, status, created_date, created_by
+) VALUES
+(VAR_TENANT_KEY, 30, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 31, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 32, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 33, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 34, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 35, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 36, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 37, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 38, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 39, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 40, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 41, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 42, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 43, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 44, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 45, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 46, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 47, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 48, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 49, VAR_ORG_ID, '-', 1, NOW(), 1),
+(VAR_TENANT_KEY, 50, VAR_ORG_ID, '-', 1, NOW(), 1);
+
+-- Name Parts
+INSERT INTO organization.eqms_nomenclature_name_parts (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, fk_eqms_entity_template_id, part_value, part_order, fk_eqms_sequence_def_id, fk_eqms_nomenclature_part_type_id, status, created_date, created_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 88, 30, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 89, 30, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 90, 30, 'project_list', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 91, 30, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 92, 31, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 93, 31, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 94, 31, 'high-level-requirements-product', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 95, 31, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 96, 32, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 97, 32, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 98, 32, 'project-feasibility-report', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 99, 32, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 100, 33, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 101, 33, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 102, 33, 'product-realisation-plan', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 103, 33, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 104, 34, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 105, 34, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 106, 34, 'product-need-document', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 107, 34, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 108, 35, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 109, 35, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 110, 35, 'pnd-project-review-report', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 111, 35, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 112, 36, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 113, 36, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 114, 36, 'design-input-requirements', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 115, 36, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 116, 37, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 117, 37, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 118, 37, 'design-project-plan-ver-3', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 119, 37, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 120, 38, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 121, 38, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 122, 38, 'intended-use-format', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 123, 38, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 124, 39, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 125, 39, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 126, 39, 'design-input-adequacy-check-list', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 127, 39, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 128, 40, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 129, 40, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 130, 40, 'design-validation-report', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 131, 40, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 132, 41, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 133, 41, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 134, 41, 'design-quality-plan', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 135, 41, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 136, 42, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 137, 42, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 138, 42, 'design-validation-plan', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 139, 42, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 140, 43, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 141, 43, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 142, 43, 'design-verification-report-v-2', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 143, 43, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 144, 44, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 145, 44, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 146, 44, 'design-history-file', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 147, 44, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 148, 45, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 149, 45, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 150, 45, 'design-output-file', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 151, 45, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 152, 46, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 153, 46, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 154, 46, 'design-review-report', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 155, 46, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 156, 47, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 157, 47, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 158, 47, 'design-transfer-checklist', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 159, 47, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 160, 48, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 161, 48, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 162, 48, 'design-inputs-to-output-traceability-matrix', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 163, 48, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 164, 49, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 165, 49, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 166, 49, 'design-verification-plan', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 167, 49, NULL, 4, NULL, 1, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 168, 50, 'PRJ', 1, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 169, 50, NULL, 2, NULL, 3, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 170, 50, 'product-life-declaration', 3, NULL, 2, 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 171, 50, NULL, 4, NULL, 1, 1, NOW(), 1);
+
+-- Part Date Formats
+INSERT INTO organization.eqms_nomenclature_part_date_formats (
+  eqms_tenant_key, fk_eqms_organization_id, fk_eqms_nomenclature_name_parts_id, date_time_format, status, created_date, created_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 91, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 95, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 99, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 103, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 107, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 111, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 115, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 119, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 123, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 127, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 131, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 135, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 139, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 143, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 147, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 151, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 155, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 159, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 163, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 167, 'ddLLyyyyHHmmss', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 171, 'ddLLyyyyHHmmss', 1, NOW(), 1);
+
+-- Entity Nomenclature Mappings
+INSERT INTO organization.eqms_entity_nomenclature_mappings (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, fk_eqms_nomenclature_name_part_id, related_table, related_column, status, created_date, created_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 30, 89, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 31, 93, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 32, 97, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 101, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 34, 105, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 35, 109, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 36, 113, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 37, 117, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 38, 121, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 39, 125, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 40, 129, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 41, 133, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 42, 137, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 43, 141, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 44, 145, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 45, 149, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 46, 153, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 47, 157, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 48, 161, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 49, 165, 'dnd.eqms_project', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 50, 169, 'dnd.eqms_project', 'id', 1, NOW(), 1);
+
+-- Nomenclature Mapping Joins
+INSERT INTO organization.eqms_nomenclature_mapping_joins (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, fk_eqms_entity_nomenclature_mapping_id, join_order, fk_eqms_nomenclature_join_type_id, join_table, join_on_left, join_on_right, status, created_date, created_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 30, 30, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 31, 31, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 32, 32, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 33, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 34, 34, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 35, 35, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 36, 36, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 37, 37, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 38, 38, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 39, 39, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 40, 40, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 41, 41, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 42, 42, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 43, 43, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 44, 44, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 45, 45, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 46, 46, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 47, 47, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 48, 48, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 49, 49, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 50, 50, 1, 1, 'dnd.eqms_project', 'id', 'id', 1, NOW(), 1);
+
+-- Nomenclature Mapping Conditions
+INSERT INTO organization.eqms_nomenclature_mapping_conditions (
+  eqms_tenant_key, fk_eqms_organization_id, fk_eqms_entity_nomenclature_mapping_id, fk_eqms_mapping_join_id, condition_order, condition_expression, status, created_date, created_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 30, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 31, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 32, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 34, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 35, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 36, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 37, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 38, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 39, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 40, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 41, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 42, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 43, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 44, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 45, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 46, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 47, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 48, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 49, NULL, 1, '@id', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 50, NULL, 1, '@id', 1, NOW(), 1);
+
+END $$;

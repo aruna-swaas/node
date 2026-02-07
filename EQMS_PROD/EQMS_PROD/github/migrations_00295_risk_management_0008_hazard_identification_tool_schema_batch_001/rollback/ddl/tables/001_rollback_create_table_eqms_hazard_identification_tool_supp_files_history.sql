@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS risk_management.eqms_hazard_identification_tool_supp_files_history;

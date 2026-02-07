@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS hrcs.eqms_hr_health_checkup_com_dis_supporting_document;

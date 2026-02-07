@@ -1,0 +1,125 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00276_risk_management_0001_scope_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:13:40
+
+Data Migration Summary:
+
+Schema: dms
+- Table: dms.eqms_document_template
+  Change Type: INSERT (Data Migration)
+  Description: Insert 5 record(s) into eqms_document_template
+
+- Table: dms.eqms_document_template_api_details
+  Change Type: INSERT (Data Migration)
+  Description: Insert 5 record(s) into eqms_document_template_api_details
+
+- Table: dms.eqms_document_template_form_mapping
+  Change Type: INSERT (Data Migration)
+  Description: Insert 5 record(s) into eqms_document_template_form_mapping
+
+- Table: dms.eqms_document_template_history
+  Change Type: INSERT (Data Migration)
+  Description: Insert 5 record(s) into eqms_document_template_history
+
+- Table: dms.eqms_document_template_type_lk
+  Change Type: INSERT (Data Migration)
+  Description: Insert 5 record(s) into eqms_document_template_type_lk
+
+- Table: dms.eqms_document_template_variable
+  Change Type: INSERT (Data Migration)
+  Description: Insert 181 record(s) into eqms_document_template_variable
+
+Schema: organization
+- Table: organization.eqms_context_types
+  Change Type: INSERT (Data Migration)
+  Description: Insert 17 record(s) into eqms_context_types
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_risk_identification_method_lk: 1 INSERT statement(s)
+  - organization.eqms_rmp_user_type_lk: 1 INSERT statement(s)
+  - organization.eqms_rmp_applicable_stage_lk: 1 INSERT statement(s)
+
+File 002_seed_data.sql (from 003_RBAC.sql):
+  - organization.eqms_menu_lk: 1 INSERT statement(s)
+  - organization.eqms_menu_activity_access: 1 INSERT statement(s)
+  - organization.eqms_role_menu_activity_access: 1 INSERT statement(s)
+
+File 003_seed_data.sql (from 004_ABAC_CONFIGURATION.sql):
+  - organization.eqms_module: 1 INSERT statement(s)
+  - abac.eqms_form: 1 INSERT statement(s)
+  - abac.eqms_form_menu_mapping: 1 INSERT statement(s)
+  - abac.eqms_form_controls: 1 INSERT statement(s)
+  - abac.eqms_form_control_actions: 1 INSERT statement(s)
+
+File 004_seed_data.sql (from 005_DRAFT_SAVE.sql):
+  - organization.eqms_context_types: 17 INSERT statement(s)
+
+File 005_seed_data.sql (from 006_WORKFLOW.sql):
+  - workflow.eqms_workflow_template: 1 INSERT statement(s)
+  - workflow.eqms_project_type: 1 INSERT statement(s)
+  - workflow.eqms_workflow_task_status: 1 INSERT statement(s)
+  - workflow.eqms_workflow_status_transition_template: 1 INSERT statement(s)
+  - workflow.eqms_workflow_status_transition_template_role_mapper: 1 INSERT statement(s)
+  - workflow.eqms_project_type_tasks: 1 INSERT statement(s)
+  - workflow.eqms_project_type_task_group: 1 INSERT statement(s)
+  - workflow.eqms_project_type_task_group_tasks: 1 INSERT statement(s)
+  - workflow.eqms_project_type_tasks_department_mapper: 1 INSERT statement(s)
+  - workflow.eqms_form_type_task_group_mapping: 1 INSERT statement(s)
+  - organization.eqms_entity_subscription: 1 INSERT statement(s)
+  - workflow.eqms_project_type_entity_subscription_mapper: 1 INSERT statement(s)
+  - workflow.eqms_project_type_tasks_url: 1 INSERT statement(s)
+
+File 006_seed_data.sql (from 007_ABAC_WF_MAPPING_CONFIGURATION.sql):
+  - abac.eqms_form_action_wf_status_mapping: 1 INSERT statement(s)
+
+File 007_seed_data.sql (from 009_NOMENCLATURE.sql):
+  - organization.eqms_entity_template: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_delimiter: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_name_parts: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_part_date_formats: 1 INSERT statement(s)
+  - organization.eqms_entity_nomenclature_mappings: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_mapping_joins: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_mapping_conditions: 1 INSERT statement(s)
+
+File 008_seed_data.sql (from F-06 Risk Management File Ver 3.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_api_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 1 INSERT statement(s)
+
+File 009_seed_data.sql (from F-07 Risk Management Plan Ver 3.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_api_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 57 INSERT statement(s)
+
+File 010_seed_data.sql (from F-08 Hazards Ver 4.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_api_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 1 INSERT statement(s)
+
+File 011_seed_data.sql (from F-09 Risk Chart.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_api_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 120 INSERT statement(s)
+
+File 012_seed_data.sql (from F-11 Benefit Risk Analysis Ver 2.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_api_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 2 INSERT statement(s)

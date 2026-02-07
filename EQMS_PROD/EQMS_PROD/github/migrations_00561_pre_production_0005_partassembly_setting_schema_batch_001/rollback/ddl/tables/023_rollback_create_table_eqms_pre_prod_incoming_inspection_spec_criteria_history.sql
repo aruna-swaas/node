@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS pre_production.eqms_pre_prod_incoming_inspection_spec_criteria_history;

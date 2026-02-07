@@ -1,0 +1,77 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00491_qc_0006_non_conformance_details_schema_batch_001
+Date with time: 2026-02-07 17:18:28
+
+Schema: qc
+- Table: qc.eqms_action_planned_return_details
+  Change Type: CREATE
+  Description: Create new table eqms_action_planned_return_details
+
+- Table: qc.eqms_action_planned_return_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_action_planned_return_details_history
+
+- Table: qc.eqms_action_planned_rework_details
+  Change Type: CREATE
+  Description: Create new table eqms_action_planned_rework_details
+
+- Table: qc.eqms_action_planned_rework_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_action_planned_rework_details_history
+
+- Table: qc.eqms_action_planned_scrap_details
+  Change Type: CREATE
+  Description: Create new table eqms_action_planned_scrap_details
+
+- Table: qc.eqms_action_planned_scrap_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_action_planned_scrap_details_history
+
+- Table: qc.eqms_equipment_calibration_details
+  Change Type: CREATE
+  Description: Create new table eqms_equipment_calibration_details
+
+- Table: qc.eqms_non_conformance_details
+  Change Type: CREATE
+  Description: Create new table eqms_non_conformance_details
+
+- Table: qc.eqms_non_conformance_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_non_conformance_details_history
+
+- Table: qc.eqms_non_conformance_details_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_non_conformance_details_supporting_files
+
+- Table: qc.eqms_non_conformance_details_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_non_conformance_details_supporting_files_history
+
+- Table: qc.eqms_part_location_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_part_location_details_history
+
+- Table: qc.eqms_action_planned_return_details
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: qc.eqms_action_planned_rework_details
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: qc.eqms_action_planned_scrap_details
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: qc.eqms_equipment_calibration_details
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: qc.eqms_non_conformance_details
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: qc.eqms_non_conformance_details_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

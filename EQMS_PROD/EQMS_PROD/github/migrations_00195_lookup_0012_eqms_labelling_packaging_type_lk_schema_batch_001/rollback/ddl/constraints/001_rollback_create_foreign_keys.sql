@@ -1,0 +1,1 @@
+ALTER TABLE organization.eqms_labelling_packaging_type_lk DROP CONSTRAINT eqms_labelling_packaging_type_lk_tenant_org_ref_unique;

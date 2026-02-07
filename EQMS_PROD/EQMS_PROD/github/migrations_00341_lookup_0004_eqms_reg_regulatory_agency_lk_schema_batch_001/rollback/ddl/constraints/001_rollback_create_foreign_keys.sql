@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_reg_regulatory_agency_lk DROP CONSTRAINT fk_erral_organization_id;
+ALTER TABLE organization.eqms_reg_regulatory_agency_lk DROP CONSTRAINT eqms_reg_regulatory_agency_lk_tenant_org_ref_unique;

@@ -1,0 +1,2 @@
+ALTER TABLE sales.eqms_delivery_dispatch DROP CONSTRAINT fk_edd_quotation_id;
+ALTER TABLE sales.eqms_order_acknowledgement DROP CONSTRAINT fk_eqms_quotation_id;

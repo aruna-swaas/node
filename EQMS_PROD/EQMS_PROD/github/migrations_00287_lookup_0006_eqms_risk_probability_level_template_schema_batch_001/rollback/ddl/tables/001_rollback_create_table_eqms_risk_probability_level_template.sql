@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_risk_probability_level_template;

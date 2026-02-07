@@ -1,0 +1,7 @@
+ALTER TABLE hrcs.eqms_hr_induction_training DROP CONSTRAINT fk_ehit_hr_induction_training_employee_header_id;
+ALTER TABLE hrcs.eqms_hr_induction_training_employee_header DROP CONSTRAINT fk_ehiteh_organization_id;
+ALTER TABLE hrcs.eqms_hr_induction_training_employee_header DROP CONSTRAINT fk_ehiteh_organization_employee_id;
+ALTER TABLE hrcs.eqms_hr_induction_training DROP CONSTRAINT fk_ehit_organization_id;
+ALTER TABLE hrcs.eqms_hr_induction_training DROP CONSTRAINT fk_ehit_organization_employee_id;
+ALTER TABLE hrcs.eqms_hr_induction_training DROP CONSTRAINT fk_ehit_hr_induction_training_topic_supporting_file_id;
+ALTER TABLE hrcs.eqms_hr_induction_training_employee_header DROP CONSTRAINT unique_tnt_org_emp_id;

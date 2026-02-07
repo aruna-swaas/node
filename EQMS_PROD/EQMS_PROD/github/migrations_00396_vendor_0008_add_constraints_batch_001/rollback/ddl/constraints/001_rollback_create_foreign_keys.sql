@@ -1,0 +1,1 @@
+ALTER TABLE vendor.eqms_sample_order_inspection_supporting_files DROP CONSTRAINT fk_esoisf_sample_order_inspection_id;

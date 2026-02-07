@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_feasibility_currency_lk DROP CONSTRAINT fk_echl_organization_id;
+ALTER TABLE organization.eqms_feasibility_currency_lk DROP CONSTRAINT eqms_feasibility_currency_lk_tenant_org_ref_unique;

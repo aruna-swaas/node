@@ -1,0 +1,93 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00404_vendor_0010_vendor_reevaluation_schema_batch_001
+Date with time: 2026-02-07 17:16:43
+
+Schema: vendor
+- Table: vendor.eqms_vendor_re_evaluation_applicable_group
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_applicable_group
+
+- Table: vendor.eqms_vendor_re_evaluation_applicable_group_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_applicable_group_history
+
+- Table: vendor.eqms_vendor_re_evaluation_group_remarks
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_group_remarks
+
+- Table: vendor.eqms_vendor_re_evaluation_group_remarks_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_group_remarks_history
+
+- Table: vendor.eqms_vendor_re_evaluation_group_remarks_sup_files
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_group_remarks_sup_files
+
+- Table: vendor.eqms_vendor_re_evaluation_group_remarks_sup_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_group_remarks_sup_files_history
+
+- Table: vendor.eqms_vendor_re_evaluation_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_history
+
+- Table: vendor.eqms_vendor_re_evaluation_issues_responses
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_issues_responses
+
+- Table: vendor.eqms_vendor_re_evaluation_issues_responses_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_issues_responses_history
+
+- Table: vendor.eqms_vendor_re_evaluation_rating
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_rating
+
+- Table: vendor.eqms_vendor_re_evaluation_rating_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_rating_history
+
+- Table: vendor.eqms_vendor_re_evaluation_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_supporting_files
+
+- Table: vendor.eqms_vendor_re_evaluation_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_supporting_files_history
+
+- Table: vendor.eqms_vendor_re_evaluation_visit
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_visit
+
+- Table: vendor.eqms_vendor_re_evaluation_visit_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_visit_history
+
+- Table: vendor.eqms_vendor_re_evaluation_applicable_group
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_re_evaluation_group_remarks
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_re_evaluation_group_remarks_sup_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_re_evaluation_issues_responses
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_re_evaluation_rating
+  Change Type: ALTER
+  Description: Add 5 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_re_evaluation_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_re_evaluation_visit
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

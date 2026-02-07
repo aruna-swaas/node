@@ -1,0 +1,3 @@
+ALTER TABLE risk_management.eqms_individual_residual_risk_analysis DROP CONSTRAINT fk_eirra_selection_lk_id;
+ALTER TABLE risk_management.eqms_individual_residual_risk_analysis DROP CONSTRAINT fk_eirra_risk_id;
+ALTER TABLE risk_management.eqms_individual_residual_risk_analysis DROP CONSTRAINT fk_eirra_organization_id;

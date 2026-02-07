@@ -1,0 +1,29 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00082_hrcs_0008_training_evaluation_schema_batch_001
+Date with time: 2026-02-07 17:10:51
+
+Schema: hrcs
+- Table: hrcs.eqms_hr_training_evaluation
+  Change Type: CREATE
+  Description: Create new table eqms_hr_training_evaluation
+
+- Table: hrcs.eqms_hr_training_evaluation_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_training_evaluation_history
+
+- Table: hrcs.eqms_hr_training_materials_supporting_file
+  Change Type: CREATE
+  Description: Create new table eqms_hr_training_materials_supporting_file
+
+- Table: hrcs.eqms_hr_training_materials_supporting_file_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_training_materials_supporting_file_history
+
+- Table: hrcs.eqms_hr_training_evaluation
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_training_materials_supporting_file
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

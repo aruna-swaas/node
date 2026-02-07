@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00440_lookup_0004_eqms_order_approval_mode_lk_schema_batch_001
+Date with time: 2026-02-07 17:17:43
+
+Schema: organization
+- Table: organization.eqms_order_approval_mode_lk
+  Change Type: CREATE
+  Description: Create new table eqms_order_approval_mode_lk
+
+- Table: organization.eqms_order_approval_mode_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)

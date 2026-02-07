@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS purchase.eqms_purchase_requisition_part_detail_history;

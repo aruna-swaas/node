@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00201_lookup_0012_eqms_dig_specification_usability_type_mapper_schema_batch_001
+Date with time: 2026-02-07 17:12:05
+
+Schema: organization
+- Table: organization.eqms_dig_specification_usability_type_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_dig_specification_usability_type_mapper
+
+- Table: organization.eqms_dig_specification_usability_type_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

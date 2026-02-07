@@ -1,0 +1,15 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00136_dnd_0004_feasibility_study_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:11:35
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_cost_heading_lk: 1 INSERT statement(s)
+  - organization.eqms_decision_lk: 1 INSERT statement(s)
+  - organization.eqms_feasibility_currency_lk: 1 INSERT statement(s)
+  - organization.eqms_feasibility_decision_lk: 1 INSERT statement(s)
+  - organization.eqms_feasibility_type_lk: 1 INSERT statement(s)

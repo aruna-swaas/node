@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_harm_lk DROP CONSTRAINT fk_ehl_organization_id;
+ALTER TABLE organization.eqms_harm_lk DROP CONSTRAINT eqms_harm_lk_tenant_org_ref_unique;

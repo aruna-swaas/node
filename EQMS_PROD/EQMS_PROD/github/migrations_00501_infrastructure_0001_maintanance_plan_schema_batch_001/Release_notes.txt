@@ -1,0 +1,65 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00501_infrastructure_0001_maintanance_plan_schema_batch_001
+Date with time: 2026-02-07 17:19:14
+
+Schema: infrastructure
+- Table: infrastructure.eqms_maintenance_plan
+  Change Type: CREATE
+  Description: Create new table eqms_maintenance_plan
+
+- Table: infrastructure.eqms_maintenance_plan_detail
+  Change Type: CREATE
+  Description: Create new table eqms_maintenance_plan_detail
+
+- Table: infrastructure.eqms_maintenance_plan_detail_history
+  Change Type: CREATE
+  Description: Create new table eqms_maintenance_plan_detail_history
+
+- Table: infrastructure.eqms_maintenance_plan_equipments
+  Change Type: CREATE
+  Description: Create new table eqms_maintenance_plan_equipments
+
+- Table: infrastructure.eqms_maintenance_plan_equipments_history
+  Change Type: CREATE
+  Description: Create new table eqms_maintenance_plan_equipments_history
+
+- Table: infrastructure.eqms_maintenance_plan_history
+  Change Type: CREATE
+  Description: Create new table eqms_maintenance_plan_history
+
+- Table: infrastructure.eqms_maintenance_plan_skill_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_maintenance_plan_skill_mapper
+
+- Table: infrastructure.eqms_maintenance_plan_skill_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_maintenance_plan_skill_mapper_history
+
+- Table: infrastructure.eqms_maintenance_plan_tools
+  Change Type: CREATE
+  Description: Create new table eqms_maintenance_plan_tools
+
+- Table: infrastructure.eqms_maintenance_plan_tools_history
+  Change Type: CREATE
+  Description: Create new table eqms_maintenance_plan_tools_history
+
+- Table: infrastructure.eqms_maintenance_plan
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: infrastructure.eqms_maintenance_plan_detail
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: infrastructure.eqms_maintenance_plan_equipments
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: infrastructure.eqms_maintenance_plan_skill_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: infrastructure.eqms_maintenance_plan_tools
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)

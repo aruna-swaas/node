@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00089_lookup_0001_eqms_clause_lk_schema_batch_001
+Date with time: 2026-02-07 17:11:11
+
+Schema: organization
+- Table: organization.eqms_clause_lk
+  Change Type: CREATE
+  Description: Create new table eqms_clause_lk
+
+- Table: organization.eqms_clause_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)

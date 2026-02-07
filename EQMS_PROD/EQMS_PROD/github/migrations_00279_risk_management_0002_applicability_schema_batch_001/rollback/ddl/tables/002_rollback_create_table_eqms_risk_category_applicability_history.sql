@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS risk_management.eqms_risk_category_applicability_history;

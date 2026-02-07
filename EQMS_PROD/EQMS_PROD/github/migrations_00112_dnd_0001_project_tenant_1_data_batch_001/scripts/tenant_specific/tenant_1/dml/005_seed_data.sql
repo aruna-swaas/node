@@ -1,0 +1,17 @@
+DO $$ 
+DECLARE 
+VAR_TENANT_KEY INT := ${TENANTKEY}; 
+VAR_ORG_ID INT := ${ORGID}; 
+
+BEGIN
+INSERT INTO organization.eqms_context_types (ref_id, eqms_tenant_key, fk_eqms_organization_id, context_name, context_description, status, created_date, created_by, modified_date, modified_by, context_slug) VALUES (30, VAR_TENANT_KEY, VAR_ORG_ID, 'project_build_stage_order', NULL , 1, NULL, NULL, NULL, NULL, 'project_build_stage_order');
+INSERT INTO organization.eqms_context_types (ref_id, eqms_tenant_key, fk_eqms_organization_id, context_name, context_description, status, created_date, created_by, modified_date, modified_by, context_slug) VALUES (31, VAR_TENANT_KEY, VAR_ORG_ID, 'market_research_study', NULL , 1, NULL, NULL, NULL, NULL, 'market_research_study');
+INSERT INTO organization.eqms_context_types (ref_id, eqms_tenant_key, fk_eqms_organization_id, context_name, context_description, status, created_date, created_by, modified_date, modified_by, context_slug) VALUES (32, VAR_TENANT_KEY, VAR_ORG_ID, 'functional_blocks', NULL , 1, NULL, NULL, NULL, NULL, 'functional_blocks');
+INSERT INTO organization.eqms_context_types (ref_id, eqms_tenant_key, fk_eqms_organization_id, context_name, context_description, status, created_date, created_by, modified_date, modified_by, context_slug) VALUES (33, VAR_TENANT_KEY, VAR_ORG_ID, 'design_input_requirements', NULL , 1, NULL, NULL, NULL, NULL, 'design_input_requirements');
+INSERT INTO organization.eqms_context_types (ref_id, eqms_tenant_key, fk_eqms_organization_id, context_name, context_description, status, created_date, created_by, modified_date, modified_by, context_slug) VALUES (34, VAR_TENANT_KEY, VAR_ORG_ID, 'stage_order', NULL , 1, NULL, NULL, NULL, NULL, 'stage_order');
+INSERT INTO organization.eqms_context_types (ref_id, eqms_tenant_key, fk_eqms_organization_id, context_name, context_description, status, created_date, created_by, modified_date, modified_by, context_slug) VALUES (35, VAR_TENANT_KEY, VAR_ORG_ID, 'pre_transfer_design_output_document', NULL , 1, NULL, NULL, NULL, NULL, 'pre_transfer_design_output_document');
+INSERT INTO organization.eqms_context_types (ref_id, eqms_tenant_key, fk_eqms_organization_id, context_name, context_description, status, created_date, created_by, modified_date, modified_by, context_slug) VALUES (36, VAR_TENANT_KEY, VAR_ORG_ID, 'final_pilot_validation_plan', NULL , 1, NULL, NULL, NULL, NULL, 'final_pilot_validation_plan');
+INSERT INTO organization.eqms_context_types (ref_id, eqms_tenant_key, fk_eqms_organization_id, context_name, context_description, status, created_date, created_by, modified_date, modified_by, context_slug) VALUES (37, VAR_TENANT_KEY, VAR_ORG_ID, 'final_pilot_validation_report', NULL , 1, NULL, NULL, NULL, NULL, 'final_pilot_validation_report');
+INSERT INTO organization.eqms_context_types (ref_id, eqms_tenant_key, fk_eqms_organization_id, context_name, context_description, status, created_date, created_by, modified_date, modified_by, context_slug) VALUES (38, VAR_TENANT_KEY, VAR_ORG_ID, 'design_output_document', NULL , 1, NULL, NULL, NULL, NULL, 'design_output_document');
+INSERT INTO organization.eqms_context_types (ref_id, eqms_tenant_key, fk_eqms_organization_id, context_name, context_description, status, created_date, created_by, modified_date, modified_by, context_slug) VALUES (39, VAR_TENANT_KEY, VAR_ORG_ID, 'final_pilot_validation_plan', NULL , 1, NULL, NULL, NULL, NULL, 'final_pilot_validation_plan');
+END $$;

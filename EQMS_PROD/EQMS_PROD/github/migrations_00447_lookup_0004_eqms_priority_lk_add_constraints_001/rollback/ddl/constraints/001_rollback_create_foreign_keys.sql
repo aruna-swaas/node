@@ -1,0 +1,1 @@
+ALTER TABLE sales.eqms_sales_forecast_detail DROP CONSTRAINT fk_esfd_priority_lk_id;

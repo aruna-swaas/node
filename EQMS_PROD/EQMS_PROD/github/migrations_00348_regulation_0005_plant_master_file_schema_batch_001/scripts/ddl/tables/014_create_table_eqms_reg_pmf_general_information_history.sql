@@ -1,0 +1,26 @@
+CREATE TABLE regulation.eqms_reg_pmf_general_information_history (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    fk_eqms_reg_pmf_general_information_id integer,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    fk_eqms_reg_plant_master_file_id integer,
+    company_profile character varying,
+    facility_profile character varying,
+    manufacturing_activity character varying,
+    other_manufacturing_activity character varying,
+    exact_address character varying,
+    product_manufactured_type character varying,
+    site_short_description character varying,
+    outside_tech_assistance character varying,
+    qms_short_description character varying,
+    status smallint,
+    record_status smallint DEFAULT 1,
+    version numeric(10,1),
+    valid_from_date timestamp without time zone,
+    valid_to_date timestamp without time zone DEFAULT '2199-12-31 23:59:59'::timestamp without time zone,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer 
+);
+

@@ -1,0 +1,49 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00386_vendor_0007_sample_order_schema_batch_001
+Date with time: 2026-02-07 17:16:34
+
+Schema: vendor
+- Table: vendor.eqms_sample_order_part_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_part_mapper
+
+- Table: vendor.eqms_sample_order_part_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_part_mapper_history
+
+- Table: vendor.eqms_sample_orders
+  Change Type: CREATE
+  Description: Create new table eqms_sample_orders
+
+- Table: vendor.eqms_sample_orders_history
+  Change Type: CREATE
+  Description: Create new table eqms_sample_orders_history
+
+- Table: vendor.eqms_sample_orders_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_sample_orders_supporting_files
+
+- Table: vendor.eqms_sample_orders_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_sample_orders_supporting_files_history
+
+- Table: vendor.eqms_vendor_agreement_checklist
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_agreement_checklist
+
+- Table: vendor.eqms_sample_order_part_mapper
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: vendor.eqms_sample_orders
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_sample_orders_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_agreement_checklist
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

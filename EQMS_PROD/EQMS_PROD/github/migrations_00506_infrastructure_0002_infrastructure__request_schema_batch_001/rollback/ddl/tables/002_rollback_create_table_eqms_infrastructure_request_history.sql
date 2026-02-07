@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS infrastructure.eqms_infrastructure_request_history;

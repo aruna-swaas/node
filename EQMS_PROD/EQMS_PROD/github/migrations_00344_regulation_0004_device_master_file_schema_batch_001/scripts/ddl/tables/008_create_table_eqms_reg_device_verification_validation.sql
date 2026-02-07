@@ -1,0 +1,27 @@
+CREATE TABLE regulation.eqms_reg_device_verification_validation (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    fk_eqms_reg_device_master_file_id integer,
+    general character varying,
+    biocompatibility character varying,
+    biocompatible_test_reports character varying,
+    biological_evaluation character varying,
+    medicinal_substances character varying,
+    biological_safety character varying,
+    sterile_eto_method character varying,
+    software_verification character varying,
+    animal_studies character varying,
+    stability_data character varying,
+    main_unit character varying,
+    utility_type_details character varying,
+    accelerated_stability_study_report character varying,
+    clinical_evidence character varying,
+    post_market_surveillance_data character varying,
+    status smallint,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer 
+);
+

@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_part_purchase_type_lk DROP CONSTRAINT fk_epptl_organization_id;
+ALTER TABLE organization.eqms_part_purchase_type_lk DROP CONSTRAINT unique_epptl_tnt_org_ref_id;

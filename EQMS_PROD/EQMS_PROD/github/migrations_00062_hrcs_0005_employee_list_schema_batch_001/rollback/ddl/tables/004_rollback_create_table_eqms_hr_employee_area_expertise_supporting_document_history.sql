@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS hrcs.eqms_hr_employee_area_expertise_supporting_document_history;

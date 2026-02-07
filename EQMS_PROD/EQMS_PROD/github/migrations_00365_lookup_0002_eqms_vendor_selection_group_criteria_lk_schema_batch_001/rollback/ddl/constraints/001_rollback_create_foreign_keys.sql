@@ -1,0 +1,3 @@
+ALTER TABLE organization.eqms_vendor_selection_group_criteria_lk DROP CONSTRAINT fk_evgcl_vendor_selection_group_lk_ref_id;
+ALTER TABLE organization.eqms_vendor_selection_group_criteria_lk DROP CONSTRAINT fk_evgcl_requirement_lk_ref_id;
+ALTER TABLE organization.eqms_vendor_selection_group_criteria_lk DROP CONSTRAINT uk_egclk_ref_id;

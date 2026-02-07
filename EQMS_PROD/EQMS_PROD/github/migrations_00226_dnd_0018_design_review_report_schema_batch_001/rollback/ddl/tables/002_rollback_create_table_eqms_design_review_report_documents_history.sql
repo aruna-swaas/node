@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dnd.eqms_design_review_report_documents_history;

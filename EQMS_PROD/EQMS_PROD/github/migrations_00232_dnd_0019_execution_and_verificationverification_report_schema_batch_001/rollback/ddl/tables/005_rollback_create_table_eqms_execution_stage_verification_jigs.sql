@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dnd.eqms_execution_stage_verification_jigs;

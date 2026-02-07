@@ -1,0 +1,12 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00280_risk_management_0002_applicability_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:13:46
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_risk_category_lk: 1 INSERT statement(s)
+  - organization.eqms_risk_subcategory_lk: 1 INSERT statement(s)

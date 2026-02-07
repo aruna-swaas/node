@@ -1,0 +1,81 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00263_marketing_0001_website_content_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:13:01
+
+Data Migration Summary:
+
+Schema: dms
+- Table: dms.eqms_document_template
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_document_template
+
+- Table: dms.eqms_document_template_form_mapping
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_document_template_form_mapping
+
+- Table: dms.eqms_document_template_history
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_document_template_history
+
+- Table: dms.eqms_document_template_magic_read_details
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_document_template_magic_read_details
+
+- Table: dms.eqms_document_template_type_lk
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_document_template_type_lk
+
+- Table: dms.eqms_document_template_variable
+  Change Type: INSERT (Data Migration)
+  Description: Insert 62 record(s) into eqms_document_template_variable
+
+- Table: dms.eqms_document_template_variable_transformation_rules
+  Change Type: INSERT (Data Migration)
+  Description: Insert 62 record(s) into eqms_document_template_variable_transformation_rules
+
+- Table: dms.eqms_document_variable_mapper
+  Change Type: INSERT (Data Migration)
+  Description: Insert 63 record(s) into eqms_document_variable_mapper
+
+File Details:
+
+File 001_seed_data.sql (from 003_RBAC.sql):
+  - organization.eqms_menu_lk: 1 INSERT statement(s)
+  - organization.eqms_menu_activity_access: 1 INSERT statement(s)
+  - organization.eqms_role_menu_activity_access: 1 INSERT statement(s)
+
+File 002_seed_data.sql (from 004_ABAC_CONFIGURATION.sql):
+  - No INSERT statements found
+
+File 003_seed_data.sql (from 005_DRAFT_SAVE.sql):
+  - No INSERT statements found
+
+File 004_seed_data.sql (from 006_WORKFLOW.sql):
+  - No INSERT statements found
+
+File 005_seed_data.sql (from 007_ABAC_WF_MAPPING_CONFIGURATION.sql):
+  - No INSERT statements found
+
+File 006_seed_data.sql (from 009_NOMENCLATURE.sql):
+  - No INSERT statements found
+
+File 007_seed_data.sql (from High-Level-Requirements-Product.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 39 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 39 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 39 INSERT statement(s)
+
+File 008_seed_data.sql (from MKG-F-01 Product Need Document.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 23 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 23 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 24 INSERT statement(s)

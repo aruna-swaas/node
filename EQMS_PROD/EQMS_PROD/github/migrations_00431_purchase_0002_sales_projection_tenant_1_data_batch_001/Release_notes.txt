@@ -1,0 +1,11 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00431_purchase_0002_sales_projection_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:17:18
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_002_PREDEFINED.sql):
+  - organization.eqms_inventory_location: 1 INSERT statement(s)

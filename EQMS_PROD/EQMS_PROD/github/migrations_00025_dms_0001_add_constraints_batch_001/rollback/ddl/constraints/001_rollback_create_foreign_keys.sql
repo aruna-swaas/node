@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_form_draft_supporting_files DROP CONSTRAINT fk_efdsf_file_id;
+ALTER TABLE organization.eqms_image DROP CONSTRAINT fk_ei_file_id;

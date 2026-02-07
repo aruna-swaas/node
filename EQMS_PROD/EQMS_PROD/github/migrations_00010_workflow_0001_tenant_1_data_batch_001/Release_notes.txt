@@ -1,0 +1,14 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00010_workflow_0001_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:09:19
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - workflow.eqms_workflow_status_lk: 1 INSERT statement(s)
+  - workflow.eqms_comments_type_lk: 1 INSERT statement(s)
+  - workflow.eqms_transition_owner_type_lk: 1 INSERT statement(s)
+  - workflow.eqms_commenter_type_lk: 1 INSERT statement(s)

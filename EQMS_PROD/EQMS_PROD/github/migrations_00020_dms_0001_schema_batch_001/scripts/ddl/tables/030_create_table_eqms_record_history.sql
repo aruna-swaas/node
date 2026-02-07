@@ -1,0 +1,25 @@
+CREATE TABLE dms.eqms_record_history (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    fk_eqms_record_id integer,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    major_record_version integer,
+    minor_record_version integer,
+    record_watermark character varying(100),
+    record_version numeric(10,1),
+    status smallint,
+    record_status smallint DEFAULT '1'::smallint,
+    version numeric(10,1),
+    valid_from_date timestamp without time zone,
+    valid_to_date timestamp without time zone DEFAULT '2199-12-31 23:59:59'::timestamp without time zone,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer,
+    fk_eqms_record_type_lk_id integer,
+    record_uploaded_date date,
+    fk_eqms_document_template_history_id integer,
+    fk_eqms_record_generation_type_lk_id integer,
+    fk_eqms_file_history_id integer 
+);
+

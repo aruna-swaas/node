@@ -1,0 +1,77 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00570_pre_production_0008_set_burn_in_schema_batch_001
+Date with time: 2026-02-07 17:20:16
+
+Schema: pre_production
+- Table: pre_production.eqms_pre_prod_set_burn_in
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_set_burn_in
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_equipment
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_set_burn_in_equipment
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_equipment_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_set_burn_in_equipment_history
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_set_burn_in_history
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_jig
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_set_burn_in_jig
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_jig_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_set_burn_in_jig_history
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_test_prot
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_set_burn_in_test_prot
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_test_prot_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_set_burn_in_test_prot_history
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_tool_type
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_set_burn_in_tool_type
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_tool_type_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_set_burn_in_tool_type_history
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_work_inst_step
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_set_burn_in_work_inst_step
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_work_inst_step_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_set_burn_in_work_inst_step_history
+
+- Table: pre_production.eqms_pre_prod_set_burn_in
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_equipment
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_jig
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_test_prot
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_tool_type
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_set_burn_in_work_inst_step
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

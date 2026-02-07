@@ -1,0 +1,14 @@
+ALTER TABLE dnd.eqms_execution_stage_deliverables DROP CONSTRAINT fk_eesd_dir_id;
+ALTER TABLE dnd.eqms_execution_stage_deliverables DROP CONSTRAINT fk_eesd_execution_stage_id;
+ALTER TABLE dnd.eqms_execution_stage_deliverables DROP CONSTRAINT fk_ees_organization_id;
+ALTER TABLE dnd.eqms_dir_supporting_document DROP CONSTRAINT fk_edsd_supporting_file_id;
+ALTER TABLE dnd.eqms_dir_supporting_document DROP CONSTRAINT fk_edsd_organization_id;
+ALTER TABLE dnd.eqms_dir_supporting_document DROP CONSTRAINT fk_edsd_dig_specification_id;
+ALTER TABLE dnd.eqms_dir_reference_dirs DROP CONSTRAINT fk_edrd_reference_dir_id;
+ALTER TABLE dnd.eqms_dir_reference_dirs DROP CONSTRAINT fk_edrd_dir_id;
+ALTER TABLE dnd.eqms_dir_reference_dirs DROP CONSTRAINT fk_edrd_organization_id;
+ALTER TABLE dnd.eqms_design_input_requirement DROP CONSTRAINT fk_edir_user_id;
+ALTER TABLE dnd.eqms_design_input_requirement DROP CONSTRAINT fk_edir_organization_id;
+ALTER TABLE dnd.eqms_design_input_requirement DROP CONSTRAINT fk_edir_functional_block_type_lk_id;
+ALTER TABLE dnd.eqms_design_input_requirement DROP CONSTRAINT fk_edir_dig_specification_id;
+ALTER TABLE dnd.eqms_design_input_requirement DROP CONSTRAINT fk_edir_design_input_gathering_id;

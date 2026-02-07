@@ -1,0 +1,77 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00134_dnd_0004_feasibility_study_schema_batch_001
+Date with time: 2026-02-07 17:11:32
+
+Schema: dnd
+- Table: dnd.eqms_feasibility_decision
+  Change Type: CREATE
+  Description: Create new table eqms_feasibility_decision
+
+- Table: dnd.eqms_feasibility_decision_history
+  Change Type: CREATE
+  Description: Create new table eqms_feasibility_decision_history
+
+- Table: dnd.eqms_feasibility_study_cost_report
+  Change Type: CREATE
+  Description: Create new table eqms_feasibility_study_cost_report
+
+- Table: dnd.eqms_feasibility_study_cost_report_history
+  Change Type: CREATE
+  Description: Create new table eqms_feasibility_study_cost_report_history
+
+- Table: dnd.eqms_feasibility_study_design_team_role
+  Change Type: CREATE
+  Description: Create new table eqms_feasibility_study_design_team_role
+
+- Table: dnd.eqms_feasibility_study_design_team_role_history
+  Change Type: CREATE
+  Description: Create new table eqms_feasibility_study_design_team_role_history
+
+- Table: dnd.eqms_feasibility_study_report
+  Change Type: CREATE
+  Description: Create new table eqms_feasibility_study_report
+
+- Table: dnd.eqms_feasibility_study_report_history
+  Change Type: CREATE
+  Description: Create new table eqms_feasibility_study_report_history
+
+- Table: dnd.eqms_feasibility_study_report_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_feasibility_study_report_supporting_files
+
+- Table: dnd.eqms_feasibility_study_report_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_feasibility_study_report_supporting_files_history
+
+- Table: dnd.eqms_feasibility_validation
+  Change Type: CREATE
+  Description: Create new table eqms_feasibility_validation
+
+- Table: dnd.eqms_feasibility_validation_history
+  Change Type: CREATE
+  Description: Create new table eqms_feasibility_validation_history
+
+- Table: dnd.eqms_feasibility_decision
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_feasibility_study_cost_report
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_feasibility_study_design_team_role
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_feasibility_study_report
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_feasibility_study_report_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_feasibility_validation
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

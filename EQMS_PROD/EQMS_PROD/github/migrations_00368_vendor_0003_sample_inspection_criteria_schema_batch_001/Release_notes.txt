@@ -1,0 +1,29 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00368_vendor_0003_sample_inspection_criteria_schema_batch_001
+Date with time: 2026-02-07 17:16:18
+
+Schema: vendor
+- Table: vendor.eqms_sample_order_inspection_criteria
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_inspection_criteria
+
+- Table: vendor.eqms_sample_order_inspection_criteria_history
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_inspection_criteria_history
+
+- Table: vendor.eqms_sample_order_inspection_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_inspection_supporting_files
+
+- Table: vendor.eqms_sample_order_inspection_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_inspection_supporting_files_history
+
+- Table: vendor.eqms_sample_order_inspection_criteria
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: vendor.eqms_sample_order_inspection_supporting_files
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_alarm_type_lk DROP CONSTRAINT fk_eatl_organization_id;
+ALTER TABLE organization.eqms_alarm_type_lk DROP CONSTRAINT unique_tnt_org_alarm_type_ref_id;

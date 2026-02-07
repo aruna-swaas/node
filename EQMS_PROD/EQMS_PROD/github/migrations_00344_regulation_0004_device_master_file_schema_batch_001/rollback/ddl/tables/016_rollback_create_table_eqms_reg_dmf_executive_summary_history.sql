@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS regulation.eqms_reg_dmf_executive_summary_history;

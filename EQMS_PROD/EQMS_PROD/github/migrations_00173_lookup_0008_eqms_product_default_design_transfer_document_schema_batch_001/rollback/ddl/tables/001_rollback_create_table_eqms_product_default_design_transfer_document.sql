@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_product_default_design_transfer_document;

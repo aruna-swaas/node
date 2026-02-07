@@ -1,0 +1,2 @@
+ALTER TABLE risk_management.eqms_rmp_production_post_production_info DROP CONSTRAINT fk_erpppi_project_id;
+ALTER TABLE risk_management.eqms_rmp_production_post_production_info DROP CONSTRAINT fk_erpppi_organization_id;

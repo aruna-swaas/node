@@ -1,0 +1,1 @@
+ALTER TABLE vendor.eqms_vendor_selection_criteria_re_evaluation DROP CONSTRAINT fk_evrgcr_vendor_re_evaluation_id;

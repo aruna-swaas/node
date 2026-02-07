@@ -1,0 +1,325 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00020_dms_0001_schema_batch_001
+Date with time: 2026-02-07 17:09:52
+
+Schema: dms
+- Table: dms.eqms_component_record
+  Change Type: CREATE
+  Description: Create new table eqms_component_record
+
+- Table: dms.eqms_component_record_history
+  Change Type: CREATE
+  Description: Create new table eqms_component_record_history
+
+- Table: dms.eqms_compressed_files
+  Change Type: CREATE
+  Description: Create new table eqms_compressed_files
+
+- Table: dms.eqms_compressed_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_compressed_files_history
+
+- Table: dms.eqms_document
+  Change Type: CREATE
+  Description: Create new table eqms_document
+
+- Table: dms.eqms_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_document_history
+
+- Table: dms.eqms_document_sections
+  Change Type: CREATE
+  Description: Create new table eqms_document_sections
+
+- Table: dms.eqms_document_template
+  Change Type: CREATE
+  Description: Create new table eqms_document_template
+
+- Table: dms.eqms_document_template_api_details
+  Change Type: CREATE
+  Description: Create new table eqms_document_template_api_details
+
+- Table: dms.eqms_document_template_form_mapping
+  Change Type: CREATE
+  Description: Create new table eqms_document_template_form_mapping
+
+- Table: dms.eqms_document_template_form_mapping_history
+  Change Type: CREATE
+  Description: Create new table eqms_document_template_form_mapping_history
+
+- Table: dms.eqms_document_template_history
+  Change Type: CREATE
+  Description: Create new table eqms_document_template_history
+
+- Table: dms.eqms_document_template_magic_read_details
+  Change Type: CREATE
+  Description: Create new table eqms_document_template_magic_read_details
+
+- Table: dms.eqms_document_template_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_document_template_type_lk
+
+- Table: dms.eqms_document_template_variable
+  Change Type: CREATE
+  Description: Create new table eqms_document_template_variable
+
+- Table: dms.eqms_document_template_variable_transformation_rules
+  Change Type: CREATE
+  Description: Create new table eqms_document_template_variable_transformation_rules
+
+- Table: dms.eqms_document_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_document_type_lk
+
+- Table: dms.eqms_document_variable_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_document_variable_mapper
+
+- Table: dms.eqms_document_variable_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_document_variable_mapper_history
+
+- Table: dms.eqms_document_variable_operation
+  Change Type: CREATE
+  Description: Create new table eqms_document_variable_operation
+
+- Table: dms.eqms_document_variables
+  Change Type: CREATE
+  Description: Create new table eqms_document_variables
+
+- Table: dms.eqms_document_variables_history
+  Change Type: CREATE
+  Description: Create new table eqms_document_variables_history
+
+- Table: dms.eqms_file
+  Change Type: CREATE
+  Description: Create new table eqms_file
+
+- Table: dms.eqms_file_category_lk
+  Change Type: CREATE
+  Description: Create new table eqms_file_category_lk
+
+- Table: dms.eqms_file_history
+  Change Type: CREATE
+  Description: Create new table eqms_file_history
+
+- Table: dms.eqms_file_tags
+  Change Type: CREATE
+  Description: Create new table eqms_file_tags
+
+- Table: dms.eqms_file_tags_history
+  Change Type: CREATE
+  Description: Create new table eqms_file_tags_history
+
+- Table: dms.eqms_file_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_file_type_lk
+
+- Table: dms.eqms_generic_details
+  Change Type: CREATE
+  Description: Create new table eqms_generic_details
+
+- Table: dms.eqms_generic_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_generic_details_history
+
+- Table: dms.eqms_record
+  Change Type: CREATE
+  Description: Create new table eqms_record
+
+- Table: dms.eqms_record_generation_mode_lk
+  Change Type: CREATE
+  Description: Create new table eqms_record_generation_mode_lk
+
+- Table: dms.eqms_record_generation_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_record_generation_type_lk
+
+- Table: dms.eqms_record_generic_details
+  Change Type: CREATE
+  Description: Create new table eqms_record_generic_details
+
+- Table: dms.eqms_record_generic_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_record_generic_details_history
+
+- Table: dms.eqms_record_history
+  Change Type: CREATE
+  Description: Create new table eqms_record_history
+
+- Table: dms.eqms_record_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_record_type_lk
+
+- Table: dms.eqms_record_variable_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_record_variable_mapper
+
+- Table: dms.eqms_record_variable_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_record_variable_mapper_history
+
+- Table: dms.eqms_record_variables
+  Change Type: CREATE
+  Description: Create new table eqms_record_variables
+
+- Table: dms.eqms_record_variables_history
+  Change Type: CREATE
+  Description: Create new table eqms_record_variables_history
+
+- Table: dms.eqms_record_verification
+  Change Type: CREATE
+  Description: Create new table eqms_record_verification
+
+- Table: dms.eqms_record_verification_comments
+  Change Type: CREATE
+  Description: Create new table eqms_record_verification_comments
+
+- Table: dms.eqms_record_verification_comments_history
+  Change Type: CREATE
+  Description: Create new table eqms_record_verification_comments_history
+
+- Table: dms.eqms_record_verification_history
+  Change Type: CREATE
+  Description: Create new table eqms_record_verification_history
+
+- Table: dms.eqms_tags
+  Change Type: CREATE
+  Description: Create new table eqms_tags
+
+- Table: dms.eqms_tags_history
+  Change Type: CREATE
+  Description: Create new table eqms_tags_history
+
+- Table: dms.eqms_video
+  Change Type: CREATE
+  Description: Create new table eqms_video
+
+- Table: dms.eqms_video_history
+  Change Type: CREATE
+  Description: Create new table eqms_video_history
+
+- Table: dms.eqms_component_record
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dms.eqms_compressed_files
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dms.eqms_document
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dms.eqms_document_sections
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dms.eqms_document_template
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 3 foreign key constraint(s)
+
+- Table: dms.eqms_document_template_form_mapping
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dms.eqms_document_template_history
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: dms.eqms_document_template_magic_read_details
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dms.eqms_document_template_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: dms.eqms_document_template_variable
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: dms.eqms_document_template_variable_transformation_rules
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dms.eqms_document_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: dms.eqms_document_variable_mapper
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dms.eqms_document_variable_operation
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: dms.eqms_document_variables
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dms.eqms_file
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: dms.eqms_file_category_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: dms.eqms_file_tags
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dms.eqms_file_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: dms.eqms_generic_details
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: dms.eqms_record
+  Change Type: ALTER
+  Description: Add 5 foreign key constraint(s)
+
+- Table: dms.eqms_record_generation_mode_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: dms.eqms_record_generation_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: dms.eqms_record_generic_details
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dms.eqms_record_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: dms.eqms_record_variable_mapper
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dms.eqms_record_variables
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dms.eqms_record_verification
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: dms.eqms_record_verification_comments
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dms.eqms_tags
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: dms.eqms_video
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

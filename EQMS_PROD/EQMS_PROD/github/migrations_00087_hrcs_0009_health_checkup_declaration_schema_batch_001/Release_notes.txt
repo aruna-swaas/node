@@ -1,0 +1,53 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00087_hrcs_0009_health_checkup_declaration_schema_batch_001
+Date with time: 2026-02-07 17:10:54
+
+Schema: hrcs
+- Table: hrcs.eqms_hr_health_checkup
+  Change Type: CREATE
+  Description: Create new table eqms_hr_health_checkup
+
+- Table: hrcs.eqms_hr_health_checkup_com_dis_supporting_document
+  Change Type: CREATE
+  Description: Create new table eqms_hr_health_checkup_com_dis_supporting_document
+
+- Table: hrcs.eqms_hr_health_checkup_com_dis_supporting_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_health_checkup_com_dis_supporting_document_history
+
+- Table: hrcs.eqms_hr_health_checkup_eye_test_supporting_document
+  Change Type: CREATE
+  Description: Create new table eqms_hr_health_checkup_eye_test_supporting_document
+
+- Table: hrcs.eqms_hr_health_checkup_eye_test_supporting_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_health_checkup_eye_test_supporting_document_history
+
+- Table: hrcs.eqms_hr_health_checkup_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_health_checkup_history
+
+- Table: hrcs.eqms_hr_health_checkup_vaccinations_supporting_document
+  Change Type: CREATE
+  Description: Create new table eqms_hr_health_checkup_vaccinations_supporting_document
+
+- Table: hrcs.eqms_hr_health_checkup_vaccinations_supporting_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_health_checkup_vaccinations_supporting_document_history
+
+- Table: hrcs.eqms_hr_health_checkup
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_health_checkup_com_dis_supporting_document
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_health_checkup_eye_test_supporting_document
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_health_checkup_vaccinations_supporting_document
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

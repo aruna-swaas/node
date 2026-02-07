@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_pre_prod_case_settings_type_lk DROP CONSTRAINT fk_epcstl_organization_id;
+ALTER TABLE organization.eqms_pre_prod_case_settings_type_lk DROP CONSTRAINT unique_epcstl_tnt_org_ref_id;

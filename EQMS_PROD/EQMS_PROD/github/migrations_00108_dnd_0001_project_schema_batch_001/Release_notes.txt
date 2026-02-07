@@ -1,0 +1,69 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00108_dnd_0001_project_schema_batch_001
+Date with time: 2026-02-07 17:11:18
+
+Schema: dnd
+- Table: dnd.eqms_product_group_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_product_group_lk_history
+
+- Table: dnd.eqms_product_market
+  Change Type: CREATE
+  Description: Create new table eqms_product_market
+
+- Table: dnd.eqms_product_market_history
+  Change Type: CREATE
+  Description: Create new table eqms_product_market_history
+
+- Table: dnd.eqms_product_regulations
+  Change Type: CREATE
+  Description: Create new table eqms_product_regulations
+
+- Table: dnd.eqms_product_regulations_history
+  Change Type: CREATE
+  Description: Create new table eqms_product_regulations_history
+
+- Table: dnd.eqms_project
+  Change Type: CREATE
+  Description: Create new table eqms_project
+
+- Table: dnd.eqms_project_documents
+  Change Type: CREATE
+  Description: Create new table eqms_project_documents
+
+- Table: dnd.eqms_project_documents_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_documents_history
+
+- Table: dnd.eqms_project_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_history
+
+- Table: dnd.eqms_regulation_history
+  Change Type: CREATE
+  Description: Create new table eqms_regulation_history
+
+- Table: dnd.eqms_regulation_standard_clause_history
+  Change Type: CREATE
+  Description: Create new table eqms_regulation_standard_clause_history
+
+- Table: dnd.eqms_regulation_standard_history
+  Change Type: CREATE
+  Description: Create new table eqms_regulation_standard_history
+
+- Table: dnd.eqms_product_market
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_product_regulations
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_project_documents
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

@@ -1,0 +1,65 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00394_vendor_0008_sample_inspection_schema_batch_001
+Date with time: 2026-02-07 17:16:38
+
+Schema: vendor
+- Table: vendor.eqms_sample_inspection_procedure_files
+  Change Type: CREATE
+  Description: Create new table eqms_sample_inspection_procedure_files
+
+- Table: vendor.eqms_sample_inspection_procedure_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_sample_inspection_procedure_files_history
+
+- Table: vendor.eqms_sample_order_insp_spec_results
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_insp_spec_results
+
+- Table: vendor.eqms_sample_order_insp_spec_results_history
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_insp_spec_results_history
+
+- Table: vendor.eqms_sample_order_insp_spec_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_insp_spec_supporting_files
+
+- Table: vendor.eqms_sample_order_insp_spec_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_insp_spec_supporting_files_history
+
+- Table: vendor.eqms_sample_order_inspection
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_inspection
+
+- Table: vendor.eqms_sample_order_inspection_history
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_inspection_history
+
+- Table: vendor.eqms_sample_order_inspection_specification
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_inspection_specification
+
+- Table: vendor.eqms_sample_order_inspection_specification_history
+  Change Type: CREATE
+  Description: Create new table eqms_sample_order_inspection_specification_history
+
+- Table: vendor.eqms_sample_inspection_procedure_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_sample_order_insp_spec_results
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_sample_order_insp_spec_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_sample_order_inspection
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: vendor.eqms_sample_order_inspection_specification
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

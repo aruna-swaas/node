@@ -1,0 +1,5 @@
+ALTER TABLE risk_management.eqms_rmp_committee DROP CONSTRAINT fk_erc_status_lk_id;
+ALTER TABLE risk_management.eqms_rmp_committee DROP CONSTRAINT fk_erc_role_lk_id;
+ALTER TABLE risk_management.eqms_rmp_committee DROP CONSTRAINT fk_erc_risk_management_plan_id;
+ALTER TABLE risk_management.eqms_rmp_committee DROP CONSTRAINT fk_erc_organization_id;
+ALTER TABLE risk_management.eqms_rmp_committee DROP CONSTRAINT fk_erc_organization_employee_id;

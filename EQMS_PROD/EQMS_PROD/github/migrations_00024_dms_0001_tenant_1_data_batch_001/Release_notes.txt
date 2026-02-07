@@ -1,0 +1,17 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00024_dms_0001_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:09:53
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - dms.eqms_document_type_lk: 1 INSERT statement(s)
+  - dms.eqms_record_generation_type_lk: 1 INSERT statement(s)
+  - dms.eqms_file_category_lk: 1 INSERT statement(s)
+  - dms.eqms_file_type_lk: 1 INSERT statement(s)
+  - dms.eqms_generic_details: 1 INSERT statement(s)
+  - dms.eqms_document_variable_operation: 1 INSERT statement(s)
+  - dms.eqms_record_generation_mode_lk: 1 INSERT statement(s)

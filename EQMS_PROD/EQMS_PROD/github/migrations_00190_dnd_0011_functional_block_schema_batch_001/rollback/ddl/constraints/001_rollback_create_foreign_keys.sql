@@ -1,0 +1,4 @@
+ALTER TABLE dnd.eqms_product_functional_subblocks DROP CONSTRAINT fk_epfs_product_functional_block_id;
+ALTER TABLE dnd.eqms_product_functional_subblocks DROP CONSTRAINT fk_epfs_organization_id;
+ALTER TABLE dnd.eqms_product_functional_blocks DROP CONSTRAINT fk_eppv_project_id;
+ALTER TABLE dnd.eqms_product_functional_blocks DROP CONSTRAINT fk_epfb_organization_id;

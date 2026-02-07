@@ -1,0 +1,2 @@
+ALTER TABLE dnd.eqms_project_dig_models DROP CONSTRAINT fk_epdm_project_design_input_gathering_id;
+ALTER TABLE dnd.eqms_dig_specification DROP CONSTRAINT fk_eds_project_design_input_gathering_id;

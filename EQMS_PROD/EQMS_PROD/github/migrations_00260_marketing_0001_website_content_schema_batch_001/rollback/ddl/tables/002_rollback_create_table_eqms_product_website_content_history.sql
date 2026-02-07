@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS marketing.eqms_product_website_content_history;

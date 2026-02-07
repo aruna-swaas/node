@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00072_lookup_0006_eqms_hr_induction_training_topic_supporting_file_schema_batch_001
+Date with time: 2026-02-07 17:10:47
+
+Schema: organization
+- Table: organization.eqms_hr_induction_training_topic_supporting_file
+  Change Type: CREATE
+  Description: Create new table eqms_hr_induction_training_topic_supporting_file
+
+- Table: organization.eqms_hr_induction_training_topic_supporting_file
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 3 foreign key constraint(s)

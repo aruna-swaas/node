@@ -1,0 +1,2 @@
+ALTER TABLE risk_management.eqms_risk_stage_review DROP CONSTRAINT fk_ersr_risk_review_requirment_id;
+ALTER TABLE risk_management.eqms_risk_stage_review DROP CONSTRAINT fk_ersr_organization_id;

@@ -1,0 +1,65 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00254_dnd_0028_installation_procedure_schema_batch_001
+Date with time: 2026-02-07 17:12:37
+
+Schema: dnd
+- Table: dnd.eqms_design_installation_procedure
+  Change Type: CREATE
+  Description: Create new table eqms_design_installation_procedure
+
+- Table: dnd.eqms_design_installation_procedure_equipment
+  Change Type: CREATE
+  Description: Create new table eqms_design_installation_procedure_equipment
+
+- Table: dnd.eqms_design_installation_procedure_equipment_history
+  Change Type: CREATE
+  Description: Create new table eqms_design_installation_procedure_equipment_history
+
+- Table: dnd.eqms_design_installation_procedure_history
+  Change Type: CREATE
+  Description: Create new table eqms_design_installation_procedure_history
+
+- Table: dnd.eqms_design_installation_procedure_skill
+  Change Type: CREATE
+  Description: Create new table eqms_design_installation_procedure_skill
+
+- Table: dnd.eqms_design_installation_procedure_skill_history
+  Change Type: CREATE
+  Description: Create new table eqms_design_installation_procedure_skill_history
+
+- Table: dnd.eqms_design_installation_procedure_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_design_installation_procedure_supporting_files
+
+- Table: dnd.eqms_design_installation_procedure_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_design_installation_procedure_supporting_files_history
+
+- Table: dnd.eqms_design_installation_procedure_tool
+  Change Type: CREATE
+  Description: Create new table eqms_design_installation_procedure_tool
+
+- Table: dnd.eqms_design_installation_procedure_tool_history
+  Change Type: CREATE
+  Description: Create new table eqms_design_installation_procedure_tool_history
+
+- Table: dnd.eqms_design_installation_procedure
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_design_installation_procedure_equipment
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_design_installation_procedure_skill
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_design_installation_procedure_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_design_installation_procedure_tool
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

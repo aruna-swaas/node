@@ -1,0 +1,123 @@
+DO $$
+DECLARE
+    VAR_TENANT_KEY INT := ${TENANTKEY};
+    VAR_ORG_ID     INT := ${ORGID};
+    VAR_BUCKET_NAME TEXT := '${BUCKETNAME}';
+	  VAR_USER_ID INT;
+    VAR_USER_SUB UUID := '${USERSUB}';
+    VAR_FILE_ID_8 INT;
+    VAR_FILE_ID_9 INT;
+    VAR_FILE_ID_10 INT;
+    VAR_FILE_ID_11 INT;
+    VAR_FILE_ID_12 INT;
+    VAR_FILE_ID_13 INT;
+    VAR_FILE_ID_14 INT;
+    VAR_FILE_ID_15 INT;
+    VAR_FILE_ID_16 INT;
+    VAR_FILE_ID_17 INT;
+    VAR_FILE_ID_18 INT;
+    VAR_FILE_ID_19 INT;
+    VAR_FILE_ID_20 INT;
+    VAR_FILE_ID_21 INT;
+    VAR_FILE_ID_22 INT;
+    VAR_FILE_ID_23 INT;
+    VAR_FILE_ID_24 INT;
+    VAR_FILE_ID_25 INT;
+    VAR_FILE_ID_26 INT;
+    VAR_FILE_ID_27 INT;
+    VAR_FILE_ID_28 INT;
+    VAR_FILE_ID_29 INT;
+    VAR_FILE_ID_30 INT;
+    VAR_FILE_ID_31 INT;
+    VAR_FILE_ID_32 INT;
+    VAR_FILE_ID_33 INT;
+    VAR_FILE_ID_34 INT;
+    VAR_FILE_ID_35 INT;
+    VAR_FILE_ID_36 INT;
+    VAR_FILE_ID_37 INT;
+    VAR_FILE_ID_38 INT;
+    VAR_FILE_ID_39 INT;
+    VAR_FILE_ID_40 INT;
+    VAR_FILE_ID_41 INT;
+    VAR_FILE_ID_42 INT;
+    VAR_FILE_ID_43 INT;
+    VAR_FILE_ID_44 INT;
+    VAR_FILE_ID_45 INT;
+    VAR_FILE_ID_46 INT;
+    VAR_FILE_ID_47 INT;
+    VAR_FILE_ID_48 INT;
+    VAR_FILE_ID_49 INT;
+    VAR_FILE_ID_50 INT;
+    VAR_FILE_ID_51 INT;
+    VAR_FILE_ID_52 INT;
+    VAR_FILE_ID_53 INT;
+    VAR_FILE_ID_54 INT;
+    VAR_FILE_ID_55 INT;
+    VAR_FILE_ID_56 INT;
+    VAR_FILE_ID_57 INT;
+    VAR_FILE_ID_58 INT;
+    VAR_FILE_ID_59 INT;
+    VAR_FILE_ID_60 INT;
+    VAR_FILE_ID_61 INT;
+    VAR_FILE_ID_62 INT;
+    VAR_FILE_ID_63 INT;
+    VAR_FILE_ID_64 INT;
+    VAR_FILE_ID_65 INT;
+    VAR_FILE_ID_66 INT;
+    VAR_FILE_ID_67 INT;
+    VAR_FILE_ID_68 INT;
+    VAR_FILE_ID_69 INT;
+    VAR_FILE_ID_70 INT;
+    VAR_FILE_ID_71 INT;
+    VAR_FILE_ID_72 INT;
+    VAR_FILE_ID_73 INT;
+    VAR_FILE_ID_74 INT;
+    VAR_FILE_ID_75 INT;
+    VAR_FILE_ID_76 INT;
+    VAR_FILE_ID_77 INT;
+    VAR_FILE_ID_78 INT;
+    VAR_FILE_ID_79 INT;
+    VAR_FILE_ID_80 INT;
+    VAR_FILE_ID_81 INT;
+    VAR_FILE_ID_82 INT;
+    VAR_FILE_ID_83 INT;
+    VAR_FILE_ID_84 INT;
+    VAR_FILE_ID_85 INT;
+    VAR_FILE_ID_86 INT;
+    VAR_FILE_ID_90 INT;
+    VAR_FILE_ID_91 INT;
+    VAR_FILE_ID_92 INT;
+    VAR_FILE_ID_93 INT;
+BEGIN
+
+INSERT INTO organization.eqms_market_demography_sub_category_lk (
+  eqms_tenant_key, fk_eqms_organization_id, fk_eqms_market_demography_category_lk_id, market_demography_sub_category, status, created_date, created_by, modified_date, modified_by, ref_id
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'Boy', 1, NOW(), 1, NULL, NULL, 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'Girl', 1, NOW(), 1, NULL, NULL, 2),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'Boy', 1, NOW(), 1, NULL, NULL, 3),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'Girl', 1, NOW(), 1, NULL, NULL, 4),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 'Male', 1, NOW(), 1, NULL, NULL, 5),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 'Female', 1, NOW(), 1, NULL, NULL, 6),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 'Male', 1, NOW(), 1, NULL, NULL, 7),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 'Female', 1, NOW(), 1, NULL, NULL, 8),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 'Adult Parents', 1, NOW(), 1, NULL, NULL, 10),
+(VAR_TENANT_KEY, VAR_ORG_ID, 8, 'Others', 1, NOW(), 1, NULL, NULL, 9),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'Rural', 1, NOW(), 1, NULL, NULL, 11),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'Urban', 1, NOW(), 1, NULL, NULL, 12),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'Citizen', 1, NOW(), 1, NULL, NULL, 13),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'Metropolitan', 1, NOW(), 1, NULL, NULL, 14),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'Low Income Groups', 1, NOW(), 1, NULL, NULL, 15),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'Mid Income Groups', 1, NOW(), 1, NULL, NULL, 16),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'High Income Groups', 1, NOW(), 1, NULL, NULL, 17),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 'Young Parents', 1, NOW(), 1, NULL, NULL, 18),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Caucasoid', 1, NOW(), 1, NULL, NULL, 19),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Negroid', 1, NOW(), 1, NULL, NULL, 20),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Mongoloid', 1, NOW(), 1, NULL, NULL, 21),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Asiatic sub group', 1, NOW(), 1, NULL, NULL, 22),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Pacific Island', 1, NOW(), 1, NULL, NULL, 23),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Australian', 1, NOW(), 1, NULL, NULL, 24),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Amerindians', 1, NOW(), 1, NULL, NULL, 25),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Eskimos', 1, NOW(), 1, NULL, NULL, 26);
+
+END $$;

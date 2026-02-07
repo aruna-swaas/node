@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00571_lookup_0009_eqms_pre_prod_product_process_checklist_lk_schema_batch_001
+Date with time: 2026-02-07 17:20:18
+
+Schema: organization
+- Table: organization.eqms_pre_prod_product_process_checklist_lk
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_product_process_checklist_lk
+
+- Table: organization.eqms_pre_prod_product_process_checklist_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)

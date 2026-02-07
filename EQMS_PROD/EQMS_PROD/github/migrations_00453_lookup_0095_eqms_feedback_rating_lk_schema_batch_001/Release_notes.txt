@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00453_lookup_0095_eqms_feedback_rating_lk_schema_batch_001
+Date with time: 2026-02-07 17:17:50
+
+Schema: organization
+- Table: organization.eqms_feedback_rating_lk
+  Change Type: CREATE
+  Description: Create new table eqms_feedback_rating_lk
+
+- Table: organization.eqms_feedback_rating_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)

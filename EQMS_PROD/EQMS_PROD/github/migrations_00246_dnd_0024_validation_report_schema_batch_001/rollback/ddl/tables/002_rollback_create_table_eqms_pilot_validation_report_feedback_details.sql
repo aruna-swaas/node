@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dnd.eqms_pilot_validation_report_feedback_details;

@@ -1,0 +1,37 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00480_qc_0003_goods_inward_schema_batch_001
+Date with time: 2026-02-07 17:18:18
+
+Schema: qc
+- Table: qc.eqms_goods_inward
+  Change Type: CREATE
+  Description: Create new table eqms_goods_inward
+
+- Table: qc.eqms_goods_inward_detail
+  Change Type: CREATE
+  Description: Create new table eqms_goods_inward_detail
+
+- Table: qc.eqms_goods_inward_detail_history
+  Change Type: CREATE
+  Description: Create new table eqms_goods_inward_detail_history
+
+- Table: qc.eqms_goods_inward_history
+  Change Type: CREATE
+  Description: Create new table eqms_goods_inward_history
+
+- Table: qc.eqms_hardware_test_procedure_spec
+  Change Type: CREATE
+  Description: Create new table eqms_hardware_test_procedure_spec
+
+- Table: qc.eqms_goods_inward
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: qc.eqms_goods_inward_detail
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: qc.eqms_hardware_test_procedure_spec
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

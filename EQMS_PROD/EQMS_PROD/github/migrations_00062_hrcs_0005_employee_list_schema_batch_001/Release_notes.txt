@@ -1,0 +1,197 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00062_hrcs_0005_employee_list_schema_batch_001
+Date with time: 2026-02-07 17:10:43
+
+Schema: hrcs
+- Table: hrcs.eqms_hr_add_employee_training_needs
+  Change Type: CREATE
+  Description: Create new table eqms_hr_add_employee_training_needs
+
+- Table: hrcs.eqms_hr_add_employee_training_needs_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_add_employee_training_needs_history
+
+- Table: hrcs.eqms_hr_add_employee_training_supporting_document
+  Change Type: CREATE
+  Description: Create new table eqms_hr_add_employee_training_supporting_document
+
+- Table: hrcs.eqms_hr_add_employee_training_supporting_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_add_employee_training_supporting_document_history
+
+- Table: hrcs.eqms_hr_employee_administrative_reports
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_administrative_reports
+
+- Table: hrcs.eqms_hr_employee_administrative_reports_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_administrative_reports_history
+
+- Table: hrcs.eqms_hr_employee_area_expertise_supporting_document
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_area_expertise_supporting_document
+
+- Table: hrcs.eqms_hr_employee_area_expertise_supporting_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_area_expertise_supporting_document_history
+
+- Table: hrcs.eqms_hr_employee_edu_qual_supporting_document
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_edu_qual_supporting_document
+
+- Table: hrcs.eqms_hr_employee_edu_qual_supporting_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_edu_qual_supporting_document_history
+
+- Table: hrcs.eqms_hr_employee_experience_supporting_document
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_experience_supporting_document
+
+- Table: hrcs.eqms_hr_employee_experience_supporting_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_experience_supporting_document_history
+
+- Table: hrcs.eqms_hr_employee_functional_reports
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_functional_reports
+
+- Table: hrcs.eqms_hr_employee_functional_reports_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_functional_reports_history
+
+- Table: hrcs.eqms_hr_employee_skill_set
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_skill_set
+
+- Table: hrcs.eqms_hr_employee_skill_set_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_skill_set_history
+
+- Table: hrcs.eqms_hr_employee_skill_supporting_document
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_skill_supporting_document
+
+- Table: hrcs.eqms_hr_employee_skill_supporting_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_skill_supporting_document_history
+
+- Table: hrcs.eqms_hr_employee_training_evaluation
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_training_evaluation
+
+- Table: hrcs.eqms_hr_employee_training_evaluation_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_training_evaluation_history
+
+- Table: hrcs.eqms_hr_employee_training_evaluation_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_training_evaluation_supporting_files
+
+- Table: hrcs.eqms_hr_employee_training_evaluation_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_training_evaluation_supporting_files_history
+
+- Table: hrcs.eqms_hr_employee_training_needs
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_training_needs
+
+- Table: hrcs.eqms_hr_employee_training_needs_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_training_needs_history
+
+- Table: hrcs.eqms_hr_employee_training_needs_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_training_needs_mapper
+
+- Table: hrcs.eqms_hr_employee_training_needs_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_training_needs_mapper_history
+
+- Table: hrcs.eqms_hr_employee_training_supporting_document
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_training_supporting_document
+
+- Table: hrcs.eqms_hr_employee_training_supporting_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_employee_training_supporting_document_history
+
+- Table: hrcs.eqms_organization_employee
+  Change Type: CREATE
+  Description: Create new table eqms_organization_employee
+
+- Table: hrcs.eqms_organization_employee_history
+  Change Type: CREATE
+  Description: Create new table eqms_organization_employee_history
+
+- Table: hrcs.eqms_organization_employee_supporting_document
+  Change Type: CREATE
+  Description: Create new table eqms_organization_employee_supporting_document
+
+- Table: hrcs.eqms_organization_employee_supporting_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_organization_employee_supporting_document_history
+
+- Table: hrcs.eqms_hr_add_employee_training_needs
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_add_employee_training_supporting_document
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_employee_administrative_reports
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_employee_area_expertise_supporting_document
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_employee_edu_qual_supporting_document
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_employee_experience_supporting_document
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_employee_functional_reports
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_employee_skill_set
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_employee_skill_supporting_document
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_employee_training_evaluation
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_employee_training_evaluation_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_employee_training_needs
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_employee_training_needs_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_employee_training_supporting_document
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_organization_employee
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 9 foreign key constraint(s)
+
+- Table: hrcs.eqms_organization_employee_supporting_document
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

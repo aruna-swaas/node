@@ -1,0 +1,11 @@
+-- Rollback: Delete seed data from file 006_WORKFLOW.sql
+-- Original file: 006_WORKFLOW.sql
+-- Seed data file: 004_seed_data.sql
+--
+-- Note: DELETE statements are in REVERSE order of INSERT statements
+-- (Last inserted first) to maintain referential integrity during rollback
+-- Each DELETE includes WHERE conditions matching the inserted data
+--
+
+-- Note: Could not extract table names from source file
+-- Please manually add DELETE statements with WHERE conditions for the tables in this file

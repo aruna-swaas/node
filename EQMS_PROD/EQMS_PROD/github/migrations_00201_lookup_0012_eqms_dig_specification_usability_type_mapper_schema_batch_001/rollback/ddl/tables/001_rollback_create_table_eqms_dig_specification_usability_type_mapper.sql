@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_dig_specification_usability_type_mapper;

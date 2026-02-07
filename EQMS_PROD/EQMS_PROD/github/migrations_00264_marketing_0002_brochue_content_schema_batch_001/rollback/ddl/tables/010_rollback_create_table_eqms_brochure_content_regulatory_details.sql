@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS marketing.eqms_brochure_content_regulatory_details;

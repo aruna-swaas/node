@@ -1,0 +1,2 @@
+ALTER TABLE risk_management.eqms_rm_benefit_risk_anlysis DROP CONSTRAINT fk_erbra_rmp_residual_risk_acceptability_criteria_id;
+ALTER TABLE risk_management.eqms_rm_benefit_risk_anlysis DROP CONSTRAINT fk_erbra_organization_id;

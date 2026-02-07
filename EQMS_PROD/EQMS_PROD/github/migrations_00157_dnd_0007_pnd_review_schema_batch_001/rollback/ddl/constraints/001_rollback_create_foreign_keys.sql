@@ -1,0 +1,14 @@
+ALTER TABLE dnd.eqms_pnd_specification_review DROP CONSTRAINT fk_epsr_pnd_review_report_id;
+ALTER TABLE dnd.eqms_pnd_specification_review DROP CONSTRAINT fk_epsr_pnd_specification_id;
+ALTER TABLE dnd.eqms_pnd_specification_review DROP CONSTRAINT fk_epsr_organization_id;
+ALTER TABLE dnd.eqms_pnd_review_required_approval_details DROP CONSTRAINT fk_eqms_pnd_review_report_id;
+ALTER TABLE dnd.eqms_pnd_review_required_approval_details DROP CONSTRAINT fk_eqms_status_lk_id;
+ALTER TABLE dnd.eqms_pnd_review_required_approval_details DROP CONSTRAINT fk_eqms_roles_lk_id;
+ALTER TABLE dnd.eqms_pnd_review_required_approval_details DROP CONSTRAINT fk_eqms_organization_id;
+ALTER TABLE dnd.eqms_pnd_review_report_conclusion DROP CONSTRAINT fk_eprrc_pnd_review_report_id;
+ALTER TABLE dnd.eqms_pnd_review_report_conclusion DROP CONSTRAINT fk_eprrc_organization_id;
+ALTER TABLE dnd.eqms_pnd_review_report_breakdown DROP CONSTRAINT fk_eprrb_pnd_review_report_id;
+ALTER TABLE dnd.eqms_pnd_review_report_breakdown DROP CONSTRAINT fk_eprrb_pnd_items_id;
+ALTER TABLE dnd.eqms_pnd_review_report_breakdown DROP CONSTRAINT fk_eprrb_organization_id;
+ALTER TABLE dnd.eqms_pnd_review_report DROP CONSTRAINT fk_eprr_product_need_document_id;
+ALTER TABLE dnd.eqms_pnd_review_report DROP CONSTRAINT fk_eprr_organization_id;

@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS abac.eqms_form_action_wf_status_mapping_history;

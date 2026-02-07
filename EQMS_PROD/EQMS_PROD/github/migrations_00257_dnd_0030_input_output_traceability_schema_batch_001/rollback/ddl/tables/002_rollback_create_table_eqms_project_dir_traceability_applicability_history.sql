@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dnd.eqms_project_dir_traceability_applicability_history;

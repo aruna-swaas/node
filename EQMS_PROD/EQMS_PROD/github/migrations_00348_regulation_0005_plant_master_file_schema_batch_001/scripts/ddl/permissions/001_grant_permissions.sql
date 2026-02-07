@@ -1,0 +1,2 @@
+-- No app users defined for module 'regulation' in app_user.txt
+-- No permissions to grant

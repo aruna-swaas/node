@@ -1,0 +1,3 @@
+ALTER TABLE vendor.eqms_vendor_agreement_checklist_status DROP CONSTRAINT fk_evacs_vendor_agreement_checklist_lk_id;
+ALTER TABLE vendor.eqms_vendor_agreement_checklist_status DROP CONSTRAINT fk_evacs_vendor_agreement_checklist_id;
+ALTER TABLE vendor.eqms_vendor_agreement_checklist_status DROP CONSTRAINT fk_evacs_organization_id;

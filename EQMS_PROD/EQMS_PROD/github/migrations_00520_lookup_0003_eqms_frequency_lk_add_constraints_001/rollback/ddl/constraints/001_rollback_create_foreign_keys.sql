@@ -1,0 +1,1 @@
+ALTER TABLE infrastructure.eqms_maintenance_plan_detail DROP CONSTRAINT fk_empd_frequency_lk_id;

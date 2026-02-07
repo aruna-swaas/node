@@ -1,0 +1,382 @@
+
+
+DO $$
+DECLARE
+    VAR_TENANT_KEY INT := ${TENANTKEY};
+    VAR_ORG_ID     INT := ${ORGID};
+BEGIN
+
+INSERT INTO organization.eqms_harm_lk (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, harm_to_value, description, status, created_by, created_date
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'Patient', 'Harm that may occur to the patient using the medical device', 1, 1, NOW()),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'User', 'Harm that may occur to the healthcare professional or user of the medical device', 1, 1, NOW()),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 'Bystanders', 'Harm that may occur to people in the vicinity who are not directly using the device', 1, 1, NOW()),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 'Enrollment', 'Harm that may occur during the enrollment or clinical trial process', 1, 1, NOW());
+
+
+INSERT INTO organization.eqms_risk_category_lk (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, category_name, status, created_by, created_date, slug
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'Intended use', 1, 1, NOW(), 'intended_use'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'Intended to be implanted', 1, 1, NOW(), 'intended_to_be_implanted'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 'Intended to be in contact with the patient or other persons', 1, 1, NOW(), 'intended_to_be_in_contact_with_the_patient_or_other_persons'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 'Materials / components used in contact with or used with', 1, 1, NOW(), 'materials_components_used_in_contact_with_or_used_with'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 'Energy delivered or extracted from patient', 1, 1, NOW(), 'energy_delivered_or_extracted_from_patient'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Substances delivered or extracted from patient', 1, 1, NOW(), 'substances_delivered_or_extracted_from_patient'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'Biological materials processed by the device', 1, 1, NOW(), 'biological_materials_processed_by_the_device'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 8, 'Sterility', 1, 1, NOW(), 'sterility'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 9, 'Cleaning and disinfection', 1, 1, NOW(), 'cleaning_and_disinfection'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 10, 'Patient environment modification', 1, 1, NOW(), 'patient_environment_modification'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 11, 'Measurements taken by the device', 1, 1, NOW(), 'measurements_taken_by_the_device'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 12, 'Device is interpretative', 1, 1, NOW(), 'device_is_interpretative'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 13, 'Conjunction with medicines or other medical technologies', 1, 1, NOW(), 'conjunction_with_medicines_or_other_medical_technologies'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 14, 'Unwanted output of energy or substance', 1, 1, NOW(), 'unwanted_output_of_energy_or_substance'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 15, 'Susceptibility to environmental influence', 1, 1, NOW(), 'susceptibility_to_environmental_influence'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 16, 'Influence on environment', 1, 1, NOW(), 'influence_on_environment'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 17, 'Consumables and accessories', 1, 1, NOW(), 'consumables_and_accessories'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 18, 'Maintenance and calibration', 1, 1, NOW(), 'maintenance_and_calibration'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 19, 'Software', 1, 1, NOW(), 'software'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 20, 'Shelf life', 1, 1, NOW(), 'shelf_life'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 21, 'Long term use effects', 1, 1, NOW(), 'long_term_use_effects'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 22, 'Device subjected to mechanical forces', 1, 1, NOW(), 'device_subjected_to_mechanical_forces'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 23, 'Lifetime of the device', 1, 1, NOW(), 'lifetime_of_the_device'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 24, 'Intended for single use', 1, 1, NOW(), 'intended_for_single_use'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 25, 'Safe decommissioning or disposal', 1, 1, NOW(), 'safe_decommissioning_or_disposal'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 26, 'Requirement of special training for installation or use', 1, 1, NOW(), 'requirement_of_special_training_for_installation_or_use'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 27, 'Information on safe use', 1, 1, NOW(), 'information_on_safe_use'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 28, 'New manufacturing process', 1, 1, NOW(), 'new_manufacturing_process'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 29, 'Human factors', 1, 1, NOW(), 'human_factors'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 30, 'Alarm system', 1, 1, NOW(), 'alarm_system'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 31, 'Deliberate misuse', 1, 1, NOW(), 'deliberate_misuse'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 32, 'Critical data for patient care', 1, 1, NOW(), 'critical_data_for_patient_care'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 'Device characteristics', 1, 1, NOW(), 'device_characteristics'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 34, 'Essential performance', 1, 1, NOW(), 'essential_performance'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 35, 'Transport and packaging', 1, 1, NOW(), 'transport_and_packaging'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 36, 'Actuating mechanism', 1, 1, NOW(), 'actuating_mechanism'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 37, 'Detachable parts identification', 1, 1, NOW(), 'detachable_parts_identification'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 38, 'Physiological effects', 1, 1, NOW(), 'physiological_effects'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 39, 'Source of input power', 1, 1, NOW(), 'source_of_input_power'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 40, 'Batteries', 1, 1, NOW(), 'batteries'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 41, 'Movable parts', 1, 1, NOW(), 'movable_parts'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 42, 'Thermal cut-outs or Overload control devices', 1, 1, NOW(), 'thermal_cut_outs_or_overload_control_devices'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 43, 'Manufacturing Hazards', 1, 1, NOW(), 'manufacturing_hazards'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 44, 'Purchase Hazards', 1, 1, NOW(), 'purchase_hazards'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 45, 'Packaging and Transportation Hazards', 1, 1, NOW(), 'packaging_and_transportation_hazards'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 46, 'QAC Hazards', 1, 1, NOW(), 'qac_hazards'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 47, 'Service Hazards', 1, 1, NOW(), 'service_hazards'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 48, 'Sales Hazards', 1, 1, NOW(), 'sales_hazards'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 49, 'Inventory Hazards', 1, 1, NOW(), 'inventory_hazards'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 50, 'Device Allow access to information', 1, 1, NOW(), 'device_allow_access_to_information'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 51, 'Does the device have a degree of autonomy (AI)', 1, 1, NOW(), 'does_the_device_have_a_degree_of_autonomy_ai'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 52, 'Medical device produce an output that is used as an input for determining clinical action or function', 1, 1, NOW(), 'medical_device_produce_an_output_that_is_used_as_an_input_for_determining_clinical_action_or_function'),
+(VAR_TENANT_KEY, VAR_ORG_ID, 53, 'Other Hazards', 1, 1, NOW(), 'other_hazards');
+
+INSERT INTO organization.eqms_risk_identification_method_lk (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, method_name, description, status, created_by, created_date
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'FMEA', 'Failure Mode and Effects Analysis', 1, 1, NOW()),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'Others', 'Other risk identification methods', 1, 1, NOW());
+
+INSERT INTO organization.eqms_rm_comparison_operator_lk (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, operator_name, operator, description, status, created_date, created_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'Less than or equal', '<=', 'Less than or equal comparison operator', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'Less than', '<', 'Less than comparison operator', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 'Equal to', '=', 'Equal to comparison operator', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 'Greater than or equal', '>=', 'Greater than or equal comparison operator', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 'Greater than', '>', 'Greater than comparison operator', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Not Equal', '!=', 'Not equal comparison operator', 1, NOW(), 1);
+
+INSERT INTO organization.eqms_rmp_residual_risk_acceptability_type_lk (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, risk_acceptability_type, description, status, created_date, created_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'Patient Survival', 'Intended user leading to survival of patient after use', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'Quality of Life Improvement', 'Improving quality of life of patient', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 'Function Preservation', 'Preventing loss of function', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 'Function Enhancement', 'Improving patient function', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 'Symptom Relief', 'Relieve from symptoms of disease', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Life Support', 'Life supporting or sustaining', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'Duration of Effect', 'Duration of the effect of benefit', 1, NOW(), 1);
+
+INSERT INTO organization.eqms_rmp_responsibility_lk (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, responsibility_name, description, status, created_date, created_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'Risk Plan', 'Development and maintenance of risk management plan', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'Risk Analysis - Hazards creation', 'Identification and analysis of potential hazards', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 'Risk Evaluation', 'Assessment and evaluation of identified risks', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 'Risk Control Identification', 'Identification of risk control measures', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 'Clinical Advisor', 'Clinical expertise and guidance for risk management', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Risk Charts', 'Development and maintenance of risk charts', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'Risk Control Implementation', 'Implementation of risk control measures', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 8, 'Risk Control Verification', 'Verification of risk control effectiveness', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 9, 'Risk Benefit Analysis', 'Analysis of risks versus benefits', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 10, 'Final Risk Management Review', 'Final review of risk management activities', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 11, 'Feedback', 'Collection and analysis of feedback', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 12, 'Implementation', 'Implementation of risk management processes', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 13, 'Information gathering of production', 'Collection of production-related information', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 14, 'Verification during production', 'Verification activities during production', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 15, 'Transportation', 'Risk management for transportation activities', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 16, 'Distributor information', 'Management of distributor-related information', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 17, 'Information gathering of post-production', 'Collection of post-production information', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 18, 'Verification of post-production controls', 'Verification of post-production control measures', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 19, 'Post Market Clinical Follow UP', 'Post-market clinical follow-up activities', 1, NOW(), 1);
+
+INSERT INTO organization.eqms_rmp_user_type_lk (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, user_type_name, description, status, created_date, created_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'Care taker', 'Patient care taker or family member who assists with device use', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'Doctor', 'Medical doctor who prescribes and oversees device usage', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 'Nurse', 'Registered nurse who operates the device in clinical settings', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 'Patient', 'End patient user who directly uses the medical device', 1, NOW(), 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 'Technician', 'Medical device technician responsible for device operation and maintenance', 1, NOW(), 1);
+
+-- eqms_risk_subcategory_lk
+INSERT INTO organization.eqms_risk_subcategory_lk (
+  eqms_tenant_key, fk_eqms_organization_id, fk_eqms_risk_category_lk_id, ref_id, subcategory_name, status, created_by, created_date, modified_by, modified_date
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 1, 'Intended use and how it is to be used?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 2, 'What roles the device is intended for? - Diagnosis, prevention, monitoring, treatment or alleviation of disease, compensation for injury or handicap, replacement or modification of anatomy, control of conception', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 3, 'What are the indications of use (e.g. patient population)?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 4, 'Does the device sustain life or support life?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 5, 'Is special intervention necessary in case of failure of the device?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 6, 'In what environments the device will be used. - Consider the use of device in Oxygen rich environment, in conjunction with flammable agents, generation of heat, fire etc.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 7, 'What are the Contra indications', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 8, 'Can the device intended use be affected by breach of security', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 9, 'Can the device be affected with unauthorised access or activity', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 10, 'Is the device intended to be implanted?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 11, 'Location of implantation', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 12, 'Characteristics of patient population, age, weight and physical activity', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 13, 'Effect of ageing of implant performance', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 14, 'Expected lifetime of the implant', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 15, 'Reversibility of implantation', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 16, 'Is the device intended to be in contact with the patient or other persons?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 17, 'Nature of contact- Surface/Invasive/Implantation', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 18, 'Period and frequency of contact', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 19, 'Whether the parts that come in contact with the patient supply heat to the patient. If so, what is likely to the temperature?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 20, 'Whether the parts that come in contact with the patient get cooled below the ambient temperature. If so what is likely to be the temperature?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 21, 'What materials or components are utilized in the medical device or are used with, or are in contact with, the medical device?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 22, 'Is the device manufactured with materials of animal origin?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 23, 'Whether the characteristics relevant to safety are known?- Consider heat, moisture, mechanical forces, electrical voltages etc.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 24, 'Are there any compatibility issues with relevant substances or with body tissues or body fluids?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 25, 'Are there any parts that come in contact with the patient but fall outside the definition of applied parts? - Consider the parts that can come in contact with the unconscious patients.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 26, 'Are there any conductive parts that can come in contact with the operator when the operator is touching the patient?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 27, 'Is energy delivered or extracted from the patient?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 28, 'Is transfer of energy controllable?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 29, 'Quality of energy transferred', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 30, 'Quantity of energy transferred', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 31, 'Duration of energy transfer', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 32, 'Are the energy levels higher than those currently used in similar device?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 33, 'Is the device intended to deliver or extract substance from the patient?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 34, 'Is it a single substance or a range of substances?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 35, 'Minimum and maximum transfer rates and control thereof', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 36, 'Does the device process any biological materials for reuse, transfusion or transplantation?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 37, 'Name the type of processes and substances processed.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 8, 38, 'Whether the device and its accessories supplied are sterile?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 8, 39, 'Whether it is for single use of re-use?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 8, 40, 'Are there any shelf life issues?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 8, 41, 'Are there any limitations on number of re-use cycles?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 8, 42, 'What is the method of product sterilization?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 8, 43, 'Impact of other sterilisaion methods not intended by the manufacturer', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 9, 44, 'Is the device intended to be routinely cleaned and disinfected by the user?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 9, 45, 'Type of cleaning and disinfectants to be used.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 9, 46, 'Limitations on number of cleaning cycles.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 9, 47, 'Influence of design on effectiveness of routine cleaning and disinfection and effect of cleaning and disinfecting agents on safety and performance of the device.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 10, 48, 'Is the device intended to modify the patient environment?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 10, 49, 'Which are factors (temperature, humidity, atmospheric gas composition, pressure and light) that needed to be modified?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 11, 50, 'Is the device used to take measurement?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 11, 51, 'What are variables that need to be measured?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 11, 52, 'What is the accuracy and the precision of the measurement result?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 12, 53, 'Is the device interpretative?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 12, 54, 'Does the device present conclusions based on input or acquired data?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 12, 55, 'Kind of algorithms used or its confidence limits', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 12, 56, 'Unintended application of data or algorithm', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 13, 57, 'Are any medicines used along with the device?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 13, 58, 'Medical technologies used with the device', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 13, 59, 'Potential problem using with medicines', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 13, 60, 'Whether the device uses any DF protected applied parts. List them.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 13, 61, 'Potential problems using with medical technologies - Consider the possibilities of operator getting shock from these parts during shock delivery.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 14, 62, 'Are there unwanted energy or substances?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 14, 63, 'Is the unwanted energy in the form of following? -Noise and vibration, heat, radiation (including ionizing, non-ionizing, ultraviolet, visible, infrared radiation), contact temperature, leakage currents, electric and/or magnetic fields', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 14, 64, 'Is the unwanted substance in any of the following form? Discharge of chemicals, waste products and body fluids', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 15, 65, 'Is the device susceptible to environmental influence?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 15, 66, 'Is the device affected by any of the following? How?- Operational environments, Transport and storage environments, Light, Temperature, Vibration, Spillage, Susceptibility to variations in power and cooling supplies, Electromagnetic interference', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 16, 67, 'Does the device influence the environment?- Consider effect on power and cooling supplies, emission of toxic materials and generation of EMI', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 17, 68, 'Are there essential consumables or accessories associated with the unit?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 17, 69, 'Specifications of consumables or accessories', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 17, 70, 'Restrictions on users in selection of consumables and accessories', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 17, 71, 'Are the accompanying documents provided as soft copy?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 18, 72, 'Is maintenance and/or calibration necessary?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 18, 73, 'Parts that need maintenance?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 18, 74, 'Maintenance to be carried out by User, specialist, operator.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 18, 75, 'Any special substance/ equipment necessary for proper calibration/maintenance?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 18, 76, 'Traceability of the calibrator to higher order reference', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 19, 77, 'Does the device contain software?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 19, 78, 'Does it need to be installed / modified / exchanged / verified by the user and/or operator?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 19, 79, 'Authenticity of software upgrade', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 19, 80, 'Arithmetic:Divide by Zero Runtime error traps, defensive codingNumeric overflow / underflowFloating point roundingImproper range / bounds checkingOff-By-One (OBO)', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 19, 81, 'Hardware Related:EPROM usage; long access time, wear outCPU / Hardware failureNoisePeripheral Interface Anomalies', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 19, 82, 'Timing:Race conditionsMissed time deadlinesMissed interruptsExcessive jitter in outputsWatchdog time-outs', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 19, 83, 'Moding:Abnormal terminationPower loss, recovery, sequencing problemsStart-up/shut-down AnomaliesEnter / Exit of low power modes', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 19, 84, 'Data Issues:Data corruptionResource contention issuesErrant pointersData conversion errors: Type casting, ScalingAveraged data out of rangeRolloversVolatile DataUnintended aliasingUse of intermediate data', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 19, 85, 'Interface Issues:Failing to update displayMulti user load issuesConfiguration errorsWrong driversBad patches / updatesSOUP failure modesVirusBrowser / Web incompatibility', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 19, 86, 'Miscellaneous:Memory leaks due to dynamic allocation of memorySystem deadlocksRe-entrancyStack overflowLogic errors or syntax (source code analysis)Infinite loopsCode corruptionDead codeIncorrect conditional codeUnintended macro side-effectsResource depletionIncorrect alarm/alert prioritisationUnauthorised featuresIncorrect order of operations / precedenceSafe state', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 20, 87, 'Does the device has restricted shelf life?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 20, 88, 'What are the labelling instructions or indicators provided?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 20, 89, 'What are the disposal methods used for medical devices after expiration date?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 21, 90, 'Are there any delayed or long term use effects?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 21, 91, 'What are the ergonomic and cumulative effects of the medical devices?(Examples saline corrodes over time, mechanical fatigue, loosening of straps, vibration effects, long term material degradation)', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 22, 92, 'To what mechanical forces the device will be subjected to?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 22, 93, 'Are mechanical forces to which the device is to be subjected are under the control of the user or controlled by interaction with other persons?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 22, 94, 'What are the arrangements done to prevent the movement of internal parts and wiring?- Consider unintentional movement of parts.- Consider detachment of connectors between different parts of the system.- Consider the damage caused while closing or opening access covers', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 23, 95, 'What determines the lifetime of the device?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 23, 96, 'What is the battery depletion period?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 23, 97, 'Does ageing determine the life time of the device?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 24, 98, 'Is the medical device intended for single use?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 24, 99, 'Does the device self-destruct after single use?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 24, 100, 'Will it be obvious after device is used?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 25, 101, 'Is safe decommissioning or disposal of the medical device necessary?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 25, 102, 'Factor that should be considered including the waste products that are generated during the disposal of the medical device itself', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 26, 103, 'Does the installation or use of the device require special training or skills?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 26, 104, 'Who will be installing the device and what is the skill level and training required for person installing it?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 27, 105, 'Whether safe use information is provided directly to the end user or through third parties (Installers, health care providers, pharmacists etc.) and whether this will have implications on training?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 27, 106, 'Is it possible that the device is likely to be installed by people without necessary skills after it has been handed over to the end user?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 27, 107, 'Whether retraining or recertification of operators or service personnel required? (based on expected life)', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 27, 108, 'List the safety precautions to be followed while replacing the parts by User / Service personnel.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 28, 109, 'Will new manufacturing process need to be established or introduced?(Consider new technology or new scale of production)', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 29, 110, 'Can the user interface design features contribute to use error?List them considering the following.Examples of interface design are control and indicators, symbols used, ergonomic features, physical design and layout, hierarchy of operation, menus for software driven devices, visibility of warnings, audibility of alarms, standardisation of colour coding.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 29, 111, 'Is the medical device used in an environment where distractions can cause use errors?List them considering the following.- consequences of use error, - whether the distractions are commonplace, - whether the user can be disturbed by an infrequent distraction.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 29, 112, 'Does the medical device have connecting parts or accessories?List them considering the following.- Possibility of wrong connections, possibility of connecting to other outlets, similarity to other products, connections, connection force, feedback on connection integrity and Over- and under-tightening.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 29, 113, 'Does the medical device have a control interface?List them considering the following.-spacing, coding, grouping, mapping, modes of feedback, blunders, slips, visibility, control differentiation, direction of activation or change, whether the controls are continuous ordiscrete, and the reversibility of settings or actions.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 29, 114, 'Does the medical device display information?List them considering the following. -Visibility in various environments, orientation, the visual capabilities of the user, populations and perspectives, clarity of the presented information, units, colour coding, and theaccessibility of critical information.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 29, 115, 'Is the medical device controlled by a menu?List them considering the following.-Complexity and number of layers, awareness of state, location of settings, navigation method, number of steps per action, sequence clarity and memorization problems, and importance of control function relative to its accessibility and the impact of deviating from specified operating procedures.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 29, 116, 'Will the medical device be used by persons with special needs?List them considering the following.-the user, their mental and physical abilities, skill and training, ergonomic aspects, the use environment, installation requirements, and the patients capability to control or influence the use of the medical device. Special attention should be paid to users with special needs, such as handicapped persons, the elderly and children. Their special needs might include assistance by another person to enable the use of a medical device. Is the medical device intended to be used by individuals with various skill levels and cultural backgrounds?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 29, 117, 'Can the user interface be used to initiate user actions?List them considering the following.-Possibility of initiating a deliberate action for the user to enter a controlled operation mode, which enlarges the risks for the patient and which creates awareness for the user for this condition.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 29, 118, 'Can the user controls be set (intentionally or accidentally) so as to get output exceeding the safe limit.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 29, 119, 'Are the parameters relevant to safety are indicated? How?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 30, 120, 'Does the device use an alarm system?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 30, 121, 'What are the risks of false alarms, missing alarms, disconnected alarms, unreliable remote alarms and medical staffs misunderstanding how the alarm works?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 31, 122, 'In what ways the device can be deliberately misused?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 31, 123, 'List them considering incorrect use of connectors, disabling safety features or alarms, neglect manufacturers recommended maintenance', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 32, 124, 'Does the device hold data critical to patient care?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 32, 125, 'Can it be modified or get corrupted? If so what are the consequences?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 126, 'Is the device mobile or portable?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 127, 'List the factors to be considered from the following.necessary grips, handles, wheels, brakes, mechanical stability and durability', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 128, 'Are there any rough surfaces, sharp edges, sharp corners etc.?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 129, 'Are there parts that can get expelled as a result of collision, expansion etc. How are they protected?- Consider parts such as springs, pressurised gas, rotating fly wheel, Lithium battery.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 130, 'Does the device produce sound? (Other than auditory alarms).- Consider its loudness and duration of exposure', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 131, 'Does the device include hydraulic or pneumatic parts?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 132, 'Will a component failure result in excessive pressure? (Beyond the working limit).', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 133, 'Does the device include pressure control or relief device? - Consider its durability and its accessibility for maintenance.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 134, 'Does the device include parts to support loads? (Including patients and operators).', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 135, 'Does the device include any liquid storage chamber?- Consider Leakage, overflow etc.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 33, 136, 'Does the device require handling of liquid for normal use?- Consider Leakage, Spillage etc.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 34, 137, 'Does the use of device depend on essential performance?Essential performance means, performance necessary to achieve freedom from unacceptable risk. It is understood by considering whether its absence or degradation would result in an unacceptable risk. Example: The characteristics of the output of life-supporting devices or the operation of an alarm.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 35, 138, 'Does the device need any special handling measure for transport or storage?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 35, 139, 'Does the device need any special handling measure during packing and unpacking?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 36, 140, 'Are there any actuating mechanisms?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 36, 141, 'Can it be detached without the use of tool?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 37, 142, 'Are there any detachable parts used in the device?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 37, 143, 'How are they identified? Can these parts be identified correctly?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 38, 144, 'Does the device produce any harmful physiological effect?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 39, 145, 'What is the type of supply input required? (Single / 3 Phase / DC / Battery). List the power sources required for normal and safe operation.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 39, 146, 'Can the terminals be connected interchangeably?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 39, 147, 'Does the device receive power from other equipment? - Consider over current, Safety in drawing power etc.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 40, 148, 'Are there any user replaceable batteries?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 40, 149, 'What is the type of battery used?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 40, 150, 'Is the battery essential for the normal operation?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 40, 151, 'How are the batteries housed? - Consider ventilation for escaping gases, Accidental short circuit, Incorrect polarity of connection.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 40, 152, 'Whether the batteries used are rechargeable? - If so, consider overcharging, charge levels, excessive temperature, Fire due to explosion etc.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 41, 153, 'Are there any exposed moving parts?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 41, 154, 'Intended function of the moving part.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 41, 155, 'Identify the characteristics of motion. - Consider speed, shape which can cause injury etc.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 41, 156, 'What are the controls provided to stop the movement of exposed moving parts? List its over travel effects.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 41, 157, 'Are there any movable guards and / or any protective measures incorporated?If applicable, list the characteristics of the protective measures used.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 41, 158, 'Does the movement require continuous activation of any control?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 41, 159, 'What is the state of the moving part following a power interruption?- Consider the uncontrolled movements.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 42, 160, 'Does the device include any thermal cut outs or resettable overload current releases?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 42, 161, 'How are the resettable devices reset?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 43, 162, 'Are there any residues or unwanted particles introduced into the product during manufacturing?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 43, 163, 'Is painting done?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 43, 164, 'Is coating done?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 43, 165, 'Is Welding done?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 43, 166, 'Any special process like 3D Printing, Soldering and others.', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 43, 167, 'Mechanical Assembly with screws and bolts as fasteners', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 44, 168, 'Safety Critical Parts sourcing issues?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 45, 169, 'Is the packaging compatible with the transportation modes', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 45, 170, 'Does packaging compatible with the environment of transportation and storage', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 45, 171, 'Packaging require special tools to unpack causing delay in usage in emergency', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 45, 172, 'Premature unpacking leading to device unable to be installed or usage', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 46, 173, 'Can the environment affect any Quality Tests?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 47, 174, 'Can on-site service modify of the software?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 48, 175, 'Do 3rd party distributors store the product in their premises?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 49, 176, 'Are finished goods stored at the manufacturing stores?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 49, 177, 'Does the finished goods area have protection from dust?', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 50, 178, 'Does the device has Ethernet, USB, Serial ports and removable hard disks', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 50, 179, 'Accessability by unauthrorised persons', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 50, 180, 'Patient private data is accessable', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 51, 181, 'Awareness of the user when autonomy generates an error or alarm or failure', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 51, 182, 'Awareness of user when intervention is required in an autonomously performed action is required', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 51, 183, 'Ability of the user to intervene in or abort', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 51, 184, 'Ability of the user to select and perform corrective actions', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 52, 185, 'Output is necessary to perform Intended use of the product', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 52, 186, 'Output has limits in normal conditions, and in fault conditions can exceed the limits that could affection clinical function', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 52, 187, 'Outputs are required for essential performance of the device', 1, 1, NOW(), NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 53, 188, 'Other hazards', 1, 1, NOW(), NULL, NULL);
+
+-- eqms_risk_review_category_lk
+INSERT INTO organization.eqms_risk_review_category_lk (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, risk_review_category, slug, status, created_date, created_by, modified_date, modified_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'Risk Management Plan', 'risk_management_plan', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'Risk Management', 'risk_management', 1, NOW(), 1, NULL, NULL);
+
+-- eqms_risk_review_summary_lk
+INSERT INTO organization.eqms_risk_review_summary_lk (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, risk_review_summary, slug, status, created_date, created_by, modified_date, modified_by, fk_eqms_risk_review_category_lk_id
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'Risk Team', 'risk_team', 1, NOW(), 1, NULL, NULL, 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'Risk Level Definition', 'risk_level_definition', 1, NOW(), 1, NULL, NULL, 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 'Hazard Identification Tool', 'hazard_identification_tool', 1, NOW(), 1, NULL, NULL, 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 'Production & Post-Production', 'production_post_production', 1, NOW(), 1, NULL, NULL, 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 'Committee', 'committee', 1, NOW(), 1, NULL, NULL, 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Risk Assessment Matrix', 'risk_assessment_matrix', 1, NOW(), 1, NULL, NULL, 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'Cumulative Residual Risk Level Acceptability Criteria', 'cumulative_residual_risk_level_acceptability_criteria', 1, NOW(), 1, NULL, NULL, 1),
+(VAR_TENANT_KEY, VAR_ORG_ID, 8, 'Hazard Identification', 'hazard_identification', 1, NOW(), 1, NULL, NULL, 2),
+(VAR_TENANT_KEY, VAR_ORG_ID, 9, 'Risk Assessment', 'risk_assessment', 1, NOW(), 1, NULL, NULL, 2),
+(VAR_TENANT_KEY, VAR_ORG_ID, 10, 'Risk Control Measure', 'risk_control_measure', 1, NOW(), 1, NULL, NULL, 2),
+(VAR_TENANT_KEY, VAR_ORG_ID, 11, 'Risk Chart After', 'risk_chart_after', 1, NOW(), 1, NULL, NULL, 2),
+(VAR_TENANT_KEY, VAR_ORG_ID, 12, 'Overall Benefit Risk Analysis', 'overall_benefit_risk_analysis', 1, NOW(), 1, NULL, NULL, 2),
+(VAR_TENANT_KEY, VAR_ORG_ID, 13, 'Hazard Identification Used', 'hazard_identification_used', 1, NOW(), 1, NULL, NULL, 2),
+(VAR_TENANT_KEY, VAR_ORG_ID, 14, 'Risk Chart Before', 'risk_chart_before', 1, NOW(), 1, NULL, NULL, 2),
+(VAR_TENANT_KEY, VAR_ORG_ID, 15, 'Individual Residual Risk Analysis', 'individual_residual_risk_analysis', 1, NOW(), 1, NULL, NULL, 2);
+
+-- eqms_rmp_applicable_stage_lk
+INSERT INTO organization.eqms_rmp_applicable_stage_lk (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, applicable_stage, slug, status, created_date, created_by, modified_date, modified_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'Concept', 'concept', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'Prototype', 'prototype', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 'Pilot', 'pilot', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, 'Risk Management', 'risk_management', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 'Design Input Gathering', 'design_input_gathering', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'Verification', 'verification', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'Validation', 'validation', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 8, 'Clinical Evaluation', 'clinical_evaluation', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 9, 'Design Transfer', 'design_transfer', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 10, 'Production', 'production', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 11, 'Post_Production', 'post_production', 1, NOW(), 1, NULL, NULL);
+
+-- eqms_hazard_identification_tool_lk
+INSERT INTO organization.eqms_hazard_identification_tool_lk (
+  eqms_tenant_key, fk_eqms_organization_id, ref_id, hazard_identification_tool, slug, status, created_date, created_by, modified_date, modified_by
+) VALUES
+(VAR_TENANT_KEY, VAR_ORG_ID, 1, 'Design FMEA', 'design_fmea', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 2, 'Process FMEA', 'process_fmea', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 3, 'Fault Tree Analysis', 'fault_tree_analysis', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 4, '5 why Analysis', '5_why_analysis', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 5, 'Event Tree Analysis', 'event_tree_analysis', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 6, 'HACCP', 'haccp', 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 7, 'Hazard and operability Study', 'hazard_operability_study', 1, NOW(), 1, NULL, NULL);
+
+END $$;

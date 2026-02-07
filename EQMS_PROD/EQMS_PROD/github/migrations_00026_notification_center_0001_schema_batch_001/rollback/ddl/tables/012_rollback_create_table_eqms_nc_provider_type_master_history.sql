@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS notification_center.eqms_nc_provider_type_master_history;

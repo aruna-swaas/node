@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_nomenclature_object_type_metadata_mapper_history;

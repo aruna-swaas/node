@@ -1,0 +1,5 @@
+ALTER TABLE dnd.eqms_product_realization_stage_process DROP CONSTRAINT fk_eprsp_product_realization_plan_id;
+ALTER TABLE dnd.eqms_product_realization_stage_process DROP CONSTRAINT fk_eqms_month_lk_id;
+ALTER TABLE dnd.eqms_product_realization_stage_process DROP CONSTRAINT fk_eprsp_organization_id;
+ALTER TABLE dnd.eqms_product_realization_plan DROP CONSTRAINT fk_eprp_project_id;
+ALTER TABLE dnd.eqms_product_realization_plan DROP CONSTRAINT fk_eprp_organization_id;

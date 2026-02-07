@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_reg_device_product_specification_aspects DROP CONSTRAINT fk_erdpsea_organization_id;
+ALTER TABLE organization.eqms_reg_device_product_specification_aspects DROP CONSTRAINT erdpsa_tenant_org_ref_unique;

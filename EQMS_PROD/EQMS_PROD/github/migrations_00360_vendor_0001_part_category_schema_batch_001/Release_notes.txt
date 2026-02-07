@@ -1,0 +1,29 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00360_vendor_0001_part_category_schema_batch_001
+Date with time: 2026-02-07 17:16:10
+
+Schema: vendor
+- Table: vendor.eqms_part_category
+  Change Type: CREATE
+  Description: Create new table eqms_part_category
+
+- Table: vendor.eqms_part_category_history
+  Change Type: CREATE
+  Description: Create new table eqms_part_category_history
+
+- Table: vendor.eqms_part_category_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_part_category_supporting_files
+
+- Table: vendor.eqms_part_category_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_part_category_supporting_files_history
+
+- Table: vendor.eqms_part_category
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_part_category_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00170_lookup_0008_eqms_design_transfer_checklist_template_mapper_lk_schema_batch_001
+Date with time: 2026-02-07 17:11:46
+
+Schema: organization
+- Table: organization.eqms_design_transfer_checklist_template_mapper_lk
+  Change Type: CREATE
+  Description: Create new table eqms_design_transfer_checklist_template_mapper_lk
+
+- Table: organization.eqms_design_transfer_checklist_template_mapper_lk
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

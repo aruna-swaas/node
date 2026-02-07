@@ -1,0 +1,6 @@
+check,result
+"All app_users from permissions.csv have table permissions in migrations","PASS"
+"Expected app_users (from CSV)","auth_app_user, dms_app_user, dnd_app_user, hrcs_app_user, infrastructure_app_user, magic_read_app_user, magic_save_app_user"
+"Total missing (table, app_user) pairs",0
+"App_users with all expected permissions",7
+"Note","Extras (granted in migrations but not in CSV) exist for some users - e.g. organization_app_user, production_app_user. Run: python verify_permissions.py"

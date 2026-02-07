@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS hrcs.eqms_hr_health_checkup_eye_test_supporting_document_history;

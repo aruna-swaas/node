@@ -1,0 +1,23 @@
+CREATE TABLE dnd.eqms_design_input_requirement (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    fk_eqms_design_input_gathering_id integer,
+    fk_eqms_project_quality_plan_id integer,
+    fk_eqms_dig_specification_id integer,
+    fk_eqms_functional_block_type_lk_id integer,
+    dir_id character varying(100),
+    dir_name character varying(100),
+    dir_description text,
+    dir_reference smallint,
+    dir_creation_reason text,
+    verification_method text,
+    comments text,
+    status smallint,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer,
+    fk_eqms_user_id integer 
+);
+

@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_rmp_residual_risk_acceptability_type_lk DROP CONSTRAINT fk_errratl_organization_id;
+ALTER TABLE organization.eqms_rmp_residual_risk_acceptability_type_lk DROP CONSTRAINT eqms_rmp_residual_risk_acceptability_type_lk_tenant_org_ref_uni;

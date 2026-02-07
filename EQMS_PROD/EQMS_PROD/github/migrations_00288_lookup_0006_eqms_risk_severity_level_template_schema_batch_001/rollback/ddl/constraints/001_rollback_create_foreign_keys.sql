@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_risk_severity_level_template DROP CONSTRAINT fk_erslt_organization_id;
+ALTER TABLE organization.eqms_risk_severity_level_template DROP CONSTRAINT eqms_risk_severity_level_template_tenant_org_ref_unique;

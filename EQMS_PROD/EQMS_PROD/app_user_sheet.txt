@@ -1,0 +1,16 @@
+APP_USER_NAME	SHEET_NAME
+organization_app_user	ORG
+pms_app_user	Workflow PMS
+dms_app_user	DMS
+notification_app_user	NC
+hrcs_app_user	HRCS
+magic_read_app_user	Magic Read
+magic_save_app_user	Magic Save
+risk_app_user	RISK
+vendor_purchase_app_user	vendor-purchase
+sales_app_user	Sales
+quality_control_app_user	QC
+infrastructure_app_user	infrastructure
+production_app_user	Pre Production
+dnd_app_user	DND
+auth_app_user	AUTH

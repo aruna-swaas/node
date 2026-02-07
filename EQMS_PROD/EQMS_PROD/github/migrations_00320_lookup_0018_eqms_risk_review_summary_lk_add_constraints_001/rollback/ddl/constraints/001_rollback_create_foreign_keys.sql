@@ -1,0 +1,1 @@
+ALTER TABLE risk_management.eqms_risk_menu_stage_review DROP CONSTRAINT fk_ermsr_risk_review_menu_lk_id;

@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00317_lookup_0018_eqms_risk_review_summary_lk_schema_batch_001
+Date with time: 2026-02-07 17:14:24
+
+Schema: organization
+- Table: organization.eqms_risk_review_summary_lk
+  Change Type: CREATE
+  Description: Create new table eqms_risk_review_summary_lk
+
+- Table: organization.eqms_risk_review_summary_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)

@@ -1,0 +1,1 @@
+ALTER TABLE hrcs.eqms_hr_employee_training_evaluation DROP CONSTRAINT fk_ehete_hr_training_evaluation_id;

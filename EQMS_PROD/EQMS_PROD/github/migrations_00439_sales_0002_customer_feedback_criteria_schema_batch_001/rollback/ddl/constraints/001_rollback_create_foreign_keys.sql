@@ -1,0 +1,6 @@
+ALTER TABLE sales.eqms_customer_feedback_criteria_detail DROP CONSTRAINT fk_ecfcd_customer_feedback_criteria_id;
+ALTER TABLE sales.eqms_customer_feedback_criteria_detail DROP CONSTRAINT fk_ecfcd_status_lk_id;
+ALTER TABLE sales.eqms_customer_feedback_criteria_detail DROP CONSTRAINT fk_ecfcd_organization_id;
+ALTER TABLE sales.eqms_customer_feedback_criteria DROP CONSTRAINT fk_esf_status_lk_id;
+ALTER TABLE sales.eqms_customer_feedback_criteria DROP CONSTRAINT fk_ecfc_organization_product_id;
+ALTER TABLE sales.eqms_customer_feedback_criteria DROP CONSTRAINT fk_ecfc_organization_id;

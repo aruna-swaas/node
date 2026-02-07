@@ -1,0 +1,14 @@
+CREATE TABLE qc.eqms_action_planned_rework_details (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    fk_eqms_non_conformance_details_id integer,
+    fk_eqms_organization_employee_id integer,
+    rework_instructions character varying(3500),
+    status smallint,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer 
+);
+

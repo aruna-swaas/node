@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_power_supply_lk DROP CONSTRAINT fk_ep_organization_id;
+ALTER TABLE organization.eqms_power_supply_lk DROP CONSTRAINT unique_epsl_tnt_org_ref_id;

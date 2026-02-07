@@ -1,0 +1,9 @@
+ALTER TABLE hrcs.eqms_hr_role_definition_skill_level_mapper DROP CONSTRAINT fk_ehcslm_hr_competency_skill_id;
+ALTER TABLE hrcs.eqms_hr_role_definition_skill_level_mapper DROP CONSTRAINT fk_ehcslm_organization_id;
+ALTER TABLE hrcs.eqms_hr_role_definition_skill_level_mapper DROP CONSTRAINT fk_ehcslm_hr_skill_master_id;
+ALTER TABLE hrcs.eqms_hr_role_definition_skill_level_mapper DROP CONSTRAINT fk_ehcslm_hr_skill_level_lk_id;
+ALTER TABLE hrcs.eqms_hr_role_definition DROP CONSTRAINT fk_ehcs_roles_lk_id;
+ALTER TABLE hrcs.eqms_hr_role_definition DROP CONSTRAINT fk_ehcs_reports_to_role_id;
+ALTER TABLE hrcs.eqms_hr_role_definition DROP CONSTRAINT fk_ehcs_organization_id;
+ALTER TABLE hrcs.eqms_hr_role_definition DROP CONSTRAINT fk_ehcs_organization_department_id;
+ALTER TABLE hrcs.eqms_hr_role_definition DROP CONSTRAINT unique_tnt_org_role_lk;

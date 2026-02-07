@@ -1,0 +1,17 @@
+ALTER TABLE qc.eqms_non_conformance_details_supporting_files DROP CONSTRAINT fk_encdsf_ncd_id;
+ALTER TABLE qc.eqms_non_conformance_details_supporting_files DROP CONSTRAINT fk_encdsf_organization_id;
+ALTER TABLE qc.eqms_non_conformance_details_supporting_files DROP CONSTRAINT fk_encdsf_file_id;
+ALTER TABLE qc.eqms_action_planned_scrap_details DROP CONSTRAINT fk_eapsd_ncd_id;
+ALTER TABLE qc.eqms_action_planned_rework_details DROP CONSTRAINT fk_eaprw_ncd_id;
+ALTER TABLE qc.eqms_action_planned_return_details DROP CONSTRAINT fk_eaprd_ncd_id;
+ALTER TABLE qc.eqms_non_conformance_details DROP CONSTRAINT fk_encd_organization_id;
+ALTER TABLE qc.eqms_non_conformance_details DROP CONSTRAINT fk_encd_insp_results_id;
+ALTER TABLE qc.eqms_non_conformance_details DROP CONSTRAINT fk_encd_action_planned_lk_id;
+ALTER TABLE qc.eqms_equipment_calibration_details DROP CONSTRAINT fk_eecd_part_lk_id;
+ALTER TABLE qc.eqms_equipment_calibration_details DROP CONSTRAINT fk_eecd_organization_id;
+ALTER TABLE qc.eqms_equipment_calibration_details DROP CONSTRAINT fk_eecd_file_id;
+ALTER TABLE qc.eqms_equipment_calibration_details DROP CONSTRAINT fk_eecd_equipment_item_id;
+ALTER TABLE qc.eqms_action_planned_scrap_details DROP CONSTRAINT fk_eapsd_organization_id;
+ALTER TABLE qc.eqms_action_planned_rework_details DROP CONSTRAINT fk_eaprw_organization_id;
+ALTER TABLE qc.eqms_action_planned_rework_details DROP CONSTRAINT fk_eaprw_employee_id;
+ALTER TABLE qc.eqms_action_planned_return_details DROP CONSTRAINT fk_eaprd_organization_id;

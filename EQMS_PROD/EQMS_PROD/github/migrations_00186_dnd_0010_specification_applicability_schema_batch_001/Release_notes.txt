@@ -1,0 +1,21 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00186_dnd_0010_specification_applicability_schema_batch_001
+Date with time: 2026-02-07 17:11:58
+
+Schema: dnd
+- Table: dnd.eqms_product_default_applicable_specification_history
+  Change Type: CREATE
+  Description: Create new table eqms_product_default_applicable_specification_history
+
+- Table: dnd.eqms_project_applicable_specification
+  Change Type: CREATE
+  Description: Create new table eqms_project_applicable_specification
+
+- Table: dnd.eqms_project_applicable_specification_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_applicable_specification_history
+
+- Table: dnd.eqms_project_applicable_specification
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

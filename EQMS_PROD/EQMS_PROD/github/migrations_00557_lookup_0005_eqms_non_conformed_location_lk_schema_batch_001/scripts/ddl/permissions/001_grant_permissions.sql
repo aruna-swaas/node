@@ -1,0 +1,12 @@
+-- ============================================================================
+-- Batch-wise Permissions for PRE_PRODUCTION Module
+-- ============================================================================
+-- This file grants schema and table access permissions to: production_app_user
+-- Generated automatically for this screen's schema batch
+-- Schemas and table names come from dump.sql file
+-- ============================================================================
+
+GRANT USAGE ON SCHEMA organization TO production_app_user;
+
+-- Grant permissions on tables in the current module's schema
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_non_conformed_location_lk TO production_app_user;

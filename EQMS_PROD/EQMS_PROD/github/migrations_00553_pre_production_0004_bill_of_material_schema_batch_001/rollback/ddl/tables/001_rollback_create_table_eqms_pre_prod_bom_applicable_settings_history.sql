@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS pre_production.eqms_pre_prod_bom_applicable_settings_history;

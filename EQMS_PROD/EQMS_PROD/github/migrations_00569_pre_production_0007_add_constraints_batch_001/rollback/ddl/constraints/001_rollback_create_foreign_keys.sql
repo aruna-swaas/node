@@ -1,0 +1,1 @@
+ALTER TABLE pre_production.eqms_pre_prod_part_assembly_drawing_supp_file DROP CONSTRAINT fk_eppadsf_pre_prod_part_assembly_drawing_id;

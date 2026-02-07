@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_hr_resource_required_type_lk DROP CONSTRAINT fk_ehrrtl_organization_id;
+ALTER TABLE organization.eqms_hr_resource_required_type_lk DROP CONSTRAINT eqms_hr_resource_required_type_lk_tenant_org_ref_unique;

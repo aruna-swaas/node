@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_hr_induction_training_topic_lk;

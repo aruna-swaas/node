@@ -1,0 +1,5 @@
+ALTER TABLE dnd.eqms_market_research_study_supporting_files DROP CONSTRAINT fk_emrssf_project_market_research_study_id;
+ALTER TABLE dnd.eqms_project_market_research_study DROP CONSTRAINT fk_eqms_project_id;
+ALTER TABLE dnd.eqms_project_market_research_study DROP CONSTRAINT fk_epmrs_organization_id;
+ALTER TABLE dnd.eqms_market_research_study_supporting_files DROP CONSTRAINT fk_emrssf_organization_id;
+ALTER TABLE dnd.eqms_market_research_study_supporting_files DROP CONSTRAINT fk_emrssf_file_id;

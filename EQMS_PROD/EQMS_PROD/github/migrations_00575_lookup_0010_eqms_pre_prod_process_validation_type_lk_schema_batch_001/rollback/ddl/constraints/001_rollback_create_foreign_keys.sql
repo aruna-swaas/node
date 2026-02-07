@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_pre_prod_process_validation_type_lk DROP CONSTRAINT fk_eppvtl_organization_id;
+ALTER TABLE organization.eqms_pre_prod_process_validation_type_lk DROP CONSTRAINT unique_eppvtl_tnt_org_ref_id;

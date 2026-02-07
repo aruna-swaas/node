@@ -1,0 +1,17 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00046_hrcs_0003_resource_requisition_schema_batch_001
+Date with time: 2026-02-07 17:10:34
+
+Schema: hrcs
+- Table: hrcs.eqms_hr_resource_requisition
+  Change Type: CREATE
+  Description: Create new table eqms_hr_resource_requisition
+
+- Table: hrcs.eqms_hr_resource_requisition_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_resource_requisition_history
+
+- Table: hrcs.eqms_hr_resource_requisition
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)

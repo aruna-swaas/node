@@ -1,0 +1,3 @@
+ALTER TABLE organization.eqms_part_category_subclass_lk DROP CONSTRAINT fk_epcsl_part_subcategory_type_lk;
+ALTER TABLE organization.eqms_part_category_subclass_lk DROP CONSTRAINT fk_epcsl_organization_id;
+ALTER TABLE organization.eqms_part_category_subclass_lk DROP CONSTRAINT uk_epcsl_ref_id;

@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_cus_feedback_group_lk DROP CONSTRAINT fk_ecfgl_organization_id;
+ALTER TABLE organization.eqms_cus_feedback_group_lk DROP CONSTRAINT uk_ecfgl_ref_id;

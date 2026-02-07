@@ -1,0 +1,3 @@
+ALTER TABLE ONLY pre_production.eqms_pre_prod_packaging_instruction_supporting_file
+    ADD CONSTRAINT fk_epppisf_pre_prod_packaging_storage_instruction_id FOREIGN KEY (fk_eqms_pre_prod_packaging_storage_instruction_id) REFERENCES pre_production.eqms_pre_prod_packaging_storage_instruction(id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+

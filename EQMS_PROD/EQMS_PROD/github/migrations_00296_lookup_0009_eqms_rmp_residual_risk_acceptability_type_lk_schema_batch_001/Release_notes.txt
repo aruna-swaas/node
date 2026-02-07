@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00296_lookup_0009_eqms_rmp_residual_risk_acceptability_type_lk_schema_batch_001
+Date with time: 2026-02-07 17:14:02
+
+Schema: organization
+- Table: organization.eqms_rmp_residual_risk_acceptability_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_residual_risk_acceptability_type_lk
+
+- Table: organization.eqms_rmp_residual_risk_acceptability_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)

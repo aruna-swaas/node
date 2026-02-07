@@ -1,0 +1,65 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00243_dnd_0023_validation_plan_schema_batch_001
+Date with time: 2026-02-07 17:12:27
+
+Schema: dnd
+- Table: dnd.eqms_pilot_validation_feedback_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_pilot_validation_feedback_supporting_files
+
+- Table: dnd.eqms_pilot_validation_feedback_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_pilot_validation_feedback_supporting_files_history
+
+- Table: dnd.eqms_pilot_validation_place
+  Change Type: CREATE
+  Description: Create new table eqms_pilot_validation_place
+
+- Table: dnd.eqms_pilot_validation_place_history
+  Change Type: CREATE
+  Description: Create new table eqms_pilot_validation_place_history
+
+- Table: dnd.eqms_pilot_validation_plan
+  Change Type: CREATE
+  Description: Create new table eqms_pilot_validation_plan
+
+- Table: dnd.eqms_pilot_validation_plan_document
+  Change Type: CREATE
+  Description: Create new table eqms_pilot_validation_plan_document
+
+- Table: dnd.eqms_pilot_validation_plan_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_pilot_validation_plan_document_history
+
+- Table: dnd.eqms_pilot_validation_plan_history
+  Change Type: CREATE
+  Description: Create new table eqms_pilot_validation_plan_history
+
+- Table: dnd.eqms_pilot_validation_plan_supporting_documents
+  Change Type: CREATE
+  Description: Create new table eqms_pilot_validation_plan_supporting_documents
+
+- Table: dnd.eqms_pilot_validation_plan_supporting_documents_history
+  Change Type: CREATE
+  Description: Create new table eqms_pilot_validation_plan_supporting_documents_history
+
+- Table: dnd.eqms_pilot_validation_feedback_supporting_files
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_pilot_validation_place
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_pilot_validation_plan
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_pilot_validation_plan_document
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_pilot_validation_plan_supporting_documents
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

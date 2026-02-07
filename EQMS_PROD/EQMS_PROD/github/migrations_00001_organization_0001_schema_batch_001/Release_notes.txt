@@ -1,0 +1,853 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00001_organization_0001_schema_batch_001
+Date with time: 2026-02-07 17:09:00
+
+Schema: organization
+- Table: organization.eqms_activity_lk
+  Change Type: CREATE
+  Description: Create new table eqms_activity_lk
+
+- Table: organization.eqms_assembly_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_assembly_type_lk
+
+- Table: organization.eqms_bom_publish_status_lk
+  Change Type: CREATE
+  Description: Create new table eqms_bom_publish_status_lk
+
+- Table: organization.eqms_bom_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_bom_type_lk
+
+- Table: organization.eqms_context_types
+  Change Type: CREATE
+  Description: Create new table eqms_context_types
+
+- Table: organization.eqms_context_types_history
+  Change Type: CREATE
+  Description: Create new table eqms_context_types_history
+
+- Table: organization.eqms_designation_lk
+  Change Type: CREATE
+  Description: Create new table eqms_designation_lk
+
+- Table: organization.eqms_employee_status_lk
+  Change Type: CREATE
+  Description: Create new table eqms_employee_status_lk
+
+- Table: organization.eqms_entity_nomenclature_mappings
+  Change Type: CREATE
+  Description: Create new table eqms_entity_nomenclature_mappings
+
+- Table: organization.eqms_entity_subscription
+  Change Type: CREATE
+  Description: Create new table eqms_entity_subscription
+
+- Table: organization.eqms_entity_subscription_history
+  Change Type: CREATE
+  Description: Create new table eqms_entity_subscription_history
+
+- Table: organization.eqms_entity_template
+  Change Type: CREATE
+  Description: Create new table eqms_entity_template
+
+- Table: organization.eqms_equipment_category_lk
+  Change Type: CREATE
+  Description: Create new table eqms_equipment_category_lk
+
+- Table: organization.eqms_equipment_item
+  Change Type: CREATE
+  Description: Create new table eqms_equipment_item
+
+- Table: organization.eqms_equipment_lk
+  Change Type: CREATE
+  Description: Create new table eqms_equipment_lk
+
+- Table: organization.eqms_form_draft_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_form_draft_supporting_files
+
+- Table: organization.eqms_form_drafts
+  Change Type: CREATE
+  Description: Create new table eqms_form_drafts
+
+- Table: organization.eqms_gender_lk
+  Change Type: CREATE
+  Description: Create new table eqms_gender_lk
+
+- Table: organization.eqms_image
+  Change Type: CREATE
+  Description: Create new table eqms_image
+
+- Table: organization.eqms_image_history
+  Change Type: CREATE
+  Description: Create new table eqms_image_history
+
+- Table: organization.eqms_infrastructure_category_lk
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_category_lk
+
+- Table: organization.eqms_infrastructure_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_type_lk
+
+- Table: organization.eqms_jig_item
+  Change Type: CREATE
+  Description: Create new table eqms_jig_item
+
+- Table: organization.eqms_jig_lk
+  Change Type: CREATE
+  Description: Create new table eqms_jig_lk
+
+- Table: organization.eqms_languages
+  Change Type: CREATE
+  Description: Create new table eqms_languages
+
+- Table: organization.eqms_login_result_lk
+  Change Type: CREATE
+  Description: Create new table eqms_login_result_lk
+
+- Table: organization.eqms_menu_activity_access
+  Change Type: CREATE
+  Description: Create new table eqms_menu_activity_access
+
+- Table: organization.eqms_menu_instance
+  Change Type: CREATE
+  Description: Create new table eqms_menu_instance
+
+- Table: organization.eqms_menu_instance_history
+  Change Type: CREATE
+  Description: Create new table eqms_menu_instance_history
+
+- Table: organization.eqms_menu_lk
+  Change Type: CREATE
+  Description: Create new table eqms_menu_lk
+
+- Table: organization.eqms_menu_object
+  Change Type: CREATE
+  Description: Create new table eqms_menu_object
+
+- Table: organization.eqms_menu_object_history
+  Change Type: CREATE
+  Description: Create new table eqms_menu_object_history
+
+- Table: organization.eqms_menu_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_menu_type_lk
+
+- Table: organization.eqms_module
+  Change Type: CREATE
+  Description: Create new table eqms_module
+
+- Table: organization.eqms_month_lk
+  Change Type: CREATE
+  Description: Create new table eqms_month_lk
+
+- Table: organization.eqms_nomenclature
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature
+
+- Table: organization.eqms_nomenclature_category
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_category
+
+- Table: organization.eqms_nomenclature_delimiter
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_delimiter
+
+- Table: organization.eqms_nomenclature_history
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_history
+
+- Table: organization.eqms_nomenclature_join_type
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_join_type
+
+- Table: organization.eqms_nomenclature_mapping_conditions
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_mapping_conditions
+
+- Table: organization.eqms_nomenclature_mapping_joins
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_mapping_joins
+
+- Table: organization.eqms_nomenclature_name_parts
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_name_parts
+
+- Table: organization.eqms_nomenclature_object_type_metadata_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_object_type_metadata_mapper
+
+- Table: organization.eqms_nomenclature_object_type_metadata_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_object_type_metadata_mapper_history
+
+- Table: organization.eqms_nomenclature_part_date_formats
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_part_date_formats
+
+- Table: organization.eqms_nomenclature_part_type
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_part_type
+
+- Table: organization.eqms_nomenclature_part_variable
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_part_variable
+
+- Table: organization.eqms_nomenclature_part_variable_history
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_part_variable_history
+
+- Table: organization.eqms_nomenclature_sequence_counters
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_sequence_counters
+
+- Table: organization.eqms_nomenclature_sequence_counters_history
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_sequence_counters_history
+
+- Table: organization.eqms_nomenclature_sequence_defs
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_sequence_defs
+
+- Table: organization.eqms_nomenclature_variable_metadata_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_variable_metadata_mapper
+
+- Table: organization.eqms_nomenclature_variable_metadata_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_nomenclature_variable_metadata_mapper_history
+
+- Table: organization.eqms_object_nomenclature
+  Change Type: CREATE
+  Description: Create new table eqms_object_nomenclature
+
+- Table: organization.eqms_object_nomenclature_history
+  Change Type: CREATE
+  Description: Create new table eqms_object_nomenclature_history
+
+- Table: organization.eqms_object_nomenclature_part
+  Change Type: CREATE
+  Description: Create new table eqms_object_nomenclature_part
+
+- Table: organization.eqms_object_nomenclature_part_history
+  Change Type: CREATE
+  Description: Create new table eqms_object_nomenclature_part_history
+
+- Table: organization.eqms_object_project_instance
+  Change Type: CREATE
+  Description: Create new table eqms_object_project_instance
+
+- Table: organization.eqms_object_project_instance_history
+  Change Type: CREATE
+  Description: Create new table eqms_object_project_instance_history
+
+- Table: organization.eqms_organization
+  Change Type: CREATE
+  Description: Create new table eqms_organization
+
+- Table: organization.eqms_organization_department
+  Change Type: CREATE
+  Description: Create new table eqms_organization_department
+
+- Table: organization.eqms_organization_department_history
+  Change Type: CREATE
+  Description: Create new table eqms_organization_department_history
+
+- Table: organization.eqms_organization_history
+  Change Type: CREATE
+  Description: Create new table eqms_organization_history
+
+- Table: organization.eqms_organization_product
+  Change Type: CREATE
+  Description: Create new table eqms_organization_product
+
+- Table: organization.eqms_organization_product_history
+  Change Type: CREATE
+  Description: Create new table eqms_organization_product_history
+
+- Table: organization.eqms_organization_role_lk
+  Change Type: CREATE
+  Description: Create new table eqms_organization_role_lk
+
+- Table: organization.eqms_organization_site
+  Change Type: CREATE
+  Description: Create new table eqms_organization_site
+
+- Table: organization.eqms_organization_site_history
+  Change Type: CREATE
+  Description: Create new table eqms_organization_site_history
+
+- Table: organization.eqms_part_component_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_part_component_type_lk
+
+- Table: organization.eqms_part_quantity_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_part_quantity_type_lk
+
+- Table: organization.eqms_part_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_part_type_lk
+
+- Table: organization.eqms_product_category_lk
+  Change Type: CREATE
+  Description: Create new table eqms_product_category_lk
+
+- Table: organization.eqms_product_group_lk
+  Change Type: CREATE
+  Description: Create new table eqms_product_group_lk
+
+- Table: organization.eqms_product_subtype_lk
+  Change Type: CREATE
+  Description: Create new table eqms_product_subtype_lk
+
+- Table: organization.eqms_product_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_product_type_lk
+
+- Table: organization.eqms_product_variants
+  Change Type: CREATE
+  Description: Create new table eqms_product_variants
+
+- Table: organization.eqms_product_variants_history
+  Change Type: CREATE
+  Description: Create new table eqms_product_variants_history
+
+- Table: organization.eqms_reg_country_lk
+  Change Type: CREATE
+  Description: Create new table eqms_reg_country_lk
+
+- Table: organization.eqms_responsibility_lk
+  Change Type: CREATE
+  Description: Create new table eqms_responsibility_lk
+
+- Table: organization.eqms_role_menu_activity_access
+  Change Type: CREATE
+  Description: Create new table eqms_role_menu_activity_access
+
+- Table: organization.eqms_roles_lk
+  Change Type: CREATE
+  Description: Create new table eqms_roles_lk
+
+- Table: organization.eqms_schedule_status_lk
+  Change Type: CREATE
+  Description: Create new table eqms_schedule_status_lk
+
+- Table: organization.eqms_selection_lk
+  Change Type: CREATE
+  Description: Create new table eqms_selection_lk
+
+- Table: organization.eqms_service_group_lk
+  Change Type: CREATE
+  Description: Create new table eqms_service_group_lk
+
+- Table: organization.eqms_status_lk
+  Change Type: CREATE
+  Description: Create new table eqms_status_lk
+
+- Table: organization.eqms_theme
+  Change Type: CREATE
+  Description: Create new table eqms_theme
+
+- Table: organization.eqms_timezones
+  Change Type: CREATE
+  Description: Create new table eqms_timezones
+
+- Table: organization.eqms_tool_category_lk
+  Change Type: CREATE
+  Description: Create new table eqms_tool_category_lk
+
+- Table: organization.eqms_tool_item
+  Change Type: CREATE
+  Description: Create new table eqms_tool_item
+
+- Table: organization.eqms_tool_item_history
+  Change Type: CREATE
+  Description: Create new table eqms_tool_item_history
+
+- Table: organization.eqms_tools
+  Change Type: CREATE
+  Description: Create new table eqms_tools
+
+- Table: organization.eqms_tools_history
+  Change Type: CREATE
+  Description: Create new table eqms_tools_history
+
+- Table: organization.eqms_unit_lk
+  Change Type: CREATE
+  Description: Create new table eqms_unit_lk
+
+- Table: organization.eqms_unit_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_unit_lk_history
+
+- Table: organization.eqms_user_authentication_refresh_token
+  Change Type: CREATE
+  Description: Create new table eqms_user_authentication_refresh_token
+
+- Table: organization.eqms_user_contact
+  Change Type: CREATE
+  Description: Create new table eqms_user_contact
+
+- Table: organization.eqms_user_contact_history
+  Change Type: CREATE
+  Description: Create new table eqms_user_contact_history
+
+- Table: organization.eqms_user_language
+  Change Type: CREATE
+  Description: Create new table eqms_user_language
+
+- Table: organization.eqms_user_language_history
+  Change Type: CREATE
+  Description: Create new table eqms_user_language_history
+
+- Table: organization.eqms_user_login_tracking
+  Change Type: CREATE
+  Description: Create new table eqms_user_login_tracking
+
+- Table: organization.eqms_user_login_tracking_history
+  Change Type: CREATE
+  Description: Create new table eqms_user_login_tracking_history
+
+- Table: organization.eqms_user_pin
+  Change Type: CREATE
+  Description: Create new table eqms_user_pin
+
+- Table: organization.eqms_user_pin_history
+  Change Type: CREATE
+  Description: Create new table eqms_user_pin_history
+
+- Table: organization.eqms_user_preference
+  Change Type: CREATE
+  Description: Create new table eqms_user_preference
+
+- Table: organization.eqms_user_preference_history
+  Change Type: CREATE
+  Description: Create new table eqms_user_preference_history
+
+- Table: organization.eqms_user_profile
+  Change Type: CREATE
+  Description: Create new table eqms_user_profile
+
+- Table: organization.eqms_user_profile_history
+  Change Type: CREATE
+  Description: Create new table eqms_user_profile_history
+
+- Table: organization.eqms_user_responsibility
+  Change Type: CREATE
+  Description: Create new table eqms_user_responsibility
+
+- Table: organization.eqms_user_responsibility_history
+  Change Type: CREATE
+  Description: Create new table eqms_user_responsibility_history
+
+- Table: organization.eqms_user_roles
+  Change Type: CREATE
+  Description: Create new table eqms_user_roles
+
+- Table: organization.eqms_user_roles_history
+  Change Type: CREATE
+  Description: Create new table eqms_user_roles_history
+
+- Table: organization.eqms_user_service_group
+  Change Type: CREATE
+  Description: Create new table eqms_user_service_group
+
+- Table: organization.eqms_user_service_group_history
+  Change Type: CREATE
+  Description: Create new table eqms_user_service_group_history
+
+- Table: organization.eqms_user_status_lk
+  Change Type: CREATE
+  Description: Create new table eqms_user_status_lk
+
+- Table: organization.eqms_user_timezone
+  Change Type: CREATE
+  Description: Create new table eqms_user_timezone
+
+- Table: organization.eqms_user_timezone_history
+  Change Type: CREATE
+  Description: Create new table eqms_user_timezone_history
+
+- Table: organization.eqms_user_verification
+  Change Type: CREATE
+  Description: Create new table eqms_user_verification
+
+- Table: organization.eqms_user_verification_history
+  Change Type: CREATE
+  Description: Create new table eqms_user_verification_history
+
+- Table: organization.eqms_users
+  Change Type: CREATE
+  Description: Create new table eqms_users
+
+- Table: organization.eqms_users_history
+  Change Type: CREATE
+  Description: Create new table eqms_users_history
+
+- Table: organization.eqms_value_acceptability_lk
+  Change Type: CREATE
+  Description: Create new table eqms_value_acceptability_lk
+
+- Table: organization.eqms_year_lk
+  Change Type: CREATE
+  Description: Create new table eqms_year_lk
+
+- Table: organization.eqms_activity_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_assembly_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_bom_publish_status_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_bom_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_context_types
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_designation_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_employee_status_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_entity_nomenclature_mappings
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_entity_subscription
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_entity_template
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 4 foreign key constraint(s)
+
+- Table: organization.eqms_equipment_category_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_equipment_item
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_equipment_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_form_draft_supporting_files
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_form_drafts
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_gender_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_image
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_infrastructure_category_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_infrastructure_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_jig_item
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_jig_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_languages
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_login_result_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_menu_activity_access
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_menu_instance
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_menu_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_menu_object
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_menu_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_module
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_month_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature_category
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s)
+
+- Table: organization.eqms_nomenclature_delimiter
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature_join_type
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature_mapping_conditions
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature_mapping_joins
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature_name_parts
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 4 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature_object_type_metadata_mapper
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature_part_date_formats
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature_part_type
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature_part_variable
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature_sequence_counters
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature_sequence_defs
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_nomenclature_variable_metadata_mapper
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_object_nomenclature
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_object_nomenclature_part
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_object_project_instance
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_organization_department
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_organization_product
+  Change Type: ALTER
+  Description: Add 5 foreign key constraint(s)
+
+- Table: organization.eqms_organization_role_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_organization_site
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_part_component_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_part_quantity_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_part_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_product_category_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_product_group_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_product_subtype_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_product_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_product_variants
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_reg_country_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_responsibility_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_role_menu_activity_access
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_roles_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_schedule_status_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_selection_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s)
+
+- Table: organization.eqms_service_group_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_status_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_theme
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_timezones
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_tool_category_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_tool_item
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_tools
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_unit_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_user_authentication_refresh_token
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_user_contact
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_user_language
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_user_login_tracking
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_user_pin
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_user_preference
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_user_profile
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: organization.eqms_user_responsibility
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_user_roles
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_user_service_group
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_user_status_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_user_timezone
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_user_verification
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: organization.eqms_users
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: organization.eqms_value_acceptability_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: organization.eqms_year_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)

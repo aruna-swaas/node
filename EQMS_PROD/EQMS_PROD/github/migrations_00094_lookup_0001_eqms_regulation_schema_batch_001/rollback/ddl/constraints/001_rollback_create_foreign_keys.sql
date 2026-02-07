@@ -1,0 +1,3 @@
+ALTER TABLE organization.eqms_regulation DROP CONSTRAINT fk_er_organization_id;
+ALTER TABLE organization.eqms_regulation DROP CONSTRAINT fk_er_market_id;
+ALTER TABLE organization.eqms_regulation DROP CONSTRAINT eqms_regulation_tenant_org_ref_unique;

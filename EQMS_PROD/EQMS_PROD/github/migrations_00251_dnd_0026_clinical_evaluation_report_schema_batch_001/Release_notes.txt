@@ -1,0 +1,17 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00251_dnd_0026_clinical_evaluation_report_schema_batch_001
+Date with time: 2026-02-07 17:12:33
+
+Schema: dnd
+- Table: dnd.eqms_pilot_clinical_evaluation_report
+  Change Type: CREATE
+  Description: Create new table eqms_pilot_clinical_evaluation_report
+
+- Table: dnd.eqms_pilot_clinical_evaluation_report_history
+  Change Type: CREATE
+  Description: Create new table eqms_pilot_clinical_evaluation_report_history
+
+- Table: dnd.eqms_pilot_clinical_evaluation_report
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

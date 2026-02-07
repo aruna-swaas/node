@@ -1,0 +1,4 @@
+ALTER TABLE pre_production.eqms_pre_prod_team_details DROP CONSTRAINT fk_epptd_status_lk_id;
+ALTER TABLE pre_production.eqms_pre_prod_team_details DROP CONSTRAINT fk_epptd_roles_lk_id;
+ALTER TABLE pre_production.eqms_pre_prod_team_details DROP CONSTRAINT fk_epptd_organization_id;
+ALTER TABLE pre_production.eqms_pre_prod_team_details DROP CONSTRAINT fk_epptd_organization_employee_id;

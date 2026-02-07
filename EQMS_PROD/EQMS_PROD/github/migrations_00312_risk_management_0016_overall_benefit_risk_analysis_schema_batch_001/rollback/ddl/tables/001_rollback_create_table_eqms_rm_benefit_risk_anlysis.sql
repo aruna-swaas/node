@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS risk_management.eqms_rm_benefit_risk_anlysis;

@@ -1,0 +1,9 @@
+ALTER TABLE dnd.eqms_execution_stage_verification_plan_supp_files DROP CONSTRAINT fk_eesvp_sf_plan_id;
+ALTER TABLE dnd.eqms_execution_stage_verification_plan_supp_files DROP CONSTRAINT fk_eesvp_sf_file_id;
+ALTER TABLE dnd.eqms_execution_stage_verification_plan_dir DROP CONSTRAINT fk_eesvp_dir_plan_id;
+ALTER TABLE dnd.eqms_execution_stage_verification_plan_dir DROP CONSTRAINT fk_eesvp_dir_dir_id;
+ALTER TABLE dnd.eqms_execution_stage_verification_plan DROP CONSTRAINT fk_eesvp_tools_id;
+ALTER TABLE dnd.eqms_execution_stage_verification_plan DROP CONSTRAINT fk_eesvp_organization_id;
+ALTER TABLE dnd.eqms_execution_stage_verification_plan DROP CONSTRAINT fk_eesvp_jig_lk_id;
+ALTER TABLE dnd.eqms_execution_stage_verification_plan DROP CONSTRAINT fk_eesvp_execution_stage_id;
+ALTER TABLE dnd.eqms_execution_stage_verification_plan DROP CONSTRAINT fk_eesvp_equipment_lk_id;

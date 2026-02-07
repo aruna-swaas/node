@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_non_conformed_location_lk DROP CONSTRAINT fk_encl_organization_id;
+ALTER TABLE organization.eqms_non_conformed_location_lk DROP CONSTRAINT unique_encl_tnt_org_ref_id;

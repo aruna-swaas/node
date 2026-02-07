@@ -1,0 +1,8 @@
+ALTER TABLE sales.eqms_sales_forecast_supporting_file DROP CONSTRAINT fk_esfsf_sales_forecast_detail_id;
+ALTER TABLE sales.eqms_sales_forecast_supporting_file DROP CONSTRAINT fk_esfsf_organization_id;
+ALTER TABLE sales.eqms_sales_forecast_supporting_file DROP CONSTRAINT fk_esfsf_file_id;
+ALTER TABLE sales.eqms_sales_forecast_detail DROP CONSTRAINT fk_esfd_sales_forecast_id;
+ALTER TABLE sales.eqms_sales_forecast DROP CONSTRAINT fk_esf_year_lk_id;
+ALTER TABLE sales.eqms_sales_forecast DROP CONSTRAINT fk_esf_product_variants_id;
+ALTER TABLE sales.eqms_sales_forecast DROP CONSTRAINT fk_esf_organization_id;
+ALTER TABLE sales.eqms_sales_forecast DROP CONSTRAINT fk_esf_month_lk_id;

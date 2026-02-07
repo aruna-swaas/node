@@ -1,0 +1,3 @@
+ALTER TABLE organization.eqms_form_drafts DROP CONSTRAINT fk_efd_form_id;
+ALTER TABLE workflow.eqms_form_type_task_group_mapping DROP CONSTRAINT fk_efttgm_form_id;
+ALTER TABLE workflow.eqms_form_task_group_mapping DROP CONSTRAINT fk_efawsm_form_id;

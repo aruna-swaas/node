@@ -1,0 +1,3 @@
+ALTER TABLE ONLY pre_production.eqms_pre_prod_performance_qualification_final_result
+    ADD CONSTRAINT fk_eppqf_process_validation_performance_qualification_id FOREIGN KEY (fk_eqms_pre_prod_proc_valid_perf_qual_id) REFERENCES pre_production.eqms_pre_prod_proc_valid_perf_qual(id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+

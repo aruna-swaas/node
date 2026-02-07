@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_rm_comparison_operator_lk DROP CONSTRAINT fk_ercol_organization_id;
+ALTER TABLE organization.eqms_rm_comparison_operator_lk DROP CONSTRAINT eqms_rm_comparison_operator_lk_tenant_org_ref_unique;

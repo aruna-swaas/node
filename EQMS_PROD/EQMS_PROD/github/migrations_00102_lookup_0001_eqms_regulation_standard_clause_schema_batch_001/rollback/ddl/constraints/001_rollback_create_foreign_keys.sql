@@ -1,0 +1,4 @@
+ALTER TABLE organization.eqms_regulation_standard_clause DROP CONSTRAINT fk_ersc_regulation_standard_id;
+ALTER TABLE organization.eqms_regulation_standard_clause DROP CONSTRAINT fk_ersc_organization_id;
+ALTER TABLE organization.eqms_regulation_standard_clause DROP CONSTRAINT fk_ersc_clause_lk_id;
+ALTER TABLE organization.eqms_regulation_standard_clause DROP CONSTRAINT eqms_regulation_standard_clause_tenant_org_ref_unique;

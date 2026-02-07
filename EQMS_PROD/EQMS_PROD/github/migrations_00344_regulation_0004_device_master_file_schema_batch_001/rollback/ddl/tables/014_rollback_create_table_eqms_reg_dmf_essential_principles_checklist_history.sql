@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS regulation.eqms_reg_dmf_essential_principles_checklist_history;

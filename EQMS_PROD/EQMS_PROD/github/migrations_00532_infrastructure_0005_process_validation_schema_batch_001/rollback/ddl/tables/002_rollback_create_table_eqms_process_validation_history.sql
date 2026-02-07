@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS infrastructure.eqms_process_validation_history;

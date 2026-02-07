@@ -1,0 +1,3 @@
+ALTER TABLE dnd.eqms_license_initiation DROP CONSTRAINT fk_epmls_project_id;
+ALTER TABLE dnd.eqms_license_initiation DROP CONSTRAINT fk_emlsl_organization_id;
+ALTER TABLE dnd.eqms_license_initiation DROP CONSTRAINT fk_eli_license_status_lk_id;

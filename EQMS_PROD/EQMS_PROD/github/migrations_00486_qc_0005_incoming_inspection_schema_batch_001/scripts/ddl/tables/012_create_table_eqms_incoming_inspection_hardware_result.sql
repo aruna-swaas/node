@@ -1,0 +1,17 @@
+CREATE TABLE qc.eqms_incoming_inspection_hardware_result (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    fk_eqms_incoming_inspection_part_details_id integer,
+    fk_eqms_hardware_test_procedure_spec_id integer,
+    reading_monitored character varying,
+    cause_stages character varying,
+    fk_eqms_failure_type_lk_id integer,
+    fk_eqms_verification_result_lk_id integer,
+    status smallint,
+    created_by integer,
+    created_date timestamp without time zone,
+    modified_by integer,
+    modified_date timestamp without time zone 
+);
+

@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dnd.eqms_high_level_design_conversion_rate_history;

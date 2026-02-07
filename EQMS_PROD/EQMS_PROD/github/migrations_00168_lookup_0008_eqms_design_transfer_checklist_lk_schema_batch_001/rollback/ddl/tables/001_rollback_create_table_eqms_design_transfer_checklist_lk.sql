@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_design_transfer_checklist_lk;

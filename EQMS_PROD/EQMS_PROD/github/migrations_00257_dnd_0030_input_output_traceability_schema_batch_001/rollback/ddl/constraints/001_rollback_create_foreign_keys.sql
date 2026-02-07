@@ -1,0 +1,3 @@
+ALTER TABLE dnd.eqms_project_dir_traceability_applicability DROP CONSTRAINT fk_eqms_design_transfer_documents_id;
+ALTER TABLE dnd.eqms_project_dir_traceability_applicability DROP CONSTRAINT fk_eqms_design_input_requirement_id;
+ALTER TABLE dnd.eqms_project_dir_traceability_applicability DROP CONSTRAINT fk_epdta_organization_id;

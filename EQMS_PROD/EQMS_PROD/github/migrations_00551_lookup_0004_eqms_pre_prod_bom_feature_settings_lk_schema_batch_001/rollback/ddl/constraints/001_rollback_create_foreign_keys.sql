@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_pre_prod_bom_feature_settings_lk DROP CONSTRAINT fk_eppbfsl_organization_id;
+ALTER TABLE organization.eqms_pre_prod_bom_feature_settings_lk DROP CONSTRAINT unique_eppbfsl_tnt_org_ref_id;

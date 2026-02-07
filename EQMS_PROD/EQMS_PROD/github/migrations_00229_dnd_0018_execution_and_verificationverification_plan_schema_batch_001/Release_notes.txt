@@ -1,0 +1,41 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00229_dnd_0018_execution_and_verificationverification_plan_schema_batch_001
+Date with time: 2026-02-07 17:12:19
+
+Schema: dnd
+- Table: dnd.eqms_execution_stage_verification_plan
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_plan
+
+- Table: dnd.eqms_execution_stage_verification_plan_dir
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_plan_dir
+
+- Table: dnd.eqms_execution_stage_verification_plan_dir_history
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_plan_dir_history
+
+- Table: dnd.eqms_execution_stage_verification_plan_history
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_plan_history
+
+- Table: dnd.eqms_execution_stage_verification_plan_supp_files
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_plan_supp_files
+
+- Table: dnd.eqms_execution_stage_verification_plan_supp_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_verification_plan_supp_files_history
+
+- Table: dnd.eqms_execution_stage_verification_plan
+  Change Type: ALTER
+  Description: Add 5 foreign key constraint(s)
+
+- Table: dnd.eqms_execution_stage_verification_plan_dir
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_execution_stage_verification_plan_supp_files
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dnd.eqms_pilot_validation_feedback_supporting_files_history;

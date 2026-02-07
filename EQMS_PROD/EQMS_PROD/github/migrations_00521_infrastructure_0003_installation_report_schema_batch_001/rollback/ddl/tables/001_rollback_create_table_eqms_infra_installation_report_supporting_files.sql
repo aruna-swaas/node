@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS infrastructure.eqms_infra_installation_report_supporting_files;

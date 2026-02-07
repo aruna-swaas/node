@@ -1,0 +1,12 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00446_sales_0004_order_acknowledgement_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:17:47
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_priority_lk: 1 INSERT statement(s)
+  - organization.eqms_order_approval_mode_lk: 1 INSERT statement(s)

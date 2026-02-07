@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dnd.eqms_part_drawing_supporting_files;

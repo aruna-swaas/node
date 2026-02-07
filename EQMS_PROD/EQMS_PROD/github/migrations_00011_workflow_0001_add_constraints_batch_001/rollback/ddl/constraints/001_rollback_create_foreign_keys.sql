@@ -1,0 +1,1 @@
+ALTER TABLE organization.eqms_object_project_instance DROP CONSTRAINT fk_eopi_project_instance_id;

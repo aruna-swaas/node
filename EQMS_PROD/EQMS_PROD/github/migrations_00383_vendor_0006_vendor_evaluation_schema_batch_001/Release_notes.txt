@@ -1,0 +1,65 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00383_vendor_0006_vendor_evaluation_schema_batch_001
+Date with time: 2026-02-07 17:16:31
+
+Schema: vendor
+- Table: vendor.eqms_vendor_evaluation
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_evaluation
+
+- Table: vendor.eqms_vendor_evaluation_group_remarks
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_evaluation_group_remarks
+
+- Table: vendor.eqms_vendor_evaluation_group_remarks_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_evaluation_group_remarks_history
+
+- Table: vendor.eqms_vendor_evaluation_group_remarks_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_evaluation_group_remarks_supporting_files
+
+- Table: vendor.eqms_vendor_evaluation_group_remarks_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_evaluation_group_remarks_supporting_files_history
+
+- Table: vendor.eqms_vendor_evaluation_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_evaluation_history
+
+- Table: vendor.eqms_vendor_evaluation_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_evaluation_supporting_files
+
+- Table: vendor.eqms_vendor_evaluation_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_evaluation_supporting_files_history
+
+- Table: vendor.eqms_vendor_evaluation_visit
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_evaluation_visit
+
+- Table: vendor.eqms_vendor_evaluation_visit_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_evaluation_visit_history
+
+- Table: vendor.eqms_vendor_evaluation
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_evaluation_group_remarks
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_evaluation_group_remarks_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_evaluation_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_evaluation_visit
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

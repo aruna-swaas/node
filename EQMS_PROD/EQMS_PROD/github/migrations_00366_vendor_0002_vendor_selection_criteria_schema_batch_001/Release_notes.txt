@@ -1,0 +1,85 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00366_vendor_0002_vendor_selection_criteria_schema_batch_001
+Date with time: 2026-02-07 17:16:16
+
+Schema: vendor
+- Table: vendor.eqms_vendor_group_criteria_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_group_criteria_mapper
+
+- Table: vendor.eqms_vendor_group_criteria_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_group_criteria_mapper_history
+
+- Table: vendor.eqms_vendor_selection_applicable_group
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_selection_applicable_group
+
+- Table: vendor.eqms_vendor_selection_applicable_group_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_selection_applicable_group_history
+
+- Table: vendor.eqms_vendor_selection_criteria
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_selection_criteria
+
+- Table: vendor.eqms_vendor_selection_criteria_evaluation
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_selection_criteria_evaluation
+
+- Table: vendor.eqms_vendor_selection_criteria_evaluation_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_selection_criteria_evaluation_history
+
+- Table: vendor.eqms_vendor_selection_criteria_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_selection_criteria_history
+
+- Table: vendor.eqms_vendor_selection_criteria_re_evaluation
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_selection_criteria_re_evaluation
+
+- Table: vendor.eqms_vendor_selection_criteria_re_evaluation_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_selection_criteria_re_evaluation_history
+
+- Table: vendor.eqms_vendor_selection_criteria_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_selection_criteria_supporting_files
+
+- Table: vendor.eqms_vendor_selection_criteria_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_selection_criteria_supporting_files_history
+
+- Table: vendor.eqms_vendor_selection_group_criteria_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_selection_group_criteria_lk_history
+
+- Table: vendor.eqms_vendor_selection_group_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_selection_group_lk_history
+
+- Table: vendor.eqms_vendor_group_criteria_mapper
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_selection_applicable_group
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_selection_criteria
+  Change Type: ALTER
+  Description: Add 6 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_selection_criteria_evaluation
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_selection_criteria_re_evaluation
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_selection_criteria_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

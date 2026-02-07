@@ -1,0 +1,6 @@
+ALTER TABLE dnd.eqms_project_concept_supporting_files DROP CONSTRAINT fk_epcsf_project_concept_id;
+ALTER TABLE dnd.eqms_project_concept_supporting_files DROP CONSTRAINT fk_epcsf_organization_id;
+ALTER TABLE dnd.eqms_project_concept_supporting_files DROP CONSTRAINT fk_epcsf_file_id;
+ALTER TABLE dnd.eqms_project_concept DROP CONSTRAINT fk_epc_project_build_stage_order_id;
+ALTER TABLE dnd.eqms_project_concept DROP CONSTRAINT fk_epc_organization_id;
+ALTER TABLE dnd.eqms_project_concept DROP CONSTRAINT fk_epc_concept_status_lk_id;

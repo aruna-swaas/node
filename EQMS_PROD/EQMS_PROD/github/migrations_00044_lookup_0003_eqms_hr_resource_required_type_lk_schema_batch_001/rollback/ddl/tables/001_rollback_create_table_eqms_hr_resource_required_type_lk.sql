@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_hr_resource_required_type_lk;

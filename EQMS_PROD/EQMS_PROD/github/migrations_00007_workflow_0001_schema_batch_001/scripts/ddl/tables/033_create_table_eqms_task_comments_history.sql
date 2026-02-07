@@ -1,0 +1,25 @@
+CREATE TABLE workflow.eqms_task_comments_history (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    fk_eqms_task_comments_id integer,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    fk_eqms_project_tasks_id integer,
+    fk_eqms_project_member_roles_id integer,
+    comments text,
+    status smallint,
+    record_status smallint DEFAULT 1,
+    version numeric(10,1),
+    valid_from_date timestamp without time zone,
+    valid_to_date timestamp without time zone DEFAULT '2199-12-31 23:59:59'::timestamp without time zone,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer,
+    fk_eqms_user_id integer,
+    fk_eqms_role_lk_id integer,
+    comments_date date,
+    fk_eqms_comment_type_lk_ref_id integer,
+    comment_order integer,
+    fk_eqms_commenter_type_lk_ref_id integer 
+);
+

@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS vendor.eqms_vendor_selection_criteria_supporting_files_history;

@@ -1,0 +1,9 @@
+ALTER TABLE sales.eqms_delivery_site_requirement DROP CONSTRAINT fk_edsr_organization_product_id;
+ALTER TABLE sales.eqms_delivery_site_requirement DROP CONSTRAINT fk_edcr_organization_id;
+ALTER TABLE sales.eqms_delivery_product DROP CONSTRAINT fk_edp_delivery_dispatch_id;
+ALTER TABLE sales.eqms_delivery_product DROP CONSTRAINT fk_edp_organization_id;
+ALTER TABLE sales.eqms_delivery_dispatch_supporting_files DROP CONSTRAINT fk_eddsf_delivery_dispatch_id;
+ALTER TABLE sales.eqms_delivery_dispatch_supporting_files DROP CONSTRAINT fk_eddsf_organization_id;
+ALTER TABLE sales.eqms_delivery_dispatch_supporting_files DROP CONSTRAINT fk_eddsf_file_id;
+ALTER TABLE sales.eqms_delivery_dispatch DROP CONSTRAINT fk_esf_status_lk_id;
+ALTER TABLE sales.eqms_delivery_dispatch DROP CONSTRAINT fk_edd_organization_id;

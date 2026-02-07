@@ -1,0 +1,81 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00208_dnd_0013_intended_use_schema_batch_001
+Date with time: 2026-02-07 17:12:08
+
+Schema: dnd
+- Table: dnd.eqms_design_input_gathering
+  Change Type: CREATE
+  Description: Create new table eqms_design_input_gathering
+
+- Table: dnd.eqms_design_input_gathering_history
+  Change Type: CREATE
+  Description: Create new table eqms_design_input_gathering_history
+
+- Table: dnd.eqms_dig_indication_of_use
+  Change Type: CREATE
+  Description: Create new table eqms_dig_indication_of_use
+
+- Table: dnd.eqms_dig_indication_of_use_history
+  Change Type: CREATE
+  Description: Create new table eqms_dig_indication_of_use_history
+
+- Table: dnd.eqms_dig_intended_population
+  Change Type: CREATE
+  Description: Create new table eqms_dig_intended_population
+
+- Table: dnd.eqms_dig_intended_population_history
+  Change Type: CREATE
+  Description: Create new table eqms_dig_intended_population_history
+
+- Table: dnd.eqms_dig_intended_users
+  Change Type: CREATE
+  Description: Create new table eqms_dig_intended_users
+
+- Table: dnd.eqms_dig_intended_users_history
+  Change Type: CREATE
+  Description: Create new table eqms_dig_intended_users_history
+
+- Table: dnd.eqms_dig_use_environments
+  Change Type: CREATE
+  Description: Create new table eqms_dig_use_environments
+
+- Table: dnd.eqms_dig_use_environments_history
+  Change Type: CREATE
+  Description: Create new table eqms_dig_use_environments_history
+
+- Table: dnd.eqms_project_design_input_gathering
+  Change Type: CREATE
+  Description: Create new table eqms_project_design_input_gathering
+
+- Table: dnd.eqms_project_design_input_gathering_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_design_input_gathering_history
+
+- Table: dnd.eqms_project_dig_models_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_dig_models_history
+
+- Table: dnd.eqms_design_input_gathering
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_dig_indication_of_use
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: dnd.eqms_dig_intended_population
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: dnd.eqms_dig_intended_users
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: dnd.eqms_dig_use_environments
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: dnd.eqms_project_design_input_gathering
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

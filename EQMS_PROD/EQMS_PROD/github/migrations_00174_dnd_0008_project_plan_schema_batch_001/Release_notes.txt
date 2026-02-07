@@ -1,0 +1,262 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00174_dnd_0008_project_plan_schema_batch_001
+Date with time: 2026-02-07 17:11:50
+
+Schema: dnd
+- Table: dnd.eqms_design_transfer_applicability
+  Change Type: CREATE
+  Description: Create new table eqms_design_transfer_applicability
+
+- Table: dnd.eqms_design_transfer_applicability_history
+  Change Type: CREATE
+  Description: Create new table eqms_design_transfer_applicability_history
+
+- Table: dnd.eqms_execution_stage
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage
+
+- Table: dnd.eqms_execution_stage_history
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_history
+
+- Table: dnd.eqms_project_build_stage_order
+  Change Type: CREATE
+  Description: Create new table eqms_project_build_stage_order
+
+- Table: dnd.eqms_project_build_stage_order_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_build_stage_order_history
+
+- Table: dnd.eqms_project_build_stages
+  Change Type: CREATE
+  Description: Create new table eqms_project_build_stages
+
+- Table: dnd.eqms_project_build_stages_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_build_stages_history
+
+- Table: dnd.eqms_project_design_team_member
+  Change Type: CREATE
+  Description: Create new table eqms_project_design_team_member
+
+- Table: dnd.eqms_project_design_team_member_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_design_team_member_history
+
+- Table: dnd.eqms_project_design_team_member_selection
+  Change Type: CREATE
+  Description: Create new table eqms_project_design_team_member_selection
+
+- Table: dnd.eqms_project_design_team_member_selection_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_design_team_member_selection_history
+
+- Table: dnd.eqms_project_design_team_other_member
+  Change Type: CREATE
+  Description: Create new table eqms_project_design_team_other_member
+
+- Table: dnd.eqms_project_design_team_other_member_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_design_team_other_member_history
+
+- Table: dnd.eqms_project_design_team_stages_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_project_design_team_stages_mapper
+
+- Table: dnd.eqms_project_design_team_stages_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_design_team_stages_mapper_history
+
+- Table: dnd.eqms_project_design_transfer_plan
+  Change Type: CREATE
+  Description: Create new table eqms_project_design_transfer_plan
+
+- Table: dnd.eqms_project_design_transfer_plan_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_design_transfer_plan_history
+
+- Table: dnd.eqms_project_plan
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan
+
+- Table: dnd.eqms_project_plan_design_review
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_design_review
+
+- Table: dnd.eqms_project_plan_design_review_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_design_review_history
+
+- Table: dnd.eqms_project_plan_equipment
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_equipment
+
+- Table: dnd.eqms_project_plan_equipment_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_equipment_history
+
+- Table: dnd.eqms_project_plan_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_history
+
+- Table: dnd.eqms_project_plan_markets
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_markets
+
+- Table: dnd.eqms_project_plan_markets_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_markets_history
+
+- Table: dnd.eqms_project_plan_procedure_reference
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_procedure_reference
+
+- Table: dnd.eqms_project_plan_procedure_reference_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_procedure_reference_history
+
+- Table: dnd.eqms_project_plan_procedures
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_procedures
+
+- Table: dnd.eqms_project_plan_procedures_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_procedures_history
+
+- Table: dnd.eqms_project_plan_schedule
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_schedule
+
+- Table: dnd.eqms_project_plan_schedule_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_schedule_history
+
+- Table: dnd.eqms_project_plan_stagewise_deliverable
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_stagewise_deliverable
+
+- Table: dnd.eqms_project_plan_stagewise_deliverable_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_stagewise_deliverable_history
+
+- Table: dnd.eqms_project_plan_tool
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_tool
+
+- Table: dnd.eqms_project_plan_tool_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_tool_history
+
+- Table: dnd.eqms_project_plan_validation_method
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_validation_method
+
+- Table: dnd.eqms_project_plan_validation_method_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_validation_method_history
+
+- Table: dnd.eqms_project_plan_verification_method
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_verification_method
+
+- Table: dnd.eqms_project_plan_verification_method_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_plan_verification_method_history
+
+- Table: dnd.eqms_project_stage_activity
+  Change Type: CREATE
+  Description: Create new table eqms_project_stage_activity
+
+- Table: dnd.eqms_project_stage_activity_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_stage_activity_history
+
+- Table: dnd.eqms_design_transfer_applicability
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_execution_stage
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_project_build_stage_order
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_project_build_stages
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_design_team_member
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: dnd.eqms_project_design_team_member_selection
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_design_team_other_member
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_design_team_stages_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_design_transfer_plan
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_plan
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_project_plan_design_review
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: dnd.eqms_project_plan_equipment
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_plan_markets
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_plan_procedure_reference
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_plan_procedures
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_plan_schedule
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_plan_stagewise_deliverable
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_plan_tool
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_plan_validation_method
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_plan_verification_method
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_stage_activity
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+Schema: organization
+- Table: organization.eqms_equipment_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_equipment_lk_history

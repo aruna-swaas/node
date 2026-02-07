@@ -1,0 +1,27 @@
+CREATE TABLE sales.eqms_customer_master_history (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    fk_eqms_customer_master_id integer,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    customer_code character varying(100),
+    encrypted_customer_name character varying(255),
+    customer_type character varying(50),
+    encrypted_contact_person_name character varying(255),
+    encrypted_email_id character varying(255),
+    encrypted_phone_number character varying(20),
+    encrypted_address character varying(1000),
+    encrypted_city character varying(100),
+    encrypted_state character varying(100),
+    encrypted_country character varying(100),
+    encrypted_postal_code character varying(20),
+    status smallint,
+    record_status smallint DEFAULT 1,
+    valid_from_date timestamp without time zone,
+    valid_to_date timestamp without time zone DEFAULT '2199-12-31 23:59:59'::timestamp without time zone,
+    created_by integer,
+    created_date timestamp without time zone,
+    modified_by integer,
+    modified_date timestamp without time zone,
+    version numeric(10,1) 
+);
+

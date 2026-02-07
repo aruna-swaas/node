@@ -1,0 +1,1 @@
+ALTER TABLE organization.eqms_inventory_location DROP CONSTRAINT fk_eil_organization_id;

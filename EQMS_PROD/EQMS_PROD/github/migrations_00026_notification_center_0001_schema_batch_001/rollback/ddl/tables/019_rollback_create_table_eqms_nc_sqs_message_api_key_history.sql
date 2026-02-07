@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS notification_center.eqms_nc_sqs_message_api_key_history;

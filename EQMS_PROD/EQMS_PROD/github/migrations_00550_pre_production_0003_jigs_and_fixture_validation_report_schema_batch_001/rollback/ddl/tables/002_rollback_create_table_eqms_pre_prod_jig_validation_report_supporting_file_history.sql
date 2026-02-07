@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS pre_production.eqms_pre_prod_jig_validation_report_supporting_file_history;

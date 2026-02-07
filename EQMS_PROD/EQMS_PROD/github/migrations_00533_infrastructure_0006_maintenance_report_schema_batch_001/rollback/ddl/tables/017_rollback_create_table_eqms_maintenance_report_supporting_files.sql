@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS infrastructure.eqms_maintenance_report_supporting_files;

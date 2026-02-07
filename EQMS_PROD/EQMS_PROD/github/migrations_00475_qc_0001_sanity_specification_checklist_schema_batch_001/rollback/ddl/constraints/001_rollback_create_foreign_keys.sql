@@ -1,0 +1,9 @@
+ALTER TABLE qc.eqms_sanity_spec_checklist_detail DROP CONSTRAINT fk_esscd_applicable_group_id;
+ALTER TABLE qc.eqms_sanity_spec_checklist_detail DROP CONSTRAINT fk_esscd_status_lk_id;
+ALTER TABLE qc.eqms_sanity_spec_checklist_detail DROP CONSTRAINT fk_esscd_organization_id;
+ALTER TABLE qc.eqms_sanity_spec_checklist_applicable_group DROP CONSTRAINT fk_esscag_sanity_spec_checklist_id;
+ALTER TABLE qc.eqms_sanity_spec_checklist_applicable_group DROP CONSTRAINT fk_esscag_organization_id;
+ALTER TABLE qc.eqms_sanity_spec_checklist_applicable_group DROP CONSTRAINT fk_esscag_group_lk_id;
+ALTER TABLE qc.eqms_sanity_spec_checklist DROP CONSTRAINT fk_essc_purchase_order_id;
+ALTER TABLE qc.eqms_sanity_spec_checklist DROP CONSTRAINT fk_essc_organization_id;
+ALTER TABLE qc.eqms_sanity_spec_checklist DROP CONSTRAINT fk_esf_status_lk_id;

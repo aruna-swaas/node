@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00198_lookup_0012_eqms_usability_type_schema_batch_001
+Date with time: 2026-02-07 17:12:04
+
+Schema: organization
+- Table: organization.eqms_usability_type
+  Change Type: CREATE
+  Description: Create new table eqms_usability_type
+
+- Table: organization.eqms_usability_type
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)

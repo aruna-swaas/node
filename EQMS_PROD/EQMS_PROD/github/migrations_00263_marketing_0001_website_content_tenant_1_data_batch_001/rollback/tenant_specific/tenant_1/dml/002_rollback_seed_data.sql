@@ -1,0 +1,11 @@
+-- Rollback: Delete seed data from file 004_ABAC_CONFIGURATION.sql
+-- Original file: 004_ABAC_CONFIGURATION.sql
+-- Seed data file: 002_seed_data.sql
+--
+-- Note: DELETE statements are in REVERSE order of INSERT statements
+-- (Last inserted first) to maintain referential integrity during rollback
+-- Each DELETE includes WHERE conditions matching the inserted data
+--
+
+-- Note: Could not extract table names from source file
+-- Please manually add DELETE statements with WHERE conditions for the tables in this file

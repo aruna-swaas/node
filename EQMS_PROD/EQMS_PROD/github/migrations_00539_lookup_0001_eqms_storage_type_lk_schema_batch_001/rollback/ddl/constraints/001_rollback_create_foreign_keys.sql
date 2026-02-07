@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_storage_type_lk DROP CONSTRAINT fk_estl_organization_id;
+ALTER TABLE organization.eqms_storage_type_lk DROP CONSTRAINT unique_estl_tnt_org_ref_id;

@@ -1,0 +1,65 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00157_dnd_0007_pnd_review_schema_batch_001
+Date with time: 2026-02-07 17:11:42
+
+Schema: dnd
+- Table: dnd.eqms_pnd_review_report
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_review_report
+
+- Table: dnd.eqms_pnd_review_report_breakdown
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_review_report_breakdown
+
+- Table: dnd.eqms_pnd_review_report_breakdown_history
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_review_report_breakdown_history
+
+- Table: dnd.eqms_pnd_review_report_conclusion
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_review_report_conclusion
+
+- Table: dnd.eqms_pnd_review_report_conclusion_history
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_review_report_conclusion_history
+
+- Table: dnd.eqms_pnd_review_report_history
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_review_report_history
+
+- Table: dnd.eqms_pnd_review_required_approval_details
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_review_required_approval_details
+
+- Table: dnd.eqms_pnd_review_required_approval_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_review_required_approval_details_history
+
+- Table: dnd.eqms_pnd_specification_review
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_specification_review
+
+- Table: dnd.eqms_pnd_specification_review_history
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_specification_review_history
+
+- Table: dnd.eqms_pnd_review_report
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_pnd_review_report_breakdown
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_pnd_review_report_conclusion
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_pnd_review_required_approval_details
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: dnd.eqms_pnd_specification_review
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

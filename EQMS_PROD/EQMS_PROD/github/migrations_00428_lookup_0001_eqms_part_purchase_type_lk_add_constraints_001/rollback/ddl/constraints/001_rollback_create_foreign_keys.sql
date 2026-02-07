@@ -1,0 +1,1 @@
+ALTER TABLE dnd.eqms_bom_assembly_part_details DROP CONSTRAINT fk_ebapd_part_purchase_type_lk_id;

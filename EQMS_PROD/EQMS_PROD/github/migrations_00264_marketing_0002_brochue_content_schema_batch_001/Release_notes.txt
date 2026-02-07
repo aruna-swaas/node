@@ -1,0 +1,77 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00264_marketing_0002_brochue_content_schema_batch_001
+Date with time: 2026-02-07 17:13:01
+
+Schema: marketing
+- Table: marketing.eqms_brochure_content_legal_details
+  Change Type: CREATE
+  Description: Create new table eqms_brochure_content_legal_details
+
+- Table: marketing.eqms_brochure_content_legal_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_brochure_content_legal_details_history
+
+- Table: marketing.eqms_brochure_content_marketing_details
+  Change Type: CREATE
+  Description: Create new table eqms_brochure_content_marketing_details
+
+- Table: marketing.eqms_brochure_content_marketing_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_brochure_content_marketing_details_history
+
+- Table: marketing.eqms_brochure_content_product_details
+  Change Type: CREATE
+  Description: Create new table eqms_brochure_content_product_details
+
+- Table: marketing.eqms_brochure_content_product_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_brochure_content_product_details_history
+
+- Table: marketing.eqms_brochure_content_regulatory_details
+  Change Type: CREATE
+  Description: Create new table eqms_brochure_content_regulatory_details
+
+- Table: marketing.eqms_brochure_content_regulatory_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_brochure_content_regulatory_details_history
+
+- Table: marketing.eqms_brochure_content_sales_details
+  Change Type: CREATE
+  Description: Create new table eqms_brochure_content_sales_details
+
+- Table: marketing.eqms_brochure_content_sales_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_brochure_content_sales_details_history
+
+- Table: marketing.eqms_product_brochure_content
+  Change Type: CREATE
+  Description: Create new table eqms_product_brochure_content
+
+- Table: marketing.eqms_product_brochure_content_history
+  Change Type: CREATE
+  Description: Create new table eqms_product_brochure_content_history
+
+- Table: marketing.eqms_brochure_content_legal_details
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: marketing.eqms_brochure_content_marketing_details
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: marketing.eqms_brochure_content_product_details
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: marketing.eqms_brochure_content_regulatory_details
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: marketing.eqms_brochure_content_sales_details
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: marketing.eqms_product_brochure_content
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

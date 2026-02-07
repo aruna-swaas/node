@@ -1,0 +1,109 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00423_purchase_0001_purchase_order_schema_batch_001
+Date with time: 2026-02-07 17:17:13
+
+Schema: purchase
+- Table: purchase.eqms_purchase_infrastructure_request
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_infrastructure_request
+
+- Table: purchase.eqms_purchase_infrastructure_request_history
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_infrastructure_request_history
+
+- Table: purchase.eqms_purchase_order
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order
+
+- Table: purchase.eqms_purchase_order_history
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_history
+
+- Table: purchase.eqms_purchase_order_infrastructure_detail
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_infrastructure_detail
+
+- Table: purchase.eqms_purchase_order_infrastructure_detail_history
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_infrastructure_detail_history
+
+- Table: purchase.eqms_purchase_order_invoice_to
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_invoice_to
+
+- Table: purchase.eqms_purchase_order_invoice_to_history
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_invoice_to_history
+
+- Table: purchase.eqms_purchase_order_part_detail
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_part_detail
+
+- Table: purchase.eqms_purchase_order_part_detail_history
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_part_detail_history
+
+- Table: purchase.eqms_purchase_order_ship_to
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_ship_to
+
+- Table: purchase.eqms_purchase_order_ship_to_history
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_ship_to_history
+
+- Table: purchase.eqms_purchase_order_source_log
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_source_log
+
+- Table: purchase.eqms_purchase_order_source_log_history
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_source_log_history
+
+- Table: purchase.eqms_purchase_order_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_supporting_files
+
+- Table: purchase.eqms_purchase_order_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_order_supporting_files_history
+
+- Table: purchase.eqms_purchase_requisition
+  Change Type: CREATE
+  Description: Create new table eqms_purchase_requisition
+
+- Table: purchase.eqms_purchase_infrastructure_request
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: purchase.eqms_purchase_order
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: purchase.eqms_purchase_order_infrastructure_detail
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: purchase.eqms_purchase_order_invoice_to
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: purchase.eqms_purchase_order_part_detail
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: purchase.eqms_purchase_order_ship_to
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: purchase.eqms_purchase_order_source_log
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: purchase.eqms_purchase_order_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: purchase.eqms_purchase_requisition
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)

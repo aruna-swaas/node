@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_feedback_rating_lk DROP CONSTRAINT fk_efrl_organization_id;
+ALTER TABLE organization.eqms_feedback_rating_lk DROP CONSTRAINT efrl_tenant_org_ref_unique;

@@ -1,0 +1,2 @@
+ALTER TABLE infrastructure.eqms_infrastructure_maintenance_schedule_detail DROP CONSTRAINT fk_eqms_schedule_status_lk_id;
+ALTER TABLE infrastructure.eqms_infrastructure_maintenance_schedule_detail DROP CONSTRAINT fk_eimsd_organization_id;

@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS risk_management.eqms_project_risk_assessment_matrix;

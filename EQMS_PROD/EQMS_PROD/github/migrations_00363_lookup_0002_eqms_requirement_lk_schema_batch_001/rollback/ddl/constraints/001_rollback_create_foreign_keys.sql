@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_requirement_lk DROP CONSTRAINT fk_erl_organization_id;
+ALTER TABLE organization.eqms_requirement_lk DROP CONSTRAINT uk_erl_ref_id;

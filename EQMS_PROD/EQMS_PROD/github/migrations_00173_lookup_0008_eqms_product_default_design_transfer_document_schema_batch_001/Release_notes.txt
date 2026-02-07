@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00173_lookup_0008_eqms_product_default_design_transfer_document_schema_batch_001
+Date with time: 2026-02-07 17:11:49
+
+Schema: organization
+- Table: organization.eqms_product_default_design_transfer_document
+  Change Type: CREATE
+  Description: Create new table eqms_product_default_design_transfer_document
+
+- Table: organization.eqms_product_default_design_transfer_document
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 5 foreign key constraint(s)

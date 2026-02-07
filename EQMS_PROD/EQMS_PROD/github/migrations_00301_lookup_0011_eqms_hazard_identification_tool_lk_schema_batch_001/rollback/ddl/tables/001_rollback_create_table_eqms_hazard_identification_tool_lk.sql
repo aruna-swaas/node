@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_hazard_identification_tool_lk;

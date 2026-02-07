@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS notification_center.eqms_nc_notification_header_history;

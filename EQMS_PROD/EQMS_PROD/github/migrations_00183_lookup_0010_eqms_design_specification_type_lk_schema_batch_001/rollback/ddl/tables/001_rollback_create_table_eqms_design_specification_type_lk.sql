@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_design_specification_type_lk;

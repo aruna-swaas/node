@@ -1,0 +1,7 @@
+ALTER TABLE dnd.eqms_conflicting_dir DROP CONSTRAINT fk_ecd_dir_declaration_id;
+ALTER TABLE dnd.eqms_dir_declaration DROP CONSTRAINT fk_eqms_dir_adequacy_report_id;
+ALTER TABLE dnd.eqms_dir_declaration DROP CONSTRAINT fk_edd_organization_id;
+ALTER TABLE dnd.eqms_dir_adequacy_report DROP CONSTRAINT fk_edar_project_applicable_specification_id;
+ALTER TABLE dnd.eqms_dir_adequacy_report DROP CONSTRAINT fk_edar_organization_id;
+ALTER TABLE dnd.eqms_conflicting_dir DROP CONSTRAINT fk_edd_organization_id;
+ALTER TABLE dnd.eqms_conflicting_dir DROP CONSTRAINT fk_ecd_design_input_requirement_id;

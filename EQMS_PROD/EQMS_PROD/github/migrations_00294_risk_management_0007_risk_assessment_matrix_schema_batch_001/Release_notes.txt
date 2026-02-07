@@ -1,0 +1,25 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00294_risk_management_0007_risk_assessment_matrix_schema_batch_001
+Date with time: 2026-02-07 17:13:57
+
+Schema: risk_management
+- Table: risk_management.eqms_project_risk_assessment_matrix
+  Change Type: CREATE
+  Description: Create new table eqms_project_risk_assessment_matrix
+
+- Table: risk_management.eqms_project_risk_assessment_matrix_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_risk_assessment_matrix_history
+
+- Table: risk_management.eqms_risk_assessment_matrix_template
+  Change Type: CREATE
+  Description: Create new table eqms_risk_assessment_matrix_template
+
+- Table: risk_management.eqms_project_risk_assessment_matrix
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: risk_management.eqms_risk_assessment_matrix_template
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 3 foreign key constraint(s)

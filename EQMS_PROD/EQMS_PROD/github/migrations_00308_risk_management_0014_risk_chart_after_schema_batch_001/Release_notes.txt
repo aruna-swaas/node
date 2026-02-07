@@ -1,0 +1,17 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00308_risk_management_0014_risk_chart_after_schema_batch_001
+Date with time: 2026-02-07 17:14:15
+
+Schema: risk_management
+- Table: risk_management.eqms_rm_after_mitigation_matrix
+  Change Type: CREATE
+  Description: Create new table eqms_rm_after_mitigation_matrix
+
+- Table: risk_management.eqms_rm_after_mitigation_matrix_history
+  Change Type: CREATE
+  Description: Create new table eqms_rm_after_mitigation_matrix_history
+
+- Table: risk_management.eqms_rm_after_mitigation_matrix
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)

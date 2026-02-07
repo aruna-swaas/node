@@ -1,0 +1,2 @@
+-- No app users defined for module 'marketing' in app_user.txt
+-- No permissions to revoke

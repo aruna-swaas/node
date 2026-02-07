@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_concept_status_lk DROP CONSTRAINT fk_ecsl_organization_id;
+ALTER TABLE organization.eqms_concept_status_lk DROP CONSTRAINT eqms_concept_status_lk_tenant_org_ref_unique;

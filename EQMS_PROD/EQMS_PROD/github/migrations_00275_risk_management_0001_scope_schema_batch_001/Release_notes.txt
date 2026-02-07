@@ -1,0 +1,85 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00275_risk_management_0001_scope_schema_batch_001
+Date with time: 2026-02-07 17:13:39
+
+Schema: risk_management
+- Table: risk_management.eqms_risk
+  Change Type: CREATE
+  Description: Create new table eqms_risk
+
+- Table: risk_management.eqms_risk_management_plan
+  Change Type: CREATE
+  Description: Create new table eqms_risk_management_plan
+
+- Table: risk_management.eqms_risk_management_plan_history
+  Change Type: CREATE
+  Description: Create new table eqms_risk_management_plan_history
+
+- Table: risk_management.eqms_risk_menu_stage_review
+  Change Type: CREATE
+  Description: Create new table eqms_risk_menu_stage_review
+
+- Table: risk_management.eqms_risk_menu_stage_review_history
+  Change Type: CREATE
+  Description: Create new table eqms_risk_menu_stage_review_history
+
+- Table: risk_management.eqms_rmp_applicable_stage
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_applicable_stage
+
+- Table: risk_management.eqms_rmp_applicable_stage_history
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_applicable_stage_history
+
+- Table: risk_management.eqms_rmp_intended_device_user_profile
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_intended_device_user_profile
+
+- Table: risk_management.eqms_rmp_intended_device_user_profile_history
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_intended_device_user_profile_history
+
+- Table: risk_management.eqms_rmp_patient_anatomical_scope
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_patient_anatomical_scope
+
+- Table: risk_management.eqms_rmp_patient_anatomical_scope_history
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_patient_anatomical_scope_history
+
+- Table: risk_management.eqms_rmp_patient_population
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_patient_population
+
+- Table: risk_management.eqms_rmp_patient_population_history
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_patient_population_history
+
+- Table: risk_management.eqms_risk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: risk_management.eqms_risk_management_plan
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: risk_management.eqms_risk_menu_stage_review
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: risk_management.eqms_rmp_applicable_stage
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: risk_management.eqms_rmp_intended_device_user_profile
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: risk_management.eqms_rmp_patient_anatomical_scope
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: risk_management.eqms_rmp_patient_population
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

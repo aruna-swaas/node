@@ -1,0 +1,1 @@
+ALTER TABLE organization.eqms_action_planned_lk DROP CONSTRAINT unique_eapl_tnt_org_ref_id;

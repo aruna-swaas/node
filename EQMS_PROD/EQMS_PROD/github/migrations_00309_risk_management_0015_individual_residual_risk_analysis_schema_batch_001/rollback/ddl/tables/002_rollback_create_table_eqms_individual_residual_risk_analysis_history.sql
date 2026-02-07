@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS risk_management.eqms_individual_residual_risk_analysis_history;

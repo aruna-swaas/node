@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_reg_test_license_template DROP CONSTRAINT fk_ertlt_eqms_organization_id;
+ALTER TABLE organization.eqms_reg_test_license_template DROP CONSTRAINT eqms_reg_test_license_template_tenant_org_ref_unique;

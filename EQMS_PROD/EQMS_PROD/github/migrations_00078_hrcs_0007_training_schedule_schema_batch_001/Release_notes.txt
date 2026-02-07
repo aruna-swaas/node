@@ -1,0 +1,53 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00078_hrcs_0007_training_schedule_schema_batch_001
+Date with time: 2026-02-07 17:10:50
+
+Schema: hrcs
+- Table: hrcs.eqms_hr_training_attendee
+  Change Type: CREATE
+  Description: Create new table eqms_hr_training_attendee
+
+- Table: hrcs.eqms_hr_training_attendee_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_training_attendee_history
+
+- Table: hrcs.eqms_hr_training_certificate_supporting_file
+  Change Type: CREATE
+  Description: Create new table eqms_hr_training_certificate_supporting_file
+
+- Table: hrcs.eqms_hr_training_certificate_supporting_file_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_training_certificate_supporting_file_history
+
+- Table: hrcs.eqms_hr_training_schedule
+  Change Type: CREATE
+  Description: Create new table eqms_hr_training_schedule
+
+- Table: hrcs.eqms_hr_training_schedule_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_training_schedule_history
+
+- Table: hrcs.eqms_hr_training_skill
+  Change Type: CREATE
+  Description: Create new table eqms_hr_training_skill
+
+- Table: hrcs.eqms_hr_training_skill_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_training_skill_history
+
+- Table: hrcs.eqms_hr_training_attendee
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_training_certificate_supporting_file
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_training_schedule
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_training_skill
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

@@ -1,0 +1,29 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00038_hrcs_0002_role_definition_schema_batch_001
+Date with time: 2026-02-07 17:10:28
+
+Schema: hrcs
+- Table: hrcs.eqms_hr_role_definition
+  Change Type: CREATE
+  Description: Create new table eqms_hr_role_definition
+
+- Table: hrcs.eqms_hr_role_definition_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_role_definition_history
+
+- Table: hrcs.eqms_hr_role_definition_skill_level_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_hr_role_definition_skill_level_mapper
+
+- Table: hrcs.eqms_hr_role_definition_skill_level_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_role_definition_skill_level_mapper_history
+
+- Table: hrcs.eqms_hr_role_definition
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 4 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_role_definition_skill_level_mapper
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)

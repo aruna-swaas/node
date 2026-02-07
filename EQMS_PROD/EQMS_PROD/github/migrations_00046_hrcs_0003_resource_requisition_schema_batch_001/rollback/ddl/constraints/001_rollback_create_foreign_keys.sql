@@ -1,0 +1,4 @@
+ALTER TABLE hrcs.eqms_hr_resource_requisition DROP CONSTRAINT fk_ehrd_roles_lk_id;
+ALTER TABLE hrcs.eqms_hr_resource_requisition DROP CONSTRAINT fk_ehrd_organization_id;
+ALTER TABLE hrcs.eqms_hr_resource_requisition DROP CONSTRAINT fk_ehrd_hr_resource_required_type_lk_id;
+ALTER TABLE hrcs.eqms_hr_resource_requisition DROP CONSTRAINT fk_ehrd_hr_recruitment_type_lk_id;

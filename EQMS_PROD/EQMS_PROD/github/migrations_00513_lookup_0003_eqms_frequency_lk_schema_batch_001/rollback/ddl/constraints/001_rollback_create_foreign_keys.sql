@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_frequency_lk DROP CONSTRAINT fk_ef_organization_id;
+ALTER TABLE organization.eqms_frequency_lk DROP CONSTRAINT unique_efl_tnt_org_ref_id;

@@ -1,0 +1,53 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00215_dnd_0014_dir_schema_batch_001
+Date with time: 2026-02-07 17:12:11
+
+Schema: dnd
+- Table: dnd.eqms_design_input_requirement
+  Change Type: CREATE
+  Description: Create new table eqms_design_input_requirement
+
+- Table: dnd.eqms_design_input_requirement_history
+  Change Type: CREATE
+  Description: Create new table eqms_design_input_requirement_history
+
+- Table: dnd.eqms_dir_reference_dirs
+  Change Type: CREATE
+  Description: Create new table eqms_dir_reference_dirs
+
+- Table: dnd.eqms_dir_reference_dirs_history
+  Change Type: CREATE
+  Description: Create new table eqms_dir_reference_dirs_history
+
+- Table: dnd.eqms_dir_supporting_document
+  Change Type: CREATE
+  Description: Create new table eqms_dir_supporting_document
+
+- Table: dnd.eqms_dir_supporting_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_dir_supporting_document_history
+
+- Table: dnd.eqms_execution_stage_deliverables
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_deliverables
+
+- Table: dnd.eqms_execution_stage_deliverables_history
+  Change Type: CREATE
+  Description: Create new table eqms_execution_stage_deliverables_history
+
+- Table: dnd.eqms_design_input_requirement
+  Change Type: ALTER
+  Description: Add 5 foreign key constraint(s)
+
+- Table: dnd.eqms_dir_reference_dirs
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_dir_supporting_document
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_execution_stage_deliverables
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

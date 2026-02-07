@@ -1,0 +1,7 @@
+ALTER TABLE risk_management.eqms_risk_control_measure DROP CONSTRAINT fk_ercm_selection_lk_id;
+ALTER TABLE risk_management.eqms_risk_control_measure DROP CONSTRAINT fk_ercm_risk_id;
+ALTER TABLE risk_management.eqms_risk_control_measure DROP CONSTRAINT fk_ercm_rcm_type_lk_id;
+ALTER TABLE risk_management.eqms_risk_control_measure DROP CONSTRAINT fk_ercm_project_risk_severity_level_id;
+ALTER TABLE risk_management.eqms_risk_control_measure DROP CONSTRAINT fk_ercm_project_risk_probability_level_id;
+ALTER TABLE risk_management.eqms_risk_control_measure DROP CONSTRAINT fk_ercm_organization_id;
+ALTER TABLE risk_management.eqms_risk_control_measure DROP CONSTRAINT eqms_risk_control_measure_unique;

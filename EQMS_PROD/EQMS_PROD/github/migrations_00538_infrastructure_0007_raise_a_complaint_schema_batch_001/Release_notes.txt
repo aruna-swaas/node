@@ -1,0 +1,29 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00538_infrastructure_0007_raise_a_complaint_schema_batch_001
+Date with time: 2026-02-07 17:19:31
+
+Schema: infrastructure
+- Table: infrastructure.eqms_infrastructure_complaint
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_complaint
+
+- Table: infrastructure.eqms_infrastructure_complaint_history
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_complaint_history
+
+- Table: infrastructure.eqms_infrastructure_complaint_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_complaint_supporting_files
+
+- Table: infrastructure.eqms_infrastructure_complaint_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_complaint_supporting_files_history
+
+- Table: infrastructure.eqms_infrastructure_complaint
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: infrastructure.eqms_infrastructure_complaint_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

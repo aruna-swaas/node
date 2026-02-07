@@ -1,0 +1,29 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00315_risk_management_0017_risk_review_report_summary_schema_batch_001
+Date with time: 2026-02-07 17:14:21
+
+Schema: risk_management
+- Table: risk_management.eqms_risk_review_report_summary
+  Change Type: CREATE
+  Description: Create new table eqms_risk_review_report_summary
+
+- Table: risk_management.eqms_risk_review_report_summary_history
+  Change Type: CREATE
+  Description: Create new table eqms_risk_review_report_summary_history
+
+- Table: risk_management.eqms_risk_review_report_summary_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_risk_review_report_summary_supporting_files
+
+- Table: risk_management.eqms_risk_review_report_summary_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_risk_review_report_summary_supporting_files_history
+
+- Table: risk_management.eqms_risk_review_report_summary
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: risk_management.eqms_risk_review_report_summary_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

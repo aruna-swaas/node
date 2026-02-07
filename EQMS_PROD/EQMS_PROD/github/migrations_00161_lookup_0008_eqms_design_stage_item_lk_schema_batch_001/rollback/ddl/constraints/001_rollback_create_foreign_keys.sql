@@ -1,0 +1,3 @@
+ALTER TABLE organization.eqms_design_stage_item_lk DROP CONSTRAINT fk_edsil_project_id;
+ALTER TABLE organization.eqms_design_stage_item_lk DROP CONSTRAINT fk_edsil_organization_id;
+ALTER TABLE organization.eqms_design_stage_item_lk DROP CONSTRAINT eqms_design_stage_item_lk_tenant_org_ref_unique;

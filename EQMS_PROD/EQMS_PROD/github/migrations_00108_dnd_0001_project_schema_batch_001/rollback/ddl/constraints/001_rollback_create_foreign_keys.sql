@@ -1,0 +1,11 @@
+ALTER TABLE dnd.eqms_project_documents DROP CONSTRAINT fk_eqms_project_id;
+ALTER TABLE dnd.eqms_project_documents DROP CONSTRAINT fk_eqms_organization_id;
+ALTER TABLE dnd.eqms_project_documents DROP CONSTRAINT fk_epd_file_id;
+ALTER TABLE dnd.eqms_project DROP CONSTRAINT fk_eqms_organization_product_id;
+ALTER TABLE dnd.eqms_project DROP CONSTRAINT fk_ep_organization_id;
+ALTER TABLE dnd.eqms_product_regulations DROP CONSTRAINT fk_eqms_regulation_standard_id;
+ALTER TABLE dnd.eqms_product_regulations DROP CONSTRAINT fk_eqms_organization_product_id;
+ALTER TABLE dnd.eqms_product_regulations DROP CONSTRAINT fk_eqms_organization_id;
+ALTER TABLE dnd.eqms_product_market DROP CONSTRAINT fk_epm_organization_product_id;
+ALTER TABLE dnd.eqms_product_market DROP CONSTRAINT fk_epm_organization_id;
+ALTER TABLE dnd.eqms_product_market DROP CONSTRAINT fk_epm_market_id;

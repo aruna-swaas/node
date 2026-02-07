@@ -1,0 +1,298 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00561_pre_production_0005_partassembly_setting_schema_batch_001
+Date with time: 2026-02-07 17:20:12
+
+Schema: organization
+- Table: organization.eqms_jig_item_history
+  Change Type: CREATE
+  Description: Create new table eqms_jig_item_history
+
+Schema: pre_production
+- Table: pre_production.eqms_pre_prod_assembly_work_instruc_supp_files
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruc_supp_files
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruc_supp_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruc_supp_files_history
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruction
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_equipment
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruction_equipment
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_equipment_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruction_equipment_history
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruction_history
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_jig
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruction_jig
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_jig_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruction_jig_history
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_skill
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruction_skill
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_skill_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruction_skill_history
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_step
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruction_step
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_step_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruction_step_history
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_tool_type
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruction_tool_type
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_tool_type_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_assembly_work_instruction_tool_type_history
+
+- Table: pre_production.eqms_pre_prod_electrical_drawing
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_electrical_drawing
+
+- Table: pre_production.eqms_pre_prod_electrical_drawing_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_electrical_drawing_history
+
+- Table: pre_production.eqms_pre_prod_electrical_drawing_supp_file
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_electrical_drawing_supp_file
+
+- Table: pre_production.eqms_pre_prod_electrical_drawing_supp_file_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_electrical_drawing_supp_file_history
+
+- Table: pre_production.eqms_pre_prod_feature_model_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_feature_model_mapper
+
+- Table: pre_production.eqms_pre_prod_feature_model_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_feature_model_mapper_history
+
+- Table: pre_production.eqms_pre_prod_incoming_insp_spec_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_incoming_insp_spec_supporting_files
+
+- Table: pre_production.eqms_pre_prod_incoming_insp_spec_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_incoming_insp_spec_supporting_files_history
+
+- Table: pre_production.eqms_pre_prod_incoming_inspection_applicable_group
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_incoming_inspection_applicable_group
+
+- Table: pre_production.eqms_pre_prod_incoming_inspection_applicable_group_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_incoming_inspection_applicable_group_history
+
+- Table: pre_production.eqms_pre_prod_incoming_inspection_spec_criteria
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_incoming_inspection_spec_criteria
+
+- Table: pre_production.eqms_pre_prod_incoming_inspection_spec_criteria_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_incoming_inspection_spec_criteria_history
+
+- Table: pre_production.eqms_pre_prod_incoming_inspection_spec_criteria_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_incoming_inspection_spec_criteria_lk_history
+
+- Table: pre_production.eqms_pre_prod_incoming_inspection_spec_group_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_incoming_inspection_spec_group_lk_history
+
+- Table: pre_production.eqms_pre_prod_incoming_inspection_specification
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_incoming_inspection_specification
+
+- Table: pre_production.eqms_pre_prod_incoming_inspection_specification_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_incoming_inspection_specification_history
+
+- Table: pre_production.eqms_pre_prod_inventory_detail
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_inventory_detail
+
+- Table: pre_production.eqms_pre_prod_inventory_detail_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_inventory_detail_history
+
+- Table: pre_production.eqms_pre_prod_iqa_exclusion
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_iqa_exclusion
+
+- Table: pre_production.eqms_pre_prod_iqa_exclusion_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_iqa_exclusion_history
+
+- Table: pre_production.eqms_pre_prod_packaging_instruction_supporting_file
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_packaging_instruction_supporting_file
+
+- Table: pre_production.eqms_pre_prod_part_assembly_drawing_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_part_assembly_drawing_history
+
+- Table: pre_production.eqms_pre_prod_part_assembly_drawing_supp_file
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_part_assembly_drawing_supp_file
+
+- Table: pre_production.eqms_pre_prod_part_assembly_drawing_supp_file_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_part_assembly_drawing_supp_file_history
+
+- Table: pre_production.eqms_pre_prod_performance_qualification_final_result
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_performance_qualification_final_result
+
+- Table: pre_production.eqms_pre_prod_performance_qualification_final_result_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_performance_qualification_final_result_history
+
+- Table: pre_production.eqms_pre_prod_product_feature
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_product_feature
+
+- Table: pre_production.eqms_pre_prod_product_feature_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_product_feature_history
+
+- Table: pre_production.eqms_pre_prod_product_process_checklist_group_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_product_process_checklist_group_lk_history
+
+- Table: pre_production.eqms_pre_prod_serial_batch
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_serial_batch
+
+- Table: pre_production.eqms_pre_prod_serial_batch_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_serial_batch_history
+
+- Table: pre_production.eqms_pre_prod_shelf_life
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_shelf_life
+
+- Table: pre_production.eqms_pre_prod_shelf_life_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_shelf_life_history
+
+- Table: pre_production.eqms_pre_prod_storage_environment
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_storage_environment
+
+- Table: pre_production.eqms_pre_prod_storage_environment_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_storage_environment_history
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruc_supp_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_equipment
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_jig
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_skill
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_step
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_assembly_work_instruction_tool_type
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_electrical_drawing
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_electrical_drawing_supp_file
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_feature_model_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_incoming_insp_spec_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_incoming_inspection_applicable_group
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_incoming_inspection_spec_criteria
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_incoming_inspection_specification
+  Change Type: ALTER
+  Description: Add 8 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_inventory_detail
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_iqa_exclusion
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_packaging_instruction_supporting_file
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_part_assembly_drawing_supp_file
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_performance_qualification_final_result
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_product_feature
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_serial_batch
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_shelf_life
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_storage_environment
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

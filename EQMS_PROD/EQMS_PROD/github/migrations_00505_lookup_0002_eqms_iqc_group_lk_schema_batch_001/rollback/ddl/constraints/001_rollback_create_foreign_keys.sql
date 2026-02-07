@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_iqc_group_lk DROP CONSTRAINT fk_ei_organization_id;
+ALTER TABLE organization.eqms_iqc_group_lk DROP CONSTRAINT unique_eigl_tnt_org_ref_id;

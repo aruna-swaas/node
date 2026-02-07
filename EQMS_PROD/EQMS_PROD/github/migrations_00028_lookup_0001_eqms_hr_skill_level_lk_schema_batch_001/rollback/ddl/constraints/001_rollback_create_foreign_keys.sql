@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_hr_skill_level_lk DROP CONSTRAINT fk_ehsll_organization_id;
+ALTER TABLE organization.eqms_hr_skill_level_lk DROP CONSTRAINT eqms_hr_skill_level_lk_tenant_org_ref_unique;

@@ -1,0 +1,29 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00283_risk_management_0004_risk_team_schema_batch_001
+Date with time: 2026-02-07 17:13:49
+
+Schema: risk_management
+- Table: risk_management.eqms_rmp_team_member
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_team_member
+
+- Table: risk_management.eqms_rmp_team_member_history
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_team_member_history
+
+- Table: risk_management.eqms_rmp_team_structure_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_team_structure_mapper
+
+- Table: risk_management.eqms_rmp_team_structure_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_team_structure_mapper_history
+
+- Table: risk_management.eqms_rmp_team_member
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: risk_management.eqms_rmp_team_structure_mapper
+  Change Type: ALTER
+  Description: Add 6 foreign key constraint(s)

@@ -1,0 +1,17 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00299_risk_management_0010_production_post_production_info_schema_batch_001
+Date with time: 2026-02-07 17:14:05
+
+Schema: risk_management
+- Table: risk_management.eqms_rmp_production_post_production_info
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_production_post_production_info
+
+- Table: risk_management.eqms_rmp_production_post_production_info_history
+  Change Type: CREATE
+  Description: Create new table eqms_rmp_production_post_production_info_history
+
+- Table: risk_management.eqms_rmp_production_post_production_info
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

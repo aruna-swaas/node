@@ -1,0 +1,14 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00457_sales_0095_customer_feedback_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:17:54
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_feedback_source_lk: 1 INSERT statement(s)
+  - organization.eqms_feedback_rating_lk: 1 INSERT statement(s)
+  - organization.eqms_cus_feedback_group_lk: 1 INSERT statement(s)
+  - organization.eqms_cus_feedback_criteria_lk: 1 INSERT statement(s)

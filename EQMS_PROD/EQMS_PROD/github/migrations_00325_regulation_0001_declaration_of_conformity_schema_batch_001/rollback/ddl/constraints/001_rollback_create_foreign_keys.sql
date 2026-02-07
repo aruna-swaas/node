@@ -1,0 +1,3 @@
+ALTER TABLE regulation.eqms_reg_conformity_declaration DROP CONSTRAINT fk_ercd_reg_product_classification_id;
+ALTER TABLE regulation.eqms_reg_conformity_declaration DROP CONSTRAINT fk_ercd_project_id;
+ALTER TABLE regulation.eqms_reg_conformity_declaration DROP CONSTRAINT fk_ercd_organization_id;

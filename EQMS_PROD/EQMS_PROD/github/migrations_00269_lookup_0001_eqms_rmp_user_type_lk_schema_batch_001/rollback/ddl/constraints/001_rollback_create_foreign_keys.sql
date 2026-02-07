@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_rmp_user_type_lk DROP CONSTRAINT fk_erutl_organization_id;
+ALTER TABLE organization.eqms_rmp_user_type_lk DROP CONSTRAINT eqms_rmp_user_type_lk_tenant_org_ref_unique;

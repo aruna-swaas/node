@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_vendor_re_evaluation_group_lk DROP CONSTRAINT fk_evregl_organization_id;
+ALTER TABLE organization.eqms_vendor_re_evaluation_group_lk DROP CONSTRAINT uk_evregl_ref_id;

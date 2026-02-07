@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_use_environment_lk DROP CONSTRAINT fk_euel_organization_id;
+ALTER TABLE organization.eqms_use_environment_lk DROP CONSTRAINT uk_euel_tenant_org_ref;

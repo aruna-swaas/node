@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_failure_type_lk DROP CONSTRAINT fk_eftl_organization_id;
+ALTER TABLE organization.eqms_failure_type_lk DROP CONSTRAINT unique_eftl_tnt_org_ref_id;

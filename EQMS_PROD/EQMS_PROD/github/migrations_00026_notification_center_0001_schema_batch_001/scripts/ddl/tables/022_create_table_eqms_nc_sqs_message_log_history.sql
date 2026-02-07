@@ -1,0 +1,25 @@
+CREATE TABLE notification_center.eqms_nc_sqs_message_log_history (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    fk_eqms_nc_sqs_message_log_id integer,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    message_group_id character varying(255),
+    message_deduplication_id character varying(255),
+    sqs_params text,
+    sqs_request_id character varying(255),
+    sqs_md5_of_message_body character varying(255),
+    sqs_message_id character varying(255),
+    sqs_sequence_number character varying(255),
+    sqs_status character varying(50),
+    sqs_response text,
+    status smallint,
+    record_status smallint DEFAULT '1'::smallint,
+    version numeric(10,1),
+    valid_from_date timestamp without time zone,
+    valid_to_date timestamp without time zone DEFAULT '2199-12-31 23:59:59'::timestamp without time zone,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer 
+);
+

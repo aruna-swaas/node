@@ -1,0 +1,12 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00290_risk_management_0006_risk_level_definition_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:13:57
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_002_PREDEFINED.sql):
+  - organization.eqms_risk_probability_level_template: 1 INSERT statement(s)
+  - organization.eqms_risk_severity_level_template: 1 INSERT statement(s)

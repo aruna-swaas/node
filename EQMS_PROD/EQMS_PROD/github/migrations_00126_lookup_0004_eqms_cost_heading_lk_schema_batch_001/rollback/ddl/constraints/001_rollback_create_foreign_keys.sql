@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_cost_heading_lk DROP CONSTRAINT fk_echl_organization_id;
+ALTER TABLE organization.eqms_cost_heading_lk DROP CONSTRAINT eqms_cost_heading_lk_tenant_org_ref_unique;

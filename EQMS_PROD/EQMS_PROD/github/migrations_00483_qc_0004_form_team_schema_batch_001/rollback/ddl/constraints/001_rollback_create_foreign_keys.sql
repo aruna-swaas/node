@@ -1,0 +1,9 @@
+ALTER TABLE qc.eqms_purchase_team_details DROP CONSTRAINT fk_eptd_purchase_team_id;
+ALTER TABLE qc.eqms_purchase_team_details DROP CONSTRAINT fk_eqms_part_category_id;
+ALTER TABLE qc.eqms_purchase_team_details DROP CONSTRAINT fk_eptd_status_lk_id;
+ALTER TABLE qc.eqms_purchase_team_details DROP CONSTRAINT fk_eptd_organization_id;
+ALTER TABLE qc.eqms_purchase_team_details DROP CONSTRAINT fk_eptd_organization_employee_id;
+ALTER TABLE qc.eqms_purchase_team_details DROP CONSTRAINT fk_eptd_hr_skill_master_id;
+ALTER TABLE qc.eqms_purchase_team DROP CONSTRAINT fk_esf_status_lk_id;
+ALTER TABLE qc.eqms_purchase_team DROP CONSTRAINT fk_ept_purchase_order_id;
+ALTER TABLE qc.eqms_purchase_team DROP CONSTRAINT fk_ept_organization_id;

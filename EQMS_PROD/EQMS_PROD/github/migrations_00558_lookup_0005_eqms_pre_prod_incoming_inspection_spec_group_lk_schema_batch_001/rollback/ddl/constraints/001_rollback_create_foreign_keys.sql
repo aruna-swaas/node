@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_pre_prod_incoming_inspection_spec_group_lk DROP CONSTRAINT fk_eiisg_organization_id;
+ALTER TABLE organization.eqms_pre_prod_incoming_inspection_spec_group_lk DROP CONSTRAINT unique_eiisg_tnt_org_ref_id;

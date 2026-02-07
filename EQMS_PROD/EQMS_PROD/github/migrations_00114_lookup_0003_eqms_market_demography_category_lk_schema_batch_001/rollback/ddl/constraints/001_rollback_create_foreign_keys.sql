@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_market_demography_category_lk DROP CONSTRAINT fk_emdcl_organization_id;
+ALTER TABLE organization.eqms_market_demography_category_lk DROP CONSTRAINT eqms_market_demography_category_lk_tenant_org_ref_unique;

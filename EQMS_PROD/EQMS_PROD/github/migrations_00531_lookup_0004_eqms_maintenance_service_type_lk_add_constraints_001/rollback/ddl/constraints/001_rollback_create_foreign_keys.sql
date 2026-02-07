@@ -1,0 +1,2 @@
+ALTER TABLE infrastructure.eqms_infrastructure_installation_report DROP CONSTRAINT fk_eiir_maintenance_service_type_lk_id;
+ALTER TABLE infrastructure.eqms_maintenance_plan_detail DROP CONSTRAINT fk_empd_maintenance_service_type_lk_id;

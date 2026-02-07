@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS risk_management.eqms_rmp_intended_device_user_profile;

@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS hrcs.eqms_hr_role_definition_skill_level_mapper_history;

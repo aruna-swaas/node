@@ -1,0 +1,13 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00016_abac_0001_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:09:37
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - abac.eqms_action_master_lk: 1 INSERT statement(s)
+  - abac.eqms_form_type_lk: 1 INSERT statement(s)
+  - abac.eqms_form_dependency_type_lk: 1 INSERT statement(s)

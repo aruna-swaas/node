@@ -1,0 +1,11 @@
+ALTER TABLE vendor.eqms_vendor_agreement_checklist DROP CONSTRAINT fk_evac_vendor_id;
+ALTER TABLE vendor.eqms_vendor_agreement_checklist DROP CONSTRAINT fk_evac_status_lk_id;
+ALTER TABLE vendor.eqms_vendor_agreement_checklist DROP CONSTRAINT fk_evac_organization_id;
+ALTER TABLE vendor.eqms_sample_orders_supporting_files DROP CONSTRAINT fk_esosf_sample_orders_id;
+ALTER TABLE vendor.eqms_sample_orders_supporting_files DROP CONSTRAINT fk_esosf_organization_id;
+ALTER TABLE vendor.eqms_sample_orders_supporting_files DROP CONSTRAINT fk_esosf_file_id;
+ALTER TABLE vendor.eqms_sample_order_part_mapper DROP CONSTRAINT fk_esopm_sample_orders_id;
+ALTER TABLE vendor.eqms_sample_orders DROP CONSTRAINT fk_eso_vendor_id;
+ALTER TABLE vendor.eqms_sample_orders DROP CONSTRAINT fk_eso_status_lk_id;
+ALTER TABLE vendor.eqms_sample_orders DROP CONSTRAINT fk_eso_organization_id;
+ALTER TABLE vendor.eqms_sample_order_part_mapper DROP CONSTRAINT fk_esopm_organization_id;

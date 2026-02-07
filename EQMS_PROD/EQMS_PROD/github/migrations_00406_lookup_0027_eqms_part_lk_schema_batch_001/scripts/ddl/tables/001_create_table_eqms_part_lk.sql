@@ -1,0 +1,28 @@
+CREATE TABLE dnd.eqms_part_lk (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    fk_eqms_part_category_id integer,
+    ref_id integer,
+    part_name character varying(500),
+    part_number character varying(25),
+    status smallint,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer,
+    fk_eqms_inventory_location_id integer,
+    aql character varying(2500),
+    type character varying(2500),
+    drawing_number character varying(2500),
+    visual character varying(2500),
+    unit_batch character varying(50),
+    min_stock integer,
+    items_required jsonb,
+    part_description character varying,
+    part_specification text,
+    fk_eqms_unit_lk_id integer,
+    classification_applicable_for_samd character varying(100),
+    fk_eqms_organization_site_id integer 
+);
+

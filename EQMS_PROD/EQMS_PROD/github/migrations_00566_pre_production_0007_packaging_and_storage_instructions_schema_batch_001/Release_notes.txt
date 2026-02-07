@@ -1,0 +1,49 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00566_pre_production_0007_packaging_and_storage_instructions_schema_batch_001
+Date with time: 2026-02-07 17:20:14
+
+Schema: pre_production
+- Table: pre_production.eqms_pre_prod_packaging_instruction_supporting_file_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_packaging_instruction_supporting_file_history
+
+- Table: pre_production.eqms_pre_prod_packaging_storage_instruction
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_packaging_storage_instruction
+
+- Table: pre_production.eqms_pre_prod_packaging_storage_instruction_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_packaging_storage_instruction_history
+
+- Table: pre_production.eqms_pre_prod_part_assembly_drawing
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_part_assembly_drawing
+
+- Table: pre_production.eqms_pre_prod_storage_instruction_supporting_file
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_storage_instruction_supporting_file
+
+- Table: pre_production.eqms_pre_prod_storage_instruction_supporting_file_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_storage_instruction_supporting_file_history
+
+- Table: pre_production.eqms_pre_prod_team
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_team
+
+- Table: pre_production.eqms_pre_prod_packaging_storage_instruction
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_part_assembly_drawing
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_storage_instruction_supporting_file
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_team
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

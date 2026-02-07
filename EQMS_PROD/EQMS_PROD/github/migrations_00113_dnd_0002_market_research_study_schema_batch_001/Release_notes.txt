@@ -1,0 +1,29 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00113_dnd_0002_market_research_study_schema_batch_001
+Date with time: 2026-02-07 17:11:20
+
+Schema: dnd
+- Table: dnd.eqms_market_research_study_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_market_research_study_supporting_files
+
+- Table: dnd.eqms_market_research_study_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_market_research_study_supporting_files_history
+
+- Table: dnd.eqms_project_market_research_study
+  Change Type: CREATE
+  Description: Create new table eqms_project_market_research_study
+
+- Table: dnd.eqms_project_market_research_study_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_market_research_study_history
+
+- Table: dnd.eqms_market_research_study_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_project_market_research_study
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

@@ -1,0 +1,33 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00439_sales_0002_customer_feedback_criteria_schema_batch_001
+Date with time: 2026-02-07 17:17:42
+
+Schema: sales
+- Table: sales.eqms_customer_feedback_criteria
+  Change Type: CREATE
+  Description: Create new table eqms_customer_feedback_criteria
+
+- Table: sales.eqms_customer_feedback_criteria_detail
+  Change Type: CREATE
+  Description: Create new table eqms_customer_feedback_criteria_detail
+
+- Table: sales.eqms_customer_feedback_criteria_detail_history
+  Change Type: CREATE
+  Description: Create new table eqms_customer_feedback_criteria_detail_history
+
+- Table: sales.eqms_customer_feedback_criteria_history
+  Change Type: CREATE
+  Description: Create new table eqms_customer_feedback_criteria_history
+
+- Table: sales.eqms_customer_feedback_history
+  Change Type: CREATE
+  Description: Create new table eqms_customer_feedback_history
+
+- Table: sales.eqms_customer_feedback_criteria
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: sales.eqms_customer_feedback_criteria_detail
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

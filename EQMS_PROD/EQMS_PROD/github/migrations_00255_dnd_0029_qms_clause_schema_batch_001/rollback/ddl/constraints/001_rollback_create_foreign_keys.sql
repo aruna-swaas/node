@@ -1,0 +1,3 @@
+ALTER TABLE dnd.eqms_product_applicable_clause DROP CONSTRAINT fk_epac_regulation_standard_clause_id;
+ALTER TABLE dnd.eqms_product_applicable_clause DROP CONSTRAINT fk_epac_organization_product_id;
+ALTER TABLE dnd.eqms_product_applicable_clause DROP CONSTRAINT fk_epac_organization_id;

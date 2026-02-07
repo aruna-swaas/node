@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dnd.eqms_feasibility_study_design_team_role;

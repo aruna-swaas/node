@@ -1,0 +1,58 @@
+-- Permissions for module 'hrcs': Grant access to tables from required module 'organization'
+-- App users: hrcs_app_user, magic_read_app_user, magic_save_app_user
+
+GRANT USAGE ON SCHEMA organization TO hrcs_app_user;
+GRANT USAGE ON SCHEMA organization TO magic_read_app_user;
+GRANT USAGE ON SCHEMA organization TO magic_save_app_user;
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_context_types TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_context_types TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_context_types TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_context_types_history TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_context_types_history TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_context_types_history TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_designation_lk TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_designation_lk TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_designation_lk TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_employee_status_lk TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_employee_status_lk TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_employee_status_lk TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_entity_subscription TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_entity_subscription TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_entity_subscription TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_entity_template TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_entity_template TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_entity_template TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_form_draft_supporting_files TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_form_draft_supporting_files TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_form_draft_supporting_files TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_form_drafts TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_form_drafts TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_form_drafts TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_module TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_module TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_module TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_nomenclature_category TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_nomenclature_category TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_nomenclature_category TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_object_project_instance TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_object_project_instance TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_object_project_instance TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_object_project_instance_history TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_object_project_instance_history TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_object_project_instance_history TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_department TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_department TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_department TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_department_history TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_department_history TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_department_history TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_site TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_site TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_site TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_roles_lk TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_roles_lk TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_roles_lk TO magic_save_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_users TO hrcs_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_users TO magic_read_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_users TO magic_save_app_user;

@@ -1,0 +1,1 @@
+ALTER TABLE risk_management.eqms_risk DROP CONSTRAINT fk_er_project_risk_probability_level_id;

@@ -1,0 +1,3 @@
+ALTER TABLE organization.eqms_dig_specification_usability_type_mapper DROP CONSTRAINT fk_edsutm_usability_type_id;
+ALTER TABLE organization.eqms_dig_specification_usability_type_mapper DROP CONSTRAINT fk_edsutm_organization_id;
+ALTER TABLE organization.eqms_dig_specification_usability_type_mapper DROP CONSTRAINT fk_edsutm_design_specification_type_lk_id;

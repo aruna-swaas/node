@@ -1,0 +1,5 @@
+ALTER TABLE vendor.eqms_sample_order_inspection DROP CONSTRAINT fk_esoi_part_lk_id;
+ALTER TABLE vendor.eqms_sample_order_part_mapper DROP CONSTRAINT fk_esopm_part_lk_id;
+ALTER TABLE vendor.eqms_sample_order_inspection_criteria DROP CONSTRAINT fk_esoic_part_lk_id;
+ALTER TABLE dnd.eqms_bom_assembly_parts DROP CONSTRAINT fk_ebap_part_lk_id;
+ALTER TABLE dnd.eqms_part_drawing_supporting_files DROP CONSTRAINT fk_epdsf_part_lk_id;

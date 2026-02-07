@@ -1,0 +1,4 @@
+ALTER TABLE risk_management.eqms_rm_before_mitigation_matrix DROP CONSTRAINT fk_erbmm_risk_id;
+ALTER TABLE risk_management.eqms_rm_before_mitigation_matrix DROP CONSTRAINT fk_erbmm_project_risk_severity_level_id;
+ALTER TABLE risk_management.eqms_rm_before_mitigation_matrix DROP CONSTRAINT fk_erbmm_project_risk_probability_level_id;
+ALTER TABLE risk_management.eqms_rm_before_mitigation_matrix DROP CONSTRAINT fk_erbmm_organization_id;

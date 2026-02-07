@@ -1,0 +1,12 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00337_regulation_0003_add_test_license_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:15:00
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_002_PREDEFINED.sql):
+  - organization.eqms_reg_test_license_template: 1 INSERT statement(s)
+  - organization.eqms_reg_test_checklist_section_master: 1 INSERT statement(s)

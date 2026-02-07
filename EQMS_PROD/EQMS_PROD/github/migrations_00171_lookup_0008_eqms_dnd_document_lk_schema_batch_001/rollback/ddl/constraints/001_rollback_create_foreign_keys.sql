@@ -1,0 +1,3 @@
+ALTER TABLE organization.eqms_dnd_document_lk DROP CONSTRAINT fk_er_file_id;
+ALTER TABLE organization.eqms_dnd_document_lk DROP CONSTRAINT fk_eddl_organization_id;
+ALTER TABLE organization.eqms_dnd_document_lk DROP CONSTRAINT eqms_dnd_document_lk_tenant_org_ref_unique;

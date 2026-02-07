@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS risk_management.eqms_rm_before_mitigation_matrix_history;

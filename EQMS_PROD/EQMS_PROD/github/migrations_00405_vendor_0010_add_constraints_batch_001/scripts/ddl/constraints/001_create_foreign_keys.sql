@@ -1,0 +1,3 @@
+ALTER TABLE ONLY vendor.eqms_vendor_re_evaluation_group_criteria_mapper
+    ADD CONSTRAINT fk_evregcm_vendor_re_evaluation_applicable_group_id FOREIGN KEY (fk_eqms_vendor_re_evaluation_applicable_group_id) REFERENCES vendor.eqms_vendor_re_evaluation_applicable_group(id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+

@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_pre_prod_product_process_checklist_group_lk DROP CONSTRAINT fk_epppcgl_organization_id;
+ALTER TABLE organization.eqms_pre_prod_product_process_checklist_group_lk DROP CONSTRAINT unique_epppcgl_tnt_org_ref_id;

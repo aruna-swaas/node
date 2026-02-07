@@ -1,0 +1,27 @@
+CREATE TABLE dms.eqms_file (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    file_name character varying(100),
+    file_description character varying(500),
+    file_extension character varying(100),
+    file_guid character varying(100),
+    file_size integer,
+    file_version_id character varying(100),
+    file_bucket character varying(255),
+    file_object_key character varying(255),
+    status smallint,
+    version numeric(10,1) DEFAULT 1.0,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer,
+    fk_eqms_file_category_lk_id integer,
+    fk_eqms_file_type_lk_id integer,
+    fk_uploaded_eqms_user_id integer,
+    purpose character varying(100),
+    source character varying(100),
+    s3_uri character varying(255),
+    full_url character varying(500) 
+);
+

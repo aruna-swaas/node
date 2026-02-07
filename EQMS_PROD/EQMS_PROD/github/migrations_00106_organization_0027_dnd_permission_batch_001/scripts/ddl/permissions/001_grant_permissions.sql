@@ -1,0 +1,54 @@
+-- Permissions for module 'dnd': Grant access to tables from required module 'organization'
+-- App users: dnd_app_user
+
+GRANT USAGE ON SCHEMA organization TO dnd_app_user;
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_assembly_type_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_bom_publish_status_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_bom_type_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_context_types TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_entity_template TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_equipment_category_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_equipment_item TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_equipment_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_form_draft_supporting_files TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_form_drafts TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_jig_item TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_jig_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_menu_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_module TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_month_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_nomenclature_category TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_object_project_instance TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_object_project_instance_history TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_department TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_department_history TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_product TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_product_history TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_role_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_site TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_organization_site_history TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_part_component_type_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_part_quantity_type_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_part_type_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_product_category_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_product_group_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_product_subtype_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_product_type_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_product_variants TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_product_variants_history TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_reg_country_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_responsibility_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_roles_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_selection_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_tool_category_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_tool_item TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_tool_item_history TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_tools TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_tools_history TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_unit_lk TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_unit_lk_history TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_user_roles TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_users TO dnd_app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE organization.eqms_year_lk TO dnd_app_user;

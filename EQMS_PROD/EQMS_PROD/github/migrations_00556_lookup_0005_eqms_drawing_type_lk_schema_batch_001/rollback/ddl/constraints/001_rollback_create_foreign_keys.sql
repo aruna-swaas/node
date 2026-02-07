@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_drawing_type_lk DROP CONSTRAINT fk_edtl_organization_id;
+ALTER TABLE organization.eqms_drawing_type_lk DROP CONSTRAINT unique_edtl_tnt_org_ref_id;

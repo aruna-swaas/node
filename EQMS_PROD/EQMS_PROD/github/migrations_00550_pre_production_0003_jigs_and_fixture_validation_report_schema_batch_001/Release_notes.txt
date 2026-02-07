@@ -1,0 +1,29 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00550_pre_production_0003_jigs_and_fixture_validation_report_schema_batch_001
+Date with time: 2026-02-07 17:19:55
+
+Schema: pre_production
+- Table: pre_production.eqms_pre_prod_jig_validation_report_supporting_file
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_jig_validation_report_supporting_file
+
+- Table: pre_production.eqms_pre_prod_jig_validation_report_supporting_file_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_jig_validation_report_supporting_file_history
+
+- Table: pre_production.eqms_pre_prod_jig_validation_results
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_jig_validation_results
+
+- Table: pre_production.eqms_pre_prod_jig_validation_results_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_jig_validation_results_history
+
+- Table: pre_production.eqms_pre_prod_jig_validation_report_supporting_file
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_jig_validation_results
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)

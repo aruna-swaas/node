@@ -1,0 +1,49 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00372_vendor_0004_vendor_reevaluation_criteria_schema_batch_001
+Date with time: 2026-02-07 17:16:25
+
+Schema: vendor
+- Table: vendor.eqms_vendor_re_evaluation_criteria
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_criteria
+
+- Table: vendor.eqms_vendor_re_evaluation_criteria_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_criteria_history
+
+- Table: vendor.eqms_vendor_re_evaluation_criteria_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_criteria_supporting_files
+
+- Table: vendor.eqms_vendor_re_evaluation_criteria_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_criteria_supporting_files_history
+
+- Table: vendor.eqms_vendor_re_evaluation_group_criteria_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_group_criteria_lk_history
+
+- Table: vendor.eqms_vendor_re_evaluation_group_criteria_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_group_criteria_mapper
+
+- Table: vendor.eqms_vendor_re_evaluation_group_criteria_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_group_criteria_mapper_history
+
+- Table: vendor.eqms_vendor_re_evaluation_group_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_group_lk_history
+
+- Table: vendor.eqms_vendor_re_evaluation_criteria
+  Change Type: ALTER
+  Description: Add 6 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_re_evaluation_criteria_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_re_evaluation_group_criteria_mapper
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)

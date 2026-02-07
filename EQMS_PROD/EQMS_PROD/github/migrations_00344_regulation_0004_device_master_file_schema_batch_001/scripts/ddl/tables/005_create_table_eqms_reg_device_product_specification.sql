@@ -1,0 +1,27 @@
+CREATE TABLE regulation.eqms_reg_device_product_specification (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    fk_eqms_reg_device_master_file_id integer,
+    material_construction character varying,
+    contra_indications character varying,
+    precautions character varying,
+    potential_adverse_effects character varying,
+    intended_use_patient_criteria character varying,
+    accessory_combination_product_description character varying,
+    novel_features character varying,
+    principle_of_operation character varying,
+    device_configurations_variants character varying,
+    key_functional_elements_description character varying,
+    product_specifications character varying,
+    previous_generation character varying,
+    predicate_device_available character varying,
+    comparative_analysis character varying,
+    status smallint,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer,
+    emits_ionizing_radiation character varying 
+);
+

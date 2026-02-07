@@ -1,0 +1,1 @@
+ALTER TABLE purchase.eqms_purchase_infrastructure_request DROP CONSTRAINT fk_epir_infrastructure_request_id;

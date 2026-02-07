@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_vendor_type_lk DROP CONSTRAINT fk_evtl_organization_id;
+ALTER TABLE organization.eqms_vendor_type_lk DROP CONSTRAINT uk_evtl_ref_id;

@@ -1,0 +1,1 @@
+ALTER TABLE risk_management.eqms_rmp_residual_risk_acceptability_criteria DROP CONSTRAINT fk_errrac_rm_comparison_operator_lk_id;

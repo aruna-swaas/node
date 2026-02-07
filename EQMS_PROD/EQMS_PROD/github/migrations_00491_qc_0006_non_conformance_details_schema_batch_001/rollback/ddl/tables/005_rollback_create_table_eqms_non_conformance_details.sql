@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS qc.eqms_non_conformance_details;

@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00185_lookup_0010_eqms_product_default_applicable_specification_schema_batch_001
+Date with time: 2026-02-07 17:11:57
+
+Schema: organization
+- Table: organization.eqms_product_default_applicable_specification
+  Change Type: CREATE
+  Description: Create new table eqms_product_default_applicable_specification
+
+- Table: organization.eqms_product_default_applicable_specification
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 5 foreign key constraint(s)

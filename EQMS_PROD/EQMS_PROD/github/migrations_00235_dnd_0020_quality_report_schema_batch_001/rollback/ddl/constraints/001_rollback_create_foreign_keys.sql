@@ -1,0 +1,9 @@
+ALTER TABLE dnd.eqms_project_quality_specifications DROP CONSTRAINT fk_eqms_dir_id;
+ALTER TABLE dnd.eqms_project_quality_specifications DROP CONSTRAINT fk_epqs_project_quality_plan_id;
+ALTER TABLE dnd.eqms_project_quality_specifications DROP CONSTRAINT fk_epqs_organization_id;
+ALTER TABLE dnd.eqms_project_quality_reports_supporting_file DROP CONSTRAINT fk_epqrsf_project_quality_reports_id;
+ALTER TABLE dnd.eqms_project_quality_reports_supporting_file DROP CONSTRAINT fk_epvd_organization_id;
+ALTER TABLE dnd.eqms_project_quality_reports_supporting_file DROP CONSTRAINT fk_epqrsf_file_id;
+ALTER TABLE dnd.eqms_project_quality_reports DROP CONSTRAINT fk_epqs_organization_id;
+ALTER TABLE dnd.eqms_project_quality_reports DROP CONSTRAINT fk_epqr_project_quality_plan_id;
+ALTER TABLE dnd.eqms_project_quality_reports DROP CONSTRAINT fk_epqr_design_stage_item_lk_id;

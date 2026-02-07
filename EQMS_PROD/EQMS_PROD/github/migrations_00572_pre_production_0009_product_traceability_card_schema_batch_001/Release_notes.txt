@@ -1,0 +1,33 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00572_pre_production_0009_product_traceability_card_schema_batch_001
+Date with time: 2026-02-07 17:20:19
+
+Schema: pre_production
+- Table: pre_production.eqms_pre_prod_product_process_checklist_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_product_process_checklist_lk_history
+
+- Table: pre_production.eqms_pre_prod_product_trace_card_process_checklist
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_product_trace_card_process_checklist
+
+- Table: pre_production.eqms_pre_prod_product_trace_card_process_checklist_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_product_trace_card_process_checklist_history
+
+- Table: pre_production.eqms_pre_prod_product_traceability_card
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_product_traceability_card
+
+- Table: pre_production.eqms_pre_prod_product_traceability_card_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_product_traceability_card_history
+
+- Table: pre_production.eqms_pre_prod_product_trace_card_process_checklist
+  Change Type: ALTER
+  Description: Add 6 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_product_traceability_card
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_performance_rating_lk DROP CONSTRAINT fk_epr_organization_id;
+ALTER TABLE organization.eqms_performance_rating_lk DROP CONSTRAINT uk_epr_ref_id;

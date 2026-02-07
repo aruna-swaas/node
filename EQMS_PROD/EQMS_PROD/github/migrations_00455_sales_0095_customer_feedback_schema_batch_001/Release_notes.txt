@@ -1,0 +1,73 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00455_sales_0095_customer_feedback_schema_batch_001
+Date with time: 2026-02-07 17:17:53
+
+Schema: sales
+- Table: sales.eqms_cus_feedback_criteria_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_cus_feedback_criteria_lk_history
+
+- Table: sales.eqms_cus_feedback_group_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_cus_feedback_group_lk_history
+
+- Table: sales.eqms_cus_feedback_person_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_cus_feedback_person_supporting_files
+
+- Table: sales.eqms_cus_feedback_person_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_cus_feedback_person_supporting_files_history
+
+- Table: sales.eqms_customer_feedback
+  Change Type: CREATE
+  Description: Create new table eqms_customer_feedback
+
+- Table: sales.eqms_customer_feedback_person
+  Change Type: CREATE
+  Description: Create new table eqms_customer_feedback_person
+
+- Table: sales.eqms_customer_feedback_person_history
+  Change Type: CREATE
+  Description: Create new table eqms_customer_feedback_person_history
+
+- Table: sales.eqms_customer_feedback_response
+  Change Type: CREATE
+  Description: Create new table eqms_customer_feedback_response
+
+- Table: sales.eqms_customer_feedback_response_history
+  Change Type: CREATE
+  Description: Create new table eqms_customer_feedback_response_history
+
+- Table: sales.eqms_customer_feedback_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_customer_feedback_supporting_files
+
+- Table: sales.eqms_customer_feedback_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_customer_feedback_supporting_files_history
+
+- Table: sales.eqms_feedback_source_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_feedback_source_lk_history
+
+- Table: sales.eqms_cus_feedback_person_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: sales.eqms_customer_feedback
+  Change Type: ALTER
+  Description: Add 6 foreign key constraint(s)
+
+- Table: sales.eqms_customer_feedback_person
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: sales.eqms_customer_feedback_response
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: sales.eqms_customer_feedback_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

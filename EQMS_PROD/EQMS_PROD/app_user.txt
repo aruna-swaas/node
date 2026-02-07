@@ -1,0 +1,21 @@
+
+Module	App_user_name	 	 
+organization	organization_app_user	 	 
+workflow	pms_app_user	 	 
+abac	 	 	 
+dms	dms_app_user	 	 
+notification_center	 	notification_app_user 	 
+hrcs	hrcs_app_user,magic_read_app_user,magic_save_app_user
+dnd	dnd_app_user
+marketing	 	 	 
+risk_management	risk_app_user	 	 
+regulation	 	 	 
+vendor	vendor_purchase_app_user	 	 
+purchase	 	vendor_purchase_app_user 
+sales	sales_app_user	 	 
+qc	quality_control_app_user	 	 
+infrastructure	infrastructure_app_user	 	 
+pre_production	production_app_user
+  - magic_read_app_user
+  - magic_save_app_user
+  - auth_app_user 

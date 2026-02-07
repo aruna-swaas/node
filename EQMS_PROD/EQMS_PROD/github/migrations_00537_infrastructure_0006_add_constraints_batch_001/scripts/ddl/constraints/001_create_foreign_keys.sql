@@ -1,0 +1,3 @@
+ALTER TABLE ONLY infrastructure.eqms_infrastructure_maintenance_schedule_detail
+    ADD CONSTRAINT fk_eqms_infrastructure_maintenance_plan_detail_id FOREIGN KEY (fk_eqms_infrastructure_maintenance_plan_detail_id) REFERENCES infrastructure.eqms_infrastructure_maintenance_plan_detail(id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+

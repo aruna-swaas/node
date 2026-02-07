@@ -1,0 +1,1 @@
+ALTER TABLE hrcs.eqms_hr_role_definition DROP CONSTRAINT fk_ehcs_hr_employment_type_lk_id;

@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_feedback_source_lk DROP CONSTRAINT fk_efsl_organization_id;
+ALTER TABLE organization.eqms_feedback_source_lk DROP CONSTRAINT efsl_tenant_org_ref_unique;

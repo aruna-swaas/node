@@ -1,0 +1,233 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00026_notification_center_0001_schema_batch_001
+Date with time: 2026-02-07 17:10:09
+
+Schema: notification_center
+- Table: notification_center.eqms_nc_email_notification_log
+  Change Type: CREATE
+  Description: Create new table eqms_nc_email_notification_log
+
+- Table: notification_center.eqms_nc_email_notification_log_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_email_notification_log_history
+
+- Table: notification_center.eqms_nc_email_provider_master
+  Change Type: CREATE
+  Description: Create new table eqms_nc_email_provider_master
+
+- Table: notification_center.eqms_nc_email_provider_master_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_email_provider_master_history
+
+- Table: notification_center.eqms_nc_notification_header
+  Change Type: CREATE
+  Description: Create new table eqms_nc_notification_header
+
+- Table: notification_center.eqms_nc_notification_header_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_notification_header_history
+
+- Table: notification_center.eqms_nc_notification_transactions
+  Change Type: CREATE
+  Description: Create new table eqms_nc_notification_transactions
+
+- Table: notification_center.eqms_nc_notification_transactions_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_notification_transactions_history
+
+- Table: notification_center.eqms_nc_notifications
+  Change Type: CREATE
+  Description: Create new table eqms_nc_notifications
+
+- Table: notification_center.eqms_nc_notifications_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_notifications_history
+
+- Table: notification_center.eqms_nc_provider_channel_master
+  Change Type: CREATE
+  Description: Create new table eqms_nc_provider_channel_master
+
+- Table: notification_center.eqms_nc_provider_channel_master_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_provider_channel_master_history
+
+- Table: notification_center.eqms_nc_provider_header
+  Change Type: CREATE
+  Description: Create new table eqms_nc_provider_header
+
+- Table: notification_center.eqms_nc_provider_header_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_provider_header_history
+
+- Table: notification_center.eqms_nc_provider_type_master
+  Change Type: CREATE
+  Description: Create new table eqms_nc_provider_type_master
+
+- Table: notification_center.eqms_nc_provider_type_master_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_provider_type_master_history
+
+- Table: notification_center.eqms_nc_retry_config
+  Change Type: CREATE
+  Description: Create new table eqms_nc_retry_config
+
+- Table: notification_center.eqms_nc_retry_config_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_retry_config_history
+
+- Table: notification_center.eqms_nc_retry_log
+  Change Type: CREATE
+  Description: Create new table eqms_nc_retry_log
+
+- Table: notification_center.eqms_nc_retry_log_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_retry_log_history
+
+- Table: notification_center.eqms_nc_schedule
+  Change Type: CREATE
+  Description: Create new table eqms_nc_schedule
+
+- Table: notification_center.eqms_nc_schedule_email_recipient
+  Change Type: CREATE
+  Description: Create new table eqms_nc_schedule_email_recipient
+
+- Table: notification_center.eqms_nc_schedule_email_recipient_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_schedule_email_recipient_history
+
+- Table: notification_center.eqms_nc_schedule_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_schedule_history
+
+- Table: notification_center.eqms_nc_schedule_variable_config
+  Change Type: CREATE
+  Description: Create new table eqms_nc_schedule_variable_config
+
+- Table: notification_center.eqms_nc_schedule_variable_config_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_schedule_variable_config_history
+
+- Table: notification_center.eqms_nc_sqs_message_api_key
+  Change Type: CREATE
+  Description: Create new table eqms_nc_sqs_message_api_key
+
+- Table: notification_center.eqms_nc_sqs_message_api_key_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_sqs_message_api_key_history
+
+- Table: notification_center.eqms_nc_sqs_message_log
+  Change Type: CREATE
+  Description: Create new table eqms_nc_sqs_message_log
+
+- Table: notification_center.eqms_nc_sqs_message_log_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_sqs_message_log_history
+
+- Table: notification_center.eqms_nc_system_settings
+  Change Type: CREATE
+  Description: Create new table eqms_nc_system_settings
+
+- Table: notification_center.eqms_nc_system_settings_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_system_settings_history
+
+- Table: notification_center.eqms_nc_template_header
+  Change Type: CREATE
+  Description: Create new table eqms_nc_template_header
+
+- Table: notification_center.eqms_nc_template_header_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_template_header_history
+
+- Table: notification_center.eqms_nc_template_identifiers
+  Change Type: CREATE
+  Description: Create new table eqms_nc_template_identifiers
+
+- Table: notification_center.eqms_nc_template_identifiers_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_template_identifiers_history
+
+- Table: notification_center.eqms_nc_template_variables
+  Change Type: CREATE
+  Description: Create new table eqms_nc_template_variables
+
+- Table: notification_center.eqms_nc_template_variables_history
+  Change Type: CREATE
+  Description: Create new table eqms_nc_template_variables_history
+
+- Table: notification_center.eqms_nc_email_notification_log
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_email_provider_master
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_notification_header
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_notification_transactions
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_notifications
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_provider_channel_master
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_provider_header
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 3 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_provider_type_master
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_retry_config
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_retry_log
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_schedule
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_schedule_email_recipient
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_schedule_variable_config
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_sqs_message_api_key
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_sqs_message_log
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_system_settings
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_template_header
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 3 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_template_identifiers
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: notification_center.eqms_nc_template_variables
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

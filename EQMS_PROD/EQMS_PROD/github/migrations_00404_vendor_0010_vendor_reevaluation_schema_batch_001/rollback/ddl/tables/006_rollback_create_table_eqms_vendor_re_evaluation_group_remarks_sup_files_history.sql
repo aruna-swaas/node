@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS vendor.eqms_vendor_re_evaluation_group_remarks_sup_files_history;

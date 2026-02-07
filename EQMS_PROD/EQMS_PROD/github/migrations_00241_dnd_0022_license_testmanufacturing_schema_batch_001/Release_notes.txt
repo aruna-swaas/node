@@ -1,0 +1,17 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00241_dnd_0022_license_testmanufacturing_schema_batch_001
+Date with time: 2026-02-07 17:12:26
+
+Schema: dnd
+- Table: dnd.eqms_license_initiation
+  Change Type: CREATE
+  Description: Create new table eqms_license_initiation
+
+- Table: dnd.eqms_license_initiation_history
+  Change Type: CREATE
+  Description: Create new table eqms_license_initiation_history
+
+- Table: dnd.eqms_license_initiation
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

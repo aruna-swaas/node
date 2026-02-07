@@ -1,0 +1,21 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00547_pre_production_0001_form_a_team_schema_batch_001
+Date with time: 2026-02-07 17:19:52
+
+Schema: pre_production
+- Table: pre_production.eqms_pre_prod_team_details
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_team_details
+
+- Table: pre_production.eqms_pre_prod_team_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_team_details_history
+
+- Table: pre_production.eqms_pre_prod_team_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_team_history
+
+- Table: pre_production.eqms_pre_prod_team_details
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)

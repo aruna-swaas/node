@@ -1,0 +1,15 @@
+CREATE TABLE organization.eqms_roles_lk (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    ref_id integer,
+    role_name character varying(255),
+    slug character varying(255),
+    status smallint,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer,
+    role_type character varying(50) 
+);
+

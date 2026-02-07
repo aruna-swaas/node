@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00513_lookup_0003_eqms_frequency_lk_schema_batch_001
+Date with time: 2026-02-07 17:19:19
+
+Schema: organization
+- Table: organization.eqms_frequency_lk
+  Change Type: CREATE
+  Description: Create new table eqms_frequency_lk
+
+- Table: organization.eqms_frequency_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)

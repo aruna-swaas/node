@@ -1,0 +1,29 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00289_risk_management_0006_risk_level_definition_schema_batch_001
+Date with time: 2026-02-07 17:13:56
+
+Schema: risk_management
+- Table: risk_management.eqms_project_risk_probability_level
+  Change Type: CREATE
+  Description: Create new table eqms_project_risk_probability_level
+
+- Table: risk_management.eqms_project_risk_probability_level_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_risk_probability_level_history
+
+- Table: risk_management.eqms_project_risk_severity_level
+  Change Type: CREATE
+  Description: Create new table eqms_project_risk_severity_level
+
+- Table: risk_management.eqms_project_risk_severity_level_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_risk_severity_level_history
+
+- Table: risk_management.eqms_project_risk_probability_level
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: risk_management.eqms_project_risk_severity_level
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

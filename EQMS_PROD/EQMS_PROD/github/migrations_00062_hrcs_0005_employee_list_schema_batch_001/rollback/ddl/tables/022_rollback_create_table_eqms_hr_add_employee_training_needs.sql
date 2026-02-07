@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS hrcs.eqms_hr_add_employee_training_needs;

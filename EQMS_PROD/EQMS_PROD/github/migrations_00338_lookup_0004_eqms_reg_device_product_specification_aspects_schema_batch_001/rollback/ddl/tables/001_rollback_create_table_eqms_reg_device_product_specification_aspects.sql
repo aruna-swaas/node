@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_reg_device_product_specification_aspects;

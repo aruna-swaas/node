@@ -1,0 +1,73 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00376_vendor_0005_vendor_list_schema_batch_001
+Date with time: 2026-02-07 17:16:28
+
+Schema: vendor
+- Table: vendor.eqms_vendor_part_category_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_part_category_mapper
+
+- Table: vendor.eqms_vendor_part_category_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_part_category_mapper_history
+
+- Table: vendor.eqms_vendor_part_category_other_details
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_part_category_other_details
+
+- Table: vendor.eqms_vendor_part_category_other_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_part_category_other_details_history
+
+- Table: vendor.eqms_vendor_part_category_selection_criteria
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_part_category_selection_criteria
+
+- Table: vendor.eqms_vendor_part_category_selection_criteria_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_part_category_selection_criteria_history
+
+- Table: vendor.eqms_vendor_re_evaluation
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation
+
+- Table: vendor.eqms_vendor_reference_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_reference_supporting_files
+
+- Table: vendor.eqms_vendor_reference_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_reference_supporting_files_history
+
+- Table: vendor.eqms_vendors
+  Change Type: CREATE
+  Description: Create new table eqms_vendors
+
+- Table: vendor.eqms_vendors_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendors_history
+
+- Table: vendor.eqms_vendor_part_category_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_part_category_other_details
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_part_category_selection_criteria
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_re_evaluation
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: vendor.eqms_vendor_reference_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: vendor.eqms_vendors
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)

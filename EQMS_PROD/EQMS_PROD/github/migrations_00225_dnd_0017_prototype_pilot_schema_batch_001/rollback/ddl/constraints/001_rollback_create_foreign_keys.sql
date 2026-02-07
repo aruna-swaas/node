@@ -1,0 +1,2 @@
+ALTER TABLE dnd.eqms_execution_stage_test_items DROP CONSTRAINT fk_estit_organization_id;
+ALTER TABLE dnd.eqms_execution_stage_test_items DROP CONSTRAINT fk_estit_execution_stage_id;

@@ -1,0 +1,3 @@
+ALTER TABLE organization.eqms_rmp_responsibility_lk DROP CONSTRAINT fk_errl_rmp_applicable_stage_lk_id;
+ALTER TABLE organization.eqms_rmp_responsibility_lk DROP CONSTRAINT fk_errl_organization_id;
+ALTER TABLE organization.eqms_rmp_responsibility_lk DROP CONSTRAINT eqms_rmp_responsibility_lk_tenant_org_ref_unique;

@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_menu_object DROP CONSTRAINT fk_emo_object_ref_id;
+ALTER TABLE organization.eqms_object_project_instance DROP CONSTRAINT fk_eopi_object_id;

@@ -1,0 +1,21 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00325_regulation_0001_declaration_of_conformity_schema_batch_001
+Date with time: 2026-02-07 17:14:48
+
+Schema: regulation
+- Table: regulation.eqms_reg_conformity_declaration
+  Change Type: CREATE
+  Description: Create new table eqms_reg_conformity_declaration
+
+- Table: regulation.eqms_reg_conformity_declaration_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_conformity_declaration_history
+
+- Table: regulation.eqms_reg_product_classification_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_product_classification_history
+
+- Table: regulation.eqms_reg_conformity_declaration
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

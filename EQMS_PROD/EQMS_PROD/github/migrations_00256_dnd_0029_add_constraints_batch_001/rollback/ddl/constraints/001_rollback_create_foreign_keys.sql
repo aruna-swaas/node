@@ -1,0 +1,1 @@
+ALTER TABLE dnd.eqms_design_transfer_applicability DROP CONSTRAINT fk_edta_product_applicable_clause_id;

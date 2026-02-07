@@ -1,0 +1,65 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00459_sales_0097_quotation_schema_batch_001
+Date with time: 2026-02-07 17:17:54
+
+Schema: sales
+- Table: sales.eqms_customer_master
+  Change Type: CREATE
+  Description: Create new table eqms_customer_master
+
+- Table: sales.eqms_customer_master_history
+  Change Type: CREATE
+  Description: Create new table eqms_customer_master_history
+
+- Table: sales.eqms_quotation
+  Change Type: CREATE
+  Description: Create new table eqms_quotation
+
+- Table: sales.eqms_quotation_customer
+  Change Type: CREATE
+  Description: Create new table eqms_quotation_customer
+
+- Table: sales.eqms_quotation_customer_history
+  Change Type: CREATE
+  Description: Create new table eqms_quotation_customer_history
+
+- Table: sales.eqms_quotation_history
+  Change Type: CREATE
+  Description: Create new table eqms_quotation_history
+
+- Table: sales.eqms_quotation_product
+  Change Type: CREATE
+  Description: Create new table eqms_quotation_product
+
+- Table: sales.eqms_quotation_product_history
+  Change Type: CREATE
+  Description: Create new table eqms_quotation_product_history
+
+- Table: sales.eqms_quotation_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_quotation_supporting_files
+
+- Table: sales.eqms_quotation_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_quotation_supporting_files_history
+
+- Table: sales.eqms_customer_master
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: sales.eqms_quotation
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: sales.eqms_quotation_customer
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: sales.eqms_quotation_product
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: sales.eqms_quotation_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

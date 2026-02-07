@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00338_lookup_0004_eqms_reg_device_product_specification_aspects_schema_batch_001
+Date with time: 2026-02-07 17:15:00
+
+Schema: organization
+- Table: organization.eqms_reg_device_product_specification_aspects
+  Change Type: CREATE
+  Description: Create new table eqms_reg_device_product_specification_aspects
+
+- Table: organization.eqms_reg_device_product_specification_aspects
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)

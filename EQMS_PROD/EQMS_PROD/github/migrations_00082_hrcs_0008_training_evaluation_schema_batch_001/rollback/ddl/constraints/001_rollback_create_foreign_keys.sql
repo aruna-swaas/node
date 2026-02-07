@@ -1,0 +1,5 @@
+ALTER TABLE hrcs.eqms_hr_training_materials_supporting_file DROP CONSTRAINT fk_ehtmsf_organization_id;
+ALTER TABLE hrcs.eqms_hr_training_materials_supporting_file DROP CONSTRAINT fk_ehtmsf_hr_training_schedule_id;
+ALTER TABLE hrcs.eqms_hr_training_materials_supporting_file DROP CONSTRAINT fk_ehtmsf_file_id;
+ALTER TABLE hrcs.eqms_hr_training_evaluation DROP CONSTRAINT fk_ehte_organization_id;
+ALTER TABLE hrcs.eqms_hr_training_evaluation DROP CONSTRAINT fk_ehte_hr_training_schedule_id;

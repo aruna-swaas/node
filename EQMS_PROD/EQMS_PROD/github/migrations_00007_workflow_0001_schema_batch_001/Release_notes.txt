@@ -1,0 +1,521 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00007_workflow_0001_schema_batch_001
+Date with time: 2026-02-07 17:09:18
+
+Schema: workflow
+- Table: workflow.eqms_commenter_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_commenter_type_lk
+
+- Table: workflow.eqms_comments_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_comments_type_lk
+
+- Table: workflow.eqms_form_required_role_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_form_required_role_type_lk
+
+- Table: workflow.eqms_form_task_group_mapping
+  Change Type: CREATE
+  Description: Create new table eqms_form_task_group_mapping
+
+- Table: workflow.eqms_form_task_group_mapping_history
+  Change Type: CREATE
+  Description: Create new table eqms_form_task_group_mapping_history
+
+- Table: workflow.eqms_form_type_task_group_mapping
+  Change Type: CREATE
+  Description: Create new table eqms_form_type_task_group_mapping
+
+- Table: workflow.eqms_form_type_task_group_mapping_history
+  Change Type: CREATE
+  Description: Create new table eqms_form_type_task_group_mapping_history
+
+- Table: workflow.eqms_project_instance
+  Change Type: CREATE
+  Description: Create new table eqms_project_instance
+
+- Table: workflow.eqms_project_instance_header
+  Change Type: CREATE
+  Description: Create new table eqms_project_instance_header
+
+- Table: workflow.eqms_project_instance_header_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_instance_header_history
+
+- Table: workflow.eqms_project_instance_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_instance_history
+
+- Table: workflow.eqms_project_member_roles
+  Change Type: CREATE
+  Description: Create new table eqms_project_member_roles
+
+- Table: workflow.eqms_project_member_roles_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_member_roles_history
+
+- Table: workflow.eqms_project_members
+  Change Type: CREATE
+  Description: Create new table eqms_project_members
+
+- Table: workflow.eqms_project_members_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_members_history
+
+- Table: workflow.eqms_project_task_dependencies
+  Change Type: CREATE
+  Description: Create new table eqms_project_task_dependencies
+
+- Table: workflow.eqms_project_task_dependencies_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_task_dependencies_history
+
+- Table: workflow.eqms_project_task_group_tasks
+  Change Type: CREATE
+  Description: Create new table eqms_project_task_group_tasks
+
+- Table: workflow.eqms_project_task_group_tasks_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_task_group_tasks_history
+
+- Table: workflow.eqms_project_task_groups
+  Change Type: CREATE
+  Description: Create new table eqms_project_task_groups
+
+- Table: workflow.eqms_project_task_groups_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_task_groups_history
+
+- Table: workflow.eqms_project_tasks
+  Change Type: CREATE
+  Description: Create new table eqms_project_tasks
+
+- Table: workflow.eqms_project_tasks_department_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_project_tasks_department_mapper
+
+- Table: workflow.eqms_project_tasks_department_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_tasks_department_mapper_history
+
+- Table: workflow.eqms_project_tasks_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_tasks_history
+
+- Table: workflow.eqms_project_tasks_level
+  Change Type: CREATE
+  Description: Create new table eqms_project_tasks_level
+
+- Table: workflow.eqms_project_tasks_level_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_tasks_level_history
+
+- Table: workflow.eqms_project_tasks_role_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_project_tasks_role_mapper
+
+- Table: workflow.eqms_project_tasks_role_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_tasks_role_mapper_history
+
+- Table: workflow.eqms_project_tasks_url
+  Change Type: CREATE
+  Description: Create new table eqms_project_tasks_url
+
+- Table: workflow.eqms_project_tasks_url_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_tasks_url_history
+
+- Table: workflow.eqms_project_type
+  Change Type: CREATE
+  Description: Create new table eqms_project_type
+
+- Table: workflow.eqms_project_type_entity_subscription_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_entity_subscription_mapper
+
+- Table: workflow.eqms_project_type_entity_subscription_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_entity_subscription_mapper_history
+
+- Table: workflow.eqms_project_type_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_history
+
+- Table: workflow.eqms_project_type_task_dependencies
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_task_dependencies
+
+- Table: workflow.eqms_project_type_task_dependencies_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_task_dependencies_history
+
+- Table: workflow.eqms_project_type_task_group
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_task_group
+
+- Table: workflow.eqms_project_type_task_group_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_task_group_history
+
+- Table: workflow.eqms_project_type_task_group_tasks
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_task_group_tasks
+
+- Table: workflow.eqms_project_type_task_group_tasks_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_task_group_tasks_history
+
+- Table: workflow.eqms_project_type_tasks
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_tasks
+
+- Table: workflow.eqms_project_type_tasks_department_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_tasks_department_mapper
+
+- Table: workflow.eqms_project_type_tasks_department_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_tasks_department_mapper_history
+
+- Table: workflow.eqms_project_type_tasks_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_tasks_history
+
+- Table: workflow.eqms_project_type_tasks_level
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_tasks_level
+
+- Table: workflow.eqms_project_type_tasks_level_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_tasks_level_history
+
+- Table: workflow.eqms_project_type_tasks_role_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_tasks_role_mapper
+
+- Table: workflow.eqms_project_type_tasks_url
+  Change Type: CREATE
+  Description: Create new table eqms_project_type_tasks_url
+
+- Table: workflow.eqms_project_workflow_journal
+  Change Type: CREATE
+  Description: Create new table eqms_project_workflow_journal
+
+- Table: workflow.eqms_project_workflow_journal_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_workflow_journal_history
+
+- Table: workflow.eqms_project_workflow_journey
+  Change Type: CREATE
+  Description: Create new table eqms_project_workflow_journey
+
+- Table: workflow.eqms_project_workflow_journey_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_workflow_journey_history
+
+- Table: workflow.eqms_project_workflow_journey_role_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_project_workflow_journey_role_mapper
+
+- Table: workflow.eqms_project_workflow_journey_role_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_workflow_journey_role_mapper_history
+
+- Table: workflow.eqms_target_audience_type_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_target_audience_type_lk_history
+
+- Table: workflow.eqms_task_comments
+  Change Type: CREATE
+  Description: Create new table eqms_task_comments
+
+- Table: workflow.eqms_task_comments_history
+  Change Type: CREATE
+  Description: Create new table eqms_task_comments_history
+
+- Table: workflow.eqms_task_generator
+  Change Type: CREATE
+  Description: Create new table eqms_task_generator
+
+- Table: workflow.eqms_task_generator_parameters
+  Change Type: CREATE
+  Description: Create new table eqms_task_generator_parameters
+
+- Table: workflow.eqms_task_generator_query
+  Change Type: CREATE
+  Description: Create new table eqms_task_generator_query
+
+- Table: workflow.eqms_task_generator_query_conditions
+  Change Type: CREATE
+  Description: Create new table eqms_task_generator_query_conditions
+
+- Table: workflow.eqms_task_generator_query_joins
+  Change Type: CREATE
+  Description: Create new table eqms_task_generator_query_joins
+
+- Table: workflow.eqms_task_generator_query_selects
+  Change Type: CREATE
+  Description: Create new table eqms_task_generator_query_selects
+
+- Table: workflow.eqms_task_rule_action
+  Change Type: CREATE
+  Description: Create new table eqms_task_rule_action
+
+- Table: workflow.eqms_task_rule_task_creation
+  Change Type: CREATE
+  Description: Create new table eqms_task_rule_task_creation
+
+- Table: workflow.eqms_transition_owner_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_transition_owner_type_lk
+
+- Table: workflow.eqms_workflow
+  Change Type: CREATE
+  Description: Create new table eqms_workflow
+
+- Table: workflow.eqms_workflow_history
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_history
+
+- Table: workflow.eqms_workflow_status_lk
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_status_lk
+
+- Table: workflow.eqms_workflow_status_transition
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_status_transition
+
+- Table: workflow.eqms_workflow_status_transition_history
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_status_transition_history
+
+- Table: workflow.eqms_workflow_status_transition_role_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_status_transition_role_mapper
+
+- Table: workflow.eqms_workflow_status_transition_role_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_status_transition_role_mapper_history
+
+- Table: workflow.eqms_workflow_status_transition_template
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_status_transition_template
+
+- Table: workflow.eqms_workflow_status_transition_template_history
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_status_transition_template_history
+
+- Table: workflow.eqms_workflow_status_transition_template_role_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_status_transition_template_role_mapper
+
+- Table: workflow.eqms_workflow_status_transition_template_role_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_status_transition_template_role_mapper_history
+
+- Table: workflow.eqms_workflow_task_status
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_task_status
+
+- Table: workflow.eqms_workflow_template
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_template
+
+- Table: workflow.eqms_workflow_template_history
+  Change Type: CREATE
+  Description: Create new table eqms_workflow_template_history
+
+- Table: workflow.eqms_commenter_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: workflow.eqms_comments_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: workflow.eqms_form_required_role_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: workflow.eqms_form_task_group_mapping
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: workflow.eqms_form_type_task_group_mapping
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: workflow.eqms_project_instance
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: workflow.eqms_project_instance_header
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 4 foreign key constraint(s)
+
+- Table: workflow.eqms_project_member_roles
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_project_members
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_project_task_dependencies
+  Change Type: ALTER
+  Description: Add 7 foreign key constraint(s)
+
+- Table: workflow.eqms_project_task_group_tasks
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_project_task_groups
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_project_tasks
+  Change Type: ALTER
+  Description: Add 5 foreign key constraint(s)
+
+- Table: workflow.eqms_project_tasks_department_mapper
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: workflow.eqms_project_tasks_level
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_project_tasks_role_mapper
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: workflow.eqms_project_tasks_url
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: workflow.eqms_project_type
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: workflow.eqms_project_type_entity_subscription_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_project_type_task_dependencies
+  Change Type: ALTER
+  Description: Add 5 foreign key constraint(s)
+
+- Table: workflow.eqms_project_type_task_group
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: workflow.eqms_project_type_task_group_tasks
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_project_type_tasks
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 4 foreign key constraint(s)
+
+- Table: workflow.eqms_project_type_tasks_department_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_project_type_tasks_level
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_project_type_tasks_role_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_project_type_tasks_url
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: workflow.eqms_project_workflow_journal
+  Change Type: ALTER
+  Description: Add 8 foreign key constraint(s)
+
+- Table: workflow.eqms_project_workflow_journey
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: workflow.eqms_project_workflow_journey_role_mapper
+  Change Type: ALTER
+  Description: Add 6 foreign key constraint(s)
+
+- Table: workflow.eqms_task_comments
+  Change Type: ALTER
+  Description: Add 7 foreign key constraint(s)
+
+- Table: workflow.eqms_task_generator
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: workflow.eqms_task_generator_parameters
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: workflow.eqms_task_generator_query
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: workflow.eqms_task_generator_query_conditions
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_task_generator_query_joins
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: workflow.eqms_task_generator_query_selects
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: workflow.eqms_task_rule_action
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: workflow.eqms_task_rule_task_creation
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_transition_owner_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: workflow.eqms_workflow
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_workflow_status_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: workflow.eqms_workflow_status_transition
+  Change Type: ALTER
+  Description: Add 6 foreign key constraint(s)
+
+- Table: workflow.eqms_workflow_status_transition_role_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_workflow_status_transition_template
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 5 foreign key constraint(s)
+
+- Table: workflow.eqms_workflow_status_transition_template_role_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: workflow.eqms_workflow_task_status
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: workflow.eqms_workflow_template
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)

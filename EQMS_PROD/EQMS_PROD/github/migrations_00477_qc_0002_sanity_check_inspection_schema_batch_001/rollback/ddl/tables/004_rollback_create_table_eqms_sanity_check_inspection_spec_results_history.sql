@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS qc.eqms_sanity_check_inspection_spec_results_history;

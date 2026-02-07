@@ -1,0 +1,64 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00005_organization_0001_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:09:01
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_organization: 1 INSERT statement(s)
+  - organization.eqms_user_status_lk: 1 INSERT statement(s)
+  - organization.eqms_roles_lk: 1 INSERT statement(s)
+  - organization.eqms_organization_department: 1 INSERT statement(s)
+  - organization.eqms_service_group_lk: 1 INSERT statement(s)
+  - organization.eqms_designation_lk: 1 INSERT statement(s)
+  - organization.eqms_responsibility_lk: 1 INSERT statement(s)
+  - organization.eqms_employee_status_lk: 1 INSERT statement(s)
+  - hrcs.eqms_organization_employee: 1 INSERT statement(s)
+  - organization.eqms_users: 1 INSERT statement(s)
+  - organization.eqms_user_contact: 1 INSERT statement(s)
+  - organization.eqms_user_service_group: 1 INSERT statement(s)
+  - organization.eqms_user_responsibility: 1 INSERT statement(s)
+  - organization.eqms_user_roles: 1 INSERT statement(s)
+  - organization.eqms_status_lk: 1 INSERT statement(s)
+  - organization.eqms_schedule_status_lk: 1 INSERT statement(s)
+  - organization.eqms_bom_publish_status_lk: 1 INSERT statement(s)
+  - organization.eqms_gender_lk: 1 INSERT statement(s)
+  - organization.eqms_product_category_lk: 1 INSERT statement(s)
+  - organization.eqms_product_group_lk: 1 INSERT statement(s)
+  - organization.eqms_product_type_lk: 1 INSERT statement(s)
+  - organization.eqms_product_subtype_lk: 1 INSERT statement(s)
+  - organization.eqms_reg_country_lk: 1 INSERT statement(s)
+  - organization.eqms_theme: 1 INSERT statement(s)
+  - organization.eqms_organization_site: 1 INSERT statement(s)
+  - organization.eqms_timezones: 1 INSERT statement(s)
+  - organization.eqms_tool_category_lk: 1 INSERT statement(s)
+  - organization.eqms_tools: 1 INSERT statement(s)
+  - organization.eqms_tool_item: 1 INSERT statement(s)
+  - organization.eqms_activity_lk: 1 INSERT statement(s)
+  - organization.eqms_assembly_type_lk: 1 INSERT statement(s)
+  - organization.eqms_bom_type_lk: 1 INSERT statement(s)
+  - organization.eqms_infrastructure_category_lk: 1 INSERT statement(s)
+  - organization.eqms_infrastructure_type_lk: 1 INSERT statement(s)
+  - organization.eqms_login_result_lk: 1 INSERT statement(s)
+  - organization.eqms_menu_type_lk: 1 INSERT statement(s)
+  - organization.eqms_month_lk: 1 INSERT statement(s)
+  - organization.eqms_part_component_type_lk: 1 INSERT statement(s)
+  - organization.eqms_part_quantity_type_lk: 1 INSERT statement(s)
+  - organization.eqms_part_type_lk: 1 INSERT statement(s)
+  - organization.eqms_selection_lk: 1 INSERT statement(s)
+  - organization.eqms_unit_lk: 1 INSERT statement(s)
+  - organization.eqms_value_acceptability_lk: 1 INSERT statement(s)
+  - organization.eqms_year_lk: 1 INSERT statement(s)
+  - organization.eqms_equipment_category_lk: 1 INSERT statement(s)
+  - organization.eqms_jig_lk: 1 INSERT statement(s)
+  - organization.eqms_equipment_lk: 1 INSERT statement(s)
+  - organization.eqms_jig_item: 1 INSERT statement(s)
+  - organization.eqms_equipment_item: 1 INSERT statement(s)
+
+File 002_seed_data.sql (from 005_nomenclature_configuration_lookup_data.sql):
+  - organization.eqms_nomenclature_part_type: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_join_type: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_category: 1 INSERT statement(s)

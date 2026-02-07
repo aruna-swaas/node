@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS risk_management.eqms_rmp_production_post_production_info;

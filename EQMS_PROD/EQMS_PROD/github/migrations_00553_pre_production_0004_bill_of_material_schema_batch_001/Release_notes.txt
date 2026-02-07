@@ -1,0 +1,53 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00553_pre_production_0004_bill_of_material_schema_batch_001
+Date with time: 2026-02-07 17:20:00
+
+Schema: pre_production
+- Table: pre_production.eqms_pre_prod_bom_applicable_settings
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_bom_applicable_settings
+
+- Table: pre_production.eqms_pre_prod_bom_applicable_settings_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_bom_applicable_settings_history
+
+- Table: pre_production.eqms_pre_prod_bom_assembly_part_item_details
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_bom_assembly_part_item_details
+
+- Table: pre_production.eqms_pre_prod_bom_assembly_part_item_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_bom_assembly_part_item_details_history
+
+- Table: pre_production.eqms_pre_prod_bom_assembly_part_item_details_supp_files
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_bom_assembly_part_item_details_supp_files
+
+- Table: pre_production.eqms_pre_prod_bom_assembly_part_item_details_supp_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_bom_assembly_part_item_details_supp_files_history
+
+- Table: pre_production.eqms_pre_prod_bom_supplier_details
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_bom_supplier_details
+
+- Table: pre_production.eqms_pre_prod_bom_supplier_details_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_bom_supplier_details_history
+
+- Table: pre_production.eqms_pre_prod_bom_applicable_settings
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_bom_assembly_part_item_details
+  Change Type: ALTER
+  Description: Add 5 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_bom_assembly_part_item_details_supp_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_bom_supplier_details
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

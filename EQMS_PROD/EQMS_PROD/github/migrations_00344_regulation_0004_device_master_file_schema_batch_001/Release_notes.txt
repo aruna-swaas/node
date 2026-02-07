@@ -1,0 +1,245 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00344_regulation_0004_device_master_file_schema_batch_001
+Date with time: 2026-02-07 17:15:04
+
+Schema: regulation
+- Table: regulation.eqms_reg_aspects_predicate_device
+  Change Type: CREATE
+  Description: Create new table eqms_reg_aspects_predicate_device
+
+- Table: regulation.eqms_reg_aspects_predicate_device_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_aspects_predicate_device_history
+
+- Table: regulation.eqms_reg_biocompatible_test_results
+  Change Type: CREATE
+  Description: Create new table eqms_reg_biocompatible_test_results
+
+- Table: regulation.eqms_reg_biocompatible_test_results_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_biocompatible_test_results_history
+
+- Table: regulation.eqms_reg_device_master_file
+  Change Type: CREATE
+  Description: Create new table eqms_reg_device_master_file
+
+- Table: regulation.eqms_reg_device_master_file_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_device_master_file_history
+
+- Table: regulation.eqms_reg_device_product_specification
+  Change Type: CREATE
+  Description: Create new table eqms_reg_device_product_specification
+
+- Table: regulation.eqms_reg_device_product_specification_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_device_product_specification_history
+
+- Table: regulation.eqms_reg_device_verification_validation
+  Change Type: CREATE
+  Description: Create new table eqms_reg_device_verification_validation
+
+- Table: regulation.eqms_reg_device_verification_validation_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_device_verification_validation_history
+
+- Table: regulation.eqms_reg_dmf_design_manufacturing_information
+  Change Type: CREATE
+  Description: Create new table eqms_reg_dmf_design_manufacturing_information
+
+- Table: regulation.eqms_reg_dmf_design_manufacturing_information_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_dmf_design_manufacturing_information_history
+
+- Table: regulation.eqms_reg_dmf_essential_principles_checklist
+  Change Type: CREATE
+  Description: Create new table eqms_reg_dmf_essential_principles_checklist
+
+- Table: regulation.eqms_reg_dmf_essential_principles_checklist_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_dmf_essential_principles_checklist_history
+
+- Table: regulation.eqms_reg_dmf_executive_summary
+  Change Type: CREATE
+  Description: Create new table eqms_reg_dmf_executive_summary
+
+- Table: regulation.eqms_reg_dmf_executive_summary_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_dmf_executive_summary_history
+
+- Table: regulation.eqms_reg_dmf_labelling
+  Change Type: CREATE
+  Description: Create new table eqms_reg_dmf_labelling
+
+- Table: regulation.eqms_reg_dmf_labelling_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_dmf_labelling_history
+
+- Table: regulation.eqms_reg_dmf_risk_control_summary
+  Change Type: CREATE
+  Description: Create new table eqms_reg_dmf_risk_control_summary
+
+- Table: regulation.eqms_reg_dmf_risk_control_summary_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_dmf_risk_control_summary_history
+
+- Table: regulation.eqms_reg_field_safety_corrective_action
+  Change Type: CREATE
+  Description: Create new table eqms_reg_field_safety_corrective_action
+
+- Table: regulation.eqms_reg_field_safety_corrective_action_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_field_safety_corrective_action_history
+
+- Table: regulation.eqms_reg_field_safety_country_mapping
+  Change Type: CREATE
+  Description: Create new table eqms_reg_field_safety_country_mapping
+
+- Table: regulation.eqms_reg_field_safety_country_mapping_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_field_safety_country_mapping_history
+
+- Table: regulation.eqms_reg_market_clearance
+  Change Type: CREATE
+  Description: Create new table eqms_reg_market_clearance
+
+- Table: regulation.eqms_reg_market_clearance_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_market_clearance_history
+
+- Table: regulation.eqms_reg_marketing_device_launch
+  Change Type: CREATE
+  Description: Create new table eqms_reg_marketing_device_launch
+
+- Table: regulation.eqms_reg_marketing_device_launch_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_marketing_device_launch_history
+
+- Table: regulation.eqms_reg_material_direct_contact
+  Change Type: CREATE
+  Description: Create new table eqms_reg_material_direct_contact
+
+- Table: regulation.eqms_reg_material_direct_contact_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_material_direct_contact_history
+
+- Table: regulation.eqms_reg_material_direct_contact_verification
+  Change Type: CREATE
+  Description: Create new table eqms_reg_material_direct_contact_verification
+
+- Table: regulation.eqms_reg_material_direct_contact_verification_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_material_direct_contact_verification_history
+
+- Table: regulation.eqms_reg_material_indirect_contact
+  Change Type: CREATE
+  Description: Create new table eqms_reg_material_indirect_contact
+
+- Table: regulation.eqms_reg_material_indirect_contact_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_material_indirect_contact_history
+
+- Table: regulation.eqms_reg_material_indirect_contact_verification
+  Change Type: CREATE
+  Description: Create new table eqms_reg_material_indirect_contact_verification
+
+- Table: regulation.eqms_reg_material_indirect_contact_verification_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_material_indirect_contact_verification_history
+
+- Table: regulation.eqms_reg_regulatory_approvals
+  Change Type: CREATE
+  Description: Create new table eqms_reg_regulatory_approvals
+
+- Table: regulation.eqms_reg_regulatory_approvals_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_regulatory_approvals_history
+
+- Table: regulation.eqms_reg_serious_adverse_event
+  Change Type: CREATE
+  Description: Create new table eqms_reg_serious_adverse_event
+
+- Table: regulation.eqms_reg_serious_adverse_event_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_serious_adverse_event_history
+
+- Table: regulation.eqms_reg_aspects_predicate_device
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_biocompatible_test_results
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_device_master_file
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_device_product_specification
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_device_verification_validation
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_dmf_design_manufacturing_information
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_dmf_essential_principles_checklist
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_dmf_executive_summary
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_dmf_labelling
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_dmf_risk_control_summary
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_field_safety_corrective_action
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_field_safety_country_mapping
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_market_clearance
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_marketing_device_launch
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_material_direct_contact
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_material_direct_contact_verification
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_material_indirect_contact
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_material_indirect_contact_verification
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_regulatory_approvals
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_serious_adverse_event
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

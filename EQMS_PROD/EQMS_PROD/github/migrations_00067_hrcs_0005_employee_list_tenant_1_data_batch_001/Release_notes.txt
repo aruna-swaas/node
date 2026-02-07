@@ -1,0 +1,12 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00067_hrcs_0005_employee_list_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:10:45
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_hr_employment_type_lk: 1 INSERT statement(s)
+  - organization.eqms_hr_employee_source_lk: 1 INSERT statement(s)

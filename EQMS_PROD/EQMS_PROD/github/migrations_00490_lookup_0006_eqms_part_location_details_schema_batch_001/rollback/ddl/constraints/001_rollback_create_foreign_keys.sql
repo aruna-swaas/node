@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_part_location_details DROP CONSTRAINT fk_epld_part_lk_id;
+ALTER TABLE organization.eqms_part_location_details DROP CONSTRAINT fk_epld_organization_id;

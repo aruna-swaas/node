@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_reg_test_checklist_section_master;

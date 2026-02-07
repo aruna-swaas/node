@@ -1,0 +1,1 @@
+ALTER TABLE dnd.eqms_design_input_requirement DROP CONSTRAINT fk_edir_project_quality_plan_id;

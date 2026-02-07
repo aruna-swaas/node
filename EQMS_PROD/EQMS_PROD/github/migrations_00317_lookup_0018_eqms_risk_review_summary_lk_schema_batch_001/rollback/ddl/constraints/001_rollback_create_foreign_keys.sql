@@ -1,0 +1,3 @@
+ALTER TABLE organization.eqms_risk_review_summary_lk DROP CONSTRAINT fk_errml_organization_id;
+ALTER TABLE organization.eqms_risk_review_summary_lk DROP CONSTRAINT fk_eqms_risk_review_category_lk_id;
+ALTER TABLE organization.eqms_risk_review_summary_lk DROP CONSTRAINT eqms_risk_review_menu_lk_tenant_org_ref_unique;

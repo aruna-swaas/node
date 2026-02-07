@@ -1,0 +1,17 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00511_infrastructure_0002_infrastructure_maintenance_plan_schema_batch_001
+Date with time: 2026-02-07 17:19:18
+
+Schema: infrastructure
+- Table: infrastructure.eqms_infrastructure_maintenance_schedule_detail
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_maintenance_schedule_detail
+
+- Table: infrastructure.eqms_infrastructure_maintenance_schedule_detail_history
+  Change Type: CREATE
+  Description: Create new table eqms_infrastructure_maintenance_schedule_detail_history
+
+- Table: infrastructure.eqms_infrastructure_maintenance_schedule_detail
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

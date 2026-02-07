@@ -1,0 +1,33 @@
+ALTER TABLE ONLY dnd.eqms_product_market
+    ADD CONSTRAINT fk_epm_market_id FOREIGN KEY (eqms_tenant_key, fk_eqms_organization_id, fk_eqms_market_id) REFERENCES organization.eqms_market(eqms_tenant_key, fk_eqms_organization_id, ref_id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+
+ALTER TABLE ONLY dnd.eqms_product_market
+    ADD CONSTRAINT fk_epm_organization_id FOREIGN KEY (fk_eqms_organization_id) REFERENCES organization.eqms_organization(id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+
+ALTER TABLE ONLY dnd.eqms_product_market
+    ADD CONSTRAINT fk_epm_organization_product_id FOREIGN KEY (fk_eqms_organization_product_id) REFERENCES organization.eqms_organization_product(id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+
+ALTER TABLE ONLY dnd.eqms_product_regulations
+    ADD CONSTRAINT fk_eqms_organization_id FOREIGN KEY (fk_eqms_organization_id) REFERENCES organization.eqms_organization(id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+
+ALTER TABLE ONLY dnd.eqms_product_regulations
+    ADD CONSTRAINT fk_eqms_organization_product_id FOREIGN KEY (fk_eqms_organization_product_id) REFERENCES organization.eqms_organization_product(id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+
+ALTER TABLE ONLY dnd.eqms_product_regulations
+    ADD CONSTRAINT fk_eqms_regulation_standard_id FOREIGN KEY (eqms_tenant_key, fk_eqms_organization_id, fk_eqms_regulation_standard_id) REFERENCES organization.eqms_regulation_standard(eqms_tenant_key, fk_eqms_organization_id, ref_id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+
+ALTER TABLE ONLY dnd.eqms_project
+    ADD CONSTRAINT fk_ep_organization_id FOREIGN KEY (fk_eqms_organization_id) REFERENCES organization.eqms_organization(id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+
+ALTER TABLE ONLY dnd.eqms_project
+    ADD CONSTRAINT fk_eqms_organization_product_id FOREIGN KEY (fk_eqms_organization_product_id) REFERENCES organization.eqms_organization_product(id);
+
+ALTER TABLE ONLY dnd.eqms_project_documents
+    ADD CONSTRAINT fk_epd_file_id FOREIGN KEY (fk_eqms_file_id) REFERENCES dms.eqms_file(id);
+
+ALTER TABLE ONLY dnd.eqms_project_documents
+    ADD CONSTRAINT fk_eqms_organization_id FOREIGN KEY (fk_eqms_organization_id) REFERENCES organization.eqms_organization(id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+
+ALTER TABLE ONLY dnd.eqms_project_documents
+    ADD CONSTRAINT fk_eqms_project_id FOREIGN KEY (fk_eqms_project_id) REFERENCES dnd.eqms_project(id) ON UPDATE NO ACTION ON DELETE RESTRICT;
+

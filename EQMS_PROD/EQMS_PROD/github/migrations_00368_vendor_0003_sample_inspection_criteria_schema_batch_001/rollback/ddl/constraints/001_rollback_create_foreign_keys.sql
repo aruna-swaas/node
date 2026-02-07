@@ -1,0 +1,4 @@
+ALTER TABLE vendor.eqms_sample_order_inspection_supporting_files DROP CONSTRAINT fk_esoisf_organization_id;
+ALTER TABLE vendor.eqms_sample_order_inspection_supporting_files DROP CONSTRAINT fk_esoisf_file_id;
+ALTER TABLE vendor.eqms_sample_order_inspection_criteria DROP CONSTRAINT fk_esoic_organization_id;
+ALTER TABLE vendor.eqms_sample_order_inspection_criteria DROP CONSTRAINT fk_esf_status_lk_id;

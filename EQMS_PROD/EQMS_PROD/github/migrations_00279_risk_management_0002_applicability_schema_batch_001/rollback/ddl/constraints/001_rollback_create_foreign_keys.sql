@@ -1,0 +1,6 @@
+ALTER TABLE risk_management.eqms_risk_subcategory_applicability DROP CONSTRAINT fk_era_risk_category_applicability_id;
+ALTER TABLE risk_management.eqms_risk_subcategory_applicability DROP CONSTRAINT fk_ersa_status_lk_id;
+ALTER TABLE risk_management.eqms_risk_subcategory_applicability DROP CONSTRAINT fk_era_organization_id;
+ALTER TABLE risk_management.eqms_risk_category_applicability DROP CONSTRAINT fk_erca_risk_category_lk_id;
+ALTER TABLE risk_management.eqms_risk_category_applicability DROP CONSTRAINT fk_erca_project_id;
+ALTER TABLE risk_management.eqms_risk_category_applicability DROP CONSTRAINT fk_erca_organization_id;

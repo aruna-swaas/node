@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS vendor.eqms_vendor_part_category_mapper_history;

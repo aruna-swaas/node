@@ -1,0 +1,12 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00563_pre_production_0005_partassembly_setting_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:20:13
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_drawing_type_lk: 1 INSERT statement(s)
+  - organization.eqms_non_conformed_location_lk: 1 INSERT statement(s)

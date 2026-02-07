@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_reg_manufacture_license_template;

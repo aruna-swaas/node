@@ -1,0 +1,6 @@
+ALTER TABLE purchase.eqms_purchase_requisition_part_detail DROP CONSTRAINT fk_eprpd_purchase_requisition_id;
+ALTER TABLE purchase.eqms_purchase_requisition_part_detail DROP CONSTRAINT fk_eprpd_part_lk_id;
+ALTER TABLE purchase.eqms_purchase_requisition_part_detail DROP CONSTRAINT fk_eprpd_organization_id;
+ALTER TABLE purchase.eqms_inventory_stock DROP CONSTRAINT fk_eis_part_lk_id;
+ALTER TABLE purchase.eqms_inventory_stock DROP CONSTRAINT fk_eis_organization_id;
+ALTER TABLE purchase.eqms_inventory_stock DROP CONSTRAINT fk_eis_inventory_location_id;

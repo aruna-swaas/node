@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_pre_prod_installation_qualification_reporter_type_lk;

@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dnd.eqms_design_transfer_manufacturing_actions_history;

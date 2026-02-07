@@ -1,0 +1,2 @@
+ALTER TABLE hrcs.eqms_hr_candidate_interviewer DROP CONSTRAINT fk_ehci_organization_employee_id;
+ALTER TABLE organization.eqms_users DROP CONSTRAINT fk_eoe_employee_id;

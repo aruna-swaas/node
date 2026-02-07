@@ -1,0 +1,3 @@
+ALTER TABLE organization.eqms_default_template_master DROP CONSTRAINT fk_edtm_organization_id;
+ALTER TABLE organization.eqms_default_template_master DROP CONSTRAINT fk_edtm_file_id;
+ALTER TABLE organization.eqms_default_template_master DROP CONSTRAINT eqms_default_template_master_ten_org_ref_unique;

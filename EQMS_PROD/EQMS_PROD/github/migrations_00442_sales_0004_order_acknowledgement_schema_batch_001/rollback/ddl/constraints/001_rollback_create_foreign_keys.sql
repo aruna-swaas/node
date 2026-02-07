@@ -1,0 +1,6 @@
+ALTER TABLE sales.eqms_order_acknowledgement_supporting_files DROP CONSTRAINT fk_eoasf_order_acknowledgement_id;
+ALTER TABLE sales.eqms_order_acknowledgement_supporting_files DROP CONSTRAINT fk_eqms_file_id;
+ALTER TABLE sales.eqms_order_acknowledgement_supporting_files DROP CONSTRAINT fk_eoasf_organization_id;
+ALTER TABLE sales.eqms_order_acknowledgement DROP CONSTRAINT fk_esf_status_lk_id;
+ALTER TABLE sales.eqms_order_acknowledgement DROP CONSTRAINT fk_eoa_organization_id;
+ALTER TABLE sales.eqms_order_acknowledgement DROP CONSTRAINT fk_eoa_order_approval_mode_lk_id;

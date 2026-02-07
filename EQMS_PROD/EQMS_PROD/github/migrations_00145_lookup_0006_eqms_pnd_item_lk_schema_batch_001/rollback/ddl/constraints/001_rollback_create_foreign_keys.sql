@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_pnd_item_lk DROP CONSTRAINT fk_eqms_organization_id;
+ALTER TABLE organization.eqms_pnd_item_lk DROP CONSTRAINT eqms_pnd_item_lk_tenant_org_ref_unique;

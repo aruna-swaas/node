@@ -1,0 +1,1 @@
+ALTER TABLE dnd.eqms_dig_specification DROP CONSTRAINT fk_edue_use_environment_lk_id;

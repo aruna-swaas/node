@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00094_lookup_0001_eqms_regulation_schema_batch_001
+Date with time: 2026-02-07 17:11:13
+
+Schema: organization
+- Table: organization.eqms_regulation
+  Change Type: CREATE
+  Description: Create new table eqms_regulation
+
+- Table: organization.eqms_regulation
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)

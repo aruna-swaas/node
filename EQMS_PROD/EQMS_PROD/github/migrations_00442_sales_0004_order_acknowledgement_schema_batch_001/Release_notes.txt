@@ -1,0 +1,33 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00442_sales_0004_order_acknowledgement_schema_batch_001
+Date with time: 2026-02-07 17:17:46
+
+Schema: sales
+- Table: sales.eqms_order_acknowledgement
+  Change Type: CREATE
+  Description: Create new table eqms_order_acknowledgement
+
+- Table: sales.eqms_order_acknowledgement_history
+  Change Type: CREATE
+  Description: Create new table eqms_order_acknowledgement_history
+
+- Table: sales.eqms_order_acknowledgement_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_order_acknowledgement_supporting_files
+
+- Table: sales.eqms_order_acknowledgement_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_order_acknowledgement_supporting_files_history
+
+- Table: sales.eqms_order_approval_mode_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_order_approval_mode_lk_history
+
+- Table: sales.eqms_order_acknowledgement
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: sales.eqms_order_acknowledgement_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

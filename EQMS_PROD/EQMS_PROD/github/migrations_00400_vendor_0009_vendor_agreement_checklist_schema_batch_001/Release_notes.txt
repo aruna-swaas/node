@@ -1,0 +1,21 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00400_vendor_0009_vendor_agreement_checklist_schema_batch_001
+Date with time: 2026-02-07 17:16:41
+
+Schema: vendor
+- Table: vendor.eqms_vendor_agreement_checklist_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_agreement_checklist_history
+
+- Table: vendor.eqms_vendor_agreement_checklist_status
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_agreement_checklist_status
+
+- Table: vendor.eqms_vendor_agreement_checklist_status_history
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_agreement_checklist_status_history
+
+- Table: vendor.eqms_vendor_agreement_checklist_status
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_sanity_spec_checklist_group_lk DROP CONSTRAINT fk_esscgl_organization_id;
+ALTER TABLE organization.eqms_sanity_spec_checklist_group_lk DROP CONSTRAINT unique_esscgl_tnt_org_ref_id;

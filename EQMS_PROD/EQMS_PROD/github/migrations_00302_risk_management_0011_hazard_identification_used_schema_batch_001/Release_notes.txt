@@ -1,0 +1,61 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00302_risk_management_0011_hazard_identification_used_schema_batch_001
+Date with time: 2026-02-07 17:14:10
+
+Schema: risk_management
+- Table: risk_management.eqms_harm_hazard_mapping
+  Change Type: CREATE
+  Description: Create new table eqms_harm_hazard_mapping
+
+- Table: risk_management.eqms_harm_hazard_mapping_history
+  Change Type: CREATE
+  Description: Create new table eqms_harm_hazard_mapping_history
+
+- Table: risk_management.eqms_hazard
+  Change Type: CREATE
+  Description: Create new table eqms_hazard
+
+- Table: risk_management.eqms_hazard_history
+  Change Type: CREATE
+  Description: Create new table eqms_hazard_history
+
+- Table: risk_management.eqms_hazard_identification
+  Change Type: CREATE
+  Description: Create new table eqms_hazard_identification
+
+- Table: risk_management.eqms_hazard_identification_history
+  Change Type: CREATE
+  Description: Create new table eqms_hazard_identification_history
+
+- Table: risk_management.eqms_hazard_identification_tool_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_hazard_identification_tool_mapper
+
+- Table: risk_management.eqms_hazard_identification_tool_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_hazard_identification_tool_mapper_history
+
+- Table: risk_management.eqms_hazard_identification_tool_supp_files
+  Change Type: CREATE
+  Description: Create new table eqms_hazard_identification_tool_supp_files
+
+- Table: risk_management.eqms_harm_hazard_mapping
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: risk_management.eqms_hazard
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: risk_management.eqms_hazard_identification
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: risk_management.eqms_hazard_identification_tool_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: risk_management.eqms_hazard_identification_tool_supp_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

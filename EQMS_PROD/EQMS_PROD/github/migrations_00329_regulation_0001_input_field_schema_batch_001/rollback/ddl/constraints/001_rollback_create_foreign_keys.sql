@@ -1,0 +1,2 @@
+ALTER TABLE regulation.eqms_reg_field_label DROP CONSTRAINT fk_erfl_organization_id;
+ALTER TABLE regulation.eqms_reg_field_label DROP CONSTRAINT fk_erfl_form_id;

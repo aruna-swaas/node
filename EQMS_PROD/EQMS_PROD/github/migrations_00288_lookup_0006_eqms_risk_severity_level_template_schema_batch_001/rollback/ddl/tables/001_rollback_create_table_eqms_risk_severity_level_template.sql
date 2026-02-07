@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_risk_severity_level_template;

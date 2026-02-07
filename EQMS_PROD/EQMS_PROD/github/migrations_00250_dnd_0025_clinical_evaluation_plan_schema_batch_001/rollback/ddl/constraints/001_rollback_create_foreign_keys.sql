@@ -1,0 +1,3 @@
+ALTER TABLE dnd.eqms_pilot_clinical_evaluation_plan DROP CONSTRAINT fk_epcep_organization_id;
+ALTER TABLE dnd.eqms_pilot_clinical_evaluation_plan DROP CONSTRAINT fk_epcep_file_id;
+ALTER TABLE dnd.eqms_pilot_clinical_evaluation_plan DROP CONSTRAINT fk_epcep_execution_stage_id;

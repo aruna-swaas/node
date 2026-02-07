@@ -1,0 +1,283 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00037_hrcs_0001_skill_master_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:10:28
+
+Data Migration Summary:
+
+Schema: abac
+- Table: abac.eqms_form
+  Change Type: INSERT (Data Migration)
+  Description: Insert 3 record(s) into eqms_form
+
+- Table: abac.eqms_form_action_wf_status_mapping
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_form_action_wf_status_mapping
+
+- Table: abac.eqms_form_control_actions
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_form_control_actions
+
+- Table: abac.eqms_form_controls
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_form_controls
+
+- Table: abac.eqms_form_menu_mapping
+  Change Type: INSERT (Data Migration)
+  Description: Insert 3 record(s) into eqms_form_menu_mapping
+
+Schema: dms
+- Table: dms.eqms_document_template
+  Change Type: INSERT (Data Migration)
+  Description: Insert 9 record(s) into eqms_document_template
+
+- Table: dms.eqms_document_template_form_mapping
+  Change Type: INSERT (Data Migration)
+  Description: Insert 15 record(s) into eqms_document_template_form_mapping
+
+- Table: dms.eqms_document_template_history
+  Change Type: INSERT (Data Migration)
+  Description: Insert 9 record(s) into eqms_document_template_history
+
+- Table: dms.eqms_document_template_magic_read_details
+  Change Type: INSERT (Data Migration)
+  Description: Insert 8 record(s) into eqms_document_template_magic_read_details
+
+- Table: dms.eqms_document_template_type_lk
+  Change Type: INSERT (Data Migration)
+  Description: Insert 9 record(s) into eqms_document_template_type_lk
+
+- Table: dms.eqms_document_template_variable
+  Change Type: INSERT (Data Migration)
+  Description: Insert 82 record(s) into eqms_document_template_variable
+
+- Table: dms.eqms_document_template_variable_transformation_rules
+  Change Type: INSERT (Data Migration)
+  Description: Insert 82 record(s) into eqms_document_template_variable_transformation_rules
+
+- Table: dms.eqms_document_variable_mapper
+  Change Type: INSERT (Data Migration)
+  Description: Insert 97 record(s) into eqms_document_variable_mapper
+
+Schema: organization
+- Table: organization.eqms_menu_activity_access
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_menu_activity_access
+
+- Table: organization.eqms_menu_lk
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_menu_lk
+
+- Table: organization.eqms_module
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_module
+
+- Table: organization.eqms_role_menu_activity_access
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_role_menu_activity_access
+
+Schema: workflow
+- Table: workflow.eqms_form_type_task_group_mapping
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_form_type_task_group_mapping
+
+- Table: workflow.eqms_project_type
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_project_type
+
+- Table: workflow.eqms_project_type_task_group
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_project_type_task_group
+
+- Table: workflow.eqms_project_type_task_group_tasks
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_project_type_task_group_tasks
+
+- Table: workflow.eqms_project_type_tasks
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_project_type_tasks
+
+- Table: workflow.eqms_project_type_tasks_department_mapper
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_project_type_tasks_department_mapper
+
+- Table: workflow.eqms_workflow_status_transition_template
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_workflow_status_transition_template
+
+- Table: workflow.eqms_workflow_status_transition_template_role_mapper
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_workflow_status_transition_template_role_mapper
+
+- Table: workflow.eqms_workflow_task_status
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_workflow_task_status
+
+- Table: workflow.eqms_workflow_template
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_workflow_template
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_hr_skill_level_lk: 1 INSERT statement(s)
+
+File 002_seed_data.sql (from 003_RBAC.sql):
+  - organization.eqms_menu_lk: 1 INSERT statement(s)
+  - organization.eqms_menu_activity_access: 1 INSERT statement(s)
+  - organization.eqms_role_menu_activity_access: 1 INSERT statement(s)
+
+File 003_seed_data.sql (from 004_ABAC_CONFIGURATION.sql):
+  - organization.eqms_module: 1 INSERT statement(s)
+  - organization.eqms_entity_subscription: 1 INSERT statement(s)
+  - abac.eqms_form: 1 INSERT statement(s)
+  - abac.eqms_form_controls: 1 INSERT statement(s)
+  - abac.eqms_form_control_actions: 1 INSERT statement(s)
+  - abac.eqms_form_menu_mapping: 1 INSERT statement(s)
+
+File 004_seed_data.sql (from 005_DRAFT_SAVE.sql):
+  - abac.eqms_form: 1 INSERT statement(s)
+  - abac.eqms_form_menu_mapping: 1 INSERT statement(s)
+  - organization.eqms_context_types: 1 INSERT statement(s)
+
+File 005_seed_data.sql (from 006_WORKFLOW.sql):
+  - workflow.eqms_workflow_template: 1 INSERT statement(s)
+  - workflow.eqms_project_type: 1 INSERT statement(s)
+  - workflow.eqms_workflow_task_status: 1 INSERT statement(s)
+  - workflow.eqms_workflow_status_transition_template: 1 INSERT statement(s)
+  - workflow.eqms_workflow_status_transition_template_role_mapper: 1 INSERT statement(s)
+  - workflow.eqms_project_type_tasks: 1 INSERT statement(s)
+  - workflow.eqms_project_type_task_group: 1 INSERT statement(s)
+  - workflow.eqms_project_type_task_group_tasks: 1 INSERT statement(s)
+  - workflow.eqms_project_type_tasks_department_mapper: 1 INSERT statement(s)
+  - workflow.eqms_form_type_task_group_mapping: 1 INSERT statement(s)
+  - workflow.eqms_project_type_entity_subscription_mapper: 1 INSERT statement(s)
+
+File 006_seed_data.sql (from 007_ABAC_WF_MAPPING_CONFIGURATION.sql):
+  - abac.eqms_form_action_wf_status_mapping: 1 INSERT statement(s)
+
+File 007_seed_data.sql (from 009_NOMENCLATURE.sql):
+  - organization.eqms_entity_template: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_delimiter: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_name_parts: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_part_date_formats: 1 INSERT statement(s)
+  - organization.eqms_entity_nomenclature_mappings: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_mapping_joins: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_mapping_conditions: 1 INSERT statement(s)
+
+File 008_seed_data.sql (from CCC-HR-F-01 Job Description.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 9 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 10 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 9 INSERT statement(s)
+
+File 009_seed_data.sql (from CCC-HR-F-02 - Individual Competency.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 2 INSERT statement(s)
+  - dms.eqms_document_template_variable: 9 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 10 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 9 INSERT statement(s)
+
+File 010_seed_data.sql (from CCC-HR-F-03 Training Need.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 7 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 10 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 7 INSERT statement(s)
+
+File 011_seed_data.sql (from CCC-HR-F-05 Resource Requisition.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - document: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 9 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 10 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 9 INSERT statement(s)
+
+File 012_seed_data.sql (from CCC-HR-F-06-Candidate Evaluation.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 14 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 15 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 14 INSERT statement(s)
+
+File 013_seed_data.sql (from CCC-HR-F-07-Org-Chart.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 3 INSERT statement(s)
+  - dms.eqms_document_template_variable: 7 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 7 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 12 INSERT statement(s)
+
+File 014_seed_data.sql (from CCC-HR-F-08-Induction.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 8 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 11 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 8 INSERT statement(s)
+
+File 015_seed_data.sql (from CCC-HR-F-09-Training-Effectiveness-Evaluation.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_api_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 1 INSERT statement(s)
+
+File 016_seed_data.sql (from CCC-HR-F-10-Employee-Check-List.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 4 INSERT statement(s)
+  - dms.eqms_document_template_variable: 18 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 18 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 20 INSERT statement(s)
+
+File 017_seed_data.sql (from 008_RBAC.sql):
+  - organization.eqms_menu_lk: 1 INSERT statement(s)
+  - organization.eqms_menu_activity_access: 1 INSERT statement(s)
+  - organization.eqms_role_menu_activity_access: 1 INSERT statement(s)
+
+File 018_seed_data.sql (from 009_ABAC_CONFIGURATION.sql):
+  - organization.eqms_module: 1 INSERT statement(s)
+  - abac.eqms_form: 1 INSERT statement(s)
+  - abac.eqms_form_controls: 1 INSERT statement(s)
+  - abac.eqms_form_control_actions: 1 INSERT statement(s)
+  - abac.eqms_form_menu_mapping: 1 INSERT statement(s)
+
+File 019_seed_data.sql (from 010_WORKFLOW.sql):
+  - workflow.eqms_workflow_template: 1 INSERT statement(s)
+  - workflow.eqms_project_type: 1 INSERT statement(s)
+  - workflow.eqms_workflow_task_status: 1 INSERT statement(s)
+  - workflow.eqms_workflow_status_transition_template: 1 INSERT statement(s)
+  - workflow.eqms_workflow_status_transition_template_role_mapper: 1 INSERT statement(s)
+  - workflow.eqms_project_type_tasks: 1 INSERT statement(s)
+  - workflow.eqms_project_type_task_group: 1 INSERT statement(s)
+  - workflow.eqms_project_type_task_group_tasks: 1 INSERT statement(s)
+  - workflow.eqms_project_type_task_dependencies: 1 INSERT statement(s)
+  - workflow.eqms_project_type_tasks_department_mapper: 1 INSERT statement(s)
+  - workflow.eqms_form_type_task_group_mapping: 1 INSERT statement(s)
+
+File 020_seed_data.sql (from 011_ABAC_WF_MAPPING_CONFIGURATION.sql):
+  - abac.eqms_form_action_wf_status_mapping: 1 INSERT statement(s)

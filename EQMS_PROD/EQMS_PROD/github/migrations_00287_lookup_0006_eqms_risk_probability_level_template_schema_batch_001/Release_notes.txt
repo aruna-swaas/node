@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00287_lookup_0006_eqms_risk_probability_level_template_schema_batch_001
+Date with time: 2026-02-07 17:13:53
+
+Schema: organization
+- Table: organization.eqms_risk_probability_level_template
+  Change Type: CREATE
+  Description: Create new table eqms_risk_probability_level_template
+
+- Table: organization.eqms_risk_probability_level_template
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)

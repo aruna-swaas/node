@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dnd.eqms_product_realization_stage_process;

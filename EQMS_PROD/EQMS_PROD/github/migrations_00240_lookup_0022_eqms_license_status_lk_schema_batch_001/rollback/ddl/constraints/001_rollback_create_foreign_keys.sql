@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_license_status_lk DROP CONSTRAINT fk_emlsl_organization_id;
+ALTER TABLE organization.eqms_license_status_lk DROP CONSTRAINT eqms_license_status_lk_tenant_org_ref_unique;

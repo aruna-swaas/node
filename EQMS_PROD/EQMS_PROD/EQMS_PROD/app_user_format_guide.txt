@@ -1,0 +1,177 @@
+================================================================================
+APP_USER.TXT FILE FORMAT GUIDE
+================================================================================
+
+This document describes the expected format for the app_user.txt file used by
+the migration script to determine which database users should be granted
+permissions for each module.
+
+================================================================================
+FILE STRUCTURE
+================================================================================
+
+1. First line: Empty line (optional)
+2. Second line: Header row with column names (tab-separated)
+   Format: "Module	App_user_name	 	  "
+3. Subsequent lines: Module entries (one per line)
+
+================================================================================
+FORMAT RULES
+================================================================================
+
+1. COLUMN SEPARATION:
+   - Use TAB characters (\t) to separate columns
+   - First column: Module name (required)
+   - Remaining columns: App user names (optional, can be multiple)
+
+2. MODULE NAME:
+   - Must be in the first column
+   - Case-insensitive (will be normalized to lowercase)
+   - Must not be empty
+   - Must not start with comma or contain " - for" (these are treated as comments)
+
+3. APP USER NAMES:
+   - Can be in the same column (comma-separated) or separate columns
+   - Multiple formats supported:
+     a) Single user: "module_app_user"
+     b) Comma-separated in same column: "user1,user2,user3"
+     c) Tab-separated columns: "user1	user2	user3"
+     d) Mixed: "user1,user2	user3"
+
+4. COMMAS:
+   - Trailing commas are automatically removed: "user," → "user"
+   - Leading commas are automatically removed: ",user" → "user"
+   - Commas within a column separate multiple users
+
+5. CONDITIONAL USERS (Screen-specific):
+   - Format: "user_name - for screen_description"
+   - These users are NOT included in base mapping
+   - They are added conditionally based on screen name
+   - Example: "magic_read_app_user - for specifications batch alone"
+   - Currently supported: dnd specification screen
+
+6. COMMENTS:
+   - Lines starting with "#" are ignored
+   - Lines where module name starts with "," or contains " - for" are skipped
+   - Lines with empty module name are skipped
+
+================================================================================
+EXAMPLES
+================================================================================
+
+Example 1: Simple module with single user
+------------------------------------------
+organization	organization_app_user
+
+Result: organization module → [organization_app_user]
+
+
+Example 2: Module with multiple users (comma-separated)
+--------------------------------------------------------
+hrcs	hrcs_app_user,magic_read_app_user,magic_save_app_user
+
+Result: hrcs module → [hrcs_app_user, magic_read_app_user, magic_save_app_user]
+Note: All users are granted for ALL screens in hrcs module
+
+
+Example 3: Module with multiple users (tab-separated)
+------------------------------------------------------
+hrcs	hrcs_app_user	magic_read_app_user	magic_save_app_user
+
+Result: Same as Example 2
+
+
+Example 4: Module with conditional users (screen-specific)
+-----------------------------------------------------------
+dnd	dnd_app_user,magic_read_app_user - for specifications batch alone,magic_save_app_user - for specifications batch alone
+
+Result:
+- Base mapping: dnd module → [dnd_app_user]
+- For specification screen: [dnd_app_user, magic_read_app_user, magic_save_app_user]
+- For other screens: [dnd_app_user] only
+
+
+Example 5: Module with trailing comma
+---------------------------------------
+workflow	pms_app_user,
+
+Result: workflow module → [pms_app_user]
+Note: Trailing comma is automatically removed
+
+
+Example 6: Module with no app users
+------------------------------------
+abac	
+
+Result: abac module → []
+Note: No permissions will be granted (empty list)
+
+
+Example 7: Comment lines (ignored)
+------------------------------------
+# This is a comment
+  ,magic_save_app_user - for specifications batch alone
+
+Result: Both lines are skipped (first is comment, second starts with comma)
+
+================================================================================
+CURRENT SPECIAL HANDLING
+================================================================================
+
+1. HRCS MODULE:
+   - All users listed are granted for ALL screens
+   - Format: "hrcs	hrcs_app_user,magic_read_app_user,magic_save_app_user"
+
+2. DND MODULE:
+   - Base user (dnd_app_user) is granted for ALL screens
+   - Magic users (magic_read_app_user, magic_save_app_user) are ONLY granted
+     for screens where screen_name contains "specification" (case-insensitive)
+   - Format: "dnd	dnd_app_user,magic_read_app_user - for specifications batch alone,magic_save_app_user - for specifications batch alone"
+
+================================================================================
+VALIDATION
+================================================================================
+
+The parser will:
+✓ Skip empty lines
+✓ Skip comment lines (starting with #)
+✓ Skip continuation/comment lines (starting with comma or containing " - for" in module name)
+✓ Remove leading/trailing commas from user names
+✓ Handle comma-separated values within columns
+✓ Normalize module names to lowercase
+✓ Skip users with " - for" comments (conditional users)
+
+================================================================================
+COMPLETE EXAMPLE FILE
+================================================================================
+
+Module	App_user_name	 	 
+organization	organization_app_user	 	 
+workflow	pms_app_user	 	 
+abac	 	 	 
+dms	dms_app_user	 	 
+notification_center	 	 	 
+hrcs	hrcs_app_user,magic_read_app_user,magic_save_app_user
+dnd	dnd_app_user,magic_read_app_user - for specifications batch alone,magic_save_app_user - for specifications batch alone
+marketing	 	 	 
+risk_management	risk_app_user	 	 
+regulation	 	 	 
+vendor	vendor_purchase_app_user	 	 
+purchase	 	 
+sales	sales_app_user	 	 
+qc	quality_control_app_user	 	 
+infrastructure	infrastructure_app_user	 	 
+pre_production	production_app_user
+
+================================================================================
+NOTES
+================================================================================
+
+- The file is read once and cached in memory for performance
+- Changes to the file require script restart to take effect
+- Module names must match the schema names in your database (case-insensitive)
+- User names are used exactly as specified (case-sensitive for database)
+- For modules with conditional users, ensure the screen name matching logic
+  in get_module_app_users() matches your screen naming convention
+
+================================================================================

@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_hr_evalution_status_lk DROP CONSTRAINT fk_ehesl_organization_id;
+ALTER TABLE organization.eqms_hr_evalution_status_lk DROP CONSTRAINT eqms_hr_evalution_status_lk_tenant_org_ref_unique;

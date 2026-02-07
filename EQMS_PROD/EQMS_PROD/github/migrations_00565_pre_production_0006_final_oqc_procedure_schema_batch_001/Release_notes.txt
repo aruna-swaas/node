@@ -1,0 +1,185 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00565_pre_production_0006_final_oqc_procedure_schema_batch_001
+Date with time: 2026-02-07 17:20:13
+
+Schema: pre_production
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_equipment
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_insp_prot_equipment
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_equipment_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_insp_prot_equipment_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_jig
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_insp_prot_jig
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_jig_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_insp_prot_jig_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_model_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_insp_prot_model_mapper
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_model_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_insp_prot_model_mapper_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_tool_type
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_insp_prot_tool_type
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_tool_type_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_insp_prot_tool_type_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_work_inst_step
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_insp_prot_work_inst_step
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_work_inst_step_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_insp_prot_work_inst_step_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_equipment
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_pack_prot_equipment
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_equipment_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_pack_prot_equipment_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_jig
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_pack_prot_jig
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_jig_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_pack_prot_jig_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_model_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_pack_prot_model_mapper
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_model_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_pack_prot_model_mapper_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_tool_type
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_pack_prot_tool_type
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_tool_type_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_pack_prot_tool_type_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_work_inst_step
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_pack_prot_work_inst_step
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_work_inst_step_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_pack_prot_work_inst_step_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_equipment
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_test_prot_equipment
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_equipment_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_test_prot_equipment_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_feat_model_map
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_test_prot_feat_model_map
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_feat_model_map_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_test_prot_feat_model_map_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_jig
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_test_prot_jig
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_jig_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_test_prot_jig_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_tool_type
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_test_prot_tool_type
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_tool_type_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_test_prot_tool_type_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_work_inst_step
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_test_prot_work_inst_step
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_work_inst_step_history
+  Change Type: CREATE
+  Description: Create new table eqms_pre_prod_final_oqc_test_prot_work_inst_step_history
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_equipment
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_jig
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_model_mapper
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_tool_type
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_insp_prot_work_inst_step
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_equipment
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_jig
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_model_mapper
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_tool_type
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_pack_prot_work_inst_step
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_equipment
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_feat_model_map
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_jig
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_tool_type
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: pre_production.eqms_pre_prod_final_oqc_test_prot_work_inst_step
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

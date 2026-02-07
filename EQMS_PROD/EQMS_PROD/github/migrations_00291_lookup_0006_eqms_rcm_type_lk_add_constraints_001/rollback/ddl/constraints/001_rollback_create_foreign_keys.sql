@@ -1,0 +1,1 @@
+ALTER TABLE dnd.eqms_dig_specification DROP CONSTRAINT fk_eqms_rcm_type_lk_id;

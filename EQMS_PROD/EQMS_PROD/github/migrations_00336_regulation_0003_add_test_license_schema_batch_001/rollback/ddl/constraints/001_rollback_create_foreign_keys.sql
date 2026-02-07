@@ -1,0 +1,6 @@
+ALTER TABLE regulation.eqms_reg_test_license_supporting_files DROP CONSTRAINT fk_ertlsf_fk_eqms_reg_test_license_id;
+ALTER TABLE regulation.eqms_reg_test_license_supporting_files DROP CONSTRAINT fk_ertlsf_eqms_organization_id;
+ALTER TABLE regulation.eqms_reg_test_license_supporting_files DROP CONSTRAINT fk_ertlsf_eqms_file_id;
+ALTER TABLE regulation.eqms_reg_test_license DROP CONSTRAINT fk_ertl_fk_eqms_project_id;
+ALTER TABLE regulation.eqms_reg_test_license DROP CONSTRAINT fk_ertl_eqms_reg_test_checklist_section_master_id;
+ALTER TABLE regulation.eqms_reg_test_license DROP CONSTRAINT fk_ertl_eqms_organization_id;

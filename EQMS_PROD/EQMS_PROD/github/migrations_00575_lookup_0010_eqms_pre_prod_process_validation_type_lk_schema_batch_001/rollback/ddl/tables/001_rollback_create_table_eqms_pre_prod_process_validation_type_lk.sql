@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_pre_prod_process_validation_type_lk;

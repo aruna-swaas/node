@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00371_lookup_0004_eqms_vendor_re_evaluation_group_criteria_lk_schema_batch_001
+Date with time: 2026-02-07 17:16:23
+
+Schema: organization
+- Table: organization.eqms_vendor_re_evaluation_group_criteria_lk
+  Change Type: CREATE
+  Description: Create new table eqms_vendor_re_evaluation_group_criteria_lk
+
+- Table: organization.eqms_vendor_re_evaluation_group_criteria_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 3 foreign key constraint(s)

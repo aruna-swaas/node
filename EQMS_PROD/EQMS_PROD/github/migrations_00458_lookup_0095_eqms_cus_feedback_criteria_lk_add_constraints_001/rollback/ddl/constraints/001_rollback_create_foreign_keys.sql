@@ -1,0 +1,1 @@
+ALTER TABLE sales.eqms_customer_feedback_criteria_detail DROP CONSTRAINT fk_ecfcd_feedback_criteria_lk_id;

@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_usability_type DROP CONSTRAINT fk_eut_organization_id;
+ALTER TABLE organization.eqms_usability_type DROP CONSTRAINT eqms_usability_type_tenant_org_ref_unique;

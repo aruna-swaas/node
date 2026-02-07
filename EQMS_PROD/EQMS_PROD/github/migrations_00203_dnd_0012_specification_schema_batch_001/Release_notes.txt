@@ -1,0 +1,109 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00203_dnd_0012_specification_schema_batch_001
+Date with time: 2026-02-07 17:12:06
+
+Schema: dnd
+- Table: dnd.eqms_device_lk
+  Change Type: CREATE
+  Description: Create new table eqms_device_lk
+
+- Table: dnd.eqms_device_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_device_lk_history
+
+- Table: dnd.eqms_dig_specification
+  Change Type: CREATE
+  Description: Create new table eqms_dig_specification
+
+- Table: dnd.eqms_dig_specification_country_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_dig_specification_country_mapper
+
+- Table: dnd.eqms_dig_specification_country_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_dig_specification_country_mapper_history
+
+- Table: dnd.eqms_dig_specification_functional_block_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_dig_specification_functional_block_mapper
+
+- Table: dnd.eqms_dig_specification_functional_block_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_dig_specification_functional_block_mapper_history
+
+- Table: dnd.eqms_dig_specification_history
+  Change Type: CREATE
+  Description: Create new table eqms_dig_specification_history
+
+- Table: dnd.eqms_dig_specification_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_dig_specification_mapper
+
+- Table: dnd.eqms_dig_specification_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_dig_specification_mapper_history
+
+- Table: dnd.eqms_dig_specification_model_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_dig_specification_model_mapper
+
+- Table: dnd.eqms_dig_specification_model_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_dig_specification_model_mapper_history
+
+- Table: dnd.eqms_labelling_packaging_type_lk_history
+  Change Type: CREATE
+  Description: Create new table eqms_labelling_packaging_type_lk_history
+
+- Table: dnd.eqms_organization_product_role
+  Change Type: CREATE
+  Description: Create new table eqms_organization_product_role
+
+- Table: dnd.eqms_organization_product_role_history
+  Change Type: CREATE
+  Description: Create new table eqms_organization_product_role_history
+
+- Table: dnd.eqms_perfomance_specification
+  Change Type: CREATE
+  Description: Create new table eqms_perfomance_specification
+
+- Table: dnd.eqms_project_dig_models
+  Change Type: CREATE
+  Description: Create new table eqms_project_dig_models
+
+- Table: dnd.eqms_device_lk
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_dig_specification
+  Change Type: ALTER
+  Description: Add 6 foreign key constraint(s)
+
+- Table: dnd.eqms_dig_specification_country_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_dig_specification_functional_block_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_dig_specification_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_dig_specification_model_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_organization_product_role
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_perfomance_specification
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: dnd.eqms_project_dig_models
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

@@ -1,0 +1,4 @@
+ALTER TABLE organization.eqms_design_transfer_checklist_lk DROP CONSTRAINT fk_eqms_record_generation_type_lk_id;
+ALTER TABLE organization.eqms_design_transfer_checklist_lk DROP CONSTRAINT fk_edtcl_organization_id;
+ALTER TABLE organization.eqms_design_transfer_checklist_lk DROP CONSTRAINT fk_edtcl_file_id;
+ALTER TABLE organization.eqms_design_transfer_checklist_lk DROP CONSTRAINT eqms_design_transfer_checklist_lk_tenant_org_ref_unique;

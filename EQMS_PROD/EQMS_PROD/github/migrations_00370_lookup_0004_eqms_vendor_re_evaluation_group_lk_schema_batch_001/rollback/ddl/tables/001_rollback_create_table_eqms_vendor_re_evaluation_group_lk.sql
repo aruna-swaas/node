@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_vendor_re_evaluation_group_lk;

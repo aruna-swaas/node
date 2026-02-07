@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS qc.eqms_incoming_insp_software_result_supporting_files_history;

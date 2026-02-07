@@ -1,0 +1,193 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00012_abac_0001_schema_batch_001
+Date with time: 2026-02-07 17:09:35
+
+Schema: abac
+- Table: abac.eqms_action_master_lk
+  Change Type: CREATE
+  Description: Create new table eqms_action_master_lk
+
+- Table: abac.eqms_form
+  Change Type: CREATE
+  Description: Create new table eqms_form
+
+- Table: abac.eqms_form_action_wf_status_mapping
+  Change Type: CREATE
+  Description: Create new table eqms_form_action_wf_status_mapping
+
+- Table: abac.eqms_form_action_wf_status_mapping_history
+  Change Type: CREATE
+  Description: Create new table eqms_form_action_wf_status_mapping_history
+
+- Table: abac.eqms_form_control_actions
+  Change Type: CREATE
+  Description: Create new table eqms_form_control_actions
+
+- Table: abac.eqms_form_control_actions_history
+  Change Type: CREATE
+  Description: Create new table eqms_form_control_actions_history
+
+- Table: abac.eqms_form_controls
+  Change Type: CREATE
+  Description: Create new table eqms_form_controls
+
+- Table: abac.eqms_form_controls_history
+  Change Type: CREATE
+  Description: Create new table eqms_form_controls_history
+
+- Table: abac.eqms_form_dependencies
+  Change Type: CREATE
+  Description: Create new table eqms_form_dependencies
+
+- Table: abac.eqms_form_dependencies_history
+  Change Type: CREATE
+  Description: Create new table eqms_form_dependencies_history
+
+- Table: abac.eqms_form_dependency_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_form_dependency_type_lk
+
+- Table: abac.eqms_form_history
+  Change Type: CREATE
+  Description: Create new table eqms_form_history
+
+- Table: abac.eqms_form_menu_mapping
+  Change Type: CREATE
+  Description: Create new table eqms_form_menu_mapping
+
+- Table: abac.eqms_form_type_lk
+  Change Type: CREATE
+  Description: Create new table eqms_form_type_lk
+
+- Table: abac.eqms_object
+  Change Type: CREATE
+  Description: Create new table eqms_object
+
+- Table: abac.eqms_object_attributes
+  Change Type: CREATE
+  Description: Create new table eqms_object_attributes
+
+- Table: abac.eqms_object_attributes_history
+  Change Type: CREATE
+  Description: Create new table eqms_object_attributes_history
+
+- Table: abac.eqms_object_context
+  Change Type: CREATE
+  Description: Create new table eqms_object_context
+
+- Table: abac.eqms_object_context_history
+  Change Type: CREATE
+  Description: Create new table eqms_object_context_history
+
+- Table: abac.eqms_object_history
+  Change Type: CREATE
+  Description: Create new table eqms_object_history
+
+- Table: abac.eqms_object_policy_mapper
+  Change Type: CREATE
+  Description: Create new table eqms_object_policy_mapper
+
+- Table: abac.eqms_object_policy_mapper_history
+  Change Type: CREATE
+  Description: Create new table eqms_object_policy_mapper_history
+
+- Table: abac.eqms_policy
+  Change Type: CREATE
+  Description: Create new table eqms_policy
+
+- Table: abac.eqms_policy_actions
+  Change Type: CREATE
+  Description: Create new table eqms_policy_actions
+
+- Table: abac.eqms_policy_actions_history
+  Change Type: CREATE
+  Description: Create new table eqms_policy_actions_history
+
+- Table: abac.eqms_policy_attributes
+  Change Type: CREATE
+  Description: Create new table eqms_policy_attributes
+
+- Table: abac.eqms_policy_attributes_history
+  Change Type: CREATE
+  Description: Create new table eqms_policy_attributes_history
+
+- Table: abac.eqms_policy_history
+  Change Type: CREATE
+  Description: Create new table eqms_policy_history
+
+- Table: abac.eqms_user_attributes
+  Change Type: CREATE
+  Description: Create new table eqms_user_attributes
+
+- Table: abac.eqms_user_attributes_history
+  Change Type: CREATE
+  Description: Create new table eqms_user_attributes_history
+
+- Table: abac.eqms_action_master_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: abac.eqms_form
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 3 foreign key constraint(s)
+
+- Table: abac.eqms_form_action_wf_status_mapping
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: abac.eqms_form_control_actions
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: abac.eqms_form_controls
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: abac.eqms_form_dependencies
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: abac.eqms_form_dependency_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: abac.eqms_form_menu_mapping
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: abac.eqms_form_type_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: abac.eqms_object
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)
+
+- Table: abac.eqms_object_attributes
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: abac.eqms_object_context
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: abac.eqms_object_policy_mapper
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: abac.eqms_policy
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)
+
+- Table: abac.eqms_policy_actions
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: abac.eqms_policy_attributes
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: abac.eqms_user_attributes
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

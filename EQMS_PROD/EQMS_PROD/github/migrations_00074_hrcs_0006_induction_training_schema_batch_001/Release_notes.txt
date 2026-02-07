@@ -1,0 +1,33 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00074_hrcs_0006_induction_training_schema_batch_001
+Date with time: 2026-02-07 17:10:49
+
+Schema: hrcs
+- Table: hrcs.eqms_hr_induction_training
+  Change Type: CREATE
+  Description: Create new table eqms_hr_induction_training
+
+- Table: hrcs.eqms_hr_induction_training_employee_header
+  Change Type: CREATE
+  Description: Create new table eqms_hr_induction_training_employee_header
+
+- Table: hrcs.eqms_hr_induction_training_employee_header_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_induction_training_employee_header_history
+
+- Table: hrcs.eqms_hr_induction_training_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_induction_training_history
+
+- Table: hrcs.eqms_hr_induction_training_topic_supporting_file_history
+  Change Type: CREATE
+  Description: Create new table eqms_hr_induction_training_topic_supporting_file_history
+
+- Table: hrcs.eqms_hr_induction_training
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: hrcs.eqms_hr_induction_training_employee_header
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 2 foreign key constraint(s)

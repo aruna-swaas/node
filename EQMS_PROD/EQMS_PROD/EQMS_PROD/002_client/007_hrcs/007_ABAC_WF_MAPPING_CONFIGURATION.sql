@@ -1,0 +1,41 @@
+﻿DO $$ 
+DECLARE 
+VAR_TENANT_KEY INT := ${TENANTKEY}; 
+VAR_ORG_ID INT := ${ORGID}; 
+
+BEGIN
+
+-- HR Form Action Workflow Status Mapping Insert Statements based on status-mapping hr.csv
+-- Form action workflow status mappings for HR forms (12, 13, 14)
+
+INSERT INTO abac.eqms_form_action_wf_status_mapping (eqms_tenant_key, fk_eqms_organization_id, fk_eqms_form_controls_id, fk_eqms_workflow_task_status_id, status, created_date, created_by, modified_date, modified_by)
+VALUES 
+(VAR_TENANT_KEY, VAR_ORG_ID, 190, NULL, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 191, 12, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 192, 13, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 192, 16, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 193, 14, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 193, 15, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 194, NULL, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 195, 11, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 195, 12, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 196, NULL, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 197, 12, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 198, 13, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 198, 16, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 199, 14, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 199, 15, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 200, NULL, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 201, 11, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 201, 12, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 202, NULL, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 203, 12, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 204, 13, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 204, 16, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 205, 14, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 205, 15, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 206, NULL, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 207, 11, 1, NOW(), 1, NULL, NULL),
+(VAR_TENANT_KEY, VAR_ORG_ID, 207, 12, 1, NOW(), 1, NULL, NULL);
+
+END $$;

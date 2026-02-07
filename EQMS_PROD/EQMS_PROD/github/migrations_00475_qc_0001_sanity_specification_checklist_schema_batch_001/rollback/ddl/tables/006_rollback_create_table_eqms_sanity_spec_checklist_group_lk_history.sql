@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS qc.eqms_sanity_spec_checklist_group_lk_history;

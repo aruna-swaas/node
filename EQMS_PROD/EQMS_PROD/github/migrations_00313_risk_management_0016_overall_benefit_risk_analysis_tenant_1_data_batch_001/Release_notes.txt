@@ -1,0 +1,11 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00313_risk_management_0016_overall_benefit_risk_analysis_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:14:21
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_rm_comparison_operator_lk: 1 INSERT statement(s)

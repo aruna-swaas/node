@@ -1,0 +1,53 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00448_sales_0005_delivery_dispatch_schema_batch_001
+Date with time: 2026-02-07 17:17:47
+
+Schema: sales
+- Table: sales.eqms_delivery_dispatch
+  Change Type: CREATE
+  Description: Create new table eqms_delivery_dispatch
+
+- Table: sales.eqms_delivery_dispatch_history
+  Change Type: CREATE
+  Description: Create new table eqms_delivery_dispatch_history
+
+- Table: sales.eqms_delivery_dispatch_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_delivery_dispatch_supporting_files
+
+- Table: sales.eqms_delivery_dispatch_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_delivery_dispatch_supporting_files_history
+
+- Table: sales.eqms_delivery_product
+  Change Type: CREATE
+  Description: Create new table eqms_delivery_product
+
+- Table: sales.eqms_delivery_product_history
+  Change Type: CREATE
+  Description: Create new table eqms_delivery_product_history
+
+- Table: sales.eqms_delivery_site_requirement
+  Change Type: CREATE
+  Description: Create new table eqms_delivery_site_requirement
+
+- Table: sales.eqms_delivery_site_requirement_history
+  Change Type: CREATE
+  Description: Create new table eqms_delivery_site_requirement_history
+
+- Table: sales.eqms_delivery_dispatch
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: sales.eqms_delivery_dispatch_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: sales.eqms_delivery_product
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: sales.eqms_delivery_site_requirement
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

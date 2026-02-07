@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_hr_induction_training_topic_lk DROP CONSTRAINT fk_ehittl_organization_id;
+ALTER TABLE organization.eqms_hr_induction_training_topic_lk DROP CONSTRAINT eqms_hr_induction_training_topic_lk_tenant_org_ref_unique;

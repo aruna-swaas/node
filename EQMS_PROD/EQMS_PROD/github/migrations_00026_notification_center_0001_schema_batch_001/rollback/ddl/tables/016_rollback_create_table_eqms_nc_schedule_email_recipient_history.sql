@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS notification_center.eqms_nc_schedule_email_recipient_history;

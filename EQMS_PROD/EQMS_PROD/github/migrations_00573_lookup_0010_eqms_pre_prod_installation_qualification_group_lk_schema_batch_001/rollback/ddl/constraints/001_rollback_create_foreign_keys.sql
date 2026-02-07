@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_pre_prod_installation_qualification_group_lk DROP CONSTRAINT fk_epiqgl_organization_id;
+ALTER TABLE organization.eqms_pre_prod_installation_qualification_group_lk DROP CONSTRAINT unique_epiqgl_tnt_org_ref_id;

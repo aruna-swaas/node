@@ -1,0 +1,26 @@
+CREATE TABLE hrcs.eqms_hr_role_definition_history (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    fk_eqms_hr_role_definition_id integer,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    fk_eqms_roles_lk_id integer,
+    fk_eqms_hr_employment_type_lk_id integer,
+    fk_eqms_organization_department_id integer,
+    fk_eqms_reports_to_role_id integer,
+    educational_qualification character varying(50),
+    experience integer,
+    job_responsibilities character varying(500),
+    area_of_expertise character varying(500),
+    training_and_certifications_details character varying(500),
+    additional_responsibility character varying(500),
+    status smallint,
+    record_status smallint DEFAULT 1,
+    version numeric(10,1),
+    valid_from_date timestamp without time zone,
+    valid_to_date timestamp without time zone DEFAULT '2199-12-31 23:59:59'::timestamp without time zone,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer 
+);
+

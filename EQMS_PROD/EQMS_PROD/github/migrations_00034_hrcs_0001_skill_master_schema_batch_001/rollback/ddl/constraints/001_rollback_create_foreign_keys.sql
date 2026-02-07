@@ -1,0 +1,5 @@
+ALTER TABLE hrcs.eqms_hr_skill_supporting_files DROP CONSTRAINT fk_ehssf_hr_skill_master_id;
+ALTER TABLE hrcs.eqms_hr_skill_supporting_files DROP CONSTRAINT fk_ehssf_organization_id;
+ALTER TABLE hrcs.eqms_hr_skill_supporting_files DROP CONSTRAINT fk_ehssf_file_id;
+ALTER TABLE hrcs.eqms_hr_skill_master DROP CONSTRAINT fk_ehsm_organization_id;
+ALTER TABLE hrcs.eqms_hr_skill_master DROP CONSTRAINT unique_tnt_org_skill_name;

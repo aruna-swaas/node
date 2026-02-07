@@ -1,0 +1,1 @@
+ALTER TABLE risk_management.eqms_hazard_ref_rcm DROP CONSTRAINT fk_ehrrcm_organization_id;

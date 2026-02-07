@@ -1,0 +1,2 @@
+ALTER TABLE qc.eqms_incoming_insp_spec_unit_results DROP CONSTRAINT fk_eisur_pre_prod_spec_criteria_id;
+ALTER TABLE qc.eqms_incoming_insp_spec_batch_results DROP CONSTRAINT fk_eisbr_pre_prod_spec_criteria_id;

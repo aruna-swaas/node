@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_hazard_identification_tool_lk DROP CONSTRAINT fk_ehitl_organization_id;
+ALTER TABLE organization.eqms_hazard_identification_tool_lk DROP CONSTRAINT eqms_hazard_identification_tool_lk_tenant_org_ref_unique;

@@ -1,0 +1,13 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00120_lookup_0003_eqms_market_segment_lk_schema_batch_001
+Date with time: 2026-02-07 17:11:24
+
+Schema: organization
+- Table: organization.eqms_market_segment_lk
+  Change Type: CREATE
+  Description: Create new table eqms_market_segment_lk
+
+- Table: organization.eqms_market_segment_lk
+  Change Type: ALTER
+  Description: Add 1 unique constraint(s), Add 1 foreign key constraint(s)

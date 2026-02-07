@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_market_demography_sub_category_lk;

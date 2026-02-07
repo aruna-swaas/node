@@ -1,0 +1,15 @@
+CREATE TABLE regulation.eqms_reg_pmf_equipment (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    eqms_tenant_key integer,
+    fk_eqms_organization_id integer,
+    fk_eqms_reg_plant_master_file_id integer,
+    production_qc_equipment_description character varying,
+    preventive_maintenance_description character varying,
+    measuring_device_calibration character varying,
+    status smallint,
+    created_date timestamp without time zone,
+    created_by integer,
+    modified_date timestamp without time zone,
+    modified_by integer 
+);
+

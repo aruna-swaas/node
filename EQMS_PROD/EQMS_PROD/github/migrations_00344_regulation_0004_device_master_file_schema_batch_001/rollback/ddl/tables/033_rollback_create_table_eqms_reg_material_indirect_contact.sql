@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS regulation.eqms_reg_material_indirect_contact;

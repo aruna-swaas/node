@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_feasibility_decision_lk DROP CONSTRAINT fk_efdl_organization_id;
+ALTER TABLE organization.eqms_feasibility_decision_lk DROP CONSTRAINT eqms_feasibility_decision_lk_tenant_org_ref_unique;

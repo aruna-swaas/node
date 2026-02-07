@@ -1,0 +1,11 @@
+ALTER TABLE hrcs.eqms_hr_training_skill DROP CONSTRAINT fk_ehts_hr_training_schedule_id;
+ALTER TABLE hrcs.eqms_hr_training_skill DROP CONSTRAINT fk_ehts_organization_id;
+ALTER TABLE hrcs.eqms_hr_training_skill DROP CONSTRAINT fk_ehts_hr_skill_master_id;
+ALTER TABLE hrcs.eqms_hr_training_certificate_supporting_file DROP CONSTRAINT fk_ehtcsf_hr_training_schedule_id;
+ALTER TABLE hrcs.eqms_hr_training_attendee DROP CONSTRAINT fk_ehta_hr_training_schedule_id;
+ALTER TABLE hrcs.eqms_hr_training_schedule DROP CONSTRAINT fk_ehts_organization_id;
+ALTER TABLE hrcs.eqms_hr_training_schedule DROP CONSTRAINT fk_ehts_organization_employee_id;
+ALTER TABLE hrcs.eqms_hr_training_certificate_supporting_file DROP CONSTRAINT fk_ehtcsf_organization_id;
+ALTER TABLE hrcs.eqms_hr_training_certificate_supporting_file DROP CONSTRAINT fk_ehtcsf_file_id;
+ALTER TABLE hrcs.eqms_hr_training_attendee DROP CONSTRAINT fk_ehta_organization_id;
+ALTER TABLE hrcs.eqms_hr_training_attendee DROP CONSTRAINT fk_ehta_organization_employee_id;

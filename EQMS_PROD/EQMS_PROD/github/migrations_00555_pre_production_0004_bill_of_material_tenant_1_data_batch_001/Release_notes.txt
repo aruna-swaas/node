@@ -1,0 +1,12 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00555_pre_production_0004_bill_of_material_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:20:01
+
+Data Migration Summary:
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_pre_prod_bom_feature_settings_lk: 1 INSERT statement(s)
+  - organization.eqms_pre_prod_case_settings_type_lk: 1 INSERT statement(s)

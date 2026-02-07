@@ -1,0 +1,3 @@
+ALTER TABLE dnd.eqms_project_applicable_specification DROP CONSTRAINT fk_eqms_design_specification_type_lk_id;
+ALTER TABLE dnd.eqms_project_applicable_specification DROP CONSTRAINT fk_epas_project_id;
+ALTER TABLE dnd.eqms_project_applicable_specification DROP CONSTRAINT fk_epas_organization_id;

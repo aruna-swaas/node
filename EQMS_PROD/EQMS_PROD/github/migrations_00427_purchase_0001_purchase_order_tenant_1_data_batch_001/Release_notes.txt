@@ -1,0 +1,155 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00427_purchase_0001_purchase_order_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:17:15
+
+Data Migration Summary:
+
+Schema: dms
+- Table: dms.eqms_document_template
+  Change Type: INSERT (Data Migration)
+  Description: Insert 9 record(s) into eqms_document_template
+
+- Table: dms.eqms_document_template_api_details
+  Change Type: INSERT (Data Migration)
+  Description: Insert 2 record(s) into eqms_document_template_api_details
+
+- Table: dms.eqms_document_template_form_mapping
+  Change Type: INSERT (Data Migration)
+  Description: Insert 4 record(s) into eqms_document_template_form_mapping
+
+- Table: dms.eqms_document_template_history
+  Change Type: INSERT (Data Migration)
+  Description: Insert 9 record(s) into eqms_document_template_history
+
+- Table: dms.eqms_document_template_magic_read_details
+  Change Type: INSERT (Data Migration)
+  Description: Insert 7 record(s) into eqms_document_template_magic_read_details
+
+- Table: dms.eqms_document_template_type_lk
+  Change Type: INSERT (Data Migration)
+  Description: Insert 9 record(s) into eqms_document_template_type_lk
+
+- Table: dms.eqms_document_template_variable
+  Change Type: INSERT (Data Migration)
+  Description: Insert 9 record(s) into eqms_document_template_variable
+
+- Table: dms.eqms_document_template_variable_transformation_rules
+  Change Type: INSERT (Data Migration)
+  Description: Insert 8 record(s) into eqms_document_template_variable_transformation_rules
+
+- Table: dms.eqms_document_variable_mapper
+  Change Type: INSERT (Data Migration)
+  Description: Insert 14 record(s) into eqms_document_variable_mapper
+
+Schema: organization
+- Table: organization.eqms_context_types
+  Change Type: INSERT (Data Migration)
+  Description: Insert 5 record(s) into eqms_context_types
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_purchase_order_type_lk: 1 INSERT statement(s)
+
+File 002_seed_data.sql (from 003_RBAC.sql):
+  - organization.eqms_menu_lk: 1 INSERT statement(s)
+  - organization.eqms_menu_activity_access: 1 INSERT statement(s)
+  - organization.eqms_role_menu_activity_access: 1 INSERT statement(s)
+
+File 003_seed_data.sql (from 004_ABAC_CONFIGURATION.sql):
+  - abac.eqms_form: 1 INSERT statement(s)
+  - abac.eqms_form_menu_mapping: 1 INSERT statement(s)
+
+File 004_seed_data.sql (from 005_DRAFT_SAVE.sql):
+  - organization.eqms_context_types: 5 INSERT statement(s)
+
+File 005_seed_data.sql (from 009_NOMENCLATURE.sql):
+  - organization.eqms_entity_template: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_delimiter: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_name_parts: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_part_date_formats: 1 INSERT statement(s)
+  - organization.eqms_entity_nomenclature_mappings: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_mapping_joins: 1 INSERT statement(s)
+  - organization.eqms_nomenclature_mapping_conditions: 1 INSERT statement(s)
+
+File 006_seed_data.sql (from Outsourced  Agreement- for Design.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 1 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 2 INSERT statement(s)
+
+File 007_seed_data.sql (from Outsourced Vendor Agreement- template.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 1 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 2 INSERT statement(s)
+
+File 008_seed_data.sql (from PUR-F-01 Vendor Selection Criteria - Parts.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_api_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 1 INSERT statement(s)
+
+File 009_seed_data.sql (from PUR-F-02 Deviation Note.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 1 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 3 INSERT statement(s)
+
+File 010_seed_data.sql (from PUR-F-03 Purchasing Information - Parts.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 1 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+
+File 011_seed_data.sql (from PUR-F-04 Vendor Agreement Check List.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 1 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 1 INSERT statement(s)
+
+File 012_seed_data.sql (from PUR-F-05 Part Vendor Re-evaluation.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_api_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 1 INSERT statement(s)
+
+File 013_seed_data.sql (from PUR-F-06 Purchase Order.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_form_mapping: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 2 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 3 INSERT statement(s)
+
+File 014_seed_data.sql (from Supplier Agreement-Critical Parts - template.sql):
+  - dms.eqms_document_template_type_lk: 1 INSERT statement(s)
+  - dms.eqms_document_template: 1 INSERT statement(s)
+  - dms.eqms_document_template_magic_read_details: 1 INSERT statement(s)
+  - dms.eqms_document_template_history: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable: 1 INSERT statement(s)
+  - dms.eqms_document_template_variable_transformation_rules: 1 INSERT statement(s)
+  - dms.eqms_document_variable_mapper: 2 INSERT statement(s)

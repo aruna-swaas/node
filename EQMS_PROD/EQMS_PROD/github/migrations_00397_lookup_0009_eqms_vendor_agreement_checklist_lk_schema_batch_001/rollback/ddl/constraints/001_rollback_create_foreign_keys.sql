@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_vendor_agreement_checklist_lk DROP CONSTRAINT fk_evaclk_organization_id;
+ALTER TABLE organization.eqms_vendor_agreement_checklist_lk DROP CONSTRAINT uk_evaclk_ref_id;

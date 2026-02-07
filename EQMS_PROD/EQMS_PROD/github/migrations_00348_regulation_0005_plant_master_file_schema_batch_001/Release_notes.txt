@@ -1,0 +1,173 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00348_regulation_0005_plant_master_file_schema_batch_001
+Date with time: 2026-02-07 17:15:06
+
+Schema: regulation
+- Table: regulation.eqms_reg_department_user_count
+  Change Type: CREATE
+  Description: Create new table eqms_reg_department_user_count
+
+- Table: regulation.eqms_reg_department_user_count_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_department_user_count_history
+
+- Table: regulation.eqms_reg_plant_master_file
+  Change Type: CREATE
+  Description: Create new table eqms_reg_plant_master_file
+
+- Table: regulation.eqms_reg_plant_master_file_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_plant_master_file_history
+
+- Table: regulation.eqms_reg_pmf_contract_activities
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_contract_activities
+
+- Table: regulation.eqms_reg_pmf_contract_activities_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_contract_activities_history
+
+- Table: regulation.eqms_reg_pmf_documentation
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_documentation
+
+- Table: regulation.eqms_reg_pmf_documentation_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_documentation_history
+
+- Table: regulation.eqms_reg_pmf_equipment
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_equipment
+
+- Table: regulation.eqms_reg_pmf_equipment_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_equipment_history
+
+- Table: regulation.eqms_reg_pmf_facility_premises
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_facility_premises
+
+- Table: regulation.eqms_reg_pmf_facility_premises_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_facility_premises_history
+
+- Table: regulation.eqms_reg_pmf_general_information
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_general_information
+
+- Table: regulation.eqms_reg_pmf_general_information_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_general_information_history
+
+- Table: regulation.eqms_reg_pmf_handling_complaints
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_handling_complaints
+
+- Table: regulation.eqms_reg_pmf_handling_complaints_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_handling_complaints_history
+
+- Table: regulation.eqms_reg_pmf_internal_audit
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_internal_audit
+
+- Table: regulation.eqms_reg_pmf_internal_audit_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_internal_audit_history
+
+- Table: regulation.eqms_reg_pmf_personnel
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_personnel
+
+- Table: regulation.eqms_reg_pmf_personnel_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_personnel_history
+
+- Table: regulation.eqms_reg_pmf_production
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_production
+
+- Table: regulation.eqms_reg_pmf_production_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_production_history
+
+- Table: regulation.eqms_reg_pmf_quality_assurance
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_quality_assurance
+
+- Table: regulation.eqms_reg_pmf_quality_assurance_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_quality_assurance_history
+
+- Table: regulation.eqms_reg_pmf_sanitation
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_sanitation
+
+- Table: regulation.eqms_reg_pmf_sanitation_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_sanitation_history
+
+- Table: regulation.eqms_reg_pmf_storage
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_storage
+
+- Table: regulation.eqms_reg_pmf_storage_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_pmf_storage_history
+
+- Table: regulation.eqms_reg_department_user_count
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_plant_master_file
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_pmf_contract_activities
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_pmf_documentation
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_pmf_equipment
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_pmf_facility_premises
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_pmf_general_information
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_pmf_handling_complaints
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_pmf_internal_audit
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_pmf_personnel
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_pmf_production
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_pmf_quality_assurance
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_pmf_sanitation
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_pmf_storage
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

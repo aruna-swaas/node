@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_risk_identification_method_lk DROP CONSTRAINT fk_eriml_organization_id;
+ALTER TABLE organization.eqms_risk_identification_method_lk DROP CONSTRAINT eqms_risk_identification_method_lk_tenant_org_ref_unique;

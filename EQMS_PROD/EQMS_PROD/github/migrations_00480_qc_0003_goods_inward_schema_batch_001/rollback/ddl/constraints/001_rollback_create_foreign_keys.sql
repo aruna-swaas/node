@@ -1,0 +1,8 @@
+ALTER TABLE qc.eqms_hardware_test_procedure_spec DROP CONSTRAINT fk_ehtps_part_lk_id;
+ALTER TABLE qc.eqms_hardware_test_procedure_spec DROP CONSTRAINT fk_ehtps_organization_id;
+ALTER TABLE qc.eqms_goods_inward_detail DROP CONSTRAINT fk_egid_goods_inward_id;
+ALTER TABLE qc.eqms_goods_inward_detail DROP CONSTRAINT fk_egid_organization_id;
+ALTER TABLE qc.eqms_goods_inward_detail DROP CONSTRAINT fk_egi_sanity_check_inspection_id;
+ALTER TABLE qc.eqms_goods_inward DROP CONSTRAINT fk_egi_status_lk_id;
+ALTER TABLE qc.eqms_goods_inward DROP CONSTRAINT fk_egi_purchase_order_id;
+ALTER TABLE qc.eqms_goods_inward DROP CONSTRAINT fk_egi_organization_id;

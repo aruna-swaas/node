@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_vendor_agreement_checklist_lk;

@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS vendor.eqms_sample_order_insp_spec_results_history;

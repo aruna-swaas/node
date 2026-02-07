@@ -1,0 +1,2 @@
+ALTER TABLE organization.eqms_verification_result_lk DROP CONSTRAINT fk_evrl_organization_id;
+ALTER TABLE organization.eqms_verification_result_lk DROP CONSTRAINT eqms_verification_result_lk_tenant_org_ref_unique;

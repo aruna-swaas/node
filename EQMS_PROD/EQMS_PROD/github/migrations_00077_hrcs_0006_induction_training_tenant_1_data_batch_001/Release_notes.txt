@@ -1,0 +1,20 @@
+Release Notes - Data Migration
+--------------------------------------------------
+Database Folder: migrations_00077_hrcs_0006_induction_training_tenant_1_data_batch_001
+Date with time: 2026-02-07 17:10:50
+
+Data Migration Summary:
+
+Schema: dms
+- Table: dms.eqms_file
+  Change Type: INSERT (Data Migration)
+  Description: Insert 6 record(s) into eqms_file
+
+File Details:
+
+File 001_seed_data.sql (from split_001_LOOKUP.sql):
+  - organization.eqms_hr_induction_training_topic_lk: 1 INSERT statement(s)
+
+File 002_seed_data.sql (from split_002_PREDEFINED.sql):
+  - dms.eqms_file: 6 INSERT statement(s)
+  - organization.eqms_hr_induction_training_topic_supporting_file: 1 INSERT statement(s)

@@ -1,0 +1,29 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00336_regulation_0003_add_test_license_schema_batch_001
+Date with time: 2026-02-07 17:14:58
+
+Schema: regulation
+- Table: regulation.eqms_reg_test_license
+  Change Type: CREATE
+  Description: Create new table eqms_reg_test_license
+
+- Table: regulation.eqms_reg_test_license_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_test_license_history
+
+- Table: regulation.eqms_reg_test_license_supporting_files
+  Change Type: CREATE
+  Description: Create new table eqms_reg_test_license_supporting_files
+
+- Table: regulation.eqms_reg_test_license_supporting_files_history
+  Change Type: CREATE
+  Description: Create new table eqms_reg_test_license_supporting_files_history
+
+- Table: regulation.eqms_reg_test_license
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: regulation.eqms_reg_test_license_supporting_files
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

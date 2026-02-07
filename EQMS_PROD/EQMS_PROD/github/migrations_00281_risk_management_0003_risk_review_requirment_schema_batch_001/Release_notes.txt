@@ -1,0 +1,17 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00281_risk_management_0003_risk_review_requirment_schema_batch_001
+Date with time: 2026-02-07 17:13:46
+
+Schema: risk_management
+- Table: risk_management.eqms_risk_review_requirment
+  Change Type: CREATE
+  Description: Create new table eqms_risk_review_requirment
+
+- Table: risk_management.eqms_risk_review_requirment_history
+  Change Type: CREATE
+  Description: Create new table eqms_risk_review_requirment_history
+
+- Table: risk_management.eqms_risk_review_requirment
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

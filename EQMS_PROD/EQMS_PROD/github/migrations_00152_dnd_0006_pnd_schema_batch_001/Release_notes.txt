@@ -1,0 +1,137 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00152_dnd_0006_pnd_schema_batch_001
+Date with time: 2026-02-07 17:11:40
+
+Schema: dnd
+- Table: dnd.eqms_pnd_buyer_chosen_requirements
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_buyer_chosen_requirements
+
+- Table: dnd.eqms_pnd_buyer_chosen_requirements_history
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_buyer_chosen_requirements_history
+
+- Table: dnd.eqms_pnd_end_user_chosen_requirements
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_end_user_chosen_requirements
+
+- Table: dnd.eqms_pnd_end_user_chosen_requirements_history
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_end_user_chosen_requirements_history
+
+- Table: dnd.eqms_pnd_items
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_items
+
+- Table: dnd.eqms_pnd_items_history
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_items_history
+
+- Table: dnd.eqms_pnd_requirement
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_requirement
+
+- Table: dnd.eqms_pnd_requirement_history
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_requirement_history
+
+- Table: dnd.eqms_pnd_specification
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_specification
+
+- Table: dnd.eqms_pnd_specification_history
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_specification_history
+
+- Table: dnd.eqms_pnd_supporting_documents
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_supporting_documents
+
+- Table: dnd.eqms_pnd_supporting_documents_history
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_supporting_documents_history
+
+- Table: dnd.eqms_pnd_text_requirements
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_text_requirements
+
+- Table: dnd.eqms_pnd_text_requirements_history
+  Change Type: CREATE
+  Description: Create new table eqms_pnd_text_requirements_history
+
+- Table: dnd.eqms_product_need_document
+  Change Type: CREATE
+  Description: Create new table eqms_product_need_document
+
+- Table: dnd.eqms_product_need_document_history
+  Change Type: CREATE
+  Description: Create new table eqms_product_need_document_history
+
+- Table: dnd.eqms_product_need_document_review_report
+  Change Type: CREATE
+  Description: Create new table eqms_product_need_document_review_report
+
+- Table: dnd.eqms_product_need_document_review_report_conclusion
+  Change Type: CREATE
+  Description: Create new table eqms_product_need_document_review_report_conclusion
+
+- Table: dnd.eqms_product_need_document_review_report_conclusion_history
+  Change Type: CREATE
+  Description: Create new table eqms_product_need_document_review_report_conclusion_history
+
+- Table: dnd.eqms_product_need_document_review_report_history
+  Change Type: CREATE
+  Description: Create new table eqms_product_need_document_review_report_history
+
+- Table: dnd.eqms_project_product_variants
+  Change Type: CREATE
+  Description: Create new table eqms_project_product_variants
+
+- Table: dnd.eqms_project_product_variants_history
+  Change Type: CREATE
+  Description: Create new table eqms_project_product_variants_history
+
+- Table: dnd.eqms_pnd_buyer_chosen_requirements
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_pnd_end_user_chosen_requirements
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_pnd_items
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_pnd_requirement
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_pnd_specification
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_pnd_supporting_documents
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)
+
+- Table: dnd.eqms_pnd_text_requirements
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_product_need_document
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_product_need_document_review_report
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_product_need_document_review_report_conclusion
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)
+
+- Table: dnd.eqms_project_product_variants
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

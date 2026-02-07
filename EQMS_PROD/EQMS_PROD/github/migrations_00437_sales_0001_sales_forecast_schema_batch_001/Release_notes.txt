@@ -1,0 +1,41 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00437_sales_0001_sales_forecast_schema_batch_001
+Date with time: 2026-02-07 17:17:41
+
+Schema: sales
+- Table: sales.eqms_sales_forecast
+  Change Type: CREATE
+  Description: Create new table eqms_sales_forecast
+
+- Table: sales.eqms_sales_forecast_detail
+  Change Type: CREATE
+  Description: Create new table eqms_sales_forecast_detail
+
+- Table: sales.eqms_sales_forecast_detail_history
+  Change Type: CREATE
+  Description: Create new table eqms_sales_forecast_detail_history
+
+- Table: sales.eqms_sales_forecast_history
+  Change Type: CREATE
+  Description: Create new table eqms_sales_forecast_history
+
+- Table: sales.eqms_sales_forecast_supporting_file
+  Change Type: CREATE
+  Description: Create new table eqms_sales_forecast_supporting_file
+
+- Table: sales.eqms_sales_forecast_supporting_file_history
+  Change Type: CREATE
+  Description: Create new table eqms_sales_forecast_supporting_file_history
+
+- Table: sales.eqms_sales_forecast
+  Change Type: ALTER
+  Description: Add 4 foreign key constraint(s)
+
+- Table: sales.eqms_sales_forecast_detail
+  Change Type: ALTER
+  Description: Add 1 foreign key constraint(s)
+
+- Table: sales.eqms_sales_forecast_supporting_file
+  Change Type: ALTER
+  Description: Add 3 foreign key constraint(s)

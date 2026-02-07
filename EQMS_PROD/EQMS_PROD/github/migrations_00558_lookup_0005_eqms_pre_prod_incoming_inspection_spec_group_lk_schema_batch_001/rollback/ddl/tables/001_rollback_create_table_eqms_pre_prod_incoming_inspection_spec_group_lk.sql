@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS organization.eqms_pre_prod_incoming_inspection_spec_group_lk;

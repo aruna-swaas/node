@@ -1,0 +1,17 @@
+Release Notes
+--------------------------------------------------
+Database Folder: migrations_00312_risk_management_0016_overall_benefit_risk_analysis_schema_batch_001
+Date with time: 2026-02-07 17:14:19
+
+Schema: risk_management
+- Table: risk_management.eqms_rm_benefit_risk_anlysis
+  Change Type: CREATE
+  Description: Create new table eqms_rm_benefit_risk_anlysis
+
+- Table: risk_management.eqms_rm_benefit_risk_anlysis_history
+  Change Type: CREATE
+  Description: Create new table eqms_rm_benefit_risk_anlysis_history
+
+- Table: risk_management.eqms_rm_benefit_risk_anlysis
+  Change Type: ALTER
+  Description: Add 2 foreign key constraint(s)

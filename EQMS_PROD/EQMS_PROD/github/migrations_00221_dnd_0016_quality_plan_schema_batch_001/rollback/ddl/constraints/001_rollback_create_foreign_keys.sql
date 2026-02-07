@@ -1,0 +1,5 @@
+ALTER TABLE dnd.eqms_project_quality_plan DROP CONSTRAINT fk_epqp_project_id;
+ALTER TABLE dnd.eqms_project_quality_plan DROP CONSTRAINT fk_epqp_project_build_stage_order_id;
+ALTER TABLE dnd.eqms_project_quality_plan DROP CONSTRAINT fk_epdtsm_organization_id;
+ALTER TABLE dnd.eqms_product_quality_objective DROP CONSTRAINT fk_epqo_product_realization_plan_id;
+ALTER TABLE dnd.eqms_product_quality_objective DROP CONSTRAINT fk_epqo_organization_id;

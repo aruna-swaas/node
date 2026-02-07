@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dnd.eqms_dig_specification_functional_block_mapper_history;
