@@ -38,7 +38,7 @@ def get_module_wise_sheet_name(module_name):
     @description Maps internal module names to sheet names in the secondary Excel file.
     @param {str} module_name - Internal module name
     @returns {str|None} Corresponding sheet name or None if not found
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 24-01-2026
     """
     # @confidential
@@ -947,7 +947,7 @@ def abbreviate_word(word: str, min_len: int = 4) -> str:
     @param {str} word - The word to abbreviate
     @param {int} min_len - Minimum length to keep (default: 4)
     @returns {str} Abbreviated word
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     if len(word) <= min_len:
@@ -982,7 +982,7 @@ def smart_trim_filename(
     @param {int} tail_tokens - Number of trailing tokens to preserve (default: 2)
     @param {int} max_len - Maximum filename length (default: 255 for Git/GitHub)
     @returns {str} Trimmed filename that fits within max_len
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     if len(filename) <= max_len:
@@ -1028,7 +1028,7 @@ def abbreviate_folder_table_name(table_name: str, max_length: int = 75) -> str:
     @param {str} table_name - The table name to abbreviate
     @param {int} max_length - Maximum length for the abbreviated name (default: 75)
     @returns {str} Abbreviated table name
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     if len(table_name) <= max_length:
@@ -1105,7 +1105,7 @@ def generate_matching_filenames(table_name: str, prefix: str = '001') -> tuple:
     @param {str} table_name - The table name (without schema prefix)
     @param {str} prefix - The numeric prefix (e.g., '001')
     @returns {tuple} (create_filename, rollback_filename) - Both with matching abbreviations
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     # Extract table name without schema
@@ -1169,7 +1169,7 @@ def get_long_path(path):
     @description Converts a path to use Windows long path prefix to bypass MAX_PATH limit
     @param {str} path - The path to convert
     @returns {str} The path with long path prefix if on Windows, otherwise unchanged
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     if sys.platform == 'win32':
@@ -2153,7 +2153,7 @@ def get_table_module(table_name, full_df):
     @param {string} table_name - The table name (can be schema.table or just table)
     @param {DataFrame} full_df - The full Excel mapping DataFrame with MODULE column
     @returns {string|None} The module name if found, None otherwise
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     if full_df is None or full_df.empty:
@@ -2191,7 +2191,7 @@ def filter_data_files_by_screen(data_files, screen_tables_set, module_df, is_loo
     @param {DataFrame} full_df - Full Excel mapping DataFrame (optional, for module detection)
     @param {string} current_module_name - Current module name being processed (optional)
     @returns {list} Filtered list of (file_path, filename) tuples
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     filtered_files = []
@@ -2816,7 +2816,7 @@ def scan_existing_batch_numbers():
     @description Scans the output folder for existing migration folders and extracts
     all batch numbers to ensure sequential numbering without gaps.
     @returns {list} Sorted list of all batch numbers found in existing folders
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 24-01-2026
     """
     # @confidential
@@ -2851,7 +2851,7 @@ def sync_state_with_folders(state):
     If 00001 is missing, sets state to 0 so next batch will be 00001.
     @param {dict} state - The state object to sync
     @returns {dict} Updated state object
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 24-01-2026
     """
     # @confidential
@@ -2883,7 +2883,7 @@ def get_next_batch_number(state, caller_info=None):
     @param {dict} state - Global migration state object
     @param {str} caller_info - Optional info about who is calling this function
     @returns {int} Next available batch number (1, 2, 3, ...)
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 24-01-2026
     """
     # @confidential
@@ -3375,7 +3375,7 @@ def extract_all_tables_from_data_files(data_files):
     
     @param {list} data_files - List of (file_path, filename) tuples
     @returns {dict} Dict mapping table_name -> dict with 'original_name' and 'files' set
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     table_to_files = defaultdict(lambda: {'original_name': None, 'files': set()})
@@ -3445,7 +3445,7 @@ def validate_all_tables_inserted(all_data_files, processed_tables_by_screen, mod
     @param {string} module_name - Current module name
     @param {DataFrame} full_df - Full Excel mapping DataFrame
     @returns {bool} True if validation passes, False otherwise
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     print(f"\n  Validating data completeness for module '{module_name}'...")
@@ -3582,7 +3582,7 @@ def split_lookup_predefined_file_by_screen(file_path, filename, screen_tables_ma
     @param {DataFrame} full_df - Full Excel mapping DataFrame for module detection
     @param {string} current_module_name - Current module name being processed
     @returns {dict} Dict mapping screen names to dict with 'do_block', 'end_block', and 'inserts' list
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     screen_inserts = {}  # Map screen -> list of INSERT statement strings
@@ -3874,7 +3874,7 @@ def generate_optimized_do_block(original_do_block, used_variables, full_content=
     @param {set} used_variables - Set of variable names (uppercase) that are actually used
     @param {string} full_content - Optional full file content to extract SELECT statements from BEGIN section
     @returns {string} Optimized DO block with only used variables
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     if not original_do_block:
@@ -4048,7 +4048,7 @@ def _process_data_files_for_screen(all_data_files, data_paths, is_lookup_folder=
     @param {dict} data_paths - Dict with 'data' and 'rdata' paths
     @param {bool} is_lookup_folder - If True, this is processing for a lookup folder (don't skip lookup tables)
     @returns {set} Set of table names (normalized) that were inserted
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     inserted_tables = set()
@@ -4282,7 +4282,7 @@ def is_predefined_file(file_path, filename):
     @param {string} file_path - Full path to the file
     @param {string} filename - Name of the file
     @returns {boolean} True if the file is a predefined file, False otherwise
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     # Check filename
@@ -4301,7 +4301,7 @@ def is_rbac_abac_workflow_file(file_path, filename):
     @param {string} file_path - Full path to the file
     @param {string} filename - Name of the file
     @returns {boolean} True if the file is RBAC/ABAC/workflow configuration, False otherwise
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     filename_lower = filename.lower()
@@ -4329,7 +4329,7 @@ def process_data_migrations(module_name, module_df, base_batch_number, sorted_sc
     @param {boolean} has_permission_files - Whether permission files exist (not used anymore, kept for compatibility)
     @param {DataFrame} full_df - Full Excel mapping DataFrame for module detection
     @returns {int} Next batch number to use (increments only when folders are actually created)
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 20-01-2025
     """
     # CRITICAL: Store full_df in globals so _process_data_files_for_screen can access it
@@ -4865,7 +4865,7 @@ def extract_foreign_key_tables(screen_tables, screen_constraints, module_name):
     @param {string} module_name - Current module name
     
     @returns {set} Set of normalized table names (with schema) that are referenced by foreign keys (excluding same schema)
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 28-12-2024
     """
     fk_tables = set()
@@ -4898,7 +4898,7 @@ def read_app_user_mapping():
     Handles special cases like hrcs (multiple users) and dnd specification screen.
     
     @returns {dict} Dictionary mapping module names (lowercase) to list of app user names
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 28-12-2024
     """
     module_user_mapping = {}
@@ -4983,7 +4983,7 @@ def get_module_app_users(module_name, screen_name=None):
     @param {string} screen_name - Optional screen name (for special cases like dnd specification)
     
     @returns {list} List of app user names for this module
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 28-12-2025
     """
     # Read mapping from file (cache it in a global variable to avoid reading multiple times)
@@ -5022,7 +5022,7 @@ def extract_user_name_from_permission_files(permission_files):
     @param {list} permission_files - List of (file_path, filename) tuples
     
     @returns {string} User/role name to grant permissions to
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 28-12-2024
     """
     # Try to extract from existing permission files
@@ -5059,7 +5059,7 @@ def generate_batch_permission_sql(module_name, screen_tables, screen_constraints
     @param {string} screen_name - Optional screen name (not used, kept for compatibility)
     
     @returns {string} Generated permission SQL content
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 28-12-2024
     """
     # Extract table names from screen_tables - use actual schema from dump.sql
@@ -5119,7 +5119,7 @@ def generate_batch_permission_rollback(module_name, screen_tables, screen_constr
     @param {string} screen_name - Optional screen name (not used, kept for compatibility)
     
     @returns {string} Generated rollback SQL content
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 28-12-2024
     """
     # Extract table names from screen_tables - use actual schema from dump.sql
@@ -5180,7 +5180,7 @@ def process_module_wise_permissions(module_name, processed_tables, current_batch
     @param {int} current_batch_counter - Current sequence number
     @param {list} app_users - List of app users for the module
     @returns {int} Updated batch counter
-    @author Aravind Sekar
+    @author Aruna Swaminathan
     @created 24-01-2026
     """
     if not os.path.exists(MODULE_WISE_TABLES_FILE):
